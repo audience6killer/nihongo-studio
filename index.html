@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Tobira recap and JLPT N2 study app. Local-first Japanese spaced repetition with recognition, production and listening.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f3ea">
+<meta name="apple-mobile-web-app-title" content="Nihongo">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Nihongo Studio</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/today" data-act="go" data-to="#/today">
+      <span class="brand-mark" aria-hidden="true">日</span>
+      <span class="brand-text">Nihongo<em>Studio</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#/today" data-act="go" data-to="#/today" data-nav="today">Today</a>
+      <a href="#/chapters" data-act="go" data-to="#/chapters" data-nav="chapters">Chapters</a>
+      <a href="#/stats" data-act="go" data-to="#/stats" data-nav="stats">Stats</a>
+      <a href="#/settings" data-act="go" data-to="#/settings" data-nav="settings">Settings</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="main" tabindex="-1">
+  <div class="boot">
+    <p class="boot-text">Loading Nihongo Studio…</p>
+  </div>
+</main>
+
+<div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+<div id="modal-root"></div>
+
+<noscript>
+  <p style="max-width:40rem;margin:2rem auto;font-family:system-ui;padding:0 1rem">
+    Nihongo Studio needs JavaScript. Everything runs locally in your browser; nothing is sent
+    anywhere.
+  </p>
+</noscript>
+
+<!-- 1. data (generated; config.js is build-injected and empty by default) -->
+<script src="assets/js/data/config.js"></script>
+<script src="assets/js/data/vocab.js"></script>
+<script src="assets/js/data/lessons.js"></script>
+<script src="assets/js/data/tap.js"></script>
+
+<!-- 2. core engine -->
+<script src="assets/js/core/util.js"></script>
+<script src="assets/js/core/lang.js"></script>
+<script src="assets/js/core/data.js"></script>
+<script src="assets/js/core/storage.js"></script>
+<script src="assets/js/core/srs.js"></script>
+<script src="assets/js/core/plan.js"></script>
+<script src="assets/js/core/tts.js"></script>
+<script src="assets/js/core/session.js"></script>
+
+<!-- 3. screens -->
+<script src="assets/js/ui/components.js"></script>
+<script src="assets/js/ui/dashboard.js"></script>
+<script src="assets/js/ui/session.js"></script>
+<script src="assets/js/ui/lesson.js"></script>
+<script src="assets/js/ui/stats.js"></script>
+
+<!-- 4. boot -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

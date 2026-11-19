@@ -1,0 +1,290 @@
+# Function words, proper nouns, numbers and inflected forms needed so that every
+# passage token resolves. Chapter-specific content words belong in recap-NN.tsv;
+# anything reusable across chapters belongs here.
+#
+# tab-separated: term<TAB>reading<TAB>gloss<TAB>pos
+#   pos: part | form | name | num | conj | exp
+
+# ---- particles and case markers -------------------------------------------
+は	は	topic marker	part
+が	が	subject marker	part
+を	を	object marker	part
+に	に	to; at; in (target, time)	part
+で	で	at; by; with (place, means)	part
+と	と	and; with; that	part
+も	も	too; also	part
+の	の	of; 's (linker)	part
+へ	へ	toward	part
+や	や	and (among others)	part
+から	から	from; because	part
+まで	まで	until; as far as	part
+より	より	than; from	part
+など	など	etc.; and so on	part
+だけ	だけ	only	part
+ほど	ほど	about; to the extent of	part
+しか	しか	only (with a negative)	part
+ばかり	ばかり	only; just	part
+って	って	(informal) says; as for	part
+
+# ---- demonstratives and pronouns ------------------------------------------
+これ	これ	this	exp
+それ	それ	that	exp
+あれ	あれ	that over there	exp
+この	この	this (before a noun)	exp
+その	その	that (before a noun)	exp
+あの	あの	that (before a noun); er…	exp
+ここ	ここ	here	exp
+そこ	そこ	there	exp
+どこ	どこ	where	exp
+だれ	だれ	who	exp
+何	なに	what	exp
+私	わたし	I; me	n.
+自分	じぶん	oneself	n.
+
+# ---- basic nouns ----------------------------------------------------------
+人	ひと	person	n.
+方	かた	person (polite); way of doing	n.
+こと	こと	thing (abstract); fact	exp
+もの	もの	thing (concrete)	exp
+ため	ため	sake; reason	exp
+ところ	ところ	place; point	exp
+とき	とき	time; when	exp
+中	なか	inside; among	n.
+上	うえ	above; on top	n.
+下	した	below; under	n.
+前	まえ	before; front	n.
+後	あと	after; later	n.
+今	いま	now	n.
+日	ひ	day	n.
+年	とし	year	n.
+月	つき	month	n.
+時	とき	time; hour	n.
+国	くに	country	n.
+日本	にほん	Japan	name
+日本人	にほんじん	Japanese person	n.
+日本語	にほんご	the Japanese language	n.
+
+# ---- verbs and forms used in the passages ---------------------------------
+する	する	to do	v.suru
+なる	なる	to become	v.i.
+いる	いる	to be; to exist (animate)	v.i.
+ある	ある	to be; to exist (inanimate)	v.i.
+いく	いく	to go	v.i.
+くる	くる	to come	v.i.
+みる	みる	to see; to look	v.t.
+いう	いう	to say	v.t.
+おもう	おもう	to think	v.t.
+できる	できる	to be possible; can do	v.i.
+なっている	なっている	to consist of; to have become	form
+こえ	こえ	to exceed (stem)	form
+こえる	こえる	to exceed	v.i.
+集まっている	あつまっている	to be gathered; to be concentrated	form
+続いている	つづいている	to continue; to run on	form
+続く	つづく	to continue	v.i.
+知られ	しられ	to be known (stem)	form
+知られる	しられる	to be known	v.i.
+異なり	ことなり	to differ (stem)	form
+異なる	ことなる	to differ	v.i.
+積もる	つもる	to pile up	v.i.
+通して	とおして	through; throughout	form
+通す	とおす	to let through	v.t.
+関わっている	かかわっている	to be connected with	form
+関わる	かかわる	to be involved in; to relate to	v.i.
+利用されてきた	りようされてきた	to have been used	form
+利用する	りようする	to use; to utilise	v.suru
+行われます	おこなわれます	to be held; to be carried out	form
+行う	おこなう	to carry out; to hold	v.t.
+広がっています	ひろがっています	to spread out; to extend	form
+広がる	ひろがる	to spread; to extend	v.i.
+住んでいる	すんでいる	to live; to reside	form
+住む	すむ	to live; to reside	v.i.
+乾燥する	かんそくする	to be dry; to dry	v.suru
+乾燥しています	かんそくしています	to be dry	form
+にぎわいます	にぎわいます	to be lively; to be busy	form
+にぎわう	にぎわう	to be lively; to bustle	v.i.
+聞きました	ききました	heard	form
+聞く	きく	to hear; to ask	v.t.
+あるんですか	あるんですか	is there? (explanatory)	form
+わかった	わかった	understood (casual)	form
+わかりました	わかりました	understood (polite)	form
+だね	だね	isn't it (casual)	form
+マジで	まじで	seriously (casual)	exp
+そうだね	そうだね	you're right (casual)	exp
+そうですね	そうですね	you're right; I see (polite)	exp
+そうだ	そうだ	that's right	exp
+そうなんだ	そうなんだ	oh, is that so (casual)	exp
+そうです	そうです	that is so	exp
+だ	だ	is; are (plain copula)	form
+です	です	is; are (polite copula)	form
+ます	ます	polite verb ending	form
+
+# ---- adverbs, conjunctions, connectives -----------------------------------
+それほど	それほど	that much; to that extent	adv
+そのため	そのため	because of that; that is why	conj
+そのまま	そのまま	as it is	exp
+また	また	again; also	adv
+まだ	まだ	still; not yet	adv
+もう	もう	already; more	adv
+とても	とても	very	adv
+よく	よく	well; often	adv
+いちばん	いちばん	the most	adv
+たくさん	たくさん	plenty; a lot	adv
+多く	おおく	many; much	adv
+大きく	おおきく	greatly	adv
+深く	ふかく	deeply	adv
+短く	みじかく	short	adv
+広く	ひろく	widely; extensively	adv
+急で	きゅうで	steep; sudden (te-form)	form
+あって	あって	there is … and	form
+そして	そして	and then	conj
+しかし	しかし	however	conj
+だから	だから	so; therefore	conj
+でも	でも	but; however	conj
+では	では	then; well	conj
+ちょっと	ちょっと	a little; a bit	adv
+まず	まず	first of all	adv
+必ず	かならず	without fail	adv
+たぶん	たぶん	probably	adv
+きっと	きっと	surely	adv
+あまり	あまり	not very (with a negative)	adv
+全然	ぜんぜん	not at all (with a negative)	adv
+くらい	くらい	about; approximately	part
+ぐらい	ぐらい	about; approximately	part
+ので	ので	because (soft)	conj
+ながら	ながら	while; at the same time	part
+のに	のに	although	conj
+けど	けど	but (casual)	conj
+けれども	けれども	but; however	conj
+という	という	called; that says	exp
+ように	ように	like; so that	exp
+ために	ために	in order to; because of	exp
+について	について	about; concerning	exp
+
+# ---- adjectives and auxiliaries -------------------------------------------
+暖かい	あたたかい	warm	い-adj.
+おいしい	おいしい	delicious	い-adj.
+暑い	あつい	hot (weather)	い-adj.
+寒い	さむい	cold	い-adj.
+大きい	おおきい	big	い-adj.
+小さい	ちいさい	small	い-adj.
+多い	おおい	many	い-adj.
+少ない	すくない	few	い-adj.
+いい	いい	good	い-adj.
+わるい	わるい	bad	い-adj.
+ない	ない	not; there is not	form
+たい	たい	want to	form
+ている	ている	be …ing; resultant state	form
+てきた	てきた	has come to; has been	form
+られる	られる	passive; potential	form
+されている	されている	has been …ed	form
+されます	されます	will be …ed (polite passive)	form
+んです	んです	explanation; seeking explanation	form
+んですか	んですか	are you …? (seeking explanation)	form
+でしょうか	でしょうか	could it be; is it (polite)	form
+
+# ---- numbers and units ----------------------------------------------------
+一億人	いちおくにん	one hundred million people	num
+百万人	ひゃくまんにん	one million people	num
+七割	ななわり	seventy percent	num
+一年	いちねん	one year	num
+一年中	いちねんじゅう	all year round	num
+三百万人	さんびゃくまんにん	three million people	num
+一つの	ひとつの	one (of)	num
+
+# ---- proper nouns ---------------------------------------------------------
+北海道	ほっかいどう	Hokkaido	name
+本州	ほんしゅう	Honshu	name
+四国	しこく	Shikoku	name
+九州	きゅうしゅう	Kyushu	name
+沖縄	おきなわ	Okinawa	name
+東京	とうきょう	Tokyo	name
+ユーラシア大陸	ユーラシアたいりく	the Eurasian continent	name
+日本列島	にほんれっとう	the Japanese archipelago	name
+
+# ---- misc for the grammar section -----------------------------------------
+ええと	ええと	er…; let me see (filler)	exp
+うん	うん	yeah (casual backchannel)	exp
+ええ	ええ	yes; uh-huh (polite backchannel)	exp
+はい	はい	yes	exp
+なるほど	なるほど	I see; that makes sense	exp
+へえ	へえ	oh really (surprise)	exp
+目上	めうえ	person of higher status	n.
+話して	はなして	speaking (te-form)	form
+話す	はなす	to speak; to talk	v.t.
+途中	とちゅう	on the way; midway	n.
+言葉	ことば	word; language	n.
+出てきません	でてきません	does not come out	form
+出る	でる	to come out	v.i.
+自然	しぜん	nature; natural	n.
+適切	てきせつ	appropriate	な-adj.
+来週	らいしゅう	next week	n.
+金曜日	きんようび	Friday	n.
+初めて	はじめて	for the first time	adv
+そんなに	そんなに	that much	adv
+そんな	そんな	that kind of	exp
+春	はる	spring	n.
+夏	なつ	summer	n.
+秋	あき	autumn	n.
+冬	ふゆ	winter	n.
+雪	ゆき	snow	n.
+魚	さかな	fish	n.
+海	うみ	sea; ocean	n.
+山	やま	mountain	n.
+川	かわ	river	n.
+水力発電	すいりょくはつでん	hydroelectric power	n.
+農業	のうぎょう	agriculture	n.
+食生活	しょくせいかつ	eating habits; diet	n.
+変化	へんか	change	n.
+南北	なんぼく	north and south	n.
+背骨	せぼね	spine	n.
+山地	さんち	mountainous region	n.
+国土	こくど	national land; territory	n.
+都市	とし	city	n.
+近く	ちかく	near; vicinity	n.
+各地	かくち	various places; everywhere	n.
+約	やく	approximately	adv
+
+# ---- added to close chapter 1 tap-coverage gaps ---------------------------
+# Found by: node tools/check_tap.mjs
+流れ	ながれ	flow; current	n.
+北	きた	north	n.
+南	みなみ	south	n.
+東	ひがし	east	n.
+西	にし	west	n.
+あり	あり	to be; there is (stem of ある)	form
+一方	いっぽう	on the other hand; while	conj
+か	か	question particle	part
+て	て	and then; -ing (connective)	part
+長い	ながい	long	い-adj.
+長く	ながく	long (adverbial); for a long time	form
+ゆるい	ゆるい	slack; gentle (of a current)	い-adj.
+文章	ぶんしょう	text; passage	n.
+主な	おもな	main; principal	な-adj.
+テーマ	テーマ	theme; topic	n.
+特徴	とくちょう	characteristic; feature	n.
+問題点	もんだいてん	problem; issue	n.
+歴史	れきし	history	n.
+同じ	おなじ	same; identical	な-adj.
+どれ	どれ	which one (of three or more)	exp
+合う	あう	to match; to agree with	v.i.
+合っている	あっている	to match; to fit	form
+急だ	きゅうだ	steep; sudden	form
+使う	つかう	to use	v.t.
+使えない	つかえない	cannot be used	form
+占めている	しめている	to account for; to occupy	form
+分かる	わかる	to be understood; to be clear	v.i.
+分かります	わかります	to be understood (polite)	form
+降る	ふる	to fall (rain, snow)	v.i.
+地域	ちいき	region; area	n.
+よる	よる	to depend on; to be due to	v.i.
+による	による	depending on; caused by	exp
+差	さ	difference; gap	n.
+あいづち	あいづち	backchannel; conversational response	n.
+えっ	えっ	huh?; what?	exp
+積もります	つもります	to pile up (polite)	form
+お	お	honorific prefix	part
+暑く	あつく	hot (adverbial)	form
+週末	しゅうまつ	weekend	n.
+近い	ちかい	near; close	い-adj.
+います	います	to be; there is (polite)	form
+な	な	attributive ending of a な-adjective	part

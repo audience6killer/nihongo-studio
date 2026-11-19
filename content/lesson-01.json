@@ -1,0 +1,123 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 1,
+  "title": { "l2": "日本の地理", "l1": "The Geography of Japan" },
+  "grammar": {
+    "point_l2": "あいづちとフィラー",
+    "point_l1": "Backchannels and fillers",
+    "explain_l1": "Japanese conversation runs on constant short responses — あいづち — that tell the other person you are following along. They do not mean you agree. The common ones are うん、ええ、そうですね、なるほど and へえ. Fillers such as ええと or あの hold the floor while you think of a word. Dropping both makes you sound like you are reading a script; using うん with someone senior sounds careless.",
+    "common_mistake_l1": "Saying うん to a teacher, a client or anyone above you. Use はい、ええ、そうですね or なるほど there instead — うん is for friends and equals. A second common slip is answering はい to every あいづち, which turns listening into agreeing.",
+    "examples": [
+      {
+        "l2": "「ええと、来週の金曜日はちょっと…」",
+        "reading": "ええと、らいしゅうのきんようびはちょっと…",
+        "l1": "\"Er, next Friday is a little…\""
+      },
+      {
+        "l2": "「なるほど、それは初めて聞きました。」",
+        "reading": "なるほど、それははじめてききました。",
+        "l1": "\"I see — that's the first I've heard of it.\""
+      },
+      {
+        "l2": "「へえ、北海道にも温泉がそんなにあるんですか。」",
+        "reading": "へえ、ほっかいどうにもおんせんがそんなにあるんですか。",
+        "l1": "\"Really? Are there that many hot springs in Hokkaido too?\""
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "目上の人と話しています。いちばん適切なあいづちはどれですか。",
+        "options_l2": ["うん、そうだね。", "はい、そうですね。", "えっ、マジで？", "わかった、わかった。"],
+        "answer": 1,
+        "explain_l1": "With someone senior, はい followed by そうですね is safe and neutral. うん、マジで and わかった are friend-to-friend forms and read as dismissive here."
+      },
+      {
+        "q_l2": "話している途中で言葉が出てきません。いちばん自然なのはどれですか。",
+        "options_l2": ["ええと、その…", "へえ、そうなんだ。", "なるほど、わかりました。", "はい、そうです。"],
+        "answer": 0,
+        "explain_l1": "A filler signals \"I'm still talking, give me a second\" and holds the floor. The other three are reactions to what someone else said, so they change the subject instead of pausing it."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本はユーラシア大陸の東に位置する島国で、北海道・本州・四国・九州などの島々からなっている。国土の面積はそれほど広くないが、人口は一億人をこえ、その多くが平野や海岸近くの都市に集まっている。国土の約七割は山地で、山脈が列島の背骨のように続いている。そのため、川は短く流れが急で、水力発電や農業に利用されてきた。日本は火山が多いことでも知られ、温泉が各地に点在する。気候は南北で大きく異なり、北の北海道では冬に雪が深く積もる一方、南の沖縄では一年を通して暖かい。四季の変化は日本人の行事や食生活に深く関わっている。各地に名所や名物があり、春の祭りには多くの観光客が集まる。",
+    "sentences": [
+      {
+        "l2": "日本はユーラシア大陸の東に位置する島国で、北海道・本州・四国・九州などの島々からなっている。",
+        "l1": "Japan is an island country lying east of the Eurasian continent, made up of islands such as Hokkaido, Honshu, Shikoku and Kyushu."
+      },
+      {
+        "l2": "国土の面積はそれほど広くないが、人口は一億人をこえ、その多くが平野や海岸近くの都市に集まっている。",
+        "l1": "Its land area is not especially large, but the population is over one hundred million, and most of it is concentrated in cities on plains and near the coast."
+      },
+      {
+        "l2": "国土の約七割は山地で、山脈が列島の背骨のように続いている。",
+        "l1": "About seventy percent of the land is mountainous, with mountain ranges running on like a spine down the archipelago."
+      },
+      {
+        "l2": "そのため、川は短く流れが急で、水力発電や農業に利用されてきた。",
+        "l1": "Because of that the rivers are short and fast, and they have long been used for hydroelectric power and for farming."
+      },
+      {
+        "l2": "日本は火山が多いことでも知られ、温泉が各地に点在する。",
+        "l1": "Japan is also known for having many volcanoes, and hot springs are scattered all over the country."
+      },
+      {
+        "l2": "気候は南北で大きく異なり、北の北海道では冬に雪が深く積もる一方、南の沖縄では一年を通して暖かい。",
+        "l1": "The climate differs sharply between north and south: in the north, Hokkaido gets deep snow in winter, while in the south, Okinawa is warm the whole year round."
+      },
+      {
+        "l2": "四季の変化は日本人の行事や食生活に深く関わっている。",
+        "l1": "The turn of the four seasons is bound up closely with Japanese seasonal events and with what people eat."
+      },
+      {
+        "l2": "各地に名所や名物があり、春の祭りには多くの観光客が集まる。",
+        "l1": "Every region has its famous sights and local specialities, and the spring festivals draw large numbers of tourists."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": ["日本の地理の特徴", "日本の長い歴史", "日本の観光の問題点", "日本の農業の歴史"],
+        "answer": 0,
+        "explain_l1": "The whole passage is about location, land, rivers, volcanoes, climate and seasons — the shape of the country, not a period or a problem."
+      },
+      {
+        "q_l2": "日本の川について、文章に合っているものはどれですか。",
+        "options_l2": ["長くて流れがゆるい", "短くて流れが急だ", "水力発電には使えない", "国土の七割を占めている"],
+        "answer": 1,
+        "explain_l1": "The text says 川は短く流れが急で. Seventy percent refers to mountains, not rivers, and the same sentence says the rivers are used for hydroelectric power."
+      },
+      {
+        "q_l2": "この文章から、日本の気候について何が分かりますか。",
+        "options_l2": [
+          "北も南も一年中同じくらい暖かい",
+          "沖縄では冬に雪がたくさん降る",
+          "同じ国でも地域による気候の差が大きい",
+          "北海道には四季の変化がない"
+        ],
+        "answer": 2,
+        "explain_l1": "Hokkaido's deep snow and Okinawa's year-round warmth are given as one contrast, so the inference is that a small country can hold very different climates."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      { "l2": "日本の国土の多くは山地です。", "l1": "Much of Japan's land is mountainous." },
+      { "l2": "温泉は火山が多いところにあります。", "l1": "Hot springs are found where there are many volcanoes." },
+      { "l2": "北海道では冬に雪が深く積もります。", "l1": "In Hokkaido the snow piles up deep in winter." },
+      { "l2": "この県の人口は百万人をこえています。", "l1": "This prefecture's population is over one million." },
+      { "l2": "春には各地でお祭りが行われます。", "l1": "In spring, festivals are held in many places." }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, describe the geography of a place you know well: where it is, what the land is like, and one thing it is known for. Use at least three of this chapter's words.",
+    "required": ["気候", "平野", "山脈", "温泉"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私が住んでいる地方は、北に山脈があって、南には広い平野が広がっています。人口は三百万人ぐらいで、気候は夏が暑く、冬は乾燥しています。山の近くには温泉が多く、週末は観光客でにぎわいます。海も近いので、魚がおいしいです。山と川が多く、春は観光客でにぎわいます。",
+    "tips_l1": "Length is the easy part; what matters is whether a reader can picture the place. Name one concrete feature — a mountain range, a river, a coastline — and one thing the region is known for. The app only counts length, required words and sentence count; have a human check the style."
+  }
+}

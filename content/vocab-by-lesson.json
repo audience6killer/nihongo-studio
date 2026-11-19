@@ -1,0 +1,342 @@
+[
+ {
+  "deck": "recap",
+  "lesson": 1,
+  "title_l2": "日本の地理",
+  "title_l1": "The Geography of Japan",
+  "items": [
+   {
+    "w": "地理",
+    "reading": "ちり",
+    "pos": "n.",
+    "gloss": "geography",
+    "alt": []
+   },
+   {
+    "w": "位置",
+    "reading": "いち",
+    "pos": "n.",
+    "gloss": "position; location",
+    "alt": []
+   },
+   {
+    "w": "位置する",
+    "reading": "いちする",
+    "pos": "v.suru",
+    "gloss": "to be located; to be situated",
+    "alt": [
+     "位置しています",
+     "位置した"
+    ]
+   },
+   {
+    "w": "島",
+    "reading": "しま",
+    "pos": "n.",
+    "gloss": "island",
+    "alt": []
+   },
+   {
+    "w": "島々",
+    "reading": "しまじま",
+    "pos": "n.",
+    "gloss": "islands; the various islands",
+    "alt": []
+   },
+   {
+    "w": "半島",
+    "reading": "はんとう",
+    "pos": "n.",
+    "gloss": "peninsula",
+    "alt": []
+   },
+   {
+    "w": "列島",
+    "reading": "れっとう",
+    "pos": "n.",
+    "gloss": "archipelago; island chain",
+    "alt": []
+   },
+   {
+    "w": "大陸",
+    "reading": "たいりく",
+    "pos": "n.",
+    "gloss": "continent",
+    "alt": []
+   },
+   {
+    "w": "気候",
+    "reading": "きこう",
+    "pos": "n.",
+    "gloss": "climate",
+    "alt": []
+   },
+   {
+    "w": "山脈",
+    "reading": "さんみゃく",
+    "pos": "n.",
+    "gloss": "mountain range",
+    "alt": []
+   },
+   {
+    "w": "平野",
+    "reading": "へいや",
+    "pos": "n.",
+    "gloss": "plain; open country",
+    "alt": []
+   },
+   {
+    "w": "盆地",
+    "reading": "ぼんち",
+    "pos": "n.",
+    "gloss": "basin",
+    "alt": []
+   },
+   {
+    "w": "高原",
+    "reading": "こうげん",
+    "pos": "n.",
+    "gloss": "plateau; highland",
+    "alt": []
+   },
+   {
+    "w": "火山",
+    "reading": "かざん",
+    "pos": "n.",
+    "gloss": "volcano",
+    "alt": []
+   },
+   {
+    "w": "温泉",
+    "reading": "おんせん",
+    "pos": "n.",
+    "gloss": "hot spring",
+    "alt": []
+   },
+   {
+    "w": "湖",
+    "reading": "みずうみ",
+    "pos": "n.",
+    "gloss": "lake",
+    "alt": []
+   },
+   {
+    "w": "海岸",
+    "reading": "かいがん",
+    "pos": "n.",
+    "gloss": "coast; seashore",
+    "alt": []
+   },
+   {
+    "w": "海峡",
+    "reading": "かいきょう",
+    "pos": "n.",
+    "gloss": "strait; channel",
+    "alt": []
+   },
+   {
+    "w": "面積",
+    "reading": "めんせき",
+    "pos": "n.",
+    "gloss": "area; surface area",
+    "alt": []
+   },
+   {
+    "w": "人口",
+    "reading": "じんこう",
+    "pos": "n.",
+    "gloss": "population",
+    "alt": []
+   },
+   {
+    "w": "首都",
+    "reading": "しゅと",
+    "pos": "n.",
+    "gloss": "capital city",
+    "alt": []
+   },
+   {
+    "w": "都道府県",
+    "reading": "とどうふけん",
+    "pos": "n.",
+    "gloss": "prefecture; the prefectural system",
+    "alt": []
+   },
+   {
+    "w": "県",
+    "reading": "けん",
+    "pos": "n.",
+    "gloss": "prefecture",
+    "alt": []
+   },
+   {
+    "w": "地方",
+    "reading": "ちほう",
+    "pos": "n.",
+    "gloss": "region; area",
+    "alt": []
+   },
+   {
+    "w": "名所",
+    "reading": "めいしょ",
+    "pos": "n.",
+    "gloss": "famous place; sightseeing spot",
+    "alt": []
+   },
+   {
+    "w": "名物",
+    "reading": "めいぶつ",
+    "pos": "n.",
+    "gloss": "local specialty; famous product",
+    "alt": []
+   },
+   {
+    "w": "祭り",
+    "reading": "まつり",
+    "pos": "n.",
+    "gloss": "festival",
+    "alt": []
+   },
+   {
+    "w": "行事",
+    "reading": "ぎょうじ",
+    "pos": "n.",
+    "gloss": "event; seasonal observance",
+    "alt": []
+   },
+   {
+    "w": "昔話",
+    "reading": "むかしばなし",
+    "pos": "n.",
+    "gloss": "folk tale; old story",
+    "alt": []
+   },
+   {
+    "w": "伝説",
+    "reading": "でんせつ",
+    "pos": "n.",
+    "gloss": "legend",
+    "alt": []
+   },
+   {
+    "w": "四季",
+    "reading": "しき",
+    "pos": "n.",
+    "gloss": "the four seasons",
+    "alt": []
+   },
+   {
+    "w": "農産物",
+    "reading": "のうさんぶつ",
+    "pos": "n.",
+    "gloss": "agricultural produce",
+    "alt": []
+   },
+   {
+    "w": "漁業",
+    "reading": "ぎょぎょう",
+    "pos": "n.",
+    "gloss": "fishing industry",
+    "alt": []
+   },
+   {
+    "w": "観光",
+    "reading": "かんこう",
+    "pos": "n.",
+    "gloss": "sightseeing; tourism",
+    "alt": []
+   },
+   {
+    "w": "観光客",
+    "reading": "かんこうきゃく",
+    "pos": "n.",
+    "gloss": "tourist; sightseer",
+    "alt": []
+   },
+   {
+    "w": "独特",
+    "reading": "どくとく",
+    "pos": "な-adj.",
+    "gloss": "unique; distinctive",
+    "alt": []
+   },
+   {
+    "w": "広い",
+    "reading": "ひろい",
+    "pos": "い-adj.",
+    "gloss": "wide; spacious",
+    "alt": []
+   },
+   {
+    "w": "狭い",
+    "reading": "せまい",
+    "pos": "い-adj.",
+    "gloss": "narrow; cramped",
+    "alt": []
+   },
+   {
+    "w": "恵まれる",
+    "reading": "めぐまれる",
+    "pos": "v.i.",
+    "gloss": "to be blessed with; to be favoured with",
+    "alt": [
+     "恵まれている"
+    ]
+   },
+   {
+    "w": "富む",
+    "reading": "とむ",
+    "pos": "v.i.",
+    "gloss": "to be rich in; to abound in",
+    "alt": [
+     "富んでいる"
+    ]
+   },
+   {
+    "w": "属する",
+    "reading": "ぞくする",
+    "pos": "v.suru",
+    "gloss": "to belong to; to be part of",
+    "alt": [
+     "属している"
+    ]
+   },
+   {
+    "w": "占める",
+    "reading": "しめる",
+    "pos": "v.t.",
+    "gloss": "to account for; to occupy",
+    "alt": [
+     "占めている"
+    ]
+   },
+   {
+    "w": "集まる",
+    "reading": "あつまる",
+    "pos": "v.i.",
+    "gloss": "to gather; to be concentrated",
+    "alt": [
+     "集まっている"
+    ]
+   },
+   {
+    "w": "流れる",
+    "reading": "ながれる",
+    "pos": "v.i.",
+    "gloss": "to flow",
+    "alt": [
+     "流れている"
+    ]
+   },
+   {
+    "w": "点在する",
+    "reading": "てんざいする",
+    "pos": "v.suru",
+    "gloss": "to be dotted about; to be scattered",
+    "alt": [
+     "点在している"
+    ]
+   }
+  ]
+ }
+]

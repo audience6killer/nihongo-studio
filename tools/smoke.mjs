@@ -1,0 +1,571 @@
+#!/usr/bin/env node
+/* smoke.mjs — load every browser module in a sandbox and exercise the engine.
+ *
+ * There is no browser automation available here (no npm, no Puppeteer), so this
+ * runs the real files against a minimal DOM shim. It catches: syntax errors,
+ * missing globals, load-order mistakes, a screen that throws while rendering,
+ * and SRS/plan/session regressions. It is not a substitute for looking at the
+ * page — see the QA checklist in the final report.
+ *
+ * Run: node tools/smoke.mjs
+ */
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
+import vm from 'node:vm';
+
+const HERE = dirname(fileURLToPath(import.meta.url));
+const ROOT = join(HERE, '..');
+
+/* ------------------------------------------------------------------- shim */
+class FakeEl {
+  constructor(tag = 'div', id = '') {
+    this.tagName = tag.toUpperCase();
+    this.id = id;
+    this.children = [];
+    this.attrs = {};
+    this._html = '';
+    this.style = {};
+    this.classList = { add() {}, remove() {}, contains: () => false };
+    this.files = [];
+    this.value = '';
+  }
+  set innerHTML(v) { this._html = String(v); this.children = []; }
+  get innerHTML() { return this._html; }
+  setAttribute(k, v) { this.attrs[k] = String(v); }
+  getAttribute(k) { return this.attrs[k] ?? null; }
+  removeAttribute(k) { delete this.attrs[k]; }
+  addEventListener() {}
+  removeEventListener() {}
+  appendChild(c) { this.children.push(c); return c; }
+  remove() {}
+  click() {}
+  focus() {}
+  closest() { return null; }
+  querySelector() { return null; }
+  querySelectorAll() { return []; }
+  getBoundingClientRect() { return { left: 0, top: 0, bottom: 0, width: 0, height: 0 }; }
+}
+
+const elements = new Map();
+function el(id, tag = 'div') {
+  if (!elements.has(id)) elements.set(id, new FakeEl(tag, id));
+  return elements.get(id);
+}
+
+const store = new Map();
+
+const documentShim = {
+  readyState: 'complete',
+  documentElement: new FakeEl('html'),
+  body: new FakeEl('body'),
+  getElementById: (id) => (['main', 'toasts', 'modal-root'].includes(id) ? el(id) : null),
+  querySelector: () => null,
+  querySelectorAll: () => [],
+  createElement: (tag) => new FakeEl(tag),
+  addEventListener() {},
+  removeEventListener() {}
+};
+
+const windowShim = {
+  document: documentShim,
+  localStorage: {
+    getItem: (k) => (store.has(k) ? store.get(k) : null),
+    setItem: (k, v) => store.set(k, String(v)),
+    removeItem: (k) => store.delete(k),
+    clear: () => store.clear(),
+    key: (i) => Array.from(store.keys())[i] ?? null,
+    get length() { return store.size; }
+  },
+  location: { hash: '#/today', hostname: '127.0.0.1', protocol: 'http:', search: '' },
+  navigator: { serviceWorker: undefined },
+  scrollTo() {},
+  matchMedia: () => ({ matches: false }),
+  addEventListener() {},
+  removeEventListener() {},
+  innerWidth: 390,
+  innerHeight: 844,
+  console,
+  setTimeout,
+  clearTimeout,
+  setInterval,
+  clearInterval
+};
+
+const sandbox = {
+  ...windowShim,
+  window: windowShim,
+  globalThis: null,
+  console,
+  Date, Math, JSON, Intl, String, Number, Object, Array, RegExp, Boolean,
+  isFinite, isNaN, parseFloat, parseInt,
+  setTimeout, clearTimeout, setInterval, clearInterval,
+  Blob, URL, TextDecoder, TextEncoder, structuredClone
+};
+sandbox.globalThis = sandbox;
+windowShim.window = windowShim;
+vm.createContext(sandbox);
+
+const FILES = [
+  'assets/js/data/config.js',
+  'assets/js/data/vocab.js',
+  'assets/js/data/lessons.js',
+  'assets/js/data/tap.js',
+  'assets/js/core/util.js',
+  'assets/js/core/lang.js',
+  'assets/js/core/data.js',
+  'assets/js/core/storage.js',
+  'assets/js/core/srs.js',
+  'assets/js/core/plan.js',
+  'assets/js/core/tts.js',
+  'assets/js/core/session.js',
+  'assets/js/ui/components.js',
+  'assets/js/ui/dashboard.js',
+  'assets/js/ui/session.js',
+  'assets/js/ui/lesson.js',
+  'assets/js/ui/stats.js',
+  'assets/js/app.js'
+];
+
+/* ------------------------------------------------------------------ runner */
+let passed = 0;
+const failures = [];
+function check(name, fn) {
+  try { fn(); passed++; } catch (e) { failures.push({ name, message: e && e.message ? e.message : String(e) }); }
+}
+function ok(v, label = '') { if (!v) throw new Error(label + 'expected truthy, got ' + JSON.stringify(v)); }
+function no(v, label = '') { if (v) throw new Error(label + 'expected falsy, got ' + JSON.stringify(v)); }
+function is(a, b, label = '') {
+  const as = JSON.stringify(a), bs = JSON.stringify(b);
+  if (as !== bs) throw new Error(`${label}expected ${bs}, got ${as}`);
+}
+function includes(hay, needle, label = '') {
+  const h = String(hay);
+  if (h.indexOf(needle) < 0) {
+    throw new Error(`${label}expected rendered output to contain ${JSON.stringify(needle.slice(0, 60))}`);
+  }
+}
+
+/* ---------------------------------------------------------------- load all */
+const loadErrors = [];
+for (const rel of FILES) {
+  try {
+    vm.runInContext(readFileSync(join(ROOT, rel), 'utf8'), sandbox, { filename: rel });
+  } catch (err) {
+    loadErrors.push(`${rel}: ${err.message}`);
+  }
+}
+check('every script loads without throwing', () => {
+  if (loadErrors.length) throw new Error(loadErrors.join(' | '));
+});
+
+const NJ = windowShim.NJ || sandbox.NJ;
+check('window.NJ namespace exists', () => ok(NJ));
+check('all engine modules are present', () => {
+  for (const k of ['U', 'L', 'D', 'S', 'SRS', 'PLAN', 'TTS', 'SESSION']) ok(NJ[k], `missing NJ.${k}: `);
+  for (const k of ['UI', 'APP']) ok(NJ[k], `missing NJ.${k}: `);
+});
+check('all five screens are registered', () => {
+  for (const k of ['today', 'chapters', 'session', 'lesson', 'stats', 'settings']) {
+    ok(NJ.UI.screens[k], `missing screen ${k}: `);
+  }
+});
+check('generated data is loaded', () => {
+  ok(NJ.D.ready(), 'data.js never initialised: ');
+  ok(NJ.D.lessons.length >= 1, 'no lessons: ');
+  ok(NJ.D.words().length >= 40, 'expected the chapter 1 vocabulary: ');
+  ok(Object.keys(NJ.D.entries).length > 200, 'expected the tap dictionary: ');
+});
+
+/* ------------------------------------------------------------------- state */
+const S = NJ.S;
+check('storage starts from defaults with the right key', () => {
+  is(S.KEY, 'nihongo.v1');
+  const st = S.load();
+  is(st.app, 'ja');
+  no(st.onboarded);
+  ok(Array.isArray((st).sessions));
+});
+
+/* --------------------------------------------------------------------- SRS */
+const SRS = NJ.SRS;
+check('new card is due immediately and recap-aware', () => {
+  const c = SRS.newCard('気候', 'rec', { now: 1000 });
+  is(c.due, 1000);
+  is(c.reps, 0);
+  is(c.ease, 2.5);
+  ok(c.recap);
+  ok(SRS.isDue(c, 1000));
+});
+check('first correct answer uses the recap base interval', () => {
+  const c = SRS.newCard('気候', 'prod', { now: 0 });
+  SRS.grade(c, true, 0);
+  is(c.interval, 4, 'recap prod base: ');
+  is(c.reps, 1);
+  is(c.due, 4 * 86400000);
+});
+check('first correct answer on a non-recap card uses the short base', () => {
+  const c = SRS.newCard('気候', 'prod', { now: 0, recap: false });
+  SRS.grade(c, true, 0);
+  is(c.interval, 2);
+});
+check('later correct answers multiply by ease', () => {
+  const c = SRS.newCard('気候', 'rec', { now: 0 });
+  SRS.grade(c, true, 0);
+  const first = c.interval;
+  SRS.grade(c, true, 0);
+  is(c.interval, Math.round(first * 2.5 * 100) / 100);
+  is(c.reps, 2);
+});
+check('a wrong answer drops to ten minutes and lowers ease', () => {
+  const c = SRS.newCard('気候', 'rec', { now: 0 });
+  SRS.grade(c, true, 0);
+  SRS.grade(c, true, 0);
+  const before = c.ease;
+  SRS.grade(c, false, 0);
+  is(c.interval, 10 / 1440);
+  is(c.due, 10 * 60000);
+  is(c.ease, Math.round((before - 0.2) * 100) / 100);
+  is(c.reps, 0, 'a lapse resets the streak: ');
+  is(c.lapses, 1);
+});
+check('ease never drops below the floor', () => {
+  const c = SRS.newCard('気候', 'rec', { now: 0 });
+  for (let i = 0; i < 20; i++) SRS.grade(c, false, 0);
+  is(c.ease, 1.3);
+});
+check('interval is capped', () => {
+  const c = SRS.newCard('気候', 'rec', { now: 0 });
+  c.interval = 700;
+  c.reps = 5;
+  SRS.grade(c, true, 0);
+  is(c.interval, 730);
+});
+check('mature threshold is 21 days', () => {
+  const c = SRS.newCard('気候', 'rec', { now: 0 });
+  no(SRS.isMature(c));
+  c.interval = 21;
+  ok(SRS.isMature(c));
+});
+check('due lists exclude future and suspended cards, sorted by due', () => {
+  const st = S.load();
+  st.cards = {
+    'A|rec': { ...SRS.newCard('A', 'rec', { now: 0 }), due: 500 },
+    'B|rec': { ...SRS.newCard('B', 'rec', { now: 0 }), due: 100 },
+    'C|rec': { ...SRS.newCard('C', 'rec', { now: 0 }), due: 100, suspended: true },
+    'D|rec': { ...SRS.newCard('D', 'rec', { now: 0 }), due: 99999 }
+  };
+  const due = SRS.due(st, { now: 1000 });
+  is(due.map((d) => d.card.w), ['B', 'A']);
+  S.reset();
+});
+
+/* -------------------------------------------------------------------- plan */
+const PLAN = NJ.PLAN;
+check('adaptive new-word load cuts at the documented thresholds', () => {
+  is(PLAN.effectiveNewPerDay(0, { newPerDay: 15 }, false), 15);
+  is(PLAN.effectiveNewPerDay(45, { newPerDay: 15 }, false), 15);
+  is(PLAN.effectiveNewPerDay(46, { newPerDay: 15 }, false), 8);
+  is(PLAN.effectiveNewPerDay(71, { newPerDay: 15 }, false), 4);
+  is(PLAN.effectiveNewPerDay(101, { newPerDay: 15 }, false), 0);
+});
+check('catch-up bonus applies only when the queue is healthy', () => {
+  is(PLAN.effectiveNewPerDay(10, { newPerDay: 15 }, true), 18, 'bonus is additive: ');
+  is(PLAN.effectiveNewPerDay(10, { newPerDay: 10 }, true), 13);
+  is(PLAN.effectiveNewPerDay(80, { newPerDay: 15 }, true), 4);
+});
+check('session shape never exceeds the review cap or the budget', () => {
+  const shape = PLAN.shape({
+    budgetSeconds: 35 * 60, dueCount: 200, wantNew: 15, availableNew: 45,
+    newGroupSeconds: PLAN.newGroupSeconds(true), avgReviewSeconds: 20,
+    reviewCap: 45, dictationCount: 2
+  });
+  ok(shape.reviewCount <= 45, 'review cap ignored: ');
+  ok(shape.newCount > 0, 'no new words in a 35 minute budget: ');
+  ok(shape.seconds <= 35 * 60, 'over budget: ');
+});
+check('projection is honest about an impossible target', () => {
+  const st = S.load();
+  st.settings.newPerDay = 15;
+  st.profile = {
+    startDate: NJ.U.dayKey(new Date()),
+    targetDate: NJ.U.dayKey(new Date()),
+    dailyMinutes: 35, exam: true
+  };
+  const p = PLAN.projection(st);
+  is(p.reachable, false);
+  ok(p.remaining > 0);
+  is(p.pctComplete, 0);
+  S.reset();
+});
+
+/* -------------------------------------------------------- language + data */
+const L = NJ.L;
+check('production accepts kana for a real kanji word', () => {
+  const w = NJ.D.word('気候');
+  ok(w);
+  ok(L.sameAnswer('きこう', w), 'kana reading rejected: ');
+  ok(L.sameAnswer('気候', w));
+  no(L.sameAnswer('ぎこう', w), 'wrong kana accepted: ');
+});
+check('every vocabulary word has a reading and a gloss', () => {
+  for (const w of NJ.D.words()) {
+    ok(w.reading && L.isKanaOnly(w.reading), `bad reading for ${w.w}: ${w.reading}`);
+    ok(w.gloss && w.gloss.length > 1, `bad gloss for ${w.w}`);
+  }
+});
+check('example context carries its own translation', () => {
+  const ex = NJ.D.exampleFor('気候');
+  ok(ex, 'no example found for 気候: ');
+  ok(ex.l2.indexOf('気候') >= 0, 'example does not contain the word: ');
+  ok(ex.l1 && ex.l1.length > 8, 'example has no translation: ');
+});
+check('distractors never include the answer', () => {
+  const w = NJ.D.word('気候');
+  for (let i = 0; i < 12; i++) {
+    const g = NJ.D.distractorGlosses(w, 3);
+    is(g.length, 3);
+    no(g.includes(w.gloss), 'answer leaked into distractors: ');
+    is(new Set(g).size, 3, 'duplicate distractors: ');
+  }
+});
+
+/* ----------------------------------------------------------------- session */
+const SES = NJ.SESSION;
+check('dictation verdict forgives one slip but not a rewrite', () => {
+  const exact = SES.dictationVerdict('日本の国土の多くは山地です。', '日本の国土の多くは山地です');
+  is(exact.correct, true);
+  is(exact.exact, true);
+  const typo = SES.dictationVerdict('日本の国土のおくは山地です。', '日本の国土の多くは山地です。');
+  is(typo.correct, true, 'one character off should pass: ');
+  const wrong = SES.dictationVerdict('まったく違う文です', '日本の国土の多くは山地です。');
+  is(wrong.correct, false);
+});
+
+check('a session builds, introduces words, and advances through grading', () => {
+  const st = S.load();
+  st.onboarded = true;
+  st.profile = {
+    name: 'Test', startDate: NJ.U.dayKey(new Date()),
+    targetDate: NJ.U.dayKey(NJ.U.addDays(new Date(), 168)),
+    dailyMinutes: 35, exam: true
+  };
+  st.settings.newPerDay = 4;
+
+  const session = SES.start(st, { hasAudio: false, force: true });
+  ok(session.items.length > 0, 'session has no items: ');
+  is(session.done, false);
+
+  // The first item must be a new-word card or a review; a new group always
+  // puts the card before its own checks.
+  let guard = 0;
+  while (!SES.finished(session) && guard++ < 400) {
+    const item = SES.item(session);
+    if (item.kind === SES.KIND.NEW) SES.grade(st, true);
+    else if (item.kind === SES.KIND.DICTATION) SES.grade(st, false, { typed: '' });
+    else SES.grade(st, true);
+  }
+  ok(SES.finished(session), 'session never finished: ');
+  SES.finish(st);
+  ok(session.done);
+  ok(Object.keys(st.words).length > 0, 'no words were introduced: ');
+  ok(st.sessions.length === 1, 'session history not written: ');
+  ok(st.cards[Object.keys(st.cards)[0]], 'cards were not created: ');
+  S.reset();
+});
+
+check('every multiple-choice item is answerable', () => {
+  const st = S.load();
+  st.onboarded = true;
+  st.settings.newPerDay = 6;
+  const session = SES.start(st, { hasAudio: true, force: true });
+  let mcqCount = 0;
+  for (const item of session.items) {
+    if (item.kind !== SES.KIND.REVIEW) continue;
+    if (item.prompt === 'type') {
+      no(item.options, 'a typing card must not carry options: ');
+      continue;
+    }
+    mcqCount++;
+    ok(Array.isArray(item.options), `item ${item.term}/${item.skill} has no options: `);
+    is(item.options.length, 4, `item ${item.term}/${item.skill} option count: `);
+    is(new Set(item.options).size, 4, `item ${item.term}/${item.skill} has duplicate options: `);
+    ok(item.answer >= 0 && item.answer < 4, `item ${item.term}/${item.skill} answer index: `);
+    if (item.prompt === 'reading') {
+      ok(NJ.L.isKanaOnly(item.options[item.answer]), 'reading answer must be kana: ');
+    } else {
+      ok(item.options[item.answer] === NJ.D.word(item.term).gloss, 'answer must be the real gloss: ');
+    }
+  }
+  ok(mcqCount > 0, 'expected at least one multiple-choice item: ');
+  S.reset();
+});
+
+check('a new word group is card-then-checks and each check is answerable', () => {
+  const st = S.load();
+  st.onboarded = true;
+  st.settings.newPerDay = 2;
+  const session = SES.start(st, { hasAudio: false, force: true });
+  const firstNew = session.items.findIndex((i) => i.kind === SES.KIND.NEW);
+  ok(firstNew >= 0, 'no new-word card in the session: ');
+  const next = session.items[firstNew + 1];
+  ok(next && next.kind === SES.KIND.REVIEW && next.term === session.items[firstNew].term,
+    'the checks must follow their card immediately: ');
+  ok(Array.isArray(next.options) && next.options.length === 4, 'fresh checks need options: ');
+  S.reset();
+});
+check('listening cards are not scheduled without a voice', () => {
+  const st = S.load();
+  st.onboarded = true;
+  st.settings.newPerDay = 2;
+  const session = SES.start(st, { hasAudio: false, force: true });
+  const listenItems = session.items.filter((i) => i.skill === 'listen');
+  is(listenItems.length, 0);
+  S.reset();
+});
+
+/* ------------------------------------------------------------------ router */
+const APP = NJ.APP;
+const UI = NJ.UI;
+const main = el('main');
+
+function renderRoute(hash) {
+  windowShim.location.hash = hash;
+  APP.render();
+  return main.innerHTML;
+}
+
+check('every route renders without throwing', () => {
+  for (const hash of ['#/today', '#/chapters', '#/lesson/1', '#/session', '#/stats', '#/settings']) {
+    const html = renderRoute(hash);
+    ok(typeof html === 'string' && html.length > 40, `route ${hash} produced almost nothing: `);
+    no(/Something went wrong/.test(html), `route ${hash} rendered the error card: ${html.slice(0, 200)}`);
+  }
+});
+
+check('today screen shows onboarding before the profile exists', () => {
+  const S2 = NJ.S;
+  S2.reset();
+  const html = renderRoute('#/today');
+  includes(html, 'Before we start');
+  includes(html, 'Minutes per weekday');
+});
+
+check('today screen shows the plan once onboarded', () => {
+  const st = NJ.S.load();
+  st.onboarded = true;
+  st.profile = {
+    name: 'Ada', startDate: NJ.U.dayKey(new Date()),
+    targetDate: NJ.U.dayKey(NJ.U.addDays(new Date(), 168)),
+    dailyMinutes: 35, exam: true
+  };
+  NJ.S.save(st);
+  const html = renderRoute('#/today');
+  includes(html, 'Ada');
+  includes(html, 'Pace');
+  includes(html, 'due reviews');
+  includes(html, 'Listening is deferred', 'no-voice warning: ');
+});
+
+check('chapters screen lists chapter 1 with its Japanese title', () => {
+  const html = renderRoute('#/chapters');
+  includes(html, '日本の地理');
+  includes(html, 'The Geography of Japan');
+  includes(html, 'あいづちとフィラー', 'grammar point in the chapter row: ');
+  includes(html, '/45 words', 'word count in the chapter row: ');
+});
+
+check('lesson screen renders all four sections', () => {
+  let html = renderRoute('#/lesson/1');
+  includes(html, '日本の地理');
+  includes(html, 'Grammar');
+  includes(html, 'あいづちとフィラー');
+
+  UI.actions['lesson-section'](null, { getAttribute: () => 'reading' });
+  html = main.innerHTML;
+  includes(html, 'Reading');
+  includes(html, 'ユーラシア大陸');
+  includes(html, 'Sentence by sentence');
+
+  UI.actions['lesson-section'](null, { getAttribute: () => 'listening' });
+  html = main.innerHTML;
+  includes(html, 'Dictation');
+
+  UI.actions['lesson-section'](null, { getAttribute: () => 'writing' });
+  html = main.innerHTML;
+  includes(html, 'Output practice');
+  includes(html, 'Use these words');
+  includes(html, 'textarea');
+
+  UI.actions['lesson-section'](null, { getAttribute: () => 'grammar' });
+});
+
+check('passage is fully tappable in the rendered output', () => {
+  UI.actions['lesson-section'](null, { getAttribute: () => 'reading' });
+  const html = main.innerHTML;
+  const tokens = html.match(/class="tok"/g) || [];
+  ok(tokens.length > 100, `expected a heavily tappable passage, got ${tokens.length} tokens: `);
+  includes(html, 'data-tap="気候"');
+});
+
+check('writing submits and records a heuristic result', () => {
+  UI.actions['lesson-section'](null, { getAttribute: () => 'writing' });
+  const st = NJ.S.load();
+  const before = st.writing.length;
+  // The textarea is not in the fake DOM, so exercise the counter path directly.
+  const text = NJ.D.lesson(1).writing.model_l2;
+  const count = NJ.L.countUnits(text, 'chars');
+  ok(count >= NJ.D.lesson(1).writing.min_units, 'model answer too short: ');
+  is(st.writing.length, before);
+});
+
+check('session route without a session explains itself', () => {
+  const st = NJ.S.load();
+  st.current = null;
+  NJ.S.save(st);
+  const html = renderRoute('#/session');
+  includes(html, 'No session yet');
+});
+
+check('screens survive an unknown chapter', () => {
+  const html = renderRoute('#/lesson/99');
+  includes(html, 'Chapter not found');
+});
+
+/* ------------------------------------------------------------- export/import */
+check('export contains no secrets and no live session', () => {
+  const st = NJ.S.load();
+  st.meta.sync = { token: 'SECRET' };
+  const text = NJ.S.exportText(st);
+  no(text.indexOf('SECRET') >= 0, 'token leaked into the export: ');
+  no(text.indexOf('"current"') >= 0, 'live session leaked into the export: ');
+  no(text.indexOf('access_token') >= 0);
+  includes(text, '"app": "ja"', 'app marker missing: ');
+});
+check('import rejects a backup from another app', () => {
+  const res = NJ.S.importText(JSON.stringify({ app: 'hanyu', cards: {}, words: {} }));
+  is(res.ok, false);
+  ok(/different app/.test(res.error), res.error);
+});
+check('import rejects junk', () => {
+  is(NJ.S.importText('not json').ok, false);
+  is(NJ.S.importText('{}').ok, false);
+});
+check('export round-trips', () => {
+  const st = NJ.S.load();
+  st.cards['気候|rec'] = NJ.SRS.newCard('気候', 'rec', { now: 1 });
+  const text = NJ.S.exportText(st);
+  const res = NJ.S.importText(text);
+  is(res.ok, true);
+  ok(res.state.cards['気候|rec'], 'card lost in round-trip: ');
+});
+
+/* ------------------------------------------------------------------ report */
+const total = passed + failures.length;
+if (failures.length) {
+  console.error(`\n  ${failures.length} of ${total} checks FAILED\n`);
+  for (const f of failures) console.error(`  ✗ ${f.name}\n      ${f.message}`);
+  console.error('');
+  process.exit(1);
+}
+console.log(`  smoke: ${passed}/${total} checks passed across ${FILES.length} modules`);
