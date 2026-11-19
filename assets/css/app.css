@@ -14,9 +14,14 @@
   --ink-3: #7a6f61;
   --rule: #ddd4c4;
   --rule-2: #e9e2d4;
-  --vermilion: #b03d2a;
-  --vermilion-ink: #8c2f1f;
-  --vermilion-wash: #f6e4df;
+  /* Japan indigo, not the vermilion of the Chinese instance. */
+  --accent: #2f4d7a;
+  --accent-ink: #22375a;
+  --accent-wash: #e3e9f4;
+  /* A wrong answer keeps its own red; the accent must never mean incorrect. */
+  --wrong: #a63a28;
+  --wrong-ink: #8c2f1f;
+  --wrong-wash: #f7e4df;
   --moss: #3f6b4f;
   --moss-wash: #e2ecdf;
   --amber: #9a6b12;
@@ -46,9 +51,12 @@
     --ink-3: #9d9384;
     --rule: #3a332a;
     --rule-2: #2e2822;
-    --vermilion: #e0705a;
-    --vermilion-ink: #f0907c;
-    --vermilion-wash: #3a221d;
+    --accent: #8fb0de;
+    --accent-ink: #aecbee;
+    --accent-wash: #1a2436;
+    --wrong: #e0705a;
+    --wrong-ink: #f0907c;
+    --wrong-wash: #3a221d;
     --moss: #86b894;
     --moss-wash: #1e2f24;
     --amber: #d8a94a;
@@ -66,9 +74,12 @@
   --ink-3: #9d9384;
   --rule: #3a332a;
   --rule-2: #2e2822;
-  --vermilion: #e0705a;
-  --vermilion-ink: #f0907c;
-  --vermilion-wash: #3a221d;
+  --accent: #8fb0de;
+  --accent-ink: #aecbee;
+  --accent-wash: #1a2436;
+  --wrong: #e0705a;
+  --wrong-ink: #f0907c;
+  --wrong-wash: #3a221d;
   --moss: #86b894;
   --moss-wash: #1e2f24;
   --amber: #d8a94a;
@@ -97,10 +108,10 @@ h1 { font-size: 1.6rem; }
 h2 { font-size: 1.25rem; }
 h3 { font-size: 1.05rem; }
 p { margin: 0 0 .85rem; }
-a { color: var(--vermilion-ink); text-underline-offset: 2px; }
+a { color: var(--accent-ink); text-underline-offset: 2px; }
 hr { border: 0; border-top: 1px solid var(--rule-2); margin: 1.25rem 0; }
 small, .small { font-size: .82rem; }
-:focus-visible { outline: 2px solid var(--vermilion); outline-offset: 2px; border-radius: 4px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
 
 .skip-link {
   position: absolute; left: -9999px; top: 0; z-index: 100;
@@ -146,7 +157,7 @@ ruby rt {
 .brand-mark {
   display: grid; place-items: center;
   width: 1.85rem; height: 1.85rem; border-radius: 9px;
-  background: var(--vermilion); color: #fcf9f3;
+  background: var(--accent); color: var(--paper-2);
   font-family: var(--font-ja); font-size: 1rem; line-height: 1;
   padding-bottom: .1em;
 }
@@ -161,7 +172,7 @@ ruby rt {
   color: var(--ink-2); font-size: .88rem; font-weight: 500; white-space: nowrap;
 }
 .nav a:hover { background: var(--paper-3); color: var(--ink); }
-.nav a[aria-current="page"] { background: var(--vermilion-wash); color: var(--vermilion-ink); }
+.nav a[aria-current="page"] { background: var(--accent-wash); color: var(--accent-ink); }
 
 /* ------------------------------------------------------------------ main */
 .main {
@@ -186,7 +197,7 @@ ruby rt {
   margin-bottom: 1rem;
 }
 .card--flat { box-shadow: none; }
-.card--accent { border-color: color-mix(in srgb, var(--vermilion) 30%, var(--rule-2)); }
+.card--accent { border-color: color-mix(in srgb, var(--accent) 30%, var(--rule-2)); }
 .card--quiet { background: transparent; box-shadow: none; border-style: dashed; }
 
 .card-head { display: flex; align-items: baseline; justify-content: space-between; gap: .75rem; margin-bottom: .6rem; }
@@ -211,8 +222,8 @@ ruby rt {
 }
 .btn:active { transform: translateY(1px); }
 .btn:disabled { opacity: .45; cursor: not-allowed; }
-.btn--primary { background: var(--vermilion); color: #fcf9f3; }
-.btn--primary:hover:not(:disabled) { background: var(--vermilion-ink); }
+.btn--primary { background: var(--accent); color: var(--paper-2); }
+.btn--primary:hover:not(:disabled) { background: var(--accent-ink); }
 .btn--ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
 .btn--ghost:hover:not(:disabled) { background: var(--paper-3); }
 .btn--quiet { background: transparent; color: var(--ink-2); border-color: transparent; padding-inline: .6rem; font-weight: 500; }
@@ -246,7 +257,7 @@ ruby rt {
   font-size: .74rem; font-weight: 600; letter-spacing: .02em;
   white-space: nowrap;
 }
-.pill--rec { background: var(--vermilion-wash); color: var(--vermilion-ink); }
+.pill--rec { background: var(--accent-wash); color: var(--accent-ink); }
 .pill--prod { background: var(--moss-wash); color: var(--moss); }
 .pill--listen { background: var(--amber-wash); color: var(--amber); }
 .pill--done { background: var(--moss-wash); color: var(--moss); }
@@ -273,8 +284,8 @@ ruby rt {
 .option-body { flex: 1 1 auto; min-width: 0; }
 .option[data-state="correct"] { border-color: var(--moss); background: var(--moss-wash); }
 .option[data-state="correct"] .option-key { background: var(--moss); color: var(--paper); }
-.option[data-state="wrong"] { border-color: var(--vermilion); background: var(--vermilion-wash); }
-.option[data-state="wrong"] .option-key { background: var(--vermilion); color: #fcf9f3; }
+.option[data-state="wrong"] { border-color: var(--wrong); background: var(--wrong-wash); }
+.option[data-state="wrong"] .option-key { background: var(--wrong); color: #fcf9f3; }
 .option[data-state="dim"] { opacity: .5; }
 
 .answer-form { display: flex; gap: .5rem; margin-top: 1rem; }
@@ -286,24 +297,24 @@ ruby rt {
   color: var(--ink); font-family: var(--font-ja); font-size: 1.15rem;
   line-height: 1.7;
 }
-.input:focus, .answer-input:focus, .textarea:focus { border-color: var(--vermilion); outline: none; }
+.input:focus, .answer-input:focus, .textarea:focus { border-color: var(--accent); outline: none; }
 .textarea { min-height: 8.5rem; resize: vertical; font-size: 1.05rem; }
 .input--ui { font-family: var(--font-ui); font-size: .95rem; }
 
 .feedback { margin-top: .9rem; padding: .8rem .9rem; border-radius: var(--radius-sm); border: 1px solid; }
 .feedback--ok { background: var(--moss-wash); border-color: var(--moss); }
-.feedback--no { background: var(--vermilion-wash); border-color: var(--vermilion); }
+.feedback--no { background: var(--wrong-wash); border-color: var(--wrong); }
 .feedback h4 { margin: 0 0 .25rem; font-family: var(--font-ui); font-size: .82rem; text-transform: uppercase; letter-spacing: .07em; }
 .feedback--ok h4 { color: var(--moss); }
-.feedback--no h4 { color: var(--vermilion-ink); }
+.feedback--no h4 { color: var(--wrong-ink); }
 .feedback p:last-child { margin-bottom: 0; }
 .answer-reveal { font-family: var(--font-ja); font-size: 1.4rem; line-height: 1.6; }
 .diff ins { background: var(--moss-wash); color: var(--moss); text-decoration: none; border-radius: 3px; padding: 0 .1em; }
-.diff del { background: var(--vermilion-wash); color: var(--vermilion-ink); border-radius: 3px; padding: 0 .1em; }
+.diff del { background: var(--wrong-wash); color: var(--wrong-ink); border-radius: 3px; padding: 0 .1em; }
 
 /* -------------------------------------------------------------- progress */
 .progress { height: 6px; background: var(--paper-3); border-radius: 999px; overflow: hidden; }
-.progress > i { display: block; height: 100%; background: var(--vermilion); border-radius: 999px; transition: width .3s ease; }
+.progress > i { display: block; height: 100%; background: var(--accent); border-radius: 999px; transition: width .3s ease; }
 .session-bar { position: sticky; top: 52px; z-index: 30; background: var(--paper); padding: .55rem 0 .6rem; }
 .session-bar-row { display: flex; align-items: center; gap: .75rem; font-size: .8rem; color: var(--ink-3); margin-bottom: .35rem; }
 
@@ -335,7 +346,7 @@ ruby rt {
   font-family: var(--font-serif); font-size: 1rem; font-variant-numeric: tabular-nums;
 }
 .chapter-num[data-state="done"] { background: var(--moss-wash); color: var(--moss); }
-.chapter-num[data-state="current"] { background: var(--vermilion); color: #fcf9f3; }
+.chapter-num[data-state="current"] { background: var(--accent); color: var(--paper-2); }
 
 /* --------------------------------------------------------------- reading */
 .passage {
@@ -349,7 +360,7 @@ ruby rt {
   border-bottom: 1px solid transparent;
   border-radius: 3px; cursor: pointer;
 }
-.tok:hover, .tok:focus-visible { background: var(--vermilion-wash); border-bottom-color: var(--vermilion); }
+.tok:hover, .tok:focus-visible { background: var(--accent-wash); border-bottom-color: var(--accent); }
 .grammar-ex { display: flex; flex-direction: column; gap: .15rem; padding: .6rem 0; border-bottom: 1px solid var(--rule-2); }
 .grammar-ex:last-child { border-bottom: 0; }
 

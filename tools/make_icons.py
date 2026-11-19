@@ -1,7 +1,7 @@
 ﻿#!/usr/bin/env python3
 """Generate the app icons without any image library.
 
-The mark is a vermilion rounded square carrying a white æ—¥ drawn from
+The mark is an indigo rounded square carrying a white æ—¥ drawn from
 rectangles, so it can be rasterised from a few integer primitives. Python
 stdlib only (zlib + struct + a hand-rolled PNG writer), which keeps the
 "no installable dependencies" promise intact.
@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, "assets", "img")
 
 PAPER = (247, 243, 234)
 INK = (31, 27, 22)
-VERMILION = (176, 61, 42)
+ACCENT = (47, 77, 122)
 CREAM = (252, 249, 243)
 
 
@@ -62,7 +62,7 @@ def render(size: int, *, bg: tuple[int, int, int, int] | None) -> list[list[tupl
     s = float(size)
     tile = rounded_rect_cover  # local alias
 
-    # Vermilion tile: inset so a rounded corner reads clearly at any size.
+    # Indigo tile: inset so a rounded corner reads clearly at any size.
     tx0, ty0t, tx1, ty1t = 0.07 * s, 0.07 * s, 0.93 * s, 0.93 * s
     tr = 0.22 * s
 
@@ -82,7 +82,7 @@ def render(size: int, *, bg: tuple[int, int, int, int] | None) -> list[list[tupl
             colour: tuple[int, int, int, int] = bg if bg else (0, 0, 0, 0)
 
             if tile(x, y, tx0, ty0t, tx1, ty1t, tr):
-                colour = (*VERMILION, 255)
+                colour = (*ACCENT, 255)
 
                 in_x = gx0 <= x <= gx1
                 in_y = gy0 <= y <= gy1
@@ -103,7 +103,7 @@ def render(size: int, *, bg: tuple[int, int, int, int] | None) -> list[list[tupl
 SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img"
      aria-label="Nihongo Studio">
   <rect width="512" height="512" rx="112" fill="#f7f3ea"/>
-  <rect x="36" y="36" width="440" height="440" rx="112" fill="#b03d2a"/>
+  <rect x="36" y="36" width="440" height="440" rx="112" fill="#2f4d7a"/>
   <g fill="#fcf9f3">
     <rect x="169" y="136" width="23" height="240"/>
     <rect x="320" y="136" width="23" height="240"/>
