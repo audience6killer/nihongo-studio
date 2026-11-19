@@ -222,10 +222,26 @@
       var s = st();
       var ses = s.current;
 
-      if (!ses) {
-        return '<div class="page-head"><h1>No session yet</h1></div>' +
-          '<div class="card"><p>Start today\'s session from the Today screen.</p>' +
-          '<a class="btn btn--primary" href="#/today" data-act="go" data-to="#/today">Go to Today</a></div>';
+      var today = U.dayKey(new Date());
+
+      // Opening this screen must always be actionable: if there is no session,
+      // or only yesterday's finished one, build today's.
+      if (!ses || (ses.done && ses.date !== today)) {
+        ses = NJ.SESSION.start(s, { hasAudio: NJ.TTS.hasVoice() });
+        NJ.S.save(s);
+      }
+
+      if (!ses || !ses.items || !ses.items.length) {
+        var due = NJ.SRS.countDue(s, { skills: NJ.TTS.hasVoice() ? NJ.SRS.SKILLS : ['rec', 'prod'] });
+        return '<div class="page-head"><h1>Nothing to do right now</h1>' +
+          '<p class="sub">No cards are due and no new words are waiting.</p></div>' +
+          '<div class="card">' +
+            '<p>' + (due > 0 ? 'Something is due — try again in a moment.' : 'Come back later, or read a chapter.') + '</p>' +
+            '<div class="btn-row">' +
+              '<a class="btn btn--ghost" href="#/chapters" data-act="go" data-to="#/chapters">Study a chapter</a>' +
+              '<a class="btn btn--ghost" href="#/today" data-act="go" data-to="#/today">Today</a>' +
+            '</div>' +
+          '</div>';
       }
 
       // Show the last item's feedback before the summary; never swallow it.

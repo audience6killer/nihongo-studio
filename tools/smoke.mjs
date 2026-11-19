@@ -519,12 +519,25 @@ check('writing submits and records a heuristic result', () => {
   is(st.writing.length, before);
 });
 
-check('session route without a session explains itself', () => {
+check('session route starts the days session instead of dead-ending', () => {
   const st = NJ.S.load();
   st.current = null;
   NJ.S.save(st);
   const html = renderRoute('#/session');
-  includes(html, 'No session yet');
+  ok(NJ.S.load().current, 'opening the session route did not start a session: ');
+  no(/No session yet/.test(html), 'the old dead-end message is back: ');
+  ok(/New word|Recognition|Production|Listening|Dictation/.test(html),
+    'unexpected session body: ' + html.slice(0, 300));
+});
+
+check('a finished session from a previous day does not block the next one', () => {
+  const st = NJ.S.load();
+  const dated = { ...st, current: { id: 'old', date: '2020-01-01', startedAt: 1, items: [], idx: 0, results: [], done: true } };
+  NJ.S.save(dated);
+  renderRoute('#/session');
+  const after = NJ.S.load().current;
+  ok(after, 'no session after a stale summary: ');
+  no(after.done === true && after.date === '2020-01-01', 'still showing the stale finished session: ');
 });
 
 check('screens survive an unknown chapter', () => {
