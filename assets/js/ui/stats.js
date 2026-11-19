@@ -123,6 +123,31 @@
         });
       }
       html += '</div>';
+
+      var exams = (s.exams || []).slice(-5).reverse();
+      html += '<div class="card"><h3>Checkpoints</h3>';
+      if (!exams.length) {
+        html += '<p class="small" style="color:var(--ink-3);margin:0">No checkpoints taken yet.</p>';
+      } else {
+        exams.forEach(function (row) {
+          html += '<dl class="kv"><dt>' + U.fmtDate(new Date(row.at), { month: 'short', day: 'numeric' }) + '</dt>' +
+            '<dd>' + row.pct + '% <span class="small" style="color:var(--ink-3)">(' +
+            row.correct + '/' + row.total + ')</span></dd></dl>';
+        });
+      }
+      html += '</div>';
+
+      if (s.diagnostic && s.diagnostic.done) {
+        var diag = s.diagnostic;
+        html += '<div class="card"><h3>Calibration</h3>' +
+          (diag.skipped
+            ? '<p class="small" style="color:var(--ink-3);margin:0">Skipped. Nothing was preseeded.</p>'
+            : '<dl class="kv"><dt>Accuracy</dt><dd>' + diag.accuracy + '%</dd></dl>' +
+              '<dl class="kv"><dt>Already solid</dt><dd>' + (diag.seeded || []).length + '</dd></dl>' +
+              '<dl class="kv"><dt>Refresh deck</dt><dd>' + (diag.refreshed || []).length + '</dd></dl>') +
+        '</div>';
+      }
+
       return html;
     }
   };
@@ -168,6 +193,11 @@
           '<input class="input input--ui" id="set-reviewcap" type="number" min="10" max="200" step="5" value="' +
             (s.settings.reviewCap || 45) + '">') +
         '<button type="button" class="btn btn--primary" data-act="save-settings">Save</button>' +
+        '<div class="btn-row" style="margin-top:.9rem">' +
+          '<button type="button" class="btn btn--ghost btn--sm" data-act="run-calibration">' +
+            (s.diagnostic && s.diagnostic.done ? 'Re-run calibration' : 'Run calibration') + '</button>' +
+          '<a class="btn btn--ghost btn--sm" href="#/exam" data-act="go" data-to="#/exam">Checkpoints</a>' +
+        '</div>' +
       '</div>';
 
       html += '<div class="card"><h2>Reading</h2>' +
@@ -293,5 +323,26 @@
         root.location.hash = '#/today';
         UI.render();
       }, 'Delete everything');
+  };
+
+  UI.actions['run-calibration'] = function () {
+    var s = st();
+    function begin() {
+      s.diagnostic = null;
+      NJ.S.save(s);
+      root.location.hash = '#/calibrate';
+      UI.render();
+    }
+    if (s.diagnostic && !s.diagnostic.done) {
+      UI.confirm('Discard the calibration in progress?', 'Nothing has been applied yet.', begin, 'Discard');
+      return;
+    }
+    if (s.diagnostic && s.diagnostic.done) {
+      UI.confirm('Re-run calibration?',
+        'The new result replaces the old one. Words already introduced keep their current cards.',
+        begin, 'Re-run');
+      return;
+    }
+    begin();
   };
 })(typeof window !== 'undefined' ? window : globalThis);

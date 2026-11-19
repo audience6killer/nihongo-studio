@@ -110,6 +110,19 @@
           '</div>';
       }
 
+      // Calibration is optional and disappears once it has run.
+      if (!NJ.DIAG.hasRun(st)) {
+        html += '<div class="card card--accent" style="border-style:dashed">' +
+          '<div class="card-head"><h2>Calibration</h2><span class="pill">~8 min</span></div>' +
+          '<p style="margin:0 0 .8rem">Fourteen adaptive items find which Tobira vocabulary you still own, ' +
+          'so the recap does not spend a month on words you already know.</p>' +
+          '<div class="btn-row">' +
+            '<a class="btn btn--primary" href="#/calibrate" data-act="go" data-to="#/calibrate">Calibrate</a>' +
+            '<span class="small" style="color:var(--ink-3);align-self:center">or just start studying below</span>' +
+          '</div>' +
+        '</div>';
+      }
+
       html += '<div class="card card--accent">' +
         '<div class="card-head"><h2>Today</h2>' +
           '<span class="pill">' + U.fmtMinutes(minutes) + ' planned</span>' +
@@ -164,6 +177,22 @@
         html += '<div class="note"><strong>Behind the plan</strong>' +
           'New words went up slightly to catch up, but only because the review queue is under control. ' +
           'If the queue grows, they will be cut instead.</div>';
+      }
+
+      // Checkpoint: offered once enough words have actually been met.
+      if (NJ.EXAM.available(st)) {
+        var lastExam = (st.exams || [])[st.exams.length - 1];
+        html += '<div class="card">' +
+          '<div class="card-head"><h2>Checkpoint</h2>' +
+            (lastExam ? '<span class="pill">last: ' + lastExam.pct + '%</span>' : '<span class="pill">not taken</span>') +
+          '</div>' +
+          '<p class="small" style="color:var(--ink-3);margin:0 0 .8rem">' +
+            'A timed sample in JLPT shape — <span lang="ja">文字・語彙</span>, ' +
+            '<span lang="ja">文法・読解</span>, <span lang="ja">聴解</span>. No writing section, ' +
+            'because JLPT has none.' +
+          '</p>' +
+          '<a class="btn btn--ghost" href="#/exam" data-act="go" data-to="#/exam">Take a checkpoint</a>' +
+        '</div>';
       }
 
       return html;

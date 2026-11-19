@@ -18,7 +18,9 @@
     lesson: 'lesson',
     session: 'session',
     stats: 'stats',
-    settings: 'settings'
+    settings: 'settings',
+    calibrate: 'calibrate',
+    exam: 'exam'
   };
 
   var NAV_OF = {
@@ -27,7 +29,9 @@
     lesson: 'chapters',
     session: 'today',
     stats: 'stats',
-    settings: 'settings'
+    settings: 'settings',
+    calibrate: 'today',
+    exam: 'today'
   };
 
   var screen = null;
@@ -41,6 +45,11 @@
     if (!main || !module) return;
 
     UI.closePopover();
+
+    // Let the outgoing screen release timers, audio and listeners.
+    if (screen && typeof screen.unmount === 'function') {
+      try { screen.unmount(); } catch (err) { if (root.console) root.console.error(err); }
+    }
 
     var html;
     try {

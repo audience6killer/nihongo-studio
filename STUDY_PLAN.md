@@ -42,15 +42,23 @@ Adaptive branch, kept from PORTING.md §4.6:
 - If stage A accuracy ≥ 55%, stage B adds 5 later-chapter items plus the grammar items (23 total).
 - Otherwise stage B adds 5 earlier-chapter items and 2 grammar items (21 total).
 
+**Built:** stage A is 10 meaning items and 4 reading items; stage B adds 5 words from whichever
+end of the course stage A points at, plus 2 grammar-in-context items drawn from lesson drills.
+Stage B shortens itself gracefully when the chapters behind it do not exist yet — it never
+invents material.
+
 Output is a **per-chapter strength estimate**, which sets the initial card state:
 
 | Calibration result | Card state |
 |---|---|
-| Recognised confidently | `rec` seeded at a long interval; only `prod` and `listen` scheduled |
-| Recognised but slow / produced wrong | Normal schedule, `prod` prioritised |
-| Missed | Refresh deck, introduced in weeks 1–3 with reduced new-word load |
+| Recognised confidently | `rec` seeded at 21 days; `prod` and `listen` due immediately |
+| Missed | Refresh deck, all three cards due now |
+
+A word counts as "already solid" only if **every** item that tested it was right. A recognised
+meaning with a failed reading does not count, because kanji→reading is the fragile half.
 
 Calibration is optional and skippable; skipping simply starts everything at the front of the deck.
+Re-running it from Settings replaces the estimate but leaves existing cards alone.
 
 ## Phase B — N2 ramp (weeks 5–24)
 
@@ -132,7 +140,8 @@ Recap items skip the 1-day step because the learner has met the word before; the
 
 ## Checkpoints
 
-Five checkpoints plus a final mock, in **JLPT shape**: 文字・語彙, 文法・読解, 聴解.
+Checkpoints sample the same skills at exam section boundaries, in **JLPT shape**: 文字・語彙,
+文法・読解, 聴解.
 
 | When | Length | Shape |
 |---|---|---|
@@ -142,6 +151,14 @@ Five checkpoints plus a final mock, in **JLPT shape**: 文字・語彙, 文法�
 | Week 18 | 45 min | N2-level sampling |
 | Week 22 | 45 min | N2-level sampling |
 | Week 24 | 60 min | Final mock |
+
+**Built so far:** the *practice* checkpoint. It is offered as soon as 12 words have actually been
+met, is built from that learner's own studied vocabulary, and runs for about 70 seconds per item.
+That keeps it honest before the full course exists — it can only test what has been taught.
+
+The **scheduled** checkpoints above (fixed at chapter boundaries and N2 weeks) arrive in Phase 6,
+when chapters 2–15 and the N2 deck exist and the timer can mean something. Until then, treat a
+practice checkpoint as a self-check, not a milestone.
 
 There is **no writing section**: JLPT does not test writing. The writing stage in a recap unit is
 labelled output practice and is scored by a transparent heuristic (length, required-word coverage,

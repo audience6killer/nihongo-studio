@@ -119,11 +119,15 @@ const FILES = [
   'assets/js/core/plan.js',
   'assets/js/core/tts.js',
   'assets/js/core/session.js',
+  'assets/js/core/diagnostic.js',
+  'assets/js/core/exam.js',
   'assets/js/ui/components.js',
   'assets/js/ui/dashboard.js',
   'assets/js/ui/session.js',
   'assets/js/ui/lesson.js',
   'assets/js/ui/stats.js',
+  'assets/js/ui/diagnostic.js',
+  'assets/js/ui/exam.js',
   'assets/js/app.js'
 ];
 
@@ -166,7 +170,7 @@ check('all engine modules are present', () => {
   for (const k of ['UI', 'APP']) ok(NJ[k], `missing NJ.${k}: `);
 });
 check('all five screens are registered', () => {
-  for (const k of ['today', 'chapters', 'session', 'lesson', 'stats', 'settings']) {
+  for (const k of ['today', 'chapters', 'session', 'lesson', 'stats', 'settings', 'calibrate', 'exam']) {
     ok(NJ.UI.screens[k], `missing screen ${k}: `);
   }
 });
@@ -424,6 +428,175 @@ check('listening cards are not scheduled without a voice', () => {
   S.reset();
 });
 
+/* ------------------------------------------------------------- calibration */
+const DIAG = NJ.DIAG;
+
+function answerAllDiagnostic(st, correct) {
+  const run = DIAG.start(st);
+  let guard = 0;
+  while (!run.done && guard++ < 200) {
+    const item = DIAG.item(run);
+    if (!item) break;
+    DIAG.submit(st, correct ? item.answer : (item.answer + 1) % 4);
+  }
+  return run;
+}
+
+check('calibration seeds what is known and refreshes what is missed', () => {
+  const st = S.reset();
+  st.onboarded = true;
+
+  const strong = answerAllDiagnostic(st, true);
+  ok(strong.done, 'strong run never finished: ');
+  is(strong.strong, true, 'a perfect stage A must unlock stage B: ');
+  ok(strong.seeded.length >= 14, `expected the tested words to be seeded, got ${strong.seeded.length}: `);
+  is(strong.refreshed.length, 0);
+
+  const term = strong.seeded[0];
+  const word = st.words[term];
+  ok(word, 'seeded word never entered state.words: ');
+  is(word.status, 'seeded');
+
+  const rec = st.cards[NJ.SRS.key(term, 'rec')];
+  const prod = st.cards[NJ.SRS.key(term, 'prod')];
+  ok(rec && prod, 'seeded word is missing cards: ');
+  is(rec.interval, DIAG.SEED_DAYS, 'recognition should be pushed out: ');
+  ok(rec.due > Date.now() + 20 * 86400000, 'recognition is not far enough out: ');
+  ok(prod.due <= Date.now() + 1000, 'production must be tested soon: ');
+
+  S.reset();
+});
+
+check('a weak calibration sends words to the refresh deck', () => {
+  const st = S.reset();
+  st.onboarded = true;
+
+  const weak = answerAllDiagnostic(st, false);
+  ok(weak.done);
+  is(weak.strong, false, 'a failing stage A must not unlock stage B: ');
+  is(weak.seeded.length, 0);
+  ok(weak.refreshed.length > 0, 'nothing went to the refresh deck: ');
+
+  const term = weak.refreshed[0];
+  is(st.words[term].deck, 'refresh');
+  is(st.words[term].status, 'refresh');
+  const card = st.cards[NJ.SRS.key(term, 'rec')];
+  ok(card, 'refresh word has no card: ');
+  ok(card.due <= Date.now() + 1000, 'refresh card should be due now: ');
+  is(card.interval, 0, 'a refresh card must not be seeded mature: ');
+
+  S.reset();
+});
+
+check('calibration only applies on finish, never mid-run', () => {
+  const st = S.reset();
+  st.onboarded = true;
+  const run = DIAG.start(st);
+  const item = DIAG.item(run);
+  DIAG.submit(st, item.answer);
+  is(Object.keys(st.words).length, 0, 'words were introduced before the run finished: ');
+  ok(!run.done);
+  S.reset();
+});
+
+check('skipping calibration leaves the deck untouched', () => {
+  const st = S.reset();
+  st.onboarded = true;
+  DIAG.skip(st);
+  ok(DIAG.hasRun(st));
+  is(Object.keys(st.words).length, 0);
+  is(Object.keys(st.cards).length, 0);
+  S.reset();
+});
+
+/* ------------------------------------------------------------------- exam */
+const EXAM = NJ.EXAM;
+
+function introduceSome(st, n) {
+  let count = 0;
+  NJ.D.chapters().forEach((ch) => {
+    NJ.D.chapterTerms(ch).forEach((t) => {
+      if (count >= n) return;
+      if (!st.words[t]) { NJ.SESSION.introduce(st, t, ch); count++; }
+    });
+  });
+  return count;
+}
+
+check('a checkpoint needs enough studied vocabulary', () => {
+  const st = S.reset();
+  introduceSome(st, 3);
+  is(EXAM.available(st), false);
+  is(EXAM.build(st, { hasAudio: false }), null);
+  S.reset();
+});
+
+check('a checkpoint is three JLPT-shaped sections with no writing', () => {
+  const st = S.reset();
+  introduceSome(st, 20);
+  const exam = EXAM.build(st, { hasAudio: false });
+  ok(exam, 'no checkpoint built with 20 studied words: ');
+  const ids = exam.sections.map((x) => x.id);
+  ok(ids.includes('vocab'), 'missing 文字・語彙: ');
+  ok(ids.includes('langread'), 'missing 文法・読解: ');
+  no(ids.includes('listen'), 'listening must be omitted when there is no voice: ');
+  no(ids.includes('writing'), 'JLPT has no writing section: ');
+  ok(exam.minutes >= EXAM.MIN_MINUTES, 'checkpoint too short: ');
+  ok(exam.items.length >= 6, 'checkpoint has too few items: ');
+  for (const item of exam.items) {
+    ok(Array.isArray(item.options) && item.options.length === 4,
+      `item ${item.kind} needs 4 options: `);
+    ok(item.answer >= 0 && item.answer < 4, `item ${item.kind} answer index: `);
+    is(new Set(item.options).size, 4, `item ${item.kind} has duplicate options: `);
+  }
+  S.reset();
+});
+
+check('finishing a checkpoint writes a scored report', () => {
+  const st = S.reset();
+  introduceSome(st, 20);
+  const exam = EXAM.build(st, { hasAudio: false });
+  st.currentExam = exam;
+  let guard = 0;
+  while (!exam.done && guard++ < 200) {
+    const item = EXAM.current(exam);
+    if (!item) break;
+    const res = EXAM.answer(exam, item.answer);
+    if (res.complete) EXAM.finish(st);
+  }
+  ok(exam.done, 'checkpoint never finished: ');
+  is(exam.report.pct, 100, 'all-correct run should score 100: ');
+  ok(exam.report.bySection.vocab.seen > 0, 'no vocabulary items scored: ');
+  is(st.exams.length, 1, 'exam history not written: ');
+  is(st.exams[0].pct, 100);
+  S.reset();
+});
+
+check('the checkpoint timer runs out and does not go negative', () => {
+  const st = S.reset();
+  introduceSome(st, 20);
+  const exam = EXAM.build(st, { hasAudio: false });
+  ok(EXAM.secondsLeft(exam) > 0, 'a fresh checkpoint is already over: ');
+  exam.startedAt = Date.now() - (exam.totalSeconds + 5) * 1000;
+  is(EXAM.secondsLeft(exam), 0);
+  S.reset();
+});
+
+check('skipped checkpoint items score as wrong', () => {
+  const st = S.reset();
+  introduceSome(st, 20);
+  const exam = EXAM.build(st, { hasAudio: false });
+  st.currentExam = exam;
+  let guard = 0;
+  while (!exam.done && guard++ < 200) {
+    const res = EXAM.skip(exam);
+    if (res.complete) EXAM.finish(st);
+  }
+  is(exam.report.pct, 0);
+  is(exam.report.correct, 0);
+  S.reset();
+});
+
 /* ------------------------------------------------------------------ router */
 const APP = NJ.APP;
 const UI = NJ.UI;
@@ -436,7 +609,7 @@ function renderRoute(hash) {
 }
 
 check('every route renders without throwing', () => {
-  for (const hash of ['#/today', '#/chapters', '#/lesson/1', '#/session', '#/stats', '#/settings']) {
+  for (const hash of ['#/today', '#/chapters', '#/lesson/1', '#/session', '#/stats', '#/settings', '#/calibrate', '#/exam']) {
     const html = renderRoute(hash);
     ok(typeof html === 'string' && html.length > 40, `route ${hash} produced almost nothing: `);
     no(/Something went wrong/.test(html), `route ${hash} rendered the error card: ${html.slice(0, 200)}`);

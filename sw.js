@@ -32,11 +32,15 @@ const CORE = [
   'assets/js/core/plan.js',
   'assets/js/core/tts.js',
   'assets/js/core/session.js',
+  'assets/js/core/diagnostic.js',
+  'assets/js/core/exam.js',
   'assets/js/ui/components.js',
   'assets/js/ui/dashboard.js',
   'assets/js/ui/session.js',
   'assets/js/ui/lesson.js',
   'assets/js/ui/stats.js',
+  'assets/js/ui/diagnostic.js',
+  'assets/js/ui/exam.js',
   'assets/js/app.js'
 ];
 
