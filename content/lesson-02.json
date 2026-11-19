@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 2,
+  "title": { "l2": "日本語のスピーチスタイル", "l1": "Speech Styles in Japanese" },
+  "grammar": {
+    "point_l2": "スピーチレベルと終助詞①",
+    "point_l1": "Speech levels and sentence-final particles, part 1",
+    "explain_l1": "Japanese carries politeness inside the sentence: the verb ending is not decoration but information about who you are talking to. です・ます is the polite level; だ・である is the plain level. Sentence-final particles sit on top of that. よ adds information the other person may not have, ね invites agreement, and な softens your own comment. Because よ asserts, it can sound pushy to someone above you; because な is familiar, it can sound careless to a client.",
+    "common_mistake_l1": "Using the plain level with someone senior simply because the content is casual. The level follows the relationship, not the topic. A second slip is sprinkling よ to be friendly: to a superior it reads as correcting them.",
+    "examples": [
+      {
+        "l2": "「部長、こちらの資料をご覧になりますか。」",
+        "reading": "ぶちょう、こちらのしりょうをごらんになりますか。",
+        "l1": "\"Director, would you like to look at these documents?\""
+      },
+      {
+        "l2": "「明日、駅で待ってるね。」",
+        "reading": "あした、えきでまってるね。",
+        "l1": "\"I'll be waiting at the station tomorrow, okay?\""
+      },
+      {
+        "l2": "「それは違うと思うよ。」",
+        "reading": "それはちがうとおもうよ。",
+        "l1": "\"I think that's not right, you know.\""
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "上司に「明日、資料を持ってきます」と言います。いちばん適切な形はどれですか。",
+        "options_l2": [
+          "明日、資料を持ってくるよ。",
+          "明日、資料を持ってきます。",
+          "明日、資料持ってく。",
+          "明日、資料を持ってくるね。"
+        ],
+        "answer": 1,
+        "explain_l1": "The relationship decides the level, not the content. 持ってきます is the polite form a subordinate uses to a superior here; the other three are plain-level, and よ in the first would sound like telling the boss off."
+      },
+      {
+        "q_l2": "親しい友人に、言いにくいことを伝えます。いちばん柔らかい言い方はどれですか。",
+        "options_l2": ["それは違う。", "それは違うよ。", "それは違うと思うんだけど…", "それは違うぞ。"],
+        "answer": 2,
+        "explain_l1": "Hedging with と思う and trailing off with んだけど leaves room for the other person. よ states, ぞ is forceful, and the bare plain form is blunt."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本語には、同じ内容を伝えるのにも、いくつかの話し方がある。会社で上司と話すときと、友だちと話すときでは、動詞の形も文の終わりも変わる。これをスピーチスタイルという。丁寧な形は「です・ます」で終わり、普通の形は「だ・である」で終わる。初対面の人や目上の人には丁寧な形を使い、親しい友だちには普通の形を使うのが普通だ。ただし、親しくても仕事の場では丁寧な形を選ぶこともある。大事なのは、相手との関係と場面に合わせて、自分で選べることだ。若い人の間では、文の終わりを省略したり、語順を入れかえたりする話し方がよく使われる。メールでは、話し言葉より書き言葉に近い形が好まれる。同じ「お願いします」でも、場面によって受ける印象は変わってくる。",
+    "sentences": [
+      {
+        "l2": "日本語には、同じ内容を伝えるのにも、いくつかの話し方がある。",
+        "l1": "In Japanese there are several ways of speaking even when you are conveying the same content."
+      },
+      {
+        "l2": "会社で上司と話すときと、友だちと話すときでは、動詞の形も文の終わりも変わる。",
+        "l1": "The verb forms and the way sentences end change between talking to your boss at work and talking to a friend."
+      },
+      {
+        "l2": "これをスピーチスタイルという。",
+        "l1": "This is called speech style."
+      },
+      {
+        "l2": "丁寧な形は「です・ます」で終わり、普通の形は「だ・である」で終わる。",
+        "l1": "The polite form ends in desu or masu, and the plain form ends in da or dearu."
+      },
+      {
+        "l2": "初対面の人や目上の人には丁寧な形を使い、親しい友だちには普通の形を使うのが普通だ。",
+        "l1": "You normally use the polite form with people you have just met or with superiors, and the plain form with close friends."
+      },
+      {
+        "l2": "ただし、親しくても仕事の場では丁寧な形を選ぶこともある。",
+        "l1": "Even so, with someone you are close to you may still choose the polite form in a work setting."
+      },
+      {
+        "l2": "大事なのは、相手との関係と場面に合わせて、自分で選べることだ。",
+        "l1": "What matters is being able to choose for yourself, according to your relationship with the other person and the situation."
+      },
+      {
+        "l2": "若い人の間では、文の終わりを省略したり、語順を入れかえたりする話し方がよく使われる。",
+        "l1": "Among younger speakers it is common to leave sentence endings off or to change the word order."
+      },
+      {
+        "l2": "メールでは、話し言葉より書き言葉に近い形が好まれる。",
+        "l1": "In email, a form closer to written language than to speech is preferred."
+      },
+      {
+        "l2": "同じ「お願いします」でも、場面によって受ける印象は変わってくる。",
+        "l1": "Even the same \"onegaishimasu\" gives a different impression depending on the situation."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "日本語の話し方の使い分け",
+          "日本語の文法の歴史",
+          "メールの書き方の練習",
+          "若い人の言葉の問題点"
+        ],
+        "answer": 0,
+        "explain_l1": "The passage runs from polite versus plain forms to particles, omission and email: all of it is about choosing a level, not about history or a mistake to fix."
+      },
+      {
+        "q_l2": "親しい友だちと話すとき、文章によると、ふつうはどの形を使いますか。",
+        "options_l2": ["丁寧な形", "普通の形", "書き言葉の形", "敬語だけを使った形"],
+        "answer": 1,
+        "explain_l1": "The fifth sentence pairs 「初対面の人や目上の人には丁寧な形」 with 「親しい友だちには普通の形」. The article's own ただし qualifies it for work settings."
+      },
+      {
+        "q_l2": "この文章から、同じ「お願いします」でも印象が変わると言えるのはなぜですか。",
+        "options_l2": [
+          "場面と相手との関係が違うから",
+          "発音が大きく違うから",
+          "文字の数が違うから",
+          "文法が間違っているから"
+        ],
+        "answer": 0,
+        "explain_l1": "The last sentence only makes sense against the whole article: the level is chosen from the relationship and the situation, so the same words land differently."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      { "l2": "上司には丁寧な形を使います。", "l1": "You use the polite form with your boss." },
+      { "l2": "友だちと話すときは普通の形になります。", "l1": "When talking with friends it becomes the plain form." },
+      { "l2": "メールでは書き言葉に近い形が好まれます。", "l1": "In email, a form close to written language is preferred." },
+      { "l2": "場面によって言葉の選び方が変わります。", "l1": "How you choose your words changes with the situation." },
+      { "l2": "若い人の話し方には省略が多いです。", "l1": "Young people's speech has a lot of omission." }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, describe how you change the way you speak depending on who you are talking to at work. Use at least three of this chapter's words.",
+    "required": ["丁寧", "場面", "省略", "印象"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私は会社では丁寧な形を使いますが、友だちと話すときは普通の形にしています。同じ場面でも、相手が目上の人かどうかで言葉を選びます。若い人の話し方には省略が多く、ときどき印象が強く感じられます。私は相手に失礼にならないように、語尾に気をつけています。",
+    "tips_l1": "Say who you are talking to before you say how you speak — the relationship is the point of the chapter. Name one concrete change, such as using ですね rather than だね. The app only counts length, required words and sentences; have a human check the style."
+  }
+}

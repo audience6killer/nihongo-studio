@@ -329,6 +329,47 @@ check('ruby escapes markup and keeps punctuation outside', () => {
   is(L.ruby('「気候」', 'きこう'), '「<ruby>気候<rt>きこう</rt></ruby>」');
 });
 
+/* ------------------------------------------------------------- L.segment */
+const DICT = {
+  人: { r: 'ひと' }, は: { r: 'は' }, はい: { r: 'はい' },
+  いなくなる: { r: 'いなくなる' }, 日本: { r: 'にほん' }, の: { r: 'の' },
+  工場: { r: 'こうじょう' }, から: { r: 'から' },
+  開発: { r: 'かいはつ' }, されています: { r: 'されています' },
+  短く: { r: 'みじかく' }, し: { r: 'し' }, た: { r: 'た' }, カタカナ: { r: 'カタカナ' }, 語: { r: 'ご' }
+};
+
+function joined(segs) { return segs.map((s) => s.t).join(''); }
+function tokensOf(text) { return L.segment(text, DICT).map((s) => s.t); }
+
+check('segment prefers maximum dictionary coverage over the greedy match', () => {
+  // Greedy longest-match would take はい here and strand く; the DP must not.
+  is(tokensOf('人はいなくなる'), ['人', 'は', 'いなくなる']);
+});
+
+check('segment is lossless on every input', () => {
+  const samples = ['人はいなくなる', '新しいロボットが開発されています。', 'あ', '', 'カタカナ語'];
+  for (const s of samples) {
+    is(joined(L.segment(s, DICT)), s, `round-trip for ${JSON.stringify(s)}: `);
+  }
+});
+
+check('segment marks unknown runs by character and still round-trips', () => {
+  const segs = L.segment('開発されています。', DICT);
+  is(segs.filter((s) => !s.known).map((s) => s.t), ['。']);
+  is(joined(segs), '開発されています。');
+});
+
+check('segment takes the longest word when coverage ties', () => {
+  const segs = L.segment('開発されています', DICT);
+  is(segs.length, 2, `expected two tokens, got ${JSON.stringify(segs.map((s) => s.t))}: `);
+  is(segs[1].t, 'されています');
+});
+
+check('segment returns nothing for empty input', () => {
+  is(L.segment('', DICT), []);
+  is(L.segment(null, DICT), []);
+});
+
 /* ------------------------------------------------------------ L.recVariant */
 check('recVariant alternates on reps', () => {
   is(L.recVariant(0), 'meaning');

@@ -212,7 +212,15 @@
   };
 
   /**
-   * Longest-match segmentation against the tap dictionary.
+   * Dictionary segmentation with maximum coverage.
+   *
+   * Greedy longest-match is not good enough for Japanese: at 「は」 in
+   * 「人はいなくなる」 it prefers the longer-but-wrong はい over は +
+   * いなくなる, because it cannot see past the current position. This walks the
+   * whole string with dynamic programming instead, maximising the number of
+   * characters covered by real dictionary words and, on a tie, minimising the
+   * number of tokens. The old greedy segmentation is one of the candidates, so
+   * coverage can only improve.
    *
    * Returns [{ t: token, known: bool }]. The concatenation of every `t` is the
    * input, always. Unknown runs come out one character at a time so the
@@ -223,26 +231,60 @@
    */
   L.MAX_TERM = 12;
 
+  function hasOwn(obj, key) {
+    return Object.prototype.hasOwnProperty.call(obj, key);
+  }
+
   L.segment = function (text, entries, maxLen) {
     var t = String(text == null ? '' : text);
     var table = entries || {};
     var MAX = maxLen || L.MAX_TERM;
-    var out = [];
-    var i = 0;
-    while (i < t.length) {
-      var matched = null;
-      var limit = Math.min(MAX, t.length - i);
+    var n = t.length;
+    if (!n) return [];
+
+    var cover = new Array(n + 1);
+    var tokens = new Array(n + 1);
+    var back = new Array(n + 1);
+    for (var k = 0; k <= n; k++) { cover[k] = -1; tokens[k] = Infinity; back[k] = -1; }
+    cover[0] = 0;
+    tokens[0] = 0;
+
+    function relax(j, c, cnt, step) {
+      if (c > cover[j] || (c === cover[j] && cnt < tokens[j])) {
+        cover[j] = c;
+        tokens[j] = cnt;
+        back[j] = step;
+      }
+    }
+
+    for (var i = 0; i < n; i++) {
+      if (cover[i] < 0) continue;
+      // Advance one unknown character: no coverage, one more token.
+      relax(i + 1, cover[i], tokens[i] + 1, 1);
+      var limit = Math.min(MAX, n - i);
       for (var len = limit; len >= 1; len--) {
         var cand = t.substr(i, len);
-        if (Object.prototype.hasOwnProperty.call(table, cand)) { matched = cand; break; }
+        if (!hasOwn(table, cand)) continue;
+        relax(i + len, cover[i] + len, tokens[i] + 1, len);
       }
-      if (matched) {
-        out.push({ t: matched, known: true });
-        i += matched.length;
-      } else {
-        out.push({ t: t.charAt(i), known: false });
-        i += 1;
-      }
+    }
+
+    var steps = [];
+    var p = n;
+    while (p > 0) {
+      var step = back[p];
+      if (step < 1) step = 1;
+      steps.push(step);
+      p -= step;
+    }
+    steps.reverse();
+
+    var out = [];
+    var at = 0;
+    for (var s = 0; s < steps.length; s++) {
+      var tok = t.substr(at, steps[s]);
+      out.push({ t: tok, known: hasOwn(table, tok) });
+      at += steps[s];
     }
     return out;
   };

@@ -6,7 +6,7 @@ window.NJ_TAP = {
  "meta": {
   "schema": 1,
   "l2": "ja",
-  "count": 308
+  "count": 587
  },
  "entries": {
   "あいづち": {
@@ -64,10 +64,25 @@ window.NJ_TAP = {
    "g": "to go",
    "p": "v.i."
   },
+  "いくつか": {
+   "r": "いくつか",
+   "g": "some; several",
+   "p": "adv."
+  },
   "いちばん": {
    "r": "いちばん",
    "g": "the most",
    "p": "adv."
+  },
+  "いっしょに": {
+   "r": "いっしょに",
+   "g": "together",
+   "p": "adv."
+  },
+  "いなくなる": {
+   "r": "いなくなる",
+   "g": "to disappear; to be gone",
+   "p": "v.i."
   },
   "います": {
    "r": "います",
@@ -78,6 +93,11 @@ window.NJ_TAP = {
    "r": "いる",
    "g": "to be; to exist (animate)",
    "p": "v.i."
+  },
+  "うち": {
+   "r": "うち",
+   "g": "among; of",
+   "p": "part"
   },
   "うん": {
    "r": "うん",
@@ -109,10 +129,20 @@ window.NJ_TAP = {
    "g": "delicious",
    "p": "い-adj."
   },
+  "おかげで": {
+   "r": "おかげで",
+   "g": "thanks to",
+   "p": "exp."
+  },
   "おもう": {
    "r": "おもう",
    "g": "to think",
    "p": "v.t."
+  },
+  "お願いします": {
+   "r": "おねがいします",
+   "g": "please; excuse me",
+   "p": "exp."
   },
   "か": {
    "r": "か",
@@ -174,6 +204,11 @@ window.NJ_TAP = {
    "g": "here",
    "p": "exp."
   },
+  "こちら": {
+   "r": "こちら",
+   "g": "this way; this one",
+   "p": "exp."
+  },
   "こと": {
    "r": "こと",
    "g": "thing (abstract); fact",
@@ -189,6 +224,21 @@ window.NJ_TAP = {
    "g": "this",
    "p": "exp."
   },
+  "これら": {
+   "r": "これら",
+   "g": "these",
+   "p": "exp."
+  },
+  "ご覧": {
+   "r": "ごらん",
+   "g": "looking (honorific)",
+   "p": "exp."
+  },
+  "されています": {
+   "r": "されています",
+   "g": "has been done",
+   "p": "form"
+  },
   "されている": {
    "r": "されている",
    "g": "has been …ed",
@@ -197,6 +247,11 @@ window.NJ_TAP = {
   "されます": {
    "r": "されます",
    "g": "will be …ed (polite passive)",
+   "p": "form"
+  },
+  "し": {
+   "r": "し",
+   "g": "doing (stem of する)",
    "p": "form"
   },
   "しか": {
@@ -208,6 +263,21 @@ window.NJ_TAP = {
    "r": "しかし",
    "g": "however",
    "p": "conj."
+  },
+  "しています": {
+   "r": "しています",
+   "g": "to be doing",
+   "p": "form"
+  },
+  "すぐ": {
+   "r": "すぐ",
+   "g": "immediately; right away",
+   "p": "adv."
+  },
+  "すべて": {
+   "r": "すべて",
+   "g": "all; everything",
+   "p": "adv."
   },
   "する": {
    "r": "する",
@@ -284,6 +354,16 @@ window.NJ_TAP = {
    "g": "that much",
    "p": "adv."
   },
+  "ぞ": {
+   "r": "ぞ",
+   "g": "(rough emphasis)",
+   "p": "part"
+  },
+  "た": {
+   "r": "た",
+   "g": "past tense ending",
+   "p": "form"
+  },
   "たい": {
    "r": "たい",
    "g": "want to",
@@ -293,6 +373,11 @@ window.NJ_TAP = {
    "r": "たくさん",
    "g": "plenty; a lot",
    "p": "adv."
+  },
+  "ただし": {
+   "r": "ただし",
+   "g": "however; that said",
+   "p": "conj."
   },
   "たぶん": {
    "r": "たぶん",
@@ -308,6 +393,11 @@ window.NJ_TAP = {
    "r": "ために",
    "g": "in order to; because of",
    "p": "exp."
+  },
+  "たり": {
+   "r": "たり",
+   "g": "doing such things as",
+   "p": "part"
   },
   "だ": {
    "r": "だ",
@@ -359,6 +449,11 @@ window.NJ_TAP = {
    "g": "has come to; has been",
    "p": "form"
   },
+  "ても": {
+   "r": "ても",
+   "g": "even if",
+   "p": "part"
+  },
   "で": {
    "r": "で",
    "g": "at; by; with (place, means)",
@@ -404,6 +499,11 @@ window.NJ_TAP = {
    "g": "time; when",
    "p": "exp."
   },
+  "ときどき": {
+   "r": "ときどき",
+   "g": "sometimes",
+   "p": "adv."
+  },
   "ところ": {
    "r": "ところ",
    "g": "place; point",
@@ -414,14 +514,34 @@ window.NJ_TAP = {
    "g": "very",
    "p": "adv."
   },
+  "どう": {
+   "r": "どう",
+   "g": "how; in what way",
+   "p": "adv."
+  },
+  "どうか": {
+   "r": "どうか",
+   "g": "whether",
+   "p": "adv."
+  },
   "どこ": {
    "r": "どこ",
    "g": "where",
    "p": "exp."
   },
+  "どの": {
+   "r": "どの",
+   "g": "which (before a noun)",
+   "p": "exp."
+  },
   "どれ": {
    "r": "どれ",
    "g": "which one (of three or more)",
+   "p": "exp."
+  },
+  "どんな": {
+   "r": "どんな",
+   "g": "what kind of",
    "p": "exp."
   },
   "な": {
@@ -439,6 +559,16 @@ window.NJ_TAP = {
    "g": "while; at the same time",
    "p": "part"
   },
+  "なければならない": {
+   "r": "なければならない",
+   "g": "must; have to",
+   "p": "form"
+  },
+  "なぜ": {
+   "r": "なぜ",
+   "g": "why",
+   "p": "adv."
+  },
   "なっている": {
    "r": "なっている",
    "g": "to consist of; to have become",
@@ -448,6 +578,16 @@ window.NJ_TAP = {
    "r": "など",
    "g": "etc.; and so on",
    "p": "part"
+  },
+  "ならない": {
+   "r": "ならない",
+   "g": "does not become",
+   "p": "form"
+  },
+  "なります": {
+   "r": "なります",
+   "g": "to become (polite)",
+   "p": "form"
   },
   "なる": {
    "r": "なる",
@@ -474,15 +614,45 @@ window.NJ_TAP = {
    "g": "to be lively; to bustle",
    "p": "v.i."
   },
+  "にくい": {
+   "r": "にくい",
+   "g": "hard to (do)",
+   "p": "form"
+  },
+  "にして": {
+   "r": "にして",
+   "g": "making it; as",
+   "p": "form"
+  },
   "について": {
    "r": "について",
    "g": "about; concerning",
    "p": "exp."
   },
+  "になります": {
+   "r": "になります",
+   "g": "to become (polite)",
+   "p": "form"
+  },
+  "になる": {
+   "r": "になる",
+   "g": "to become",
+   "p": "v.i."
+  },
   "による": {
    "r": "による",
    "g": "depending on; caused by",
    "p": "exp."
+  },
+  "によると": {
+   "r": "によると",
+   "g": "according to",
+   "p": "exp."
+  },
+  "ね": {
+   "r": "ね",
+   "g": "right?; isn't it",
+   "p": "part"
   },
   "の": {
    "r": "の",
@@ -514,6 +684,11 @@ window.NJ_TAP = {
    "g": "only; just",
    "p": "part"
   },
+  "ふつう": {
+   "r": "ふつう",
+   "g": "usually; normally",
+   "p": "adv."
+  },
   "へ": {
    "r": "へ",
    "g": "toward",
@@ -522,6 +697,21 @@ window.NJ_TAP = {
   "へえ": {
    "r": "へえ",
    "g": "oh really (surprise)",
+   "p": "exp."
+  },
+  "べき": {
+   "r": "べき",
+   "g": "should; ought to",
+   "p": "form"
+  },
+  "ほう": {
+   "r": "ほう",
+   "g": "one side; the ... way",
+   "p": "exp."
+  },
+  "ほうがいい": {
+   "r": "ほうがいい",
+   "g": "had better",
    "p": "exp."
   },
   "ほど": {
@@ -538,6 +728,11 @@ window.NJ_TAP = {
    "r": "まず",
    "g": "first of all",
    "p": "adv."
+  },
+  "ません": {
+   "r": "ません",
+   "g": "polite negative ending",
+   "p": "form"
   },
   "また": {
    "r": "また",
@@ -584,6 +779,11 @@ window.NJ_TAP = {
    "g": "slack; gentle (of a current)",
    "p": "い-adj."
   },
+  "よ": {
+   "r": "よ",
+   "g": "(asserting) you know",
+   "p": "part"
+  },
   "ように": {
    "r": "ように",
    "g": "like; so that",
@@ -619,6 +819,11 @@ window.NJ_TAP = {
    "g": "understood (polite)",
    "p": "form"
   },
+  "わけ": {
+   "r": "わけ",
+   "g": "reason; it is not the case that",
+   "p": "exp."
+  },
   "わるい": {
    "r": "わるい",
    "g": "bad",
@@ -628,6 +833,11 @@ window.NJ_TAP = {
    "r": "を",
    "g": "object marker",
    "p": "part"
+  },
+  "んだけど": {
+   "r": "んだけど",
+   "g": "but; though (explanatory)",
+   "p": "exp."
   },
   "んです": {
    "r": "んです",
@@ -639,9 +849,79 @@ window.NJ_TAP = {
    "g": "are you …? (seeking explanation)",
    "p": "form"
   },
+  "アプリ": {
+   "r": "アプリ",
+   "g": "app; application",
+   "p": "n."
+  },
+  "アルバイト": {
+   "r": "アルバイト",
+   "g": "part-time job (from German Arbeit)",
+   "p": "n."
+  },
+  "インターネット": {
+   "r": "インターネット",
+   "g": "the internet",
+   "p": "n."
+  },
+  "エアコン": {
+   "r": "エアコン",
+   "g": "air conditioner",
+   "p": "n."
+  },
+  "カタカナ": {
+   "r": "カタカナ",
+   "g": "katakana",
+   "p": "n."
+  },
+  "コンピューター": {
+   "r": "コンピューター",
+   "g": "computer",
+   "p": "n."
+  },
+  "システム": {
+   "r": "システム",
+   "g": "system",
+   "p": "n."
+  },
+  "スピーチスタイル": {
+   "r": "スピーチスタイル",
+   "g": "speech style; level of politeness",
+   "p": "n."
+  },
+  "スマートフォン": {
+   "r": "スマートフォン",
+   "g": "smartphone",
+   "p": "n."
+  },
   "テーマ": {
    "r": "テーマ",
    "g": "theme; topic",
+   "p": "n."
+  },
+  "データ": {
+   "r": "データ",
+   "g": "data",
+   "p": "n."
+  },
+  "ドイツ語": {
+   "r": "ドイツご",
+   "g": "the German language",
+   "p": "n."
+  },
+  "ニュアンス": {
+   "r": "ニュアンス",
+   "g": "nuance",
+   "p": "n."
+  },
+  "パソコン": {
+   "r": "パソコン",
+   "g": "personal computer",
+   "p": "n."
+  },
+  "ホテル": {
+   "r": "ホテル",
+   "g": "hotel",
    "p": "n."
   },
   "マジで": {
@@ -649,10 +929,25 @@ window.NJ_TAP = {
    "g": "seriously (casual)",
    "p": "exp."
   },
+  "マンション": {
+   "r": "マンション",
+   "g": "apartment block; condominium",
+   "p": "n."
+  },
+  "メール": {
+   "r": "メール",
+   "g": "email; mail",
+   "p": "n."
+  },
   "ユーラシア大陸": {
    "r": "ユーラシアたいりく",
    "g": "the Eurasian continent",
    "p": "name"
+  },
+  "ロボット": {
+   "r": "ロボット",
+   "g": "robot",
+   "p": "n."
   },
   "一つの": {
    "r": "ひとつの",
@@ -679,6 +974,16 @@ window.NJ_TAP = {
    "g": "on the other hand; while",
    "p": "conj."
   },
+  "丁寧": {
+   "r": "ていねい",
+   "g": "polite; careful",
+   "p": "な-adj."
+  },
+  "丁寧語": {
+   "r": "ていねいご",
+   "g": "polite language (teineigo)",
+   "p": "n."
+  },
   "七割": {
    "r": "ななわり",
    "g": "seventy percent",
@@ -694,10 +999,55 @@ window.NJ_TAP = {
    "g": "above; on top",
    "p": "n."
   },
+  "上がった": {
+   "r": "あがった",
+   "g": "rose",
+   "p": "form"
+  },
+  "上がりました": {
+   "r": "あがりました",
+   "g": "rose (polite)",
+   "p": "form"
+  },
+  "上がる": {
+   "r": "あがる",
+   "g": "to rise; to go up",
+   "p": "v.i."
+  },
+  "上げる": {
+   "r": "あげる",
+   "g": "to raise",
+   "p": "v.t."
+  },
+  "上司": {
+   "r": "じょうし",
+   "g": "boss; superior",
+   "p": "n."
+  },
   "下": {
    "r": "した",
    "g": "below; under",
    "p": "n."
+  },
+  "下がっている": {
+   "r": "さがっている",
+   "g": "to be falling",
+   "p": "form"
+  },
+  "下がる": {
+   "r": "さがる",
+   "g": "to go down; to fall",
+   "p": "v.i."
+  },
+  "不便": {
+   "r": "ふべん",
+   "g": "inconvenient",
+   "p": "な-adj."
+  },
+  "不安": {
+   "r": "ふあん",
+   "g": "anxious; anxiety",
+   "p": "な-adj."
   },
   "中": {
    "r": "なか",
@@ -734,10 +1084,65 @@ window.NJ_TAP = {
    "g": "population",
    "p": "n."
   },
+  "人工知能": {
+   "r": "じんこうちのう",
+   "g": "artificial intelligence",
+   "p": "n."
+  },
+  "人間": {
+   "r": "にんげん",
+   "g": "human being; person",
+   "p": "n."
+  },
   "今": {
    "r": "いま",
    "g": "now",
    "p": "n."
+  },
+  "介護": {
+   "r": "かいご",
+   "g": "nursing care",
+   "p": "n."
+  },
+  "仕事": {
+   "r": "しごと",
+   "g": "work; job",
+   "p": "n."
+  },
+  "任せられる": {
+   "r": "まかせられる",
+   "g": "to be left to someone",
+   "p": "form"
+  },
+  "任せる": {
+   "r": "まかせる",
+   "g": "to entrust; to leave (to someone)",
+   "p": "v.t."
+  },
+  "企業": {
+   "r": "きぎょう",
+   "g": "company; enterprise",
+   "p": "n."
+  },
+  "会社": {
+   "r": "かいしゃ",
+   "g": "company; office",
+   "p": "n."
+  },
+  "会話": {
+   "r": "かいわ",
+   "g": "conversation",
+   "p": "n."
+  },
+  "伝えます": {
+   "r": "つたえます",
+   "g": "to convey (polite)",
+   "p": "form"
+  },
+  "伝える": {
+   "r": "つたえる",
+   "g": "to convey; to pass on",
+   "p": "v.t."
   },
   "伝説": {
    "r": "でんせつ",
@@ -769,6 +1174,36 @@ window.NJ_TAP = {
    "g": "what",
    "p": "exp."
   },
+  "作業": {
+   "r": "さぎょう",
+   "g": "work; task",
+   "p": "n."
+  },
+  "使い": {
+   "r": "つかい",
+   "g": "using (stem of 使う)",
+   "p": "form"
+  },
+  "使います": {
+   "r": "つかいます",
+   "g": "to use (polite)",
+   "p": "form"
+  },
+  "使い分け": {
+   "r": "つかいわけ",
+   "g": "proper use; differentiation",
+   "p": "n."
+  },
+  "使い分ける": {
+   "r": "つかいわける",
+   "g": "to use properly; to distinguish in use",
+   "p": "v.t."
+  },
+  "使い方": {
+   "r": "つかいかた",
+   "g": "way of using; how to use",
+   "p": "n."
+  },
   "使う": {
    "r": "つかう",
    "g": "to use",
@@ -779,15 +1214,110 @@ window.NJ_TAP = {
    "g": "cannot be used",
    "p": "form"
   },
+  "使った": {
+   "r": "つかった",
+   "g": "used",
+   "p": "form"
+  },
+  "使っています": {
+   "r": "つかっています",
+   "g": "to be using",
+   "p": "form"
+  },
+  "使われる": {
+   "r": "つかわれる",
+   "g": "to be used",
+   "p": "form"
+  },
+  "使われ始めた": {
+   "r": "つかわれはじめた",
+   "g": "began to be used",
+   "p": "form"
+  },
+  "便利": {
+   "r": "べんり",
+   "g": "convenient; handy",
+   "p": "な-adj."
+  },
+  "修理": {
+   "r": "しゅうり",
+   "g": "repair",
+   "p": "n."
+  },
+  "倒置": {
+   "r": "とうち",
+   "g": "inversion (of word order)",
+   "p": "n."
+  },
+  "値段": {
+   "r": "ねだん",
+   "g": "price",
+   "p": "n."
+  },
+  "働いています": {
+   "r": "はたらいています",
+   "g": "to be working (polite)",
+   "p": "form"
+  },
+  "働いている": {
+   "r": "はたらいている",
+   "g": "to be working",
+   "p": "form"
+  },
+  "働く": {
+   "r": "はたらく",
+   "g": "to work",
+   "p": "v.i."
+  },
+  "充電": {
+   "r": "じゅうでん",
+   "g": "charging",
+   "p": "n."
+  },
+  "入れかえたり": {
+   "r": "いれかえたり",
+   "g": "swapping and so on",
+   "p": "form"
+  },
+  "入れかえる": {
+   "r": "いれかえる",
+   "g": "to swap; to reorder",
+   "p": "v.t."
+  },
   "全然": {
    "r": "ぜんぜん",
    "g": "not at all (with a negative)",
    "p": "adv."
   },
+  "全部": {
+   "r": "ぜんぶ",
+   "g": "all; the whole",
+   "p": "adv."
+  },
+  "内容": {
+   "r": "ないよう",
+   "g": "content; substance",
+   "p": "n."
+  },
   "冬": {
    "r": "ふゆ",
    "g": "winter",
    "p": "n."
+  },
+  "処理": {
+   "r": "しょり",
+   "g": "processing",
+   "p": "n."
+  },
+  "出しました": {
+   "r": "だしました",
+   "g": "to take out; to send (polite)",
+   "p": "form"
+  },
+  "出す": {
+   "r": "だす",
+   "g": "to take out; to submit",
+   "p": "v.t."
   },
   "出てきません": {
    "r": "でてきません",
@@ -819,6 +1349,11 @@ window.NJ_TAP = {
    "g": "for the first time",
    "p": "adv."
   },
+  "初対面": {
+   "r": "はつたいめん",
+   "g": "first meeting",
+   "p": "n."
+  },
   "利用されてきた": {
    "r": "りようされてきた",
    "g": "to have been used",
@@ -832,6 +1367,16 @@ window.NJ_TAP = {
   "前": {
    "r": "まえ",
    "g": "before; front",
+   "p": "n."
+  },
+  "効率": {
+   "r": "こうりつ",
+   "g": "efficiency",
+   "p": "n."
+  },
+  "動詞": {
+   "r": "どうし",
+   "g": "verb",
    "p": "n."
   },
   "北": {
@@ -859,6 +1404,11 @@ window.NJ_TAP = {
    "g": "north and south",
    "p": "n."
   },
+  "単純": {
+   "r": "たんじゅん",
+   "g": "simple; plain",
+   "p": "な-adj."
+  },
   "占めている": {
    "r": "しめている",
    "g": "to account for; to occupy",
@@ -867,6 +1417,46 @@ window.NJ_TAP = {
   "占める": {
    "r": "しめる",
    "g": "to account for; to occupy",
+   "p": "v.t."
+  },
+  "印象": {
+   "r": "いんしょう",
+   "g": "impression",
+   "p": "n."
+  },
+  "危険": {
+   "r": "きけん",
+   "g": "dangerous; danger",
+   "p": "な-adj."
+  },
+  "友だち": {
+   "r": "ともだち",
+   "g": "friend",
+   "p": "n."
+  },
+  "友人": {
+   "r": "ゆうじん",
+   "g": "friend",
+   "p": "n."
+  },
+  "取られる": {
+   "r": "とられる",
+   "g": "to be taken",
+   "p": "form"
+  },
+  "取り入れる": {
+   "r": "とりいれる",
+   "g": "to adopt; to take in",
+   "p": "v.t."
+  },
+  "取る": {
+   "r": "とる",
+   "g": "to take",
+   "p": "v.t."
+  },
+  "受ける": {
+   "r": "うける",
+   "g": "to receive; to get (an impression)",
    "p": "v.t."
   },
   "各地": {
@@ -884,10 +1474,25 @@ window.NJ_TAP = {
    "g": "to match; to fit",
    "p": "form"
   },
+  "合わせて": {
+   "r": "あわせて",
+   "g": "in line with; according to",
+   "p": "form"
+  },
+  "合わせる": {
+   "r": "あわせる",
+   "g": "to match; to fit; to adjust",
+   "p": "v.t."
+  },
   "同じ": {
    "r": "おなじ",
    "g": "same; identical",
    "p": "な-adj."
+  },
+  "同僚": {
+   "r": "どうりょう",
+   "g": "colleague",
+   "p": "n."
   },
   "名所": {
    "r": "めいしょ",
@@ -897,6 +1502,26 @@ window.NJ_TAP = {
   "名物": {
    "r": "めいぶつ",
    "g": "local specialty; famous product",
+   "p": "n."
+  },
+  "向いている": {
+   "r": "むいている",
+   "g": "to be suited to",
+   "p": "form"
+  },
+  "向く": {
+   "r": "むく",
+   "g": "to face; to be suited to",
+   "p": "v.i."
+  },
+  "品質": {
+   "r": "ひんしつ",
+   "g": "quality",
+   "p": "n."
+  },
+  "問題": {
+   "r": "もんだい",
+   "g": "problem; question",
    "p": "n."
   },
   "問題点": {
@@ -939,6 +1564,46 @@ window.NJ_TAP = {
    "g": "geography",
    "p": "n."
   },
+  "場": {
+   "r": "ば",
+   "g": "place; occasion",
+   "p": "n."
+  },
+  "場面": {
+   "r": "ばめん",
+   "g": "scene; situation",
+   "p": "n."
+  },
+  "増える": {
+   "r": "ふえる",
+   "g": "to increase (by itself)",
+   "p": "v.i."
+  },
+  "増やす": {
+   "r": "ふやす",
+   "g": "to increase (something)",
+   "p": "v.t."
+  },
+  "変える": {
+   "r": "かえる",
+   "g": "to change (something)",
+   "p": "v.t."
+  },
+  "変わってくる": {
+   "r": "かわってくる",
+   "g": "to come to change",
+   "p": "form"
+  },
+  "変わります": {
+   "r": "かわります",
+   "g": "to change (polite)",
+   "p": "form"
+  },
+  "変わる": {
+   "r": "かわる",
+   "g": "to change (itself)",
+   "p": "v.i."
+  },
   "変化": {
    "r": "へんか",
    "g": "change",
@@ -947,6 +1612,11 @@ window.NJ_TAP = {
   "夏": {
    "r": "なつ",
    "g": "summer",
+   "p": "n."
+  },
+  "外来語": {
+   "r": "がいらいご",
+   "g": "loanword; word of foreign origin",
    "p": "n."
   },
   "多い": {
@@ -969,9 +1639,74 @@ window.NJ_TAP = {
    "g": "greatly",
    "p": "adv."
   },
+  "大きな": {
+   "r": "おおきな",
+   "g": "big (attributive)",
+   "p": "な-adj."
+  },
+  "大事": {
+   "r": "だいじ",
+   "g": "important; precious",
+   "p": "な-adj."
+  },
   "大陸": {
    "r": "たいりく",
    "g": "continent",
+   "p": "n."
+  },
+  "失礼": {
+   "r": "しつれい",
+   "g": "rude; impolite",
+   "p": "な-adj."
+  },
+  "好まれます": {
+   "r": "このまれます",
+   "g": "to be preferred (polite)",
+   "p": "form"
+  },
+  "好まれる": {
+   "r": "このまれる",
+   "g": "to be preferred",
+   "p": "form"
+  },
+  "好む": {
+   "r": "このむ",
+   "g": "to prefer; to like",
+   "p": "v.t."
+  },
+  "始めた": {
+   "r": "はじめた",
+   "g": "began",
+   "p": "form"
+  },
+  "始める": {
+   "r": "はじめる",
+   "g": "to begin (something)",
+   "p": "v.t."
+  },
+  "安全": {
+   "r": "あんぜん",
+   "g": "safe; safety",
+   "p": "な-adj."
+  },
+  "安定": {
+   "r": "あんてい",
+   "g": "stable; stability",
+   "p": "な-adj."
+  },
+  "安定させる": {
+   "r": "あんていさせる",
+   "g": "to stabilise",
+   "p": "form"
+  },
+  "実験": {
+   "r": "じっけん",
+   "g": "experiment",
+   "p": "n."
+  },
+  "家": {
+   "r": "いえ",
+   "g": "house; home",
    "p": "n."
   },
   "富む": {
@@ -983,6 +1718,11 @@ window.NJ_TAP = {
    "r": "さむい",
    "g": "cold",
    "p": "い-adj."
+  },
+  "尊敬語": {
+   "r": "そんけいご",
+   "g": "respectful language (sonkeigo)",
+   "p": "n."
   },
   "小さい": {
    "r": "ちいさい",
@@ -1029,6 +1769,11 @@ window.NJ_TAP = {
    "g": "river",
    "p": "n."
   },
+  "工場": {
+   "r": "こうじょう",
+   "g": "factory",
+   "p": "n."
+  },
   "差": {
    "r": "さ",
    "g": "difference; gap",
@@ -1064,6 +1809,41 @@ window.NJ_TAP = {
    "g": "widely; extensively",
    "p": "adv."
   },
+  "建物": {
+   "r": "たてもの",
+   "g": "building",
+   "p": "n."
+  },
+  "強い": {
+   "r": "つよい",
+   "g": "strong",
+   "p": "い-adj."
+  },
+  "強く": {
+   "r": "つよく",
+   "g": "strongly",
+   "p": "form"
+  },
+  "形": {
+   "r": "かたち",
+   "g": "form; shape",
+   "p": "n."
+  },
+  "役割": {
+   "r": "やくわり",
+   "g": "role",
+   "p": "n."
+  },
+  "待ってる": {
+   "r": "まってる",
+   "g": "to be waiting (casual)",
+   "p": "form"
+  },
+  "待つ": {
+   "r": "まつ",
+   "g": "to wait",
+   "p": "v.t."
+  },
   "後": {
    "r": "あと",
    "g": "after; later",
@@ -1073,6 +1853,21 @@ window.NJ_TAP = {
    "r": "かならず",
    "g": "without fail",
    "p": "adv."
+  },
+  "必要": {
+   "r": "ひつよう",
+   "g": "necessary; need",
+   "p": "な-adj."
+  },
+  "思います": {
+   "r": "おもいます",
+   "g": "to think (polite)",
+   "p": "form"
+  },
+  "思う": {
+   "r": "おもう",
+   "g": "to think",
+   "p": "v.t."
   },
   "急だ": {
    "r": "きゅうだ",
@@ -1084,15 +1879,125 @@ window.NJ_TAP = {
    "g": "steep; sudden (te-form)",
    "p": "form"
   },
+  "性能": {
+   "r": "せいのう",
+   "g": "performance; capability",
+   "p": "n."
+  },
   "恵まれる": {
    "r": "めぐまれる",
    "g": "to be blessed with; to be favoured with",
    "p": "v.i."
   },
+  "情報": {
+   "r": "じょうほう",
+   "g": "information",
+   "p": "n."
+  },
+  "意味": {
+   "r": "いみ",
+   "g": "meaning",
+   "p": "n."
+  },
+  "感じられます": {
+   "r": "かんじられます",
+   "g": "to be felt",
+   "p": "form"
+  },
+  "感じる": {
+   "r": "かんじる",
+   "g": "to feel",
+   "p": "v.t."
+  },
+  "技術": {
+   "r": "ぎじゅつ",
+   "g": "technology; technique",
+   "p": "n."
+  },
+  "持ってきます": {
+   "r": "もってきます",
+   "g": "to bring (polite)",
+   "p": "form"
+  },
+  "持ってく": {
+   "r": "もってく",
+   "g": "to bring (very casual)",
+   "p": "form"
+  },
+  "持ってくる": {
+   "r": "もってくる",
+   "g": "to bring (casual)",
+   "p": "form"
+  },
+  "持つ": {
+   "r": "もつ",
+   "g": "to hold; to carry",
+   "p": "v.t."
+  },
+  "挨拶": {
+   "r": "あいさつ",
+   "g": "greeting",
+   "p": "n."
+  },
+  "携帯": {
+   "r": "けいたい",
+   "g": "mobile phone; portable",
+   "p": "n."
+  },
+  "操作": {
+   "r": "そうさ",
+   "g": "operation; handling",
+   "p": "n."
+  },
+  "故障": {
+   "r": "こしょう",
+   "g": "breakdown; fault",
+   "p": "n."
+  },
+  "教育": {
+   "r": "きょういく",
+   "g": "education",
+   "p": "n."
+  },
+  "敬語": {
+   "r": "けいご",
+   "g": "honorific language; polite language",
+   "p": "n."
+  },
+  "数": {
+   "r": "かず",
+   "g": "number; count",
+   "p": "n."
+  },
+  "文": {
+   "r": "ぶん",
+   "g": "sentence; text",
+   "p": "n."
+  },
+  "文字": {
+   "r": "もじ",
+   "g": "character; letter",
+   "p": "n."
+  },
+  "文法": {
+   "r": "ぶんぽう",
+   "g": "grammar",
+   "p": "n."
+  },
   "文章": {
    "r": "ぶんしょう",
    "g": "text; passage",
    "p": "n."
+  },
+  "文脈": {
+   "r": "ぶんみゃく",
+   "g": "context",
+   "p": "n."
+  },
+  "新しい": {
+   "r": "あたらしい",
+   "g": "new",
+   "p": "い-adj."
   },
   "方": {
    "r": "かた",
@@ -1124,6 +2029,11 @@ window.NJ_TAP = {
    "g": "the Japanese language",
    "p": "n."
   },
+  "明日": {
+   "r": "あした",
+   "g": "tomorrow",
+   "p": "n."
+  },
   "昔話": {
    "r": "むかしばなし",
    "g": "folk tale; old story",
@@ -1138,6 +2048,16 @@ window.NJ_TAP = {
    "r": "とき",
    "g": "time; hour",
    "p": "n."
+  },
+  "時間": {
+   "r": "じかん",
+   "g": "time; hour",
+   "p": "n."
+  },
+  "普通": {
+   "r": "ふつう",
+   "g": "ordinary; usual",
+   "p": "な-adj."
   },
   "暑い": {
    "r": "あつい",
@@ -1154,15 +2074,55 @@ window.NJ_TAP = {
    "g": "warm",
    "p": "い-adj."
   },
+  "書き手": {
+   "r": "かきて",
+   "g": "writer; author",
+   "p": "n."
+  },
+  "書き方": {
+   "r": "かきかた",
+   "g": "way of writing",
+   "p": "n."
+  },
+  "書き言葉": {
+   "r": "かきことば",
+   "g": "written language",
+   "p": "n."
+  },
+  "最も": {
+   "r": "もっとも",
+   "g": "most",
+   "p": "adv."
+  },
+  "最後": {
+   "r": "さいご",
+   "g": "the last; the end",
+   "p": "n."
+  },
+  "最近": {
+   "r": "さいきん",
+   "g": "recently",
+   "p": "adv."
+  },
   "月": {
    "r": "つき",
    "g": "month",
+   "p": "n."
+  },
+  "期待": {
+   "r": "きたい",
+   "g": "expectation",
    "p": "n."
   },
   "本州": {
    "r": "ほんしゅう",
    "g": "Honshu",
    "p": "name"
+  },
+  "来た": {
+   "r": "きた",
+   "g": "came",
+   "p": "form"
   },
   "来週": {
    "r": "らいしゅう",
@@ -1179,20 +2139,95 @@ window.NJ_TAP = {
    "g": "Tokyo",
    "p": "name"
   },
+  "柔らかい": {
+   "r": "やわらかい",
+   "g": "soft; gentle",
+   "p": "い-adj."
+  },
+  "楽しませる": {
+   "r": "たのしませる",
+   "g": "to entertain; to please",
+   "p": "form"
+  },
+  "楽しむ": {
+   "r": "たのしむ",
+   "g": "to enjoy",
+   "p": "v.t."
+  },
+  "機械": {
+   "r": "きかい",
+   "g": "machine; machinery",
+   "p": "n."
+  },
+  "機能": {
+   "r": "きのう",
+   "g": "function; feature",
+   "p": "n."
+  },
+  "次": {
+   "r": "つぎ",
+   "g": "next",
+   "p": "n."
+  },
+  "止めた": {
+   "r": "とめた",
+   "g": "stopped",
+   "p": "form"
+  },
+  "止める": {
+   "r": "とめる",
+   "g": "to stop (something)",
+   "p": "v.t."
+  },
+  "正しい": {
+   "r": "ただしい",
+   "g": "correct; right",
+   "p": "い-adj."
+  },
+  "正確": {
+   "r": "せいかく",
+   "g": "accurate; precise",
+   "p": "な-adj."
+  },
   "歴史": {
    "r": "れきし",
    "g": "history",
    "p": "n."
+  },
+  "毎日": {
+   "r": "まいにち",
+   "g": "every day",
+   "p": "n."
+  },
+  "気": {
+   "r": "き",
+   "g": "mind; attention",
+   "p": "n."
+  },
+  "気をつけています": {
+   "r": "きをつけています",
+   "g": "to be careful",
+   "p": "form"
   },
   "気候": {
    "r": "きこう",
    "g": "climate",
    "p": "n."
   },
+  "気持ち": {
+   "r": "きもち",
+   "g": "feeling; mood",
+   "p": "n."
+  },
   "水力発電": {
    "r": "すいりょくはつでん",
    "g": "hydroelectric power",
    "p": "n."
+  },
+  "決める": {
+   "r": "きめる",
+   "g": "to decide",
+   "p": "v.t."
   },
   "沖縄": {
    "r": "おきなわ",
@@ -1228,6 +2263,16 @@ window.NJ_TAP = {
    "r": "ふかく",
    "g": "deeply",
    "p": "adv."
+  },
+  "減らす": {
+   "r": "へらす",
+   "g": "to reduce; to decrease",
+   "p": "v.t."
+  },
+  "減る": {
+   "r": "へる",
+   "g": "to decrease (by itself)",
+   "p": "v.i."
   },
   "温泉": {
    "r": "おんせん",
@@ -1269,6 +2314,41 @@ window.NJ_TAP = {
    "g": "narrow; cramped",
    "p": "い-adj."
   },
+  "理解": {
+   "r": "りかい",
+   "g": "understanding",
+   "p": "n."
+  },
+  "理解したり": {
+   "r": "りかいしたり",
+   "g": "understanding (and so on)",
+   "p": "form"
+  },
+  "生活": {
+   "r": "せいかつ",
+   "g": "life; daily living",
+   "p": "n."
+  },
+  "生産": {
+   "r": "せいせい",
+   "g": "production",
+   "p": "n."
+  },
+  "産業": {
+   "r": "さんぎょう",
+   "g": "industry",
+   "p": "n."
+  },
+  "画面": {
+   "r": "がめん",
+   "g": "screen",
+   "p": "n."
+  },
+  "略す": {
+   "r": "りゃくす",
+   "g": "to abbreviate",
+   "p": "v.t."
+  },
   "異なり": {
    "r": "ことなり",
    "g": "to differ (stem)",
@@ -1278,6 +2358,26 @@ window.NJ_TAP = {
    "r": "ことなる",
    "g": "to differ",
    "p": "v.i."
+  },
+  "発明": {
+   "r": "はつめい",
+   "g": "invention",
+   "p": "n."
+  },
+  "発見": {
+   "r": "はっけん",
+   "g": "discovery",
+   "p": "n."
+  },
+  "発達": {
+   "r": "はったつ",
+   "g": "development; growth",
+   "p": "n."
+  },
+  "発音": {
+   "r": "はつおん",
+   "g": "pronunciation",
+   "p": "n."
   },
   "百万人": {
    "r": "ひゃくまんにん",
@@ -1292,6 +2392,21 @@ window.NJ_TAP = {
   "目上": {
    "r": "めうえ",
    "g": "person of higher status",
+   "p": "n."
+  },
+  "目指す": {
+   "r": "めざす",
+   "g": "to aim for; to target",
+   "p": "v.t."
+  },
+  "相手": {
+   "r": "あいて",
+   "g": "the other person; partner",
+   "p": "n."
+  },
+  "省略": {
+   "r": "しょうりゃく",
+   "g": "omission",
    "p": "n."
   },
   "県": {
@@ -1314,6 +2429,16 @@ window.NJ_TAP = {
    "g": "short",
    "p": "adv."
   },
+  "短縮": {
+   "r": "たんしゅく",
+   "g": "shortening; abbreviation",
+   "p": "n."
+  },
+  "研究": {
+   "r": "けんきゅう",
+   "g": "research",
+   "p": "n."
+  },
   "祭り": {
    "r": "まつり",
    "g": "festival",
@@ -1324,9 +2449,19 @@ window.NJ_TAP = {
    "g": "I; me",
    "p": "n."
   },
+  "私たち": {
+   "r": "わたしたち",
+   "g": "we; us",
+   "p": "n."
+  },
   "秋": {
    "r": "あき",
    "g": "autumn",
+   "p": "n."
+  },
+  "科学": {
+   "r": "かがく",
+   "g": "science",
    "p": "n."
   },
   "積もります": {
@@ -1344,6 +2479,21 @@ window.NJ_TAP = {
    "g": "approximately",
    "p": "adv."
   },
+  "終わり": {
+   "r": "おわり",
+   "g": "end; ending",
+   "p": "n."
+  },
+  "終わる": {
+   "r": "おわる",
+   "g": "to end",
+   "p": "v.i."
+  },
+  "終助詞": {
+   "r": "しゅうじょし",
+   "g": "sentence-final particle",
+   "p": "n."
+  },
   "続いている": {
    "r": "つづいている",
    "g": "to continue; to run on",
@@ -1353,6 +2503,36 @@ window.NJ_TAP = {
    "r": "つづく",
    "g": "to continue",
    "p": "v.i."
+  },
+  "続ける": {
+   "r": "つづける",
+   "g": "to continue (something)",
+   "p": "v.t."
+  },
+  "練習": {
+   "r": "れんしゅう",
+   "g": "practice",
+   "p": "n."
+  },
+  "考え": {
+   "r": "かんがえ",
+   "g": "idea; thought",
+   "p": "n."
+  },
+  "考えたり": {
+   "r": "かんがえたり",
+   "g": "thinking (and so on)",
+   "p": "form"
+  },
+  "考えなければならない": {
+   "r": "かんがえなければならない",
+   "g": "must think about",
+   "p": "form"
+  },
+  "考える": {
+   "r": "かんがえる",
+   "g": "to think; to consider",
+   "p": "v.t."
   },
   "聞きました": {
    "r": "ききました",
@@ -1374,10 +2554,20 @@ window.NJ_TAP = {
    "g": "oneself",
    "p": "n."
   },
+  "自動": {
+   "r": "じどう",
+   "g": "automatic",
+   "p": "n."
+  },
   "自然": {
    "r": "しぜん",
    "g": "nature; natural",
    "p": "n."
+  },
+  "若い": {
+   "r": "わかい",
+   "g": "young",
+   "p": "い-adj."
   },
   "行う": {
    "r": "おこなう",
@@ -1394,10 +2584,45 @@ window.NJ_TAP = {
    "g": "event; seasonal observance",
    "p": "n."
   },
+  "表す": {
+   "r": "あらわす",
+   "g": "to express; to show",
+   "p": "v.t."
+  },
+  "表現": {
+   "r": "ひょうげん",
+   "g": "expression",
+   "p": "n."
+  },
+  "装置": {
+   "r": "そうち",
+   "g": "device; apparatus",
+   "p": "n."
+  },
+  "製品": {
+   "r": "せいひん",
+   "g": "product; manufactured goods",
+   "p": "n."
+  },
+  "複雑": {
+   "r": "ふくざつ",
+   "g": "complicated; complex",
+   "p": "な-adj."
+  },
   "西": {
    "r": "にし",
    "g": "west",
    "p": "n."
+  },
+  "親しい": {
+   "r": "したしい",
+   "g": "close; intimate",
+   "p": "い-adj."
+  },
+  "親しく": {
+   "r": "したしく",
+   "g": "closely; intimately",
+   "p": "form"
   },
   "観光": {
    "r": "かんこう",
@@ -1409,6 +2634,36 @@ window.NJ_TAP = {
    "g": "tourist; sightseer",
    "p": "n."
   },
+  "言いたい": {
+   "r": "いいたい",
+   "g": "want to say",
+   "p": "form"
+  },
+  "言いにくい": {
+   "r": "いいにくい",
+   "g": "hard to say",
+   "p": "い-adj."
+  },
+  "言います": {
+   "r": "いいます",
+   "g": "to say (polite)",
+   "p": "form"
+  },
+  "言い方": {
+   "r": "いいかた",
+   "g": "way of saying",
+   "p": "n."
+  },
+  "言う": {
+   "r": "いう",
+   "g": "to say",
+   "p": "v.t."
+  },
+  "言える": {
+   "r": "いえる",
+   "g": "to be able to say",
+   "p": "form"
+  },
   "言葉": {
    "r": "ことば",
    "g": "word; language",
@@ -1419,10 +2674,50 @@ window.NJ_TAP = {
    "g": "speaking (te-form)",
    "p": "form"
   },
+  "話し方": {
+   "r": "はなしかた",
+   "g": "way of speaking",
+   "p": "n."
+  },
+  "話し言葉": {
+   "r": "はなしことば",
+   "g": "spoken language",
+   "p": "n."
+  },
   "話す": {
    "r": "はなす",
    "g": "to speak; to talk",
    "p": "v.t."
+  },
+  "語": {
+   "r": "ご",
+   "g": "word; language",
+   "p": "part"
+  },
+  "語尾": {
+   "r": "ごび",
+   "g": "word ending; sentence ending",
+   "p": "n."
+  },
+  "語彙": {
+   "r": "ごい",
+   "g": "vocabulary",
+   "p": "n."
+  },
+  "語順": {
+   "r": "ごじゅん",
+   "g": "word order",
+   "p": "n."
+  },
+  "謙譲語": {
+   "r": "けんじょうご",
+   "g": "humble language (kenjougo)",
+   "p": "n."
+  },
+  "資料": {
+   "r": "しりょう",
+   "g": "materials; documents",
+   "p": "n."
   },
   "農業": {
    "r": "のうぎょう",
@@ -1459,15 +2754,75 @@ window.NJ_TAP = {
    "g": "to let through",
    "p": "v.t."
   },
+  "通信": {
+   "r": "つうしん",
+   "g": "communication; telecommunications",
+   "p": "n."
+  },
+  "速い": {
+   "r": "はやい",
+   "g": "fast; quick",
+   "p": "い-adj."
+  },
   "週末": {
    "r": "しゅうまつ",
    "g": "weekend",
    "p": "n."
   },
+  "進歩": {
+   "r": "しんぽ",
+   "g": "progress; advance",
+   "p": "n."
+  },
+  "違う": {
+   "r": "ちがう",
+   "g": "to differ; to be wrong",
+   "p": "v.i."
+  },
   "適切": {
    "r": "てきせつ",
    "g": "appropriate",
    "p": "な-adj."
+  },
+  "選びます": {
+   "r": "えらびます",
+   "g": "to choose (polite)",
+   "p": "form"
+  },
+  "選びません": {
+   "r": "えらびません",
+   "g": "to not choose",
+   "p": "form"
+  },
+  "選び方": {
+   "r": "えらびかた",
+   "g": "way of choosing",
+   "p": "n."
+  },
+  "選ぶ": {
+   "r": "えらぶ",
+   "g": "to choose; to select",
+   "p": "v.t."
+  },
+  "選べる": {
+   "r": "えらべる",
+   "g": "to be able to choose",
+   "p": "form"
+  },
+  "部下": {
+   "r": "ぶか",
+   "g": "subordinate; staff",
+   "p": "n."
+  },
+  "部品": {
+   "r": "ぶひん",
+   "g": "parts; components",
+   "p": "n."
+  },
+  "部長": {
+   "r": "ぶちょう",
+   "g": "department manager",
+   "p": "n."
   },
   "都市": {
    "r": "とし",
@@ -1494,6 +2849,26 @@ window.NJ_TAP = {
    "g": "long (adverbial); for a long time",
    "p": "form"
   },
+  "開発": {
+   "r": "かいはつ",
+   "g": "development; development work",
+   "p": "n."
+  },
+  "間": {
+   "r": "あいだ",
+   "g": "between; among",
+   "p": "n."
+  },
+  "間違える": {
+   "r": "まちがえる",
+   "g": "to make a mistake",
+   "p": "v.t."
+  },
+  "間違っている": {
+   "r": "まちがっている",
+   "g": "to be wrong",
+   "p": "form"
+  },
   "関わっている": {
    "r": "かかわっている",
    "g": "to be connected with",
@@ -1503,6 +2878,11 @@ window.NJ_TAP = {
    "r": "かかわる",
    "g": "to be involved in; to relate to",
    "p": "v.i."
+  },
+  "関係": {
+   "r": "かんけい",
+   "g": "relationship; connection",
+   "p": "n."
   },
   "降る": {
    "r": "ふる",
@@ -1519,9 +2899,19 @@ window.NJ_TAP = {
    "g": "to gather; to be concentrated",
    "p": "v.i."
   },
+  "集合住宅": {
+   "r": "しゅうごうじゅうたく",
+   "g": "apartment building; housing complex",
+   "p": "n."
+  },
   "雪": {
    "r": "ゆき",
    "g": "snow",
+   "p": "n."
+  },
+  "電源": {
+   "r": "でんげん",
+   "g": "power source",
    "p": "n."
   },
   "面積": {
@@ -1537,6 +2927,11 @@ window.NJ_TAP = {
   "首都": {
    "r": "しゅと",
    "g": "capital city",
+   "p": "n."
+  },
+  "駅": {
+   "r": "えき",
+   "g": "station",
    "p": "n."
   },
   "高原": {

@@ -56,15 +56,16 @@ python tools/validate_content.py
 
 ## State of the build
 
-Chapter 1 is complete and end to end: onboarding, plan, new-word cards, recognition,
-production, listening, dictation, reading with tap-to-define, the writing task, stats,
-settings and export/import.
+Chapters 1–3 are complete and end to end: onboarding, calibration, the daily session
+(recognition, production, listening, dictation), reading with tap-to-define, the writing
+task, practice checkpoints, stats, settings and export/import. 169 words, every passage
+token tappable.
 
-Chapters 2–15 are not authored yet. The engine, schema and validators already handle them —
+Chapters 4–15 are not authored yet. The engine, schema and validators already handle them —
 `content/LEDGER.md` tracks what exists and what does not.
 
-Not yet built: calibration/refresh deck, checkpoints, the N2 deck, sync, and deploy.
-Those are Phases 3–8 in `PLAN.md`.
+Not yet built: scheduled checkpoints at chapter boundaries, the N2 deck, sync, and deploy.
+Those are Phases 6–8 in `PLAN.md`.
 
 ## Audio needs a Japanese voice
 

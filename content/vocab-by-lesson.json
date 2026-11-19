@@ -338,5 +338,889 @@
     ]
    }
   ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 2,
+  "title_l2": "日本語のスピーチスタイル",
+  "title_l1": "Speech Styles in Japanese",
+  "items": [
+   {
+    "w": "敬語",
+    "reading": "けいご",
+    "pos": "n.",
+    "gloss": "honorific language; polite language",
+    "alt": []
+   },
+   {
+    "w": "尊敬語",
+    "reading": "そんけいご",
+    "pos": "n.",
+    "gloss": "respectful language (sonkeigo)",
+    "alt": []
+   },
+   {
+    "w": "謙譲語",
+    "reading": "けんじょうご",
+    "pos": "n.",
+    "gloss": "humble language (kenjougo)",
+    "alt": []
+   },
+   {
+    "w": "丁寧語",
+    "reading": "ていねいご",
+    "pos": "n.",
+    "gloss": "polite language (teineigo)",
+    "alt": []
+   },
+   {
+    "w": "スピーチスタイル",
+    "reading": "スピーチスタイル",
+    "pos": "n.",
+    "gloss": "speech style; level of politeness",
+    "alt": []
+   },
+   {
+    "w": "丁寧",
+    "reading": "ていねい",
+    "pos": "な-adj.",
+    "gloss": "polite; careful",
+    "alt": []
+   },
+   {
+    "w": "普通",
+    "reading": "ふつう",
+    "pos": "な-adj.",
+    "gloss": "ordinary; usual",
+    "alt": []
+   },
+   {
+    "w": "場面",
+    "reading": "ばめん",
+    "pos": "n.",
+    "gloss": "scene; situation",
+    "alt": []
+   },
+   {
+    "w": "場",
+    "reading": "ば",
+    "pos": "n.",
+    "gloss": "place; occasion",
+    "alt": []
+   },
+   {
+    "w": "文脈",
+    "reading": "ぶんみゃく",
+    "pos": "n.",
+    "gloss": "context",
+    "alt": []
+   },
+   {
+    "w": "書き言葉",
+    "reading": "かきことば",
+    "pos": "n.",
+    "gloss": "written language",
+    "alt": []
+   },
+   {
+    "w": "話し言葉",
+    "reading": "はなしことば",
+    "pos": "n.",
+    "gloss": "spoken language",
+    "alt": []
+   },
+   {
+    "w": "話し方",
+    "reading": "はなしかた",
+    "pos": "n.",
+    "gloss": "way of speaking",
+    "alt": []
+   },
+   {
+    "w": "省略",
+    "reading": "しょうりゃく",
+    "pos": "n.",
+    "gloss": "omission",
+    "alt": []
+   },
+   {
+    "w": "短縮",
+    "reading": "たんしゅく",
+    "pos": "n.",
+    "gloss": "shortening; abbreviation",
+    "alt": []
+   },
+   {
+    "w": "倒置",
+    "reading": "とうち",
+    "pos": "n.",
+    "gloss": "inversion (of word order)",
+    "alt": []
+   },
+   {
+    "w": "終助詞",
+    "reading": "しゅうじょし",
+    "pos": "n.",
+    "gloss": "sentence-final particle",
+    "alt": []
+   },
+   {
+    "w": "語順",
+    "reading": "ごじゅん",
+    "pos": "n.",
+    "gloss": "word order",
+    "alt": []
+   },
+   {
+    "w": "動詞",
+    "reading": "どうし",
+    "pos": "n.",
+    "gloss": "verb",
+    "alt": []
+   },
+   {
+    "w": "文",
+    "reading": "ぶん",
+    "pos": "n.",
+    "gloss": "sentence; text",
+    "alt": []
+   },
+   {
+    "w": "形",
+    "reading": "かたち",
+    "pos": "n.",
+    "gloss": "form; shape",
+    "alt": []
+   },
+   {
+    "w": "語尾",
+    "reading": "ごび",
+    "pos": "n.",
+    "gloss": "word ending; sentence ending",
+    "alt": []
+   },
+   {
+    "w": "表現",
+    "reading": "ひょうげん",
+    "pos": "n.",
+    "gloss": "expression",
+    "alt": []
+   },
+   {
+    "w": "語彙",
+    "reading": "ごい",
+    "pos": "n.",
+    "gloss": "vocabulary",
+    "alt": []
+   },
+   {
+    "w": "印象",
+    "reading": "いんしょう",
+    "pos": "n.",
+    "gloss": "impression",
+    "alt": []
+   },
+   {
+    "w": "ニュアンス",
+    "reading": "ニュアンス",
+    "pos": "n.",
+    "gloss": "nuance",
+    "alt": []
+   },
+   {
+    "w": "内容",
+    "reading": "ないよう",
+    "pos": "n.",
+    "gloss": "content; substance",
+    "alt": []
+   },
+   {
+    "w": "会話",
+    "reading": "かいわ",
+    "pos": "n.",
+    "gloss": "conversation",
+    "alt": []
+   },
+   {
+    "w": "挨拶",
+    "reading": "あいさつ",
+    "pos": "n.",
+    "gloss": "greeting",
+    "alt": []
+   },
+   {
+    "w": "伝える",
+    "reading": "つたえる",
+    "pos": "v.t.",
+    "gloss": "to convey; to pass on",
+    "alt": []
+   },
+   {
+    "w": "変わる",
+    "reading": "かわる",
+    "pos": "v.i.",
+    "gloss": "to change (itself)",
+    "alt": []
+   },
+   {
+    "w": "変える",
+    "reading": "かえる",
+    "pos": "v.t.",
+    "gloss": "to change (something)",
+    "alt": []
+   },
+   {
+    "w": "選ぶ",
+    "reading": "えらぶ",
+    "pos": "v.t.",
+    "gloss": "to choose; to select",
+    "alt": []
+   },
+   {
+    "w": "使い分ける",
+    "reading": "つかいわける",
+    "pos": "v.t.",
+    "gloss": "to use properly; to distinguish in use",
+    "alt": []
+   },
+   {
+    "w": "合わせる",
+    "reading": "あわせる",
+    "pos": "v.t.",
+    "gloss": "to match; to fit; to adjust",
+    "alt": []
+   },
+   {
+    "w": "好む",
+    "reading": "このむ",
+    "pos": "v.t.",
+    "gloss": "to prefer; to like",
+    "alt": []
+   },
+   {
+    "w": "受ける",
+    "reading": "うける",
+    "pos": "v.t.",
+    "gloss": "to receive; to get (an impression)",
+    "alt": []
+   },
+   {
+    "w": "入れかえる",
+    "reading": "いれかえる",
+    "pos": "v.t.",
+    "gloss": "to swap; to reorder",
+    "alt": []
+   },
+   {
+    "w": "略す",
+    "reading": "りゃくす",
+    "pos": "v.t.",
+    "gloss": "to abbreviate",
+    "alt": []
+   },
+   {
+    "w": "上司",
+    "reading": "じょうし",
+    "pos": "n.",
+    "gloss": "boss; superior",
+    "alt": []
+   },
+   {
+    "w": "部下",
+    "reading": "ぶか",
+    "pos": "n.",
+    "gloss": "subordinate; staff",
+    "alt": []
+   },
+   {
+    "w": "同僚",
+    "reading": "どうりょう",
+    "pos": "n.",
+    "gloss": "colleague",
+    "alt": []
+   },
+   {
+    "w": "友だち",
+    "reading": "ともだち",
+    "pos": "n.",
+    "gloss": "friend",
+    "alt": []
+   },
+   {
+    "w": "相手",
+    "reading": "あいて",
+    "pos": "n.",
+    "gloss": "the other person; partner",
+    "alt": []
+   },
+   {
+    "w": "初対面",
+    "reading": "はつたいめん",
+    "pos": "n.",
+    "gloss": "first meeting",
+    "alt": []
+   },
+   {
+    "w": "関係",
+    "reading": "かんけい",
+    "pos": "n.",
+    "gloss": "relationship; connection",
+    "alt": []
+   },
+   {
+    "w": "仕事",
+    "reading": "しごと",
+    "pos": "n.",
+    "gloss": "work; job",
+    "alt": []
+   },
+   {
+    "w": "会社",
+    "reading": "かいしゃ",
+    "pos": "n.",
+    "gloss": "company; office",
+    "alt": []
+   },
+   {
+    "w": "親しい",
+    "reading": "したしい",
+    "pos": "い-adj.",
+    "gloss": "close; intimate",
+    "alt": []
+   },
+   {
+    "w": "大事",
+    "reading": "だいじ",
+    "pos": "な-adj.",
+    "gloss": "important; precious",
+    "alt": []
+   },
+   {
+    "w": "若い",
+    "reading": "わかい",
+    "pos": "い-adj.",
+    "gloss": "young",
+    "alt": []
+   },
+   {
+    "w": "メール",
+    "reading": "メール",
+    "pos": "n.",
+    "gloss": "email; mail",
+    "alt": []
+   },
+   {
+    "w": "間違える",
+    "reading": "まちがえる",
+    "pos": "v.t.",
+    "gloss": "to make a mistake",
+    "alt": []
+   },
+   {
+    "w": "失礼",
+    "reading": "しつれい",
+    "pos": "な-adj.",
+    "gloss": "rude; impolite",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 3,
+  "title_l2": "日本のテクノロジー",
+  "title_l1": "Technology in Japan",
+  "items": [
+   {
+    "w": "技術",
+    "reading": "ぎじゅつ",
+    "pos": "n.",
+    "gloss": "technology; technique",
+    "alt": []
+   },
+   {
+    "w": "科学",
+    "reading": "かがく",
+    "pos": "n.",
+    "gloss": "science",
+    "alt": []
+   },
+   {
+    "w": "ロボット",
+    "reading": "ロボット",
+    "pos": "n.",
+    "gloss": "robot",
+    "alt": []
+   },
+   {
+    "w": "人工知能",
+    "reading": "じんこうちのう",
+    "pos": "n.",
+    "gloss": "artificial intelligence",
+    "alt": []
+   },
+   {
+    "w": "開発",
+    "reading": "かいはつ",
+    "pos": "n.",
+    "gloss": "development; development work",
+    "alt": []
+   },
+   {
+    "w": "発達",
+    "reading": "はったつ",
+    "pos": "n.",
+    "gloss": "development; growth",
+    "alt": []
+   },
+   {
+    "w": "進歩",
+    "reading": "しんぽ",
+    "pos": "n.",
+    "gloss": "progress; advance",
+    "alt": []
+   },
+   {
+    "w": "発明",
+    "reading": "はつめい",
+    "pos": "n.",
+    "gloss": "invention",
+    "alt": []
+   },
+   {
+    "w": "発見",
+    "reading": "はっけん",
+    "pos": "n.",
+    "gloss": "discovery",
+    "alt": []
+   },
+   {
+    "w": "研究",
+    "reading": "けんきゅう",
+    "pos": "n.",
+    "gloss": "research",
+    "alt": []
+   },
+   {
+    "w": "実験",
+    "reading": "じっけん",
+    "pos": "n.",
+    "gloss": "experiment",
+    "alt": []
+   },
+   {
+    "w": "装置",
+    "reading": "そうち",
+    "pos": "n.",
+    "gloss": "device; apparatus",
+    "alt": []
+   },
+   {
+    "w": "機械",
+    "reading": "きかい",
+    "pos": "n.",
+    "gloss": "machine; machinery",
+    "alt": []
+   },
+   {
+    "w": "自動",
+    "reading": "じどう",
+    "pos": "n.",
+    "gloss": "automatic",
+    "alt": []
+   },
+   {
+    "w": "操作",
+    "reading": "そうさ",
+    "pos": "n.",
+    "gloss": "operation; handling",
+    "alt": []
+   },
+   {
+    "w": "機能",
+    "reading": "きのう",
+    "pos": "n.",
+    "gloss": "function; feature",
+    "alt": []
+   },
+   {
+    "w": "性能",
+    "reading": "せいのう",
+    "pos": "n.",
+    "gloss": "performance; capability",
+    "alt": []
+   },
+   {
+    "w": "処理",
+    "reading": "しょり",
+    "pos": "n.",
+    "gloss": "processing",
+    "alt": []
+   },
+   {
+    "w": "情報",
+    "reading": "じょうほう",
+    "pos": "n.",
+    "gloss": "information",
+    "alt": []
+   },
+   {
+    "w": "通信",
+    "reading": "つうしん",
+    "pos": "n.",
+    "gloss": "communication; telecommunications",
+    "alt": []
+   },
+   {
+    "w": "携帯",
+    "reading": "けいたい",
+    "pos": "n.",
+    "gloss": "mobile phone; portable",
+    "alt": []
+   },
+   {
+    "w": "画面",
+    "reading": "がめん",
+    "pos": "n.",
+    "gloss": "screen",
+    "alt": []
+   },
+   {
+    "w": "電源",
+    "reading": "でんげん",
+    "pos": "n.",
+    "gloss": "power source",
+    "alt": []
+   },
+   {
+    "w": "充電",
+    "reading": "じゅうでん",
+    "pos": "n.",
+    "gloss": "charging",
+    "alt": []
+   },
+   {
+    "w": "故障",
+    "reading": "こしょう",
+    "pos": "n.",
+    "gloss": "breakdown; fault",
+    "alt": []
+   },
+   {
+    "w": "修理",
+    "reading": "しゅうり",
+    "pos": "n.",
+    "gloss": "repair",
+    "alt": []
+   },
+   {
+    "w": "部品",
+    "reading": "ぶひん",
+    "pos": "n.",
+    "gloss": "parts; components",
+    "alt": []
+   },
+   {
+    "w": "工場",
+    "reading": "こうじょう",
+    "pos": "n.",
+    "gloss": "factory",
+    "alt": []
+   },
+   {
+    "w": "企業",
+    "reading": "きぎょう",
+    "pos": "n.",
+    "gloss": "company; enterprise",
+    "alt": []
+   },
+   {
+    "w": "製品",
+    "reading": "せいひん",
+    "pos": "n.",
+    "gloss": "product; manufactured goods",
+    "alt": []
+   },
+   {
+    "w": "産業",
+    "reading": "さんぎょう",
+    "pos": "n.",
+    "gloss": "industry",
+    "alt": []
+   },
+   {
+    "w": "効率",
+    "reading": "こうりつ",
+    "pos": "n.",
+    "gloss": "efficiency",
+    "alt": []
+   },
+   {
+    "w": "作業",
+    "reading": "さぎょう",
+    "pos": "n.",
+    "gloss": "work; task",
+    "alt": []
+   },
+   {
+    "w": "品質",
+    "reading": "ひんしつ",
+    "pos": "n.",
+    "gloss": "quality",
+    "alt": []
+   },
+   {
+    "w": "生産",
+    "reading": "せいせい",
+    "pos": "n.",
+    "gloss": "production",
+    "alt": []
+   },
+   {
+    "w": "役割",
+    "reading": "やくわり",
+    "pos": "n.",
+    "gloss": "role",
+    "alt": []
+   },
+   {
+    "w": "介護",
+    "reading": "かいご",
+    "pos": "n.",
+    "gloss": "nursing care",
+    "alt": []
+   },
+   {
+    "w": "教育",
+    "reading": "きょういく",
+    "pos": "n.",
+    "gloss": "education",
+    "alt": []
+   },
+   {
+    "w": "生活",
+    "reading": "せいかつ",
+    "pos": "n.",
+    "gloss": "life; daily living",
+    "alt": []
+   },
+   {
+    "w": "最後",
+    "reading": "さいご",
+    "pos": "n.",
+    "gloss": "the last; the end",
+    "alt": []
+   },
+   {
+    "w": "期待",
+    "reading": "きたい",
+    "pos": "n.",
+    "gloss": "expectation",
+    "alt": []
+   },
+   {
+    "w": "問題",
+    "reading": "もんだい",
+    "pos": "n.",
+    "gloss": "problem; question",
+    "alt": []
+   },
+   {
+    "w": "便利",
+    "reading": "べんり",
+    "pos": "な-adj.",
+    "gloss": "convenient; handy",
+    "alt": []
+   },
+   {
+    "w": "不便",
+    "reading": "ふべん",
+    "pos": "な-adj.",
+    "gloss": "inconvenient",
+    "alt": []
+   },
+   {
+    "w": "危険",
+    "reading": "きけん",
+    "pos": "な-adj.",
+    "gloss": "dangerous; danger",
+    "alt": []
+   },
+   {
+    "w": "安全",
+    "reading": "あんぜん",
+    "pos": "な-adj.",
+    "gloss": "safe; safety",
+    "alt": []
+   },
+   {
+    "w": "複雑",
+    "reading": "ふくざつ",
+    "pos": "な-adj.",
+    "gloss": "complicated; complex",
+    "alt": []
+   },
+   {
+    "w": "単純",
+    "reading": "たんじゅん",
+    "pos": "な-adj.",
+    "gloss": "simple; plain",
+    "alt": []
+   },
+   {
+    "w": "正確",
+    "reading": "せいかく",
+    "pos": "な-adj.",
+    "gloss": "accurate; precise",
+    "alt": []
+   },
+   {
+    "w": "安定",
+    "reading": "あんてい",
+    "pos": "な-adj.",
+    "gloss": "stable; stability",
+    "alt": []
+   },
+   {
+    "w": "不安",
+    "reading": "ふあん",
+    "pos": "な-adj.",
+    "gloss": "anxious; anxiety",
+    "alt": []
+   },
+   {
+    "w": "外来語",
+    "reading": "がいらいご",
+    "pos": "n.",
+    "gloss": "loanword; word of foreign origin",
+    "alt": []
+   },
+   {
+    "w": "人間",
+    "reading": "にんげん",
+    "pos": "n.",
+    "gloss": "human being; person",
+    "alt": []
+   },
+   {
+    "w": "任せる",
+    "reading": "まかせる",
+    "pos": "v.t.",
+    "gloss": "to entrust; to leave (to someone)",
+    "alt": []
+   },
+   {
+    "w": "増やす",
+    "reading": "ふやす",
+    "pos": "v.t.",
+    "gloss": "to increase (something)",
+    "alt": []
+   },
+   {
+    "w": "増える",
+    "reading": "ふえる",
+    "pos": "v.i.",
+    "gloss": "to increase (by itself)",
+    "alt": []
+   },
+   {
+    "w": "減らす",
+    "reading": "へらす",
+    "pos": "v.t.",
+    "gloss": "to reduce; to decrease",
+    "alt": []
+   },
+   {
+    "w": "減る",
+    "reading": "へる",
+    "pos": "v.i.",
+    "gloss": "to decrease (by itself)",
+    "alt": []
+   },
+   {
+    "w": "取り入れる",
+    "reading": "とりいれる",
+    "pos": "v.t.",
+    "gloss": "to adopt; to take in",
+    "alt": []
+   },
+   {
+    "w": "目指す",
+    "reading": "めざす",
+    "pos": "v.t.",
+    "gloss": "to aim for; to target",
+    "alt": []
+   },
+   {
+    "w": "表す",
+    "reading": "あらわす",
+    "pos": "v.t.",
+    "gloss": "to express; to show",
+    "alt": []
+   },
+   {
+    "w": "スマートフォン",
+    "reading": "スマートフォン",
+    "pos": "n.",
+    "gloss": "smartphone",
+    "alt": []
+   },
+   {
+    "w": "コンピューター",
+    "reading": "コンピューター",
+    "pos": "n.",
+    "gloss": "computer",
+    "alt": []
+   },
+   {
+    "w": "インターネット",
+    "reading": "インターネット",
+    "pos": "n.",
+    "gloss": "the internet",
+    "alt": []
+   },
+   {
+    "w": "パソコン",
+    "reading": "パソコン",
+    "pos": "n.",
+    "gloss": "personal computer",
+    "alt": []
+   },
+   {
+    "w": "データ",
+    "reading": "データ",
+    "pos": "n.",
+    "gloss": "data",
+    "alt": []
+   },
+   {
+    "w": "システム",
+    "reading": "システム",
+    "pos": "n.",
+    "gloss": "system",
+    "alt": []
+   },
+   {
+    "w": "アプリ",
+    "reading": "アプリ",
+    "pos": "n.",
+    "gloss": "app; application",
+    "alt": []
+   },
+   {
+    "w": "エアコン",
+    "reading": "エアコン",
+    "pos": "n.",
+    "gloss": "air conditioner",
+    "alt": []
+   },
+   {
+    "w": "マンション",
+    "reading": "マンション",
+    "pos": "n.",
+    "gloss": "apartment block; condominium",
+    "alt": []
+   }
+  ]
  }
 ]

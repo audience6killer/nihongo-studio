@@ -130,10 +130,16 @@ node tools/test_lang.mjs
 option counts and answer indices, required-words in the model, character counts, `reading` being
 kana-only, duplicate terms, and duplicate grammar ids.
 
-`check_tap.mjs` proves that tap coverage is total: for every passage, the stored segments must
+`check_tap.mjs` proves that tap coverage is total: for every passage, the segments must
 reconstruct the source exactly and every segment must resolve to a dictionary entry with a reading
-and a gloss. If it fails, the report names the exact uncovered run — add it to `tap-extra.tsv` and
-rebuild.
+and a gloss. Segmentation maximises dictionary coverage with dynamic programming (`L.segment`), not
+greedy longest-match — greedy picks the longer-but-wrong はい inside はいなくなる and strands a
+character. If the check fails it names the exact uncovered run and its context; add it to
+`tap-extra.tsv` and rebuild.
+
+Most gaps are inflected surfaces of words already taught (使います, 変わってくる, 任せられる).
+That is expected: the dictionary is surface-based, so a verb needs one row per form that appears in
+the content. Check the report before writing new words — usually you are adding a form, not a word.
 
 ## 6. Adding a chapter
 

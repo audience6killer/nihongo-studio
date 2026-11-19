@@ -1,8 +1,7 @@
 # Nihongo Studio — Build Plan
 
 **Instance:** Japanese (L2) for an English-speaking learner (L1), anchored on **Tobira** as a recap and **JLPT N2** as the forward target.
-**Status:** **Phases 0–2 built and green** (2026-11-19). Phases 3–8 not started. Review checkpoint open.
-**Prepared from:** `PORTING.md` (§1–§17), the official Tobira publisher site, and a live check of this machine's toolchain.
+**Status:** Phases 0–4 built and green, plus the first content batch (chapters 1–3 of 15). Phases 5 (rest of the content), 6 (N2 deck), 7 (deploy) and 8 (QA freeze) remain.
 
 ### Approved decisions (recorded)
 
@@ -13,13 +12,19 @@
 | Listening module | **Built in full**; learner installs a `ja-JP` voice. Setup card ships with the app (R3). |
 | First release scope | **Phases 0–2** — engine + chapter 1 complete, then review before scaling content |
 
-### Phase 0–2 result
+### Build progress
 
-| Gate | Result |
-|---|---|
-| Phase 0 — shell, PWA scaffolding, docs, dev server | Serves at `http://127.0.0.1:8765`. Icons generated without any image library. `nihongo.v1` created on first load. |
-| Phase 1 — language adapter | `node tools/test_lang.mjs` → **50/50** |
-| Phase 2 — chapter 1 end to end | `python tools/validate_content.py` → pass · `node tools/check_tap.mjs` → **643 tokens, 100% resolved** · `node tools/smoke.mjs` → **41/41** across all 18 modules |
+| Phase | State | Evidence |
+|---|---|---|
+| 0 — shell, PWA scaffolding, docs, dev server | done | serves at `127.0.0.1:8765`; icons generated with no image library |
+| 1 — language adapter | done | `node tools/test_lang.mjs` → **55/55** |
+| 2 — chapter 1 end to end | done | validate pass · tap 100% · `node tools/smoke.mjs` → **51/51** across 22 modules |
+| 3 — engine completeness | done as part of Phase 2 | SRS, plan, stats, settings, export/import all covered by smoke |
+| 4 — calibration, refresh deck, checkpoints | done | 9 new smoke checks; adaptive branch and JLPT-shaped exams verified |
+| 5 — content scale | **3 of 15 chapters** | 169 words · 1,938 tokens in 132 texts, 100% tap coverage · 587 entries |
+| 6 — N2 deck and scheduled checkpoints | not started | |
+| 7 — PWA deploy and optional sync | not started | |
+| 8 — QA matrix and freeze | not started | |
 
 Bugs found and fixed by these tests, rather than by the user:
 
@@ -30,6 +35,9 @@ Bugs found and fixed by these tests, rather than by the user:
 3. `SRS.grade` treated an explicit `now = 0` as "no timestamp", making the scheduler untestable.
 4. The catch-up bonus was capped at the daily setting, nullifying `+3` when behind.
 5. Dictation tolerance counted a substitution as two edits, so one mistyped character failed.
+6. **Greedy longest-match segmented はいなくなる as はい + なく, stranding a character.** Now
+   maximum-coverage DP; this fixed a whole class of tap gaps across every chapter.
+7. A finished session from a previous day blocked the next one on `#/session`.
 
 **Not verified:** visual layout. No browser automation is possible in this environment — headless
 Edge cannot start under the file sandbox (its mojo channel is denied). The screens are exercised

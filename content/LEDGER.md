@@ -2,9 +2,14 @@
 
 One row per chapter. Updated after every batch, and after every validator run.
 
-| Ch | Title (L2) | Title (L1) | Grammar point | Words | Reading chars | Sentences | Dictation | Writing | Translations | Tap | Validate |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | 日本の地理 | The Geography of Japan | あいづちとフィラー | 45 | 267 | 8 | 5 | 116 chars | sentence-level | 308 entries / 643 tokens | pass |
+| Ch | Title (L2) | Title (L1) | Grammar point | Words | Reading chars | Sentences | Dictation | Drills | Writing | Translations | Tap | Validate |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 日本の地理 | The Geography of Japan | あいづちとフィラー | 45 | 267 | 8 | 5 | 2 | 116 chars | sentence-level | ✓ | pass |
+| 2 | 日本語のスピーチスタイル | Speech Styles in Japanese | スピーチレベルと終助詞① | 54 | 288 | 10 | 5 | 2 | 115 chars | sentence-level | ✓ | pass |
+| 3 | 日本のテクノロジー | Technology in Japan | カタカナ語・外来語 | 70 | 242 | 9 | 5 | 2 | 107 chars | sentence-level | ✓ | pass |
+
+Latest run: **169 words across 3 chapters · 1,938 tokens in 132 texts, 100% resolved ·
+587 dictionary entries · 3/3 lessons validated.**
 
 ## How to read this
 
@@ -13,19 +18,20 @@ One row per chapter. Updated after every batch, and after every validator run.
 - **Sentences** — `reading.sentences[]` pairs. Must concatenate to exactly `reading.text_l2`.
 - **Translations** — `sentence-level` means every sentence carries its own L1 rendering. Any other
   value is a defect.
-- **Tap** — total dictionary entries, then the number of passage/example/option tokens the
-  coverage checker resolved. Coverage must be 100%.
-- **Validate** — the result of `python tools/validate_content.py --lessons NN` plus
-  `node tools/check_tap.mjs`.
+- **Tap** — 100% means `node tools/check_tap.mjs` resolved every token in every text against the
+  dictionary. A `✓` here is a hard gate, not a spot check.
+- **Validate** — `python tools/validate_content.py` plus `node tools/check_tap.mjs`, both green.
 
-## Remaining chapters (from the publisher's public chapter list)
+## Remaining chapters
+
+Chapter titles and topic lists are facts taken from the publisher's public site
+(<https://tobiraweb.9640.jp/introduction/book01/>). Every passage, question, drill, explanation
+and model answer in `content/` was written for this app.
 
 | Ch | Title (L2) | Planned grammar point | Status |
 |---|---|---|---|
-| 2 | 日本語のスピーチスタイル | スピーチレベルと終助詞① | not started |
-| 3 | 日本のテクノロジー | カタカナ語・外来語 | not started |
-| 4 | 日本のスポーツ | 数字と助数詞 | not started |
-| 5 | 日本の食べ物 | が・けれども | not started |
+| 4 | 日本のスポーツ | 数字と助数詞 | next batch |
+| 5 | 日本の食べ物 | が・けれども | next batch |
 | 6 | 日本人と宗教 | もの・こと | not started |
 | 7 | 日本のポップカルチャー | 連濁 | not started |
 | 8 | 日本の伝統芸能 | ノ形容詞 | not started |
@@ -37,6 +43,10 @@ One row per chapter. Updated after every batch, and after every validator run.
 | 14 | 日本の政治 | んです | not started |
 | 15 | 世界と私の国の未来 | たとえ・メタファー | not started |
 
-Chapter titles and topic lists are facts taken from the publisher's public site
-(<https://tobiraweb.9640.jp/introduction/book01/>). Every passage, question, drill, explanation
-and model answer in `content/` was written for this app.
+## Authoring cost, measured
+
+Chapter 1 took one tap-coverage pass. Chapter 2 took two. Chapter 3 took three, and exposed a
+tokenizer flaw: greedy longest-match picked the longer-but-wrong はい inside はいなくなる and
+stranded く. `L.segment` now maximises dictionary coverage with dynamic programming, which fixed
+that class of bug for every chapter at once. Expect roughly 30–45 new dictionary rows per chapter,
+mostly inflected surfaces of words already taught.

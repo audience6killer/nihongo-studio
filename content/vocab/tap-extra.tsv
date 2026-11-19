@@ -288,3 +288,167 @@
 近い	ちかい	near; close	い-adj.
 います	います	to be; there is (polite)	form
 な	な	attributive ending of a な-adjective	part
+# ---- chapter 2: 日本語のスピーチスタイル + general polite forms --------------
+# Surface forms, auxiliaries and words the chapter 2 texts use. Kept here rather
+# than in recap-02.tsv when the item is a form of an already-taught word or a
+# general-purpose word needed by many chapters.
+この	この	this (before a noun)	exp
+こちら	こちら	this way; this one	exp
+になる	になる	to become	v.i.
+なります	なります	to become (polite)	form
+になります	になります	to become (polite)	form
+にして	にして	making it; as	form
+しています	しています	to be doing	form
+使います	つかいます	to use (polite)	form
+使った	つかった	used	form
+使われる	つかわれる	to be used	form
+使う	つかう	to use	v.t.
+使い	つかい	using (stem of 使う)	form
+言い方	いいかた	way of saying	n.
+言いにくい	いいにくい	hard to say	い-adj.
+言います	いいます	to say (polite)	form
+言う	いう	to say	v.t.
+言える	いえる	to be able to say	form
+思う	おもう	to think	v.t.
+伝えます	つたえます	to convey (polite)	form
+変わります	かわります	to change (polite)	form
+変わってくる	かわってくる	to come to change	form
+選びます	えらびます	to choose (polite)	form
+選び方	えらびかた	way of choosing	n.
+選べる	えらべる	to be able to choose	form
+好まれる	このまれる	to be preferred	form
+好まれます	このまれます	to be preferred (polite)	form
+合わせて	あわせて	in line with; according to	form
+入れかえたり	いれかえたり	swapping and so on	form
+待つ	まつ	to wait	v.t.
+待ってる	まってる	to be waiting (casual)	form
+持つ	もつ	to hold; to carry	v.t.
+持ってきます	もってきます	to bring (polite)	form
+終わり	おわり	end; ending	n.
+終わる	おわる	to end	v.i.
+感じる	かんじる	to feel	v.t.
+感じられます	かんじられます	to be felt	form
+柔らかい	やわらかい	soft; gentle	い-adj.
+強い	つよい	strong	い-adj.
+強く	つよく	strongly	form
+親しく	したしく	closely; intimately	form
+間	あいだ	between; among	n.
+気	き	mind; attention	n.
+気をつけています	きをつけています	to be careful	form
+お願いします	おねがいします	please; excuse me	exp
+ご覧	ごらん	looking (honorific)	exp
+資料	しりょう	materials; documents	n.
+部長	ぶちょう	department manager	n.
+駅	えき	station	n.
+明日	あした	tomorrow	n.
+友人	ゆうじん	friend	n.
+発音	はつおん	pronunciation	n.
+文字	もじ	character; letter	n.
+数	かず	number; count	n.
+練習	れんしゅう	practice	n.
+文法	ぶんぽう	grammar	n.
+書き方	かきかた	way of writing	n.
+使い分け	つかいわけ	proper use; differentiation	n.
+いくつか	いくつか	some; several	adv
+ただし	ただし	however; that said	conj
+なぜ	なぜ	why	adv
+ふつう	ふつう	usually; normally	adv
+ときどき	ときどき	sometimes	adv
+どうか	どうか	whether	adv
+どの	どの	which (before a noun)	exp
+によると	によると	according to	exp
+にくい	にくい	hard to (do)	form
+ても	ても	even if	part
+たり	たり	doing such things as	part
+んだけど	んだけど	but; though (explanatory)	exp
+ね	ね	right?; isn't it	part
+よ	よ	(asserting) you know	part
+ぞ	ぞ	(rough emphasis)	part
+違う	ちがう	to differ; to be wrong	v.i.
+持ってくる	もってくる	to bring (casual)	form
+持ってく	もってく	to bring (very casual)	form
+し	し	doing (stem of する)	form
+ならない	ならない	does not become	form
+間違っている	まちがっている	to be wrong	form
+# ---- chapter 3: 日本のテクノロジー + general verbal forms -------------------
+働く	はたらく	to work	v.i.
+働いている	はたらいている	to be working	form
+使っています	つかっています	to be using	form
+使われ始めた	つかわれはじめた	began to be used	form
+使い方	つかいかた	way of using; how to use	n.
+出しました	だしました	to take out; to send (polite)	form
+出す	だす	to take out; to submit	v.t.
+来た	きた	came	form
+続ける	つづける	to continue (something)	v.t.
+時間	じかん	time; hour	n.
+いっしょに	いっしょに	together	adv
+すべて	すべて	all; everything	adv
+最近	さいきん	recently	adv
+これら	これら	these	exp
+始める	はじめる	to begin (something)	v.t.
+始めた	はじめた	began	form
+考える	かんがえる	to think; to consider	v.t.
+考えたり	かんがえたり	thinking (and so on)	form
+考えなければならない	かんがえなければならない	must think about	form
+なければならない	なければならない	must; have to	form
+気持ち	きもち	feeling; mood	n.
+理解	りかい	understanding	n.
+理解したり	りかいしたり	understanding (and so on)	form
+決める	きめる	to decide	v.t.
+上がる	あがる	to rise; to go up	v.i.
+上がった	あがった	rose	form
+上がりました	あがりました	rose (polite)	form
+上げる	あげる	to raise	v.t.
+取る	とる	to take	v.t.
+取られる	とられる	to be taken	form
+任せられる	まかせられる	to be left to someone	form
+わけ	わけ	reason; it is not the case that	exp
+新しい	あたらしい	new	い-adj.
+私たち	わたしたち	we; us	n.
+おかげで	おかげで	thanks to	exp
+ません	ません	polite negative ending	form
+くる	くる	to come (kana)	exp
+建物	たてもの	building	n.
+ホテル	ホテル	hotel	n.
+集合住宅	しゅうごうじゅうたく	apartment building; housing complex	n.
+アルバイト	アルバイト	part-time job (from German Arbeit)	n.
+ドイツ語	ドイツご	the German language	n.
+大きな	おおきな	big (attributive)	な-adj.
+# ---- chapter 3, second pass ------------------------------------------------
+働いています	はたらいています	to be working (polite)	form
+思います	おもいます	to think (polite)	form
+選びません	えらびません	to not choose	form
+言いたい	いいたい	want to say	form
+どう	どう	how; in what way	adv
+どんな	どんな	what kind of	exp
+考え	かんがえ	idea; thought	n.
+書き手	かきて	writer; author	n.
+楽しむ	たのしむ	to enjoy	v.t.
+楽しませる	たのしませる	to entertain; to please	form
+べき	べき	should; ought to	form
+止める	とめる	to stop (something)	v.t.
+止めた	とめた	stopped	form
+ほう	ほう	one side; the ... way	exp
+ほうがいい	ほうがいい	had better	exp
+カタカナ	カタカナ	katakana	n.
+語	ご	word; language	part
+意味	いみ	meaning	n.
+正しい	ただしい	correct; right	い-adj.
+速い	はやい	fast; quick	い-adj.
+必要	ひつよう	necessary; need	な-adj.
+いなくなる	いなくなる	to disappear; to be gone	v.i.
+値段	ねだん	price	n.
+下がる	さがる	to go down; to fall	v.i.
+下がっている	さがっている	to be falling	form
+向く	むく	to face; to be suited to	v.i.
+向いている	むいている	to be suited to	form
+最も	もっとも	most	adv
+すぐ	すぐ	immediately; right away	adv
+全部	ぜんぶ	all; the whole	adv
+次	つぎ	next	n.
+うち	うち	among; of	part
+家	いえ	house; home	n.
+毎日	まいにち	every day	n.
+安定させる	あんていさせる	to stabilise	form
+されています	されています	has been done	form
+た	た	past tense ending	form
