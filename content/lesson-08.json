@@ -1,0 +1,173 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 8,
+  "title": {
+    "l2": "日本の伝統芸能",
+    "l1": "Japanese Traditional Performing Arts"
+  },
+  "grammar": {
+    "point_l2": "ノ形容詞 — 「の」で名詞を修飾する語",
+    "point_l1": "No-adjectives: modifiers that take の, not な",
+    "explain_l1": "English gives you no signal for の versus な, so the particle has to be stored with the word. A small, closed set of modifiers takes の: 普通の (普通の人), 特別の (特別の日), 本当の (本当の理由), 本物の. These are the old ナリ-adjectives, and their の forms are the established ones in writing; you will also hear 特別な日, but 大変の and 静かの are simply wrong, because 大変 and 静か are ordinary な-adjectives (大変な一日, 静かな部屋). 同じ is the exception everyone trips on: it modifies a noun with の (同じ人, 同じ話, 同じ動き), so 同じな人 is wrong even though 同じ appears in な-adjective lists; 同じな is only right before an explanatory ending such as ので (同じなので).",
+    "common_mistake_l1": "Reaching for な with every noun modifier, which produces 大変の日 and 静かの部屋 — nouns that are not in the の-set and never take の. The mirror error is 同じな人, where the one word that does take の gets な. Neither error is about meaning; both come from not storing the particle with the word.",
+    "examples": [
+      {
+        "l2": "狂言の舞台には、普通の人が出てきます。",
+        "reading": "きょうげんのぶたいには、ふつうのひとがでてきます。",
+        "l1": "Ordinary people come out onto the kyōgen stage."
+      },
+      {
+        "l2": "本当のことを言うと、この役はとても難しいです。",
+        "reading": "ほんとうのことをいうと、このやくはとてもむずかしいです。",
+        "l1": "To tell you the truth, this role is very difficult."
+      },
+      {
+        "l2": "同じ役者でも、衣装が変わると、違う役に見えます。",
+        "reading": "おなじやくしゃでも、いしょうがかわると、ちがうやくにみえます。",
+        "l1": "Even the same actor looks like a different role once the costume changes."
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "「大変」の正しい形はどれですか。",
+        "options_l2": [
+          "大変の日です。",
+          "大変な日です。",
+          "大変だ日です。",
+          "大変で日です。"
+        ],
+        "answer": 1,
+        "explain_l1": "大変 is a な-adjective, so it takes な before a noun. 大変の is exactly the error the の-set invites, and だ and で are sentence-level forms that cannot sit between a modifier and its noun."
+      },
+      {
+        "q_l2": "「同じ」の正しい形はどれですか。",
+        "options_l2": [
+          "同じな人でも、衣装で変わります。",
+          "同じ人でも、衣装で変わります。",
+          "同じだ人でも、衣装で変わります。",
+          "同じで人でも、衣装で変わります。"
+        ],
+        "answer": 1,
+        "explain_l1": "同じ modifies a noun with の even though it is listed as a な-adjective: 同じ人, 同じ話. 同じな人 is the standard trap. だ and で are sentence-level, so they cannot modify 人 here."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本の伝統芸能には、古い時代から続く狂言という笑いの舞台がある。能では役者が面をつけて静かに舞うが、狂言では役者は面をつけない。衣装も化粧も能より少なく、声と体だけで観客を笑わせる。物語は短く、主人と家来の間の小さな間違いがそのまま笑いになる。家来が主人の言葉を違う意味に受け取ると、主人は怒り、観客は笑う。役者は稽古を重ね、台詞をゆっくり言い、同じ動きを何度も繰り返す。言葉は今の言葉とは違って古いが、動きだけで物語の筋は分かる。公演のあと、友だちに物語を三つの文で説明するのは、案外難しい。どの場面を残して、どれを捨てるかで、その人の理解が分かる。同じ物語でも、語る人が違えば、笑うところも変わる。",
+    "sentences": [
+      {
+        "l2": "日本の伝統芸能には、古い時代から続く狂言という笑いの舞台がある。",
+        "l1": "Among Japan's traditional performing arts is kyōgen, a stage for laughter that has continued from long ago."
+      },
+      {
+        "l2": "能では役者が面をつけて静かに舞うが、狂言では役者は面をつけない。",
+        "l1": "In nō the actors put on masks and dance quietly, but in kyōgen the actors wear no masks."
+      },
+      {
+        "l2": "衣装も化粧も能より少なく、声と体だけで観客を笑わせる。",
+        "l1": "Costume and makeup are plainer than in nō; voice and body alone make the audience laugh."
+      },
+      {
+        "l2": "物語は短く、主人と家来の間の小さな間違いがそのまま笑いになる。",
+        "l1": "The stories are short: a small misunderstanding between a master and his servant becomes the laugh itself."
+      },
+      {
+        "l2": "家来が主人の言葉を違う意味に受け取ると、主人は怒り、観客は笑う。",
+        "l1": "When the servant takes the master's words in the wrong sense, the master gets angry and the audience laughs."
+      },
+      {
+        "l2": "役者は稽古を重ね、台詞をゆっくり言い、同じ動きを何度も繰り返す。",
+        "l1": "The actors rehearse again and again, deliver their lines slowly, and repeat the same movement many times."
+      },
+      {
+        "l2": "言葉は今の言葉とは違って古いが、動きだけで物語の筋は分かる。",
+        "l1": "The language is old and differs from today's, but the movement alone tells you the plot."
+      },
+      {
+        "l2": "公演のあと、友だちに物語を三つの文で説明するのは、案外難しい。",
+        "l1": "After a performance, explaining the story to a friend in three sentences is surprisingly hard."
+      },
+      {
+        "l2": "どの場面を残して、どれを捨てるかで、その人の理解が分かる。",
+        "l1": "Which scenes you keep and which you drop show how well you understood it."
+      },
+      {
+        "l2": "同じ物語でも、語る人が違えば、笑うところも変わる。",
+        "l1": "The same tale, told by a different person, gets its laughs in different places."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "狂言の舞台の特徴",
+          "能の歴史",
+          "衣装の値段",
+          "観客の数"
+        ],
+        "answer": 0,
+        "explain_l1": "Every sentence is about how kyōgen is performed and how its story is retold: masks, costume, voice and body, a thin plot, and the difficulty of summarising it. Nō appears only as a contrast."
+      },
+      {
+        "q_l2": "狂言の役者は、面をどうしますか。",
+        "options_l2": [
+          "面をつけない。",
+          "面をつけて舞う。",
+          "面を衣装として使う。",
+          "面を化粧として使う。"
+        ],
+        "answer": 0,
+        "explain_l1": "The second sentence sets up the contrast: 能では…面をつけて…舞うが、狂言では…面をつけない. Option 2 describes nō, and options 3 and 4 give a mask a job the passage never mentions."
+      },
+      {
+        "q_l2": "「案外難しい」とあるが、何が難しいと言っていますか。",
+        "options_l2": [
+          "物語を三つの文で説明すること。",
+          "能の面をつけること。",
+          "衣装と化粧を選ぶこと。",
+          "狂言の言葉を聞くこと。"
+        ],
+        "answer": 0,
+        "explain_l1": "The word 案外難しい is attached to 友だちに物語を三つの文で説明するのは. The next sentence explains why it is hard: choosing which scenes to keep and which to drop reveals how well you followed the story."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      {
+        "l2": "狂言は日本の伝統芸能です。",
+        "l1": "Kyōgen is a Japanese traditional performing art."
+      },
+      {
+        "l2": "狂言の役者は面をつけません。",
+        "l1": "Kyōgen actors do not wear masks."
+      },
+      {
+        "l2": "衣装も化粧もとても少ないです。",
+        "l1": "Both the costumes and the makeup are very minimal."
+      },
+      {
+        "l2": "言葉は古いですが、動きで分かります。",
+        "l1": "The language is old, but you can follow it through the movement."
+      },
+      {
+        "l2": "役者は台詞を忘れないように稽古します。",
+        "l1": "The actors rehearse so that they do not forget their lines."
+      }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, name one traditional performing art you have seen or want to see, and summarise one of its stories in three or four sentences. Say what the performers rely on instead of elaborate props, and say which part of the story you would leave out. Use at least three of this chapter's words.",
+    "required": [
+      "伝統",
+      "狂言",
+      "筋"
+    ],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私は東京の劇場で狂言を見ました。伝統のある舞台で、衣装も化粧も少なく、役者は面をつけずに演じます。物語は短く、家来が主人の言葉を違う意味に受け取るだけの話です。その筋を三つの文で説明すると、案外難しく、どの場面を残すかで印象が変わりました。",
+    "tips_l1": "Open with what you saw and where: a concrete place and a concrete art beat an adjective. Then give the plot in one sentence using 物語 and 筋, and force yourself into three sentences, because the passage's point is that the limit is what makes the summary hard. The app only counts length, required words and sentence count; have a human read the style."
+  }
+}

@@ -1,0 +1,105 @@
+# Chapter 4 — 日本のスポーツ / Sports in Japan
+# tap coverage: surface forms, counters and general words whose only job is to let
+# every token of this chapter resolve. Chapter content words live in recap-04.tsv.
+#
+# tab-separated: term<TAB>reading<TAB>gloss<TAB>pos
+
+# ---- people and school ------------------------------------------------------
+# 学校・授業・教える・教わる・覚える・声 are taught in recap-08/recap-09, so they
+# are not repeated here; the chapter only needs its own forms and counters.
+先生	せんせい	teacher	n.
+一年生	いちねんせい	first-year student	n.
+二年生	にねんせい	second-year student	n.
+三年生	さんねんせい	third-year student	n.
+剣道部	けんどうぶ	kendo club	n.
+部員	ぶいん	club member	n.
+家族	かぞく	family	n.
+筆者	ひっしゃ	the writer; the author	n.
+
+# ---- equipment, places, everyday nouns -------------------------------------
+用具	ようぐ	tool; equipment; gear	n.
+片づけ方	かたづけかた	way of putting something away	n.
+礼	れい	bow; courtesy	n.
+始め	はじめ	the beginning; the start	n.
+食事	しょくじ	meal; diet	n.
+竹刀	しない	bamboo sword (shinai)	n.
+観客席	かんきゃくせき	spectator seating	n.
+駐車場	ちゅうしゃじょう	parking lot	n.
+車	くるま	car; vehicle	n.
+掃除	そうじ	cleaning	n.
+読み方	よみかた	way of reading	n.
+みほん	みほん	sample; specimen	n.
+ことば	ことば	word; wording	n.
+スポーツ	スポーツ	sport	n.
+プロ	プロ	professional	n.
+ルール	ルール	rule	n.
+
+# ---- numbers and counters ---------------------------------------------------
+三つ	みっつ	three (things)	num
+三台	さんだい	three (machines or vehicles)	num
+三枚	さんまい	three (flat things)	num
+一本	いっぽん	one (long thin object)	num
+三本	さんぼん	three (long thin objects)	num
+さんほん	さんほん	sanhon (not a valid reading of 三本)	num
+さんぼん	さんぼん	sanbon — three (long thin objects)	num
+さんぽん	さんぽん	sanpon (not a valid reading of 三本)	num
+何人	なんにん	how many people	num
+四人	よにん	four people	num
+五人	ごにん	five people	num
+六人	ろくにん	six people	num
+十五人	じゅうごにん	fifteen people	num
+一日	いちにち	one day	n.
+今年	ことし	this year	n.
+週	しゅう	week	n.
+二回	にかい	two times	num
+三回	さんかい	three times	num
+四回	よんかい	four times	num
+五回	ごかい	five times	num
+三百回	さんびゃくかい	three hundred times	num
+
+# ---- adverbs, phrases and connectives ---------------------------------------
+少し	すこし	a little; a few	adv
+ずつ	ずつ	at a time; each	part
+なく	なく	not …; without	form
+ふだん	ふだん	normally; usually	adv
+最初	さいしょ	first; the beginning	n.
+大切	たいせつ	important; precious	な-adj.
+面倒	めんどう	troublesome; a bother	な-adj.
+毎回	まいかい	every time	adv
+きちんと	きちんと	properly; neatly	adv
+なかなか	なかなか	not easily; quite	adv
+いつか	いつか	someday	adv
+として	として	as; in the role of	exp
+によって	によって	by; depending on	exp
+
+# ---- verbs and their forms used in this chapter's texts ---------------------
+始まる	はじまる	to begin; to start	v.i.
+覚えて	おぼえて	to remember; to learn (te-form)	form
+作られる	つくられる	to be made; to be formed	form
+出て	でて	to take part; to come out (te-form)	form
+入れる	いれる	to put in; to insert	v.t.
+かける	かける	to call out; to hang	v.t.
+ふる	ふる	to swing; to brandish	v.t.
+やめる	やめる	to quit; to stop	v.t.
+行い	おこない	to carry out (stem)	form
+行います	おこないます	to carry out; to hold (polite)	form
+来ます	きます	to come (polite)	form
+出られる	でられる	to be able to take part	form
+します	します	to do (polite)	form
+あります	あります	there is; to be (polite)	form
+ありました	ありました	there was	form
+持ってきました	もってきました	to bring (polite past)	form
+勝った	かった	won	form
+勝って	かって	to win; to beat (te-form)	form
+負けて	まけて	to lose (te-form)	form
+鍛えなさい	きたえなさい	train it (imperative)	form
+教わります	おそわります	to be taught (polite)	form
+言われて	いわれて	to be said; to be told (te-form)	form
+感じました	かんじました	felt	form
+見て	みて	to see; to watch (te-form)	form
+分かりました	わかりました	understood	form
+違います	ちがいます	to differ (polite)	form
+伝えたい	つたえたい	want to convey	form
+続ければ	つづければ	if one continues	form
+うるさく	うるさく	fussily; strictly	adv
+ていねい	ていねい	polite; careful	な-adj.

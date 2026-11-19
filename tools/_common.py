@@ -163,7 +163,7 @@ def deck_lesson_files() -> list[tuple[str, int, str]]:
     if not os.path.isdir(VOCAB_DIR):
         return found
     for name in sorted(os.listdir(VOCAB_DIR)):
-        if not name.endswith(".tsv") or name == "tap-extra.tsv":
+        if not name.endswith(".tsv") or name.startswith("tap-"):
             continue
         stem = name[:-4]
         if "-" not in stem:

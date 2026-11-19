@@ -1224,6 +1224,4330 @@
   ]
  },
  {
+  "deck": "recap",
+  "lesson": 4,
+  "title_l2": "日本のスポーツ",
+  "title_l1": "Sports in Japan",
+  "items": [
+   {
+    "w": "試合",
+    "reading": "しあい",
+    "pos": "n.",
+    "gloss": "match; game; contest",
+    "alt": []
+   },
+   {
+    "w": "応援",
+    "reading": "おうえん",
+    "pos": "n.",
+    "gloss": "support; cheering",
+    "alt": []
+   },
+   {
+    "w": "選手",
+    "reading": "せんしゅ",
+    "pos": "n.",
+    "gloss": "player; athlete; competitor",
+    "alt": []
+   },
+   {
+    "w": "努力",
+    "reading": "どりょく",
+    "pos": "n.",
+    "gloss": "effort; hard work",
+    "alt": []
+   },
+   {
+    "w": "勝つ",
+    "reading": "かつ",
+    "pos": "v.i.",
+    "gloss": "to win",
+    "alt": []
+   },
+   {
+    "w": "負ける",
+    "reading": "まける",
+    "pos": "v.i.",
+    "gloss": "to lose",
+    "alt": []
+   },
+   {
+    "w": "武道",
+    "reading": "ぶどう",
+    "pos": "n.",
+    "gloss": "martial arts; budo",
+    "alt": []
+   },
+   {
+    "w": "礼儀",
+    "reading": "れいぎ",
+    "pos": "n.",
+    "gloss": "manners; courtesy; etiquette",
+    "alt": []
+   },
+   {
+    "w": "先輩",
+    "reading": "せんぱい",
+    "pos": "n.",
+    "gloss": "senior; older member of a group",
+    "alt": []
+   },
+   {
+    "w": "後輩",
+    "reading": "こうはい",
+    "pos": "n.",
+    "gloss": "junior; younger member of a group",
+    "alt": []
+   },
+   {
+    "w": "部活",
+    "reading": "ぶかつ",
+    "pos": "n.",
+    "gloss": "club activity; school club",
+    "alt": []
+   },
+   {
+    "w": "柔道",
+    "reading": "じゅうどう",
+    "pos": "n.",
+    "gloss": "judo",
+    "alt": []
+   },
+   {
+    "w": "剣道",
+    "reading": "けんどう",
+    "pos": "n.",
+    "gloss": "kendo",
+    "alt": []
+   },
+   {
+    "w": "空手",
+    "reading": "からて",
+    "pos": "n.",
+    "gloss": "karate",
+    "alt": []
+   },
+   {
+    "w": "相撲",
+    "reading": "すもう",
+    "pos": "n.",
+    "gloss": "sumo",
+    "alt": []
+   },
+   {
+    "w": "稽古",
+    "reading": "けいこ",
+    "pos": "n.",
+    "gloss": "practice; training (in a martial art)",
+    "alt": []
+   },
+   {
+    "w": "道場",
+    "reading": "どうじょう",
+    "pos": "n.",
+    "gloss": "dojo; training hall",
+    "alt": []
+   },
+   {
+    "w": "心",
+    "reading": "こころ",
+    "pos": "n.",
+    "gloss": "heart; mind",
+    "alt": []
+   },
+   {
+    "w": "技",
+    "reading": "わざ",
+    "pos": "n.",
+    "gloss": "technique; move",
+    "alt": []
+   },
+   {
+    "w": "体",
+    "reading": "からだ",
+    "pos": "n.",
+    "gloss": "body",
+    "alt": []
+   },
+   {
+    "w": "勝負",
+    "reading": "しょうぶ",
+    "pos": "n.",
+    "gloss": "contest; match; win or loss",
+    "alt": []
+   },
+   {
+    "w": "観客",
+    "reading": "かんきゃく",
+    "pos": "n.",
+    "gloss": "spectator; audience",
+    "alt": []
+   },
+   {
+    "w": "監督",
+    "reading": "かんとく",
+    "pos": "n.",
+    "gloss": "coach; manager",
+    "alt": []
+   },
+   {
+    "w": "指導",
+    "reading": "しどう",
+    "pos": "n.",
+    "gloss": "coaching; guidance",
+    "alt": []
+   },
+   {
+    "w": "体力",
+    "reading": "たいりょく",
+    "pos": "n.",
+    "gloss": "physical strength; stamina",
+    "alt": []
+   },
+   {
+    "w": "集中",
+    "reading": "しゅうちゅう",
+    "pos": "n.",
+    "gloss": "concentration",
+    "alt": []
+   },
+   {
+    "w": "基本",
+    "reading": "きほん",
+    "pos": "n.",
+    "gloss": "basics; foundation",
+    "alt": []
+   },
+   {
+    "w": "型",
+    "reading": "かた",
+    "pos": "n.",
+    "gloss": "form; kata (set movement)",
+    "alt": []
+   },
+   {
+    "w": "段",
+    "reading": "だん",
+    "pos": "n.",
+    "gloss": "dan; grade (in martial arts)",
+    "alt": []
+   },
+   {
+    "w": "帯",
+    "reading": "おび",
+    "pos": "n.",
+    "gloss": "belt; sash",
+    "alt": []
+   },
+   {
+    "w": "運動",
+    "reading": "うんどう",
+    "pos": "n.",
+    "gloss": "exercise; sport",
+    "alt": []
+   },
+   {
+    "w": "大会",
+    "reading": "たいかい",
+    "pos": "n.",
+    "gloss": "tournament; meet",
+    "alt": []
+   },
+   {
+    "w": "人気",
+    "reading": "にんき",
+    "pos": "n.",
+    "gloss": "popularity",
+    "alt": []
+   },
+   {
+    "w": "競技",
+    "reading": "きょうぎ",
+    "pos": "n.",
+    "gloss": "competition; event",
+    "alt": []
+   },
+   {
+    "w": "チーム",
+    "reading": "チーム",
+    "pos": "n.",
+    "gloss": "team",
+    "alt": []
+   },
+   {
+    "w": "コーチ",
+    "reading": "コーチ",
+    "pos": "n.",
+    "gloss": "coach",
+    "alt": []
+   },
+   {
+    "w": "頑張る",
+    "reading": "がんばる",
+    "pos": "v.i.",
+    "gloss": "to do one's best; to work hard",
+    "alt": []
+   },
+   {
+    "w": "諦める",
+    "reading": "あきらめる",
+    "pos": "v.t.",
+    "gloss": "to give up; to abandon",
+    "alt": []
+   },
+   {
+    "w": "挑戦",
+    "reading": "ちょうせん",
+    "pos": "n.",
+    "gloss": "challenge; attempt",
+    "alt": []
+   },
+   {
+    "w": "尊敬",
+    "reading": "そんけい",
+    "pos": "n.",
+    "gloss": "respect; admiration",
+    "alt": []
+   },
+   {
+    "w": "仲間",
+    "reading": "なかま",
+    "pos": "n.",
+    "gloss": "companion; teammate",
+    "alt": []
+   },
+   {
+    "w": "入部",
+    "reading": "にゅうぶ",
+    "pos": "n.",
+    "gloss": "joining a club",
+    "alt": []
+   },
+   {
+    "w": "引退",
+    "reading": "いんたい",
+    "pos": "n.",
+    "gloss": "retirement; stepping down",
+    "alt": []
+   },
+   {
+    "w": "厳しい",
+    "reading": "きびしい",
+    "pos": "い-adj.",
+    "gloss": "strict; harsh; tough",
+    "alt": []
+   },
+   {
+    "w": "褒める",
+    "reading": "ほめる",
+    "pos": "v.t.",
+    "gloss": "to praise; to commend",
+    "alt": []
+   },
+   {
+    "w": "励ます",
+    "reading": "はげます",
+    "pos": "v.t.",
+    "gloss": "to encourage; to cheer on",
+    "alt": []
+   },
+   {
+    "w": "支える",
+    "reading": "ささえる",
+    "pos": "v.t.",
+    "gloss": "to support; to hold up",
+    "alt": []
+   },
+   {
+    "w": "上達",
+    "reading": "じょうたつ",
+    "pos": "n.",
+    "gloss": "improvement; progress",
+    "alt": []
+   },
+   {
+    "w": "実力",
+    "reading": "じつりょく",
+    "pos": "n.",
+    "gloss": "real ability; actual strength",
+    "alt": []
+   },
+   {
+    "w": "姿勢",
+    "reading": "しせい",
+    "pos": "n.",
+    "gloss": "posture; attitude",
+    "alt": []
+   },
+   {
+    "w": "鍛える",
+    "reading": "きたえる",
+    "pos": "v.t.",
+    "gloss": "to train; to forge; to strengthen",
+    "alt": []
+   },
+   {
+    "w": "磨く",
+    "reading": "みがく",
+    "pos": "v.t.",
+    "gloss": "to polish; to refine",
+    "alt": []
+   },
+   {
+    "w": "畳",
+    "reading": "たたみ",
+    "pos": "n.",
+    "gloss": "tatami; straw mat",
+    "alt": []
+   },
+   {
+    "w": "合宿",
+    "reading": "がっしゅく",
+    "pos": "n.",
+    "gloss": "training camp; lodging together",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 5,
+  "title_l2": "日本の食べ物",
+  "title_l1": "Japanese Food",
+  "items": [
+   {
+    "w": "提供",
+    "reading": "ていきょう",
+    "pos": "n.",
+    "gloss": "serving; provision (of food)",
+    "alt": []
+   },
+   {
+    "w": "ご飯",
+    "reading": "ごはん",
+    "pos": "n.",
+    "gloss": "cooked rice; meal",
+    "alt": []
+   },
+   {
+    "w": "米",
+    "reading": "こめ",
+    "pos": "n.",
+    "gloss": "rice (grain)",
+    "alt": []
+   },
+   {
+    "w": "主食",
+    "reading": "しゅしょく",
+    "pos": "n.",
+    "gloss": "staple food",
+    "alt": []
+   },
+   {
+    "w": "おかず",
+    "reading": "おかず",
+    "pos": "n.",
+    "gloss": "side dish eaten with rice",
+    "alt": []
+   },
+   {
+    "w": "汁物",
+    "reading": "しるもの",
+    "pos": "n.",
+    "gloss": "soup served with a meal",
+    "alt": []
+   },
+   {
+    "w": "献立",
+    "reading": "こんだて",
+    "pos": "n.",
+    "gloss": "menu; meal plan",
+    "alt": []
+   },
+   {
+    "w": "食卓",
+    "reading": "しょくたく",
+    "pos": "n.",
+    "gloss": "dining table",
+    "alt": []
+   },
+   {
+    "w": "中心",
+    "reading": "ちゅうしん",
+    "pos": "n.",
+    "gloss": "centre; core",
+    "alt": []
+   },
+   {
+    "w": "茶碗",
+    "reading": "ちゃわん",
+    "pos": "n.",
+    "gloss": "rice bowl; teacup",
+    "alt": []
+   },
+   {
+    "w": "料理",
+    "reading": "りょうり",
+    "pos": "n.",
+    "gloss": "cooking; a dish; cuisine",
+    "alt": []
+   },
+   {
+    "w": "調理",
+    "reading": "ちょうり",
+    "pos": "n.",
+    "gloss": "preparation of food; cooking",
+    "alt": []
+   },
+   {
+    "w": "炊く",
+    "reading": "たく",
+    "pos": "v.t.",
+    "gloss": "to cook (rice)",
+    "alt": []
+   },
+   {
+    "w": "稲",
+    "reading": "いね",
+    "pos": "n.",
+    "gloss": "rice plant",
+    "alt": []
+   },
+   {
+    "w": "田んぼ",
+    "reading": "たんぼ",
+    "pos": "n.",
+    "gloss": "rice field",
+    "alt": []
+   },
+   {
+    "w": "収穫",
+    "reading": "しゅうかく",
+    "pos": "n.",
+    "gloss": "harvest",
+    "alt": []
+   },
+   {
+    "w": "栽培",
+    "reading": "さいばい",
+    "pos": "n.",
+    "gloss": "cultivation; growing",
+    "alt": []
+   },
+   {
+    "w": "保存",
+    "reading": "ほぞん",
+    "pos": "v.suru",
+    "gloss": "preservation; storage",
+    "alt": []
+   },
+   {
+    "w": "冷凍",
+    "reading": "れいとう",
+    "pos": "v.suru",
+    "gloss": "freezing",
+    "alt": []
+   },
+   {
+    "w": "材料",
+    "reading": "ざいりょう",
+    "pos": "n.",
+    "gloss": "ingredient; material",
+    "alt": []
+   },
+   {
+    "w": "栄養",
+    "reading": "えいよう",
+    "pos": "n.",
+    "gloss": "nutrition",
+    "alt": []
+   },
+   {
+    "w": "塩",
+    "reading": "しお",
+    "pos": "n.",
+    "gloss": "salt",
+    "alt": []
+   },
+   {
+    "w": "漬物",
+    "reading": "つけもの",
+    "pos": "n.",
+    "gloss": "pickles",
+    "alt": []
+   },
+   {
+    "w": "醤油",
+    "reading": "しょうゆ",
+    "pos": "n.",
+    "gloss": "soy sauce",
+    "alt": []
+   },
+   {
+    "w": "味噌",
+    "reading": "みそ",
+    "pos": "n.",
+    "gloss": "soybean paste; miso",
+    "alt": []
+   },
+   {
+    "w": "酢",
+    "reading": "す",
+    "pos": "n.",
+    "gloss": "vinegar",
+    "alt": []
+   },
+   {
+    "w": "油",
+    "reading": "あぶら",
+    "pos": "n.",
+    "gloss": "oil; cooking oil",
+    "alt": []
+   },
+   {
+    "w": "小麦粉",
+    "reading": "こむぎこ",
+    "pos": "n.",
+    "gloss": "wheat flour",
+    "alt": []
+   },
+   {
+    "w": "具",
+    "reading": "ぐ",
+    "pos": "n.",
+    "gloss": "ingredient; topping (in soup)",
+    "alt": []
+   },
+   {
+    "w": "麺",
+    "reading": "めん",
+    "pos": "n.",
+    "gloss": "noodles",
+    "alt": []
+   },
+   {
+    "w": "スープ",
+    "reading": "スープ",
+    "pos": "n.",
+    "gloss": "soup; broth",
+    "alt": []
+   },
+   {
+    "w": "煮る",
+    "reading": "にる",
+    "pos": "v.t.",
+    "gloss": "to simmer; to stew",
+    "alt": []
+   },
+   {
+    "w": "炒める",
+    "reading": "いためる",
+    "pos": "v.t.",
+    "gloss": "to stir-fry",
+    "alt": []
+   },
+   {
+    "w": "揚げる",
+    "reading": "あげる",
+    "pos": "v.t.",
+    "gloss": "to deep-fry",
+    "alt": []
+   },
+   {
+    "w": "味",
+    "reading": "あじ",
+    "pos": "n.",
+    "gloss": "taste; flavour",
+    "alt": []
+   },
+   {
+    "w": "味わう",
+    "reading": "あじわう",
+    "pos": "v.t.",
+    "gloss": "to taste; to savour",
+    "alt": []
+   },
+   {
+    "w": "香り",
+    "reading": "かおり",
+    "pos": "n.",
+    "gloss": "aroma; fragrance",
+    "alt": []
+   },
+   {
+    "w": "食感",
+    "reading": "しょっかん",
+    "pos": "n.",
+    "gloss": "texture (of food)",
+    "alt": []
+   },
+   {
+    "w": "旬",
+    "reading": "しゅん",
+    "pos": "n.",
+    "gloss": "season when food is at its best",
+    "alt": []
+   },
+   {
+    "w": "寿司",
+    "reading": "すし",
+    "pos": "n.",
+    "gloss": "sushi",
+    "alt": []
+   },
+   {
+    "w": "握る",
+    "reading": "にぎる",
+    "pos": "v.t.",
+    "gloss": "to press (rice) into shape; to grip",
+    "alt": []
+   },
+   {
+    "w": "回転寿司",
+    "reading": "かいてんずし",
+    "pos": "n.",
+    "gloss": "conveyor-belt sushi",
+    "alt": []
+   },
+   {
+    "w": "外食",
+    "reading": "がいしょく",
+    "pos": "n.",
+    "gloss": "eating out",
+    "alt": []
+   },
+   {
+    "w": "注文",
+    "reading": "ちゅうもん",
+    "pos": "n.",
+    "gloss": "order (in a restaurant)",
+    "alt": []
+   },
+   {
+    "w": "定食",
+    "reading": "ていしょく",
+    "pos": "n.",
+    "gloss": "set meal",
+    "alt": []
+   },
+   {
+    "w": "丼",
+    "reading": "どんぶり",
+    "pos": "n.",
+    "gloss": "rice-bowl dish; deep bowl",
+    "alt": []
+   },
+   {
+    "w": "ファストフード",
+    "reading": "ファストフード",
+    "pos": "n.",
+    "gloss": "fast food",
+    "alt": []
+   },
+   {
+    "w": "商品",
+    "reading": "しょうひん",
+    "pos": "n.",
+    "gloss": "product; goods",
+    "alt": []
+   },
+   {
+    "w": "発売",
+    "reading": "はつばい",
+    "pos": "n.",
+    "gloss": "release of a product; putting on sale",
+    "alt": []
+   },
+   {
+    "w": "製造",
+    "reading": "せいぞう",
+    "pos": "n.",
+    "gloss": "manufacture",
+    "alt": []
+   },
+   {
+    "w": "普及",
+    "reading": "ふきゅう",
+    "pos": "n.",
+    "gloss": "spread; becoming widespread",
+    "alt": []
+   },
+   {
+    "w": "思いつく",
+    "reading": "おもいつく",
+    "pos": "v.t.",
+    "gloss": "to hit on; to come up with",
+    "alt": []
+   },
+   {
+    "w": "手軽",
+    "reading": "てがる",
+    "pos": "な-adj.",
+    "gloss": "simple; easy to do",
+    "alt": []
+   },
+   {
+    "w": "安い",
+    "reading": "やすい",
+    "pos": "い-adj.",
+    "gloss": "cheap; inexpensive",
+    "alt": []
+   },
+   {
+    "w": "姿",
+    "reading": "すがた",
+    "pos": "n.",
+    "gloss": "form; appearance",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 6,
+  "title_l2": "日本人と宗教",
+  "title_l1": "The Japanese and Religion",
+  "items": [
+   {
+    "w": "信仰",
+    "reading": "しんこう",
+    "pos": "n.",
+    "gloss": "faith; religious belief",
+    "alt": []
+   },
+   {
+    "w": "無宗教",
+    "reading": "むしゅうきょう",
+    "pos": "n.",
+    "gloss": "having no religion; non-religious",
+    "alt": []
+   },
+   {
+    "w": "神道",
+    "reading": "しんとう",
+    "pos": "n.",
+    "gloss": "Shinto",
+    "alt": []
+   },
+   {
+    "w": "神社",
+    "reading": "じんじゃ",
+    "pos": "n.",
+    "gloss": "Shinto shrine",
+    "alt": []
+   },
+   {
+    "w": "教会",
+    "reading": "きょうかい",
+    "pos": "n.",
+    "gloss": "church",
+    "alt": []
+   },
+   {
+    "w": "参拝",
+    "reading": "さんぱい",
+    "pos": "v.suru",
+    "gloss": "visit to a shrine or temple; worship",
+    "alt": []
+   },
+   {
+    "w": "儀式",
+    "reading": "ぎしき",
+    "pos": "n.",
+    "gloss": "ceremony; ritual",
+    "alt": []
+   },
+   {
+    "w": "習慣",
+    "reading": "しゅうかん",
+    "pos": "n.",
+    "gloss": "custom; habit",
+    "alt": []
+   },
+   {
+    "w": "迷信",
+    "reading": "めいしん",
+    "pos": "n.",
+    "gloss": "superstition",
+    "alt": []
+   },
+   {
+    "w": "縁起",
+    "reading": "えんぎ",
+    "pos": "n.",
+    "gloss": "omen; luck (good or bad)",
+    "alt": []
+   },
+   {
+    "w": "神話",
+    "reading": "しんわ",
+    "pos": "n.",
+    "gloss": "myth; mythology",
+    "alt": []
+   },
+   {
+    "w": "神",
+    "reading": "かみ",
+    "pos": "n.",
+    "gloss": "god; deity",
+    "alt": []
+   },
+   {
+    "w": "鳥居",
+    "reading": "とりい",
+    "pos": "n.",
+    "gloss": "torii gate",
+    "alt": []
+   },
+   {
+    "w": "境内",
+    "reading": "けいだい",
+    "pos": "n.",
+    "gloss": "shrine or temple grounds",
+    "alt": []
+   },
+   {
+    "w": "仏像",
+    "reading": "ぶつぞう",
+    "pos": "n.",
+    "gloss": "statue of a Buddhist figure",
+    "alt": []
+   },
+   {
+    "w": "仏壇",
+    "reading": "ぶつだん",
+    "pos": "n.",
+    "gloss": "Buddhist altar kept in a home",
+    "alt": []
+   },
+   {
+    "w": "神棚",
+    "reading": "かみだな",
+    "pos": "n.",
+    "gloss": "small Shinto altar kept in a home",
+    "alt": []
+   },
+   {
+    "w": "線香",
+    "reading": "せんこう",
+    "pos": "n.",
+    "gloss": "incense stick",
+    "alt": []
+   },
+   {
+    "w": "墓",
+    "reading": "はか",
+    "pos": "n.",
+    "gloss": "grave",
+    "alt": []
+   },
+   {
+    "w": "葬式",
+    "reading": "そうしき",
+    "pos": "n.",
+    "gloss": "funeral",
+    "alt": []
+   },
+   {
+    "w": "僧侶",
+    "reading": "そうりょ",
+    "pos": "n.",
+    "gloss": "monk; priest",
+    "alt": []
+   },
+   {
+    "w": "神主",
+    "reading": "かんぬし",
+    "pos": "n.",
+    "gloss": "Shinto priest",
+    "alt": []
+   },
+   {
+    "w": "修行",
+    "reading": "しゅぎょう",
+    "pos": "n.",
+    "gloss": "training; ascetic practice",
+    "alt": []
+   },
+   {
+    "w": "巡礼",
+    "reading": "じゅんれい",
+    "pos": "n.",
+    "gloss": "pilgrimage",
+    "alt": []
+   },
+   {
+    "w": "魂",
+    "reading": "たましい",
+    "pos": "n.",
+    "gloss": "soul; spirit",
+    "alt": []
+   },
+   {
+    "w": "賽銭",
+    "reading": "さいせん",
+    "pos": "n.",
+    "gloss": "offering money at a shrine or temple",
+    "alt": []
+   },
+   {
+    "w": "絵馬",
+    "reading": "えま",
+    "pos": "n.",
+    "gloss": "votive plaque at a shrine",
+    "alt": []
+   },
+   {
+    "w": "正月",
+    "reading": "しょうがつ",
+    "pos": "n.",
+    "gloss": "New Year; the first month",
+    "alt": []
+   },
+   {
+    "w": "初詣",
+    "reading": "はつもうで",
+    "pos": "n.",
+    "gloss": "first visit to a shrine or temple in the new year",
+    "alt": []
+   },
+   {
+    "w": "節分",
+    "reading": "せつぶん",
+    "pos": "n.",
+    "gloss": "Setsubun, the day before spring begins",
+    "alt": []
+   },
+   {
+    "w": "お盆",
+    "reading": "おぼん",
+    "pos": "n.",
+    "gloss": "Obon, the summer festival for ancestors",
+    "alt": []
+   },
+   {
+    "w": "おみくじ",
+    "reading": "おみくじ",
+    "pos": "n.",
+    "gloss": "fortune slip",
+    "alt": []
+   },
+   {
+    "w": "お守り",
+    "reading": "おまもり",
+    "pos": "n.",
+    "gloss": "amulet; lucky charm",
+    "alt": []
+   },
+   {
+    "w": "お参り",
+    "reading": "おまいり",
+    "pos": "n.",
+    "gloss": "visit to a shrine or temple",
+    "alt": []
+   },
+   {
+    "w": "願い事",
+    "reading": "ねがいごと",
+    "pos": "n.",
+    "gloss": "wish; prayer",
+    "alt": []
+   },
+   {
+    "w": "祖先",
+    "reading": "そせん",
+    "pos": "n.",
+    "gloss": "ancestor",
+    "alt": []
+   },
+   {
+    "w": "墓参り",
+    "reading": "はかまいり",
+    "pos": "n.",
+    "gloss": "visit to a family grave",
+    "alt": []
+   },
+   {
+    "w": "供養",
+    "reading": "くよう",
+    "pos": "n.",
+    "gloss": "memorial service for the dead",
+    "alt": []
+   },
+   {
+    "w": "豆",
+    "reading": "まめ",
+    "pos": "n.",
+    "gloss": "bean",
+    "alt": []
+   },
+   {
+    "w": "本気",
+    "reading": "ほんき",
+    "pos": "な-adj.",
+    "gloss": "serious; in earnest",
+    "alt": []
+   },
+   {
+    "w": "不吉",
+    "reading": "ふきつ",
+    "pos": "な-adj.",
+    "gloss": "unlucky; ominous",
+    "alt": []
+   },
+   {
+    "w": "神聖",
+    "reading": "しんせい",
+    "pos": "な-adj.",
+    "gloss": "sacred; holy",
+    "alt": []
+   },
+   {
+    "w": "祈る",
+    "reading": "いのる",
+    "pos": "v.t.",
+    "gloss": "to pray",
+    "alt": []
+   },
+   {
+    "w": "願う",
+    "reading": "ねがう",
+    "pos": "v.t.",
+    "gloss": "to wish for; to pray for",
+    "alt": []
+   },
+   {
+    "w": "祝う",
+    "reading": "いわう",
+    "pos": "v.t.",
+    "gloss": "to celebrate",
+    "alt": []
+   },
+   {
+    "w": "祭る",
+    "reading": "まつる",
+    "pos": "v.t.",
+    "gloss": "to worship; to enshrine",
+    "alt": []
+   },
+   {
+    "w": "供える",
+    "reading": "そなえる",
+    "pos": "v.t.",
+    "gloss": "to offer to a deity or to the dead",
+    "alt": []
+   },
+   {
+    "w": "敬う",
+    "reading": "うやまう",
+    "pos": "v.t.",
+    "gloss": "to respect; to revere",
+    "alt": []
+   },
+   {
+    "w": "訪れる",
+    "reading": "おとずれる",
+    "pos": "v.t.",
+    "gloss": "to visit",
+    "alt": []
+   },
+   {
+    "w": "参る",
+    "reading": "まいる",
+    "pos": "v.i.",
+    "gloss": "to visit a shrine or temple; to go (humble)",
+    "alt": []
+   },
+   {
+    "w": "占い",
+    "reading": "うらない",
+    "pos": "n.",
+    "gloss": "fortune-telling; divination",
+    "alt": []
+   },
+   {
+    "w": "初日の出",
+    "reading": "はつひので",
+    "pos": "n.",
+    "gloss": "first sunrise of the year",
+    "alt": []
+   },
+   {
+    "w": "七五三",
+    "reading": "しちごさん",
+    "pos": "n.",
+    "gloss": "Shichi-go-san, the November rite for children",
+    "alt": []
+   },
+   {
+    "w": "鐘",
+    "reading": "かね",
+    "pos": "n.",
+    "gloss": "bell",
+    "alt": []
+   },
+   {
+    "w": "手を合わせる",
+    "reading": "てをあわせる",
+    "pos": "exp.",
+    "gloss": "to put one's hands together in prayer",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 7,
+  "title_l2": "日本のポップカルチャー",
+  "title_l1": "Japanese Pop Culture",
+  "items": [
+   {
+    "w": "漫画",
+    "reading": "まんが",
+    "pos": "n.",
+    "gloss": "manga; comics",
+    "alt": []
+   },
+   {
+    "w": "漫画家",
+    "reading": "まんがか",
+    "pos": "n.",
+    "gloss": "manga artist; manga creator",
+    "alt": []
+   },
+   {
+    "w": "作品",
+    "reading": "さくひん",
+    "pos": "n.",
+    "gloss": "work; piece (of art)",
+    "alt": []
+   },
+   {
+    "w": "作家",
+    "reading": "さっか",
+    "pos": "n.",
+    "gloss": "author; writer; creator",
+    "alt": []
+   },
+   {
+    "w": "読者",
+    "reading": "どくしゃ",
+    "pos": "n.",
+    "gloss": "reader",
+    "alt": []
+   },
+   {
+    "w": "評判",
+    "reading": "ひょうばん",
+    "pos": "n.",
+    "gloss": "reputation; word of mouth; popularity",
+    "alt": []
+   },
+   {
+    "w": "描く",
+    "reading": "えがく",
+    "pos": "v.t.",
+    "gloss": "to draw; to depict; to portray",
+    "alt": []
+   },
+   {
+    "w": "出版",
+    "reading": "しゅっぱん",
+    "pos": "n.",
+    "gloss": "publication; publishing",
+    "alt": []
+   },
+   {
+    "w": "翻訳",
+    "reading": "ほんやく",
+    "pos": "n.",
+    "gloss": "translation (into another language)",
+    "alt": []
+   },
+   {
+    "w": "世代",
+    "reading": "せだい",
+    "pos": "n.",
+    "gloss": "generation; age group",
+    "alt": []
+   },
+   {
+    "w": "音",
+    "reading": "おと",
+    "pos": "n.",
+    "gloss": "sound; noise",
+    "alt": []
+   },
+   {
+    "w": "雑誌",
+    "reading": "ざっし",
+    "pos": "n.",
+    "gloss": "magazine; journal",
+    "alt": []
+   },
+   {
+    "w": "連載",
+    "reading": "れんさい",
+    "pos": "n.",
+    "gloss": "serialisation; publication in instalments",
+    "alt": []
+   },
+   {
+    "w": "編集",
+    "reading": "へんしゅう",
+    "pos": "n.",
+    "gloss": "editing; compilation",
+    "alt": []
+   },
+   {
+    "w": "編集者",
+    "reading": "へんしゅうしゃ",
+    "pos": "n.",
+    "gloss": "editor (of a publication)",
+    "alt": []
+   },
+   {
+    "w": "締め切り",
+    "reading": "しめきり",
+    "pos": "n.",
+    "gloss": "deadline",
+    "alt": []
+   },
+   {
+    "w": "原稿",
+    "reading": "げんこう",
+    "pos": "n.",
+    "gloss": "manuscript; copy",
+    "alt": []
+   },
+   {
+    "w": "吹き出し",
+    "reading": "ふきだし",
+    "pos": "n.",
+    "gloss": "speech bubble; balloon (in a comic)",
+    "alt": []
+   },
+   {
+    "w": "白黒",
+    "reading": "しろくろ",
+    "pos": "n.",
+    "gloss": "black and white",
+    "alt": []
+   },
+   {
+    "w": "印刷",
+    "reading": "いんさつ",
+    "pos": "n.",
+    "gloss": "printing",
+    "alt": []
+   },
+   {
+    "w": "単行本",
+    "reading": "たんこうぼん",
+    "pos": "n.",
+    "gloss": "book-form edition; collected volume",
+    "alt": []
+   },
+   {
+    "w": "売れる",
+    "reading": "うれる",
+    "pos": "v.i.",
+    "gloss": "to sell; to sell well",
+    "alt": []
+   },
+   {
+    "w": "娯楽",
+    "reading": "ごらく",
+    "pos": "n.",
+    "gloss": "entertainment; amusement",
+    "alt": []
+   },
+   {
+    "w": "芸術",
+    "reading": "げいじゅつ",
+    "pos": "n.",
+    "gloss": "art; the arts",
+    "alt": []
+   },
+   {
+    "w": "評価",
+    "reading": "ひょうか",
+    "pos": "n.",
+    "gloss": "evaluation; appraisal",
+    "alt": []
+   },
+   {
+    "w": "批評",
+    "reading": "ひひょう",
+    "pos": "n.",
+    "gloss": "criticism; review",
+    "alt": []
+   },
+   {
+    "w": "才能",
+    "reading": "さいのう",
+    "pos": "n.",
+    "gloss": "talent; gift",
+    "alt": []
+   },
+   {
+    "w": "職人",
+    "reading": "しょくにん",
+    "pos": "n.",
+    "gloss": "craftsman; artisan",
+    "alt": []
+   },
+   {
+    "w": "取材",
+    "reading": "しゅざい",
+    "pos": "n.",
+    "gloss": "gathering material; research visit (for a story)",
+    "alt": []
+   },
+   {
+    "w": "擬音語",
+    "reading": "ぎおんご",
+    "pos": "n.",
+    "gloss": "onomatopoeia; sound-symbolic word",
+    "alt": []
+   },
+   {
+    "w": "擬態語",
+    "reading": "ぎたいご",
+    "pos": "n.",
+    "gloss": "mimetic word; word describing a state",
+    "alt": []
+   },
+   {
+    "w": "手紙",
+    "reading": "てがみ",
+    "pos": "n.",
+    "gloss": "letter",
+    "alt": []
+   },
+   {
+    "w": "花火",
+    "reading": "はなび",
+    "pos": "n.",
+    "gloss": "fireworks",
+    "alt": []
+   },
+   {
+    "w": "人々",
+    "reading": "ひとびと",
+    "pos": "n.",
+    "gloss": "people; the people",
+    "alt": []
+   },
+   {
+    "w": "物語",
+    "reading": "ものがたり",
+    "pos": "n.",
+    "gloss": "story; tale",
+    "alt": []
+   },
+   {
+    "w": "主人公",
+    "reading": "しゅじんこう",
+    "pos": "n.",
+    "gloss": "protagonist; main character",
+    "alt": []
+   },
+   {
+    "w": "舞台",
+    "reading": "ぶたい",
+    "pos": "n.",
+    "gloss": "setting (of a story); stage",
+    "alt": []
+   },
+   {
+    "w": "名作",
+    "reading": "めいさく",
+    "pos": "n.",
+    "gloss": "masterpiece",
+    "alt": []
+   },
+   {
+    "w": "商業",
+    "reading": "しょうぎょう",
+    "pos": "n.",
+    "gloss": "commerce; commercial business",
+    "alt": []
+   },
+   {
+    "w": "現場",
+    "reading": "げんば",
+    "pos": "n.",
+    "gloss": "the actual site; the front line",
+    "alt": []
+   },
+   {
+    "w": "睡眠",
+    "reading": "すいみん",
+    "pos": "n.",
+    "gloss": "sleep",
+    "alt": []
+   },
+   {
+    "w": "話題",
+    "reading": "わだい",
+    "pos": "n.",
+    "gloss": "topic; something talked about",
+    "alt": []
+   },
+   {
+    "w": "工夫",
+    "reading": "くふう",
+    "pos": "n.",
+    "gloss": "ingenuity; a clever device",
+    "alt": []
+   },
+   {
+    "w": "海外",
+    "reading": "かいがい",
+    "pos": "n.",
+    "gloss": "overseas; abroad",
+    "alt": []
+   },
+   {
+    "w": "分析",
+    "reading": "ぶんせき",
+    "pos": "n.",
+    "gloss": "analysis",
+    "alt": []
+   },
+   {
+    "w": "学問",
+    "reading": "がくもん",
+    "pos": "n.",
+    "gloss": "scholarship; academic study",
+    "alt": []
+   },
+   {
+    "w": "対象",
+    "reading": "たいしょう",
+    "pos": "n.",
+    "gloss": "subject (of study); target",
+    "alt": []
+   },
+   {
+    "w": "専門",
+    "reading": "せんもん",
+    "pos": "n.",
+    "gloss": "speciality; field of expertise",
+    "alt": []
+   },
+   {
+    "w": "真面目",
+    "reading": "まじめ",
+    "pos": "な-adj.",
+    "gloss": "serious; earnest",
+    "alt": []
+   },
+   {
+    "w": "軽い",
+    "reading": "かるい",
+    "pos": "い-adj.",
+    "gloss": "light; frivolous",
+    "alt": []
+   },
+   {
+    "w": "共感",
+    "reading": "きょうかん",
+    "pos": "n.",
+    "gloss": "empathy; shared feeling",
+    "alt": []
+   },
+   {
+    "w": "奥",
+    "reading": "おく",
+    "pos": "n.",
+    "gloss": "depth; the inner part",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 8,
+  "title_l2": "日本の伝統芸能",
+  "title_l1": "Japanese Traditional Performing Arts",
+  "items": [
+   {
+    "w": "伝統",
+    "reading": "でんとう",
+    "pos": "n.",
+    "gloss": "tradition",
+    "alt": []
+   },
+   {
+    "w": "芸能",
+    "reading": "げいのう",
+    "pos": "n.",
+    "gloss": "performing arts",
+    "alt": []
+   },
+   {
+    "w": "狂言",
+    "reading": "きょうげん",
+    "pos": "n.",
+    "gloss": "kyōgen (comic theatre)",
+    "alt": []
+   },
+   {
+    "w": "能",
+    "reading": "のう",
+    "pos": "n.",
+    "gloss": "nō (masked theatre)",
+    "alt": []
+   },
+   {
+    "w": "役者",
+    "reading": "やくしゃ",
+    "pos": "n.",
+    "gloss": "actor; performer",
+    "alt": []
+   },
+   {
+    "w": "衣装",
+    "reading": "いしょう",
+    "pos": "n.",
+    "gloss": "costume",
+    "alt": []
+   },
+   {
+    "w": "化粧",
+    "reading": "けしょう",
+    "pos": "n.",
+    "gloss": "makeup",
+    "alt": []
+   },
+   {
+    "w": "面",
+    "reading": "めん",
+    "pos": "n.",
+    "gloss": "mask",
+    "alt": []
+   },
+   {
+    "w": "声",
+    "reading": "こえ",
+    "pos": "n.",
+    "gloss": "voice",
+    "alt": []
+   },
+   {
+    "w": "台詞",
+    "reading": "せりふ",
+    "pos": "n.",
+    "gloss": "lines; dialogue",
+    "alt": []
+   },
+   {
+    "w": "筋",
+    "reading": "すじ",
+    "pos": "n.",
+    "gloss": "plot; storyline",
+    "alt": []
+   },
+   {
+    "w": "動き",
+    "reading": "うごき",
+    "pos": "n.",
+    "gloss": "movement",
+    "alt": []
+   },
+   {
+    "w": "間違い",
+    "reading": "まちがい",
+    "pos": "n.",
+    "gloss": "mistake",
+    "alt": []
+   },
+   {
+    "w": "主人",
+    "reading": "しゅじん",
+    "pos": "n.",
+    "gloss": "master; employer",
+    "alt": []
+   },
+   {
+    "w": "家来",
+    "reading": "けらい",
+    "pos": "n.",
+    "gloss": "retainer; servant",
+    "alt": []
+   },
+   {
+    "w": "公演",
+    "reading": "こうえん",
+    "pos": "n.",
+    "gloss": "public performance",
+    "alt": []
+   },
+   {
+    "w": "説明",
+    "reading": "せつめい",
+    "pos": "n.",
+    "gloss": "explanation",
+    "alt": []
+   },
+   {
+    "w": "見せ場",
+    "reading": "みせば",
+    "pos": "n.",
+    "gloss": "highlight; the big scene",
+    "alt": []
+   },
+   {
+    "w": "笑い",
+    "reading": "わらい",
+    "pos": "n.",
+    "gloss": "laughter; a laugh",
+    "alt": []
+   },
+   {
+    "w": "古典",
+    "reading": "こてん",
+    "pos": "n.",
+    "gloss": "classic; classical work",
+    "alt": []
+   },
+   {
+    "w": "拍手",
+    "reading": "はくしゅ",
+    "pos": "n.",
+    "gloss": "applause",
+    "alt": []
+   },
+   {
+    "w": "役",
+    "reading": "やく",
+    "pos": "n.",
+    "gloss": "role; part",
+    "alt": []
+   },
+   {
+    "w": "時代",
+    "reading": "じだい",
+    "pos": "n.",
+    "gloss": "period; era",
+    "alt": []
+   },
+   {
+    "w": "劇場",
+    "reading": "げきじょう",
+    "pos": "n.",
+    "gloss": "theatre; playhouse",
+    "alt": []
+   },
+   {
+    "w": "静か",
+    "reading": "しずか",
+    "pos": "な-adj.",
+    "gloss": "quiet",
+    "alt": []
+   },
+   {
+    "w": "特別",
+    "reading": "とくべつ",
+    "pos": "な-adj.",
+    "gloss": "special",
+    "alt": []
+   },
+   {
+    "w": "本当",
+    "reading": "ほんとう",
+    "pos": "な-adj.",
+    "gloss": "real; true",
+    "alt": []
+   },
+   {
+    "w": "大変",
+    "reading": "たいへん",
+    "pos": "な-adj.",
+    "gloss": "tough; serious",
+    "alt": []
+   },
+   {
+    "w": "面白い",
+    "reading": "おもしろい",
+    "pos": "い-adj.",
+    "gloss": "interesting; funny",
+    "alt": []
+   },
+   {
+    "w": "古い",
+    "reading": "ふるい",
+    "pos": "い-adj.",
+    "gloss": "old; out of date",
+    "alt": []
+   },
+   {
+    "w": "短い",
+    "reading": "みじかい",
+    "pos": "い-adj.",
+    "gloss": "short",
+    "alt": []
+   },
+   {
+    "w": "難しい",
+    "reading": "むずかしい",
+    "pos": "い-adj.",
+    "gloss": "difficult",
+    "alt": []
+   },
+   {
+    "w": "ゆっくり",
+    "reading": "ゆっくり",
+    "pos": "adv.",
+    "gloss": "slowly; at ease",
+    "alt": []
+   },
+   {
+    "w": "案外",
+    "reading": "あんがい",
+    "pos": "adv.",
+    "gloss": "unexpectedly; more than you would think",
+    "alt": []
+   },
+   {
+    "w": "演じる",
+    "reading": "えんじる",
+    "pos": "v.t.",
+    "gloss": "to perform (a role)",
+    "alt": []
+   },
+   {
+    "w": "舞う",
+    "reading": "まう",
+    "pos": "v.i.",
+    "gloss": "to dance; to flutter",
+    "alt": []
+   },
+   {
+    "w": "語る",
+    "reading": "かたる",
+    "pos": "v.t.",
+    "gloss": "to narrate; to tell",
+    "alt": []
+   },
+   {
+    "w": "笑う",
+    "reading": "わらう",
+    "pos": "v.i.",
+    "gloss": "to laugh",
+    "alt": []
+   },
+   {
+    "w": "忘れる",
+    "reading": "わすれる",
+    "pos": "v.t.",
+    "gloss": "to forget",
+    "alt": []
+   },
+   {
+    "w": "怒る",
+    "reading": "おこる",
+    "pos": "v.i.",
+    "gloss": "to get angry",
+    "alt": []
+   },
+   {
+    "w": "繰り返す",
+    "reading": "くりかえす",
+    "pos": "v.t.",
+    "gloss": "to repeat",
+    "alt": []
+   },
+   {
+    "w": "残す",
+    "reading": "のこす",
+    "pos": "v.t.",
+    "gloss": "to leave (something) behind; to keep",
+    "alt": []
+   },
+   {
+    "w": "捨てる",
+    "reading": "すてる",
+    "pos": "v.t.",
+    "gloss": "to throw away; to leave out",
+    "alt": []
+   },
+   {
+    "w": "受け取る",
+    "reading": "うけとる",
+    "pos": "v.t.",
+    "gloss": "to take; to interpret",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 9,
+  "title_l2": "日本の教育",
+  "title_l1": "Education in Japan",
+  "items": [
+   {
+    "w": "制度",
+    "reading": "せいど",
+    "pos": "n.",
+    "gloss": "system; institution",
+    "alt": []
+   },
+   {
+    "w": "試験",
+    "reading": "しけん",
+    "pos": "n.",
+    "gloss": "examination; test",
+    "alt": []
+   },
+   {
+    "w": "入学",
+    "reading": "にゅうがく",
+    "pos": "n.",
+    "gloss": "entering a school; enrolment",
+    "alt": []
+   },
+   {
+    "w": "卒業",
+    "reading": "そつぎょう",
+    "pos": "n.",
+    "gloss": "graduation",
+    "alt": []
+   },
+   {
+    "w": "教師",
+    "reading": "きょうし",
+    "pos": "n.",
+    "gloss": "teacher; instructor",
+    "alt": []
+   },
+   {
+    "w": "生徒",
+    "reading": "せいと",
+    "pos": "n.",
+    "gloss": "pupil; student",
+    "alt": []
+   },
+   {
+    "w": "授業",
+    "reading": "じゅぎょう",
+    "pos": "n.",
+    "gloss": "class; lesson",
+    "alt": []
+   },
+   {
+    "w": "成績",
+    "reading": "せいせき",
+    "pos": "n.",
+    "gloss": "results; marks; grades",
+    "alt": []
+   },
+   {
+    "w": "競争",
+    "reading": "きょうそう",
+    "pos": "n.",
+    "gloss": "competition",
+    "alt": []
+   },
+   {
+    "w": "進学",
+    "reading": "しんがく",
+    "pos": "n.",
+    "gloss": "going on to higher education",
+    "alt": []
+   },
+   {
+    "w": "学校",
+    "reading": "がっこう",
+    "pos": "n.",
+    "gloss": "school",
+    "alt": []
+   },
+   {
+    "w": "塾",
+    "reading": "じゅく",
+    "pos": "n.",
+    "gloss": "cram school; private tutoring school",
+    "alt": []
+   },
+   {
+    "w": "偏差値",
+    "reading": "へんさち",
+    "pos": "n.",
+    "gloss": "deviation score (used to rank exam results)",
+    "alt": []
+   },
+   {
+    "w": "受験",
+    "reading": "じゅけん",
+    "pos": "n.",
+    "gloss": "sitting an entrance examination",
+    "alt": []
+   },
+   {
+    "w": "入試",
+    "reading": "にゅうし",
+    "pos": "n.",
+    "gloss": "entrance examination",
+    "alt": []
+   },
+   {
+    "w": "合格",
+    "reading": "ごうかく",
+    "pos": "n.",
+    "gloss": "passing an examination",
+    "alt": []
+   },
+   {
+    "w": "面接",
+    "reading": "めんせつ",
+    "pos": "n.",
+    "gloss": "interview",
+    "alt": []
+   },
+   {
+    "w": "学歴",
+    "reading": "がくれき",
+    "pos": "n.",
+    "gloss": "academic background; educational record",
+    "alt": []
+   },
+   {
+    "w": "知識",
+    "reading": "ちしき",
+    "pos": "n.",
+    "gloss": "knowledge",
+    "alt": []
+   },
+   {
+    "w": "宿題",
+    "reading": "しゅくだい",
+    "pos": "n.",
+    "gloss": "homework",
+    "alt": []
+   },
+   {
+    "w": "教科書",
+    "reading": "きょうかしょ",
+    "pos": "n.",
+    "gloss": "textbook",
+    "alt": []
+   },
+   {
+    "w": "教室",
+    "reading": "きょうしつ",
+    "pos": "n.",
+    "gloss": "classroom",
+    "alt": []
+   },
+   {
+    "w": "校則",
+    "reading": "こうそく",
+    "pos": "n.",
+    "gloss": "school rules",
+    "alt": []
+   },
+   {
+    "w": "同級生",
+    "reading": "どうきゅうせい",
+    "pos": "n.",
+    "gloss": "classmate",
+    "alt": []
+   },
+   {
+    "w": "大学",
+    "reading": "だいがく",
+    "pos": "n.",
+    "gloss": "university",
+    "alt": []
+   },
+   {
+    "w": "高校",
+    "reading": "こうこう",
+    "pos": "n.",
+    "gloss": "high school",
+    "alt": []
+   },
+   {
+    "w": "予備校",
+    "reading": "よびこう",
+    "pos": "n.",
+    "gloss": "exam-preparation school",
+    "alt": []
+   },
+   {
+    "w": "保護者",
+    "reading": "ほごしゃ",
+    "pos": "n.",
+    "gloss": "parent or guardian",
+    "alt": []
+   },
+   {
+    "w": "教員",
+    "reading": "きょういん",
+    "pos": "n.",
+    "gloss": "teacher; teaching staff",
+    "alt": []
+   },
+   {
+    "w": "家庭",
+    "reading": "かてい",
+    "pos": "n.",
+    "gloss": "home; household",
+    "alt": []
+   },
+   {
+    "w": "興味",
+    "reading": "きょうみ",
+    "pos": "n.",
+    "gloss": "interest",
+    "alt": []
+   },
+   {
+    "w": "機会",
+    "reading": "きかい",
+    "pos": "n.",
+    "gloss": "opportunity; chance",
+    "alt": []
+   },
+   {
+    "w": "いじめ",
+    "reading": "いじめ",
+    "pos": "n.",
+    "gloss": "bullying",
+    "alt": []
+   },
+   {
+    "w": "不登校",
+    "reading": "ふとうこう",
+    "pos": "n.",
+    "gloss": "not attending school; school refusal",
+    "alt": []
+   },
+   {
+    "w": "格差",
+    "reading": "かくさ",
+    "pos": "n.",
+    "gloss": "gap; disparity",
+    "alt": []
+   },
+   {
+    "w": "苦手",
+    "reading": "にがて",
+    "pos": "な-adj.",
+    "gloss": "weak at; poor at",
+    "alt": []
+   },
+   {
+    "w": "得意",
+    "reading": "とくい",
+    "pos": "な-adj.",
+    "gloss": "good at; a strong point",
+    "alt": []
+   },
+   {
+    "w": "当たり前",
+    "reading": "あたりまえ",
+    "pos": "な-adj.",
+    "gloss": "natural; a matter of course",
+    "alt": []
+   },
+   {
+    "w": "教える",
+    "reading": "おしえる",
+    "pos": "v.t.",
+    "gloss": "to teach; to tell",
+    "alt": []
+   },
+   {
+    "w": "習う",
+    "reading": "ならう",
+    "pos": "v.t.",
+    "gloss": "to learn from a teacher",
+    "alt": []
+   },
+   {
+    "w": "学ぶ",
+    "reading": "まなぶ",
+    "pos": "v.t.",
+    "gloss": "to learn; to study",
+    "alt": []
+   },
+   {
+    "w": "覚える",
+    "reading": "おぼえる",
+    "pos": "v.t.",
+    "gloss": "to memorise; to learn by heart",
+    "alt": []
+   },
+   {
+    "w": "教わる",
+    "reading": "おそわる",
+    "pos": "v.t.",
+    "gloss": "to be taught; to learn from someone",
+    "alt": []
+   },
+   {
+    "w": "伸びる",
+    "reading": "のびる",
+    "pos": "v.i.",
+    "gloss": "to grow; to improve",
+    "alt": []
+   },
+   {
+    "w": "決まる",
+    "reading": "きまる",
+    "pos": "v.i.",
+    "gloss": "to be decided",
+    "alt": []
+   },
+   {
+    "w": "育てる",
+    "reading": "そだてる",
+    "pos": "v.t.",
+    "gloss": "to raise; to bring up",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 10,
+  "title_l2": "日本の便利な店",
+  "title_l1": "Japan's Convenience Stores",
+  "items": [
+   {
+    "w": "自動販売機",
+    "reading": "じどうはんばいき",
+    "pos": "n.",
+    "gloss": "vending machine",
+    "alt": []
+   },
+   {
+    "w": "販売",
+    "reading": "はんばい",
+    "pos": "n.",
+    "gloss": "sale; selling",
+    "alt": []
+   },
+   {
+    "w": "小銭",
+    "reading": "こぜに",
+    "pos": "n.",
+    "gloss": "small change; coins",
+    "alt": []
+   },
+   {
+    "w": "袋",
+    "reading": "ふくろ",
+    "pos": "n.",
+    "gloss": "bag; carrier bag",
+    "alt": []
+   },
+   {
+    "w": "現金",
+    "reading": "げんきん",
+    "pos": "n.",
+    "gloss": "cash",
+    "alt": []
+   },
+   {
+    "w": "支払い",
+    "reading": "しはらい",
+    "pos": "n.",
+    "gloss": "payment",
+    "alt": []
+   },
+   {
+    "w": "電子マネー",
+    "reading": "でんしマネー",
+    "pos": "n.",
+    "gloss": "electronic money; stored-value card",
+    "alt": []
+   },
+   {
+    "w": "店",
+    "reading": "みせ",
+    "pos": "n.",
+    "gloss": "shop; store",
+    "alt": []
+   },
+   {
+    "w": "店員",
+    "reading": "てんいん",
+    "pos": "n.",
+    "gloss": "shop assistant; clerk",
+    "alt": []
+   },
+   {
+    "w": "客",
+    "reading": "きゃく",
+    "pos": "n.",
+    "gloss": "customer; client",
+    "alt": []
+   },
+   {
+    "w": "棚",
+    "reading": "たな",
+    "pos": "n.",
+    "gloss": "shelf",
+    "alt": []
+   },
+   {
+    "w": "レジ",
+    "reading": "レジ",
+    "pos": "n.",
+    "gloss": "checkout counter; till",
+    "alt": []
+   },
+   {
+    "w": "コンビニ",
+    "reading": "コンビニ",
+    "pos": "n.",
+    "gloss": "convenience store",
+    "alt": []
+   },
+   {
+    "w": "飲み物",
+    "reading": "のみもの",
+    "pos": "n.",
+    "gloss": "drink; beverage",
+    "alt": []
+   },
+   {
+    "w": "缶",
+    "reading": "かん",
+    "pos": "n.",
+    "gloss": "can; tin",
+    "alt": []
+   },
+   {
+    "w": "容器",
+    "reading": "ようき",
+    "pos": "n.",
+    "gloss": "container; packaging",
+    "alt": []
+   },
+   {
+    "w": "分別",
+    "reading": "ぶんべつ",
+    "pos": "n.",
+    "gloss": "sorting; separating rubbish",
+    "alt": []
+   },
+   {
+    "w": "賞味期限",
+    "reading": "しょうみきげん",
+    "pos": "n.",
+    "gloss": "best-before date",
+    "alt": []
+   },
+   {
+    "w": "在庫",
+    "reading": "ざいこ",
+    "pos": "n.",
+    "gloss": "stock; inventory",
+    "alt": []
+   },
+   {
+    "w": "品切れ",
+    "reading": "しなぎれ",
+    "pos": "n.",
+    "gloss": "out of stock; sold out",
+    "alt": []
+   },
+   {
+    "w": "深夜",
+    "reading": "しんや",
+    "pos": "n.",
+    "gloss": "late at night; the middle of the night",
+    "alt": []
+   },
+   {
+    "w": "費用",
+    "reading": "ひよう",
+    "pos": "n.",
+    "gloss": "cost; expense",
+    "alt": []
+   },
+   {
+    "w": "電気",
+    "reading": "でんき",
+    "pos": "n.",
+    "gloss": "electricity; electric light",
+    "alt": []
+   },
+   {
+    "w": "明かり",
+    "reading": "あかり",
+    "pos": "n.",
+    "gloss": "light; illumination",
+    "alt": []
+   },
+   {
+    "w": "停電",
+    "reading": "ていでん",
+    "pos": "n.",
+    "gloss": "power cut; blackout",
+    "alt": []
+   },
+   {
+    "w": "手間",
+    "reading": "てま",
+    "pos": "n.",
+    "gloss": "time and effort; trouble",
+    "alt": []
+   },
+   {
+    "w": "廃棄",
+    "reading": "はいき",
+    "pos": "n.",
+    "gloss": "disposal; throwing away",
+    "alt": []
+   },
+   {
+    "w": "買い物",
+    "reading": "かいもの",
+    "pos": "n.",
+    "gloss": "shopping; a purchase",
+    "alt": []
+   },
+   {
+    "w": "開ける",
+    "reading": "あける",
+    "pos": "v.t.",
+    "gloss": "to open (something)",
+    "alt": []
+   },
+   {
+    "w": "閉まる",
+    "reading": "しまる",
+    "pos": "v.i.",
+    "gloss": "to close; to be shut",
+    "alt": []
+   },
+   {
+    "w": "閉める",
+    "reading": "しめる",
+    "pos": "v.t.",
+    "gloss": "to close (something); to shut",
+    "alt": []
+   },
+   {
+    "w": "入る",
+    "reading": "はいる",
+    "pos": "v.i.",
+    "gloss": "to go in; to enter",
+    "alt": []
+   },
+   {
+    "w": "落ちる",
+    "reading": "おちる",
+    "pos": "v.i.",
+    "gloss": "to fall; to drop",
+    "alt": []
+   },
+   {
+    "w": "落とす",
+    "reading": "おとす",
+    "pos": "v.t.",
+    "gloss": "to drop (something); to lose",
+    "alt": []
+   },
+   {
+    "w": "付く",
+    "reading": "つく",
+    "pos": "v.i.",
+    "gloss": "to come on; to be attached",
+    "alt": []
+   },
+   {
+    "w": "付ける",
+    "reading": "つける",
+    "pos": "v.t.",
+    "gloss": "to switch on; to attach",
+    "alt": []
+   },
+   {
+    "w": "消える",
+    "reading": "きえる",
+    "pos": "v.i.",
+    "gloss": "to go out; to disappear",
+    "alt": []
+   },
+   {
+    "w": "消す",
+    "reading": "けす",
+    "pos": "v.t.",
+    "gloss": "to turn off; to erase",
+    "alt": []
+   },
+   {
+    "w": "止まる",
+    "reading": "とまる",
+    "pos": "v.i.",
+    "gloss": "to stop; to come to a halt",
+    "alt": []
+   },
+   {
+    "w": "並ぶ",
+    "reading": "ならぶ",
+    "pos": "v.i.",
+    "gloss": "to stand in a row; to queue",
+    "alt": []
+   },
+   {
+    "w": "並べる",
+    "reading": "ならべる",
+    "pos": "v.t.",
+    "gloss": "to line up; to arrange",
+    "alt": []
+   },
+   {
+    "w": "売る",
+    "reading": "うる",
+    "pos": "v.t.",
+    "gloss": "to sell",
+    "alt": []
+   },
+   {
+    "w": "置く",
+    "reading": "おく",
+    "pos": "v.t.",
+    "gloss": "to put; to place",
+    "alt": []
+   },
+   {
+    "w": "壊れる",
+    "reading": "こわれる",
+    "pos": "v.i.",
+    "gloss": "to break down; to be broken",
+    "alt": []
+   },
+   {
+    "w": "壊す",
+    "reading": "こわす",
+    "pos": "v.t.",
+    "gloss": "to break (something)",
+    "alt": []
+   },
+   {
+    "w": "拾う",
+    "reading": "ひろう",
+    "pos": "v.t.",
+    "gloss": "to pick up",
+    "alt": []
+   },
+   {
+    "w": "済ませる",
+    "reading": "すませる",
+    "pos": "v.t.",
+    "gloss": "to finish; to get (something) done",
+    "alt": []
+   },
+   {
+    "w": "立ち寄る",
+    "reading": "たちよる",
+    "pos": "v.i.",
+    "gloss": "to drop in; to stop by",
+    "alt": []
+   },
+   {
+    "w": "温める",
+    "reading": "あたためる",
+    "pos": "v.t.",
+    "gloss": "to warm up; to heat",
+    "alt": []
+   },
+   {
+    "w": "冷やす",
+    "reading": "ひやす",
+    "pos": "v.t.",
+    "gloss": "to chill; to cool",
+    "alt": []
+   },
+   {
+    "w": "身近",
+    "reading": "みぢか",
+    "pos": "な-adj.",
+    "gloss": "familiar; close to hand",
+    "alt": []
+   },
+   {
+    "w": "欠かせない",
+    "reading": "かかせない",
+    "pos": "い-adj.",
+    "gloss": "indispensable; impossible to do without",
+    "alt": []
+   },
+   {
+    "w": "冷たい",
+    "reading": "つめたい",
+    "pos": "い-adj.",
+    "gloss": "cold (to the touch)",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 11,
+  "title_l2": "日本の歴史",
+  "title_l1": "The History of Japan",
+  "items": [
+   {
+    "w": "世紀",
+    "reading": "せいき",
+    "pos": "n.",
+    "gloss": "century",
+    "alt": []
+   },
+   {
+    "w": "戦国時代",
+    "reading": "せんごくじだい",
+    "pos": "n.",
+    "gloss": "the Sengoku period; the age of regional warfare",
+    "alt": []
+   },
+   {
+    "w": "遣唐使",
+    "reading": "けんとうし",
+    "pos": "n.",
+    "gloss": "envoy sent to Tang China",
+    "alt": []
+   },
+   {
+    "w": "都",
+    "reading": "みやこ",
+    "pos": "n.",
+    "gloss": "capital; capital city",
+    "alt": []
+   },
+   {
+    "w": "貴族",
+    "reading": "きぞく",
+    "pos": "n.",
+    "gloss": "aristocrat; noble",
+    "alt": []
+   },
+   {
+    "w": "武士",
+    "reading": "ぶし",
+    "pos": "n.",
+    "gloss": "samurai; warrior",
+    "alt": []
+   },
+   {
+    "w": "武将",
+    "reading": "ぶしょう",
+    "pos": "n.",
+    "gloss": "warlord; military commander",
+    "alt": []
+   },
+   {
+    "w": "領地",
+    "reading": "りょうち",
+    "pos": "n.",
+    "gloss": "territory; domain",
+    "alt": []
+   },
+   {
+    "w": "戦い",
+    "reading": "たたかい",
+    "pos": "n.",
+    "gloss": "battle; fighting",
+    "alt": []
+   },
+   {
+    "w": "支配",
+    "reading": "しはい",
+    "pos": "n.",
+    "gloss": "rule; control",
+    "alt": []
+   },
+   {
+    "w": "統一",
+    "reading": "とういつ",
+    "pos": "n.",
+    "gloss": "unification",
+    "alt": []
+   },
+   {
+    "w": "幕府",
+    "reading": "ばくふ",
+    "pos": "n.",
+    "gloss": "shogunate",
+    "alt": []
+   },
+   {
+    "w": "城",
+    "reading": "しろ",
+    "pos": "n.",
+    "gloss": "castle",
+    "alt": []
+   },
+   {
+    "w": "全国",
+    "reading": "ぜんこく",
+    "pos": "n.",
+    "gloss": "the whole country",
+    "alt": []
+   },
+   {
+    "w": "漢字",
+    "reading": "かんじ",
+    "pos": "n.",
+    "gloss": "kanji; Chinese characters",
+    "alt": []
+   },
+   {
+    "w": "仏教",
+    "reading": "ぶっきょう",
+    "pos": "n.",
+    "gloss": "Buddhism",
+    "alt": []
+   },
+   {
+    "w": "キリスト教",
+    "reading": "キリストきょう",
+    "pos": "n.",
+    "gloss": "Christianity",
+    "alt": []
+   },
+   {
+    "w": "宗教",
+    "reading": "しゅうきょう",
+    "pos": "n.",
+    "gloss": "religion",
+    "alt": []
+   },
+   {
+    "w": "文化",
+    "reading": "ぶんか",
+    "pos": "n.",
+    "gloss": "culture",
+    "alt": []
+   },
+   {
+    "w": "寺",
+    "reading": "てら",
+    "pos": "n.",
+    "gloss": "temple",
+    "alt": []
+   },
+   {
+    "w": "教え",
+    "reading": "おしえ",
+    "pos": "n.",
+    "gloss": "teaching; doctrine",
+    "alt": []
+   },
+   {
+    "w": "記録",
+    "reading": "きろく",
+    "pos": "n.",
+    "gloss": "record; document",
+    "alt": []
+   },
+   {
+    "w": "書物",
+    "reading": "しょもつ",
+    "pos": "n.",
+    "gloss": "book; written work",
+    "alt": []
+   },
+   {
+    "w": "暦",
+    "reading": "こよみ",
+    "pos": "n.",
+    "gloss": "calendar",
+    "alt": []
+   },
+   {
+    "w": "貿易",
+    "reading": "ぼうえき",
+    "pos": "n.",
+    "gloss": "trade",
+    "alt": []
+   },
+   {
+    "w": "輸入",
+    "reading": "ゆにゅう",
+    "pos": "n.",
+    "gloss": "import; importing",
+    "alt": []
+   },
+   {
+    "w": "輸出",
+    "reading": "ゆしゅつ",
+    "pos": "n.",
+    "gloss": "export; exporting",
+    "alt": []
+   },
+   {
+    "w": "鉄砲",
+    "reading": "てっぽう",
+    "pos": "n.",
+    "gloss": "gun; firearm",
+    "alt": []
+   },
+   {
+    "w": "港",
+    "reading": "みなと",
+    "pos": "n.",
+    "gloss": "port; harbour",
+    "alt": []
+   },
+   {
+    "w": "商人",
+    "reading": "しょうにん",
+    "pos": "n.",
+    "gloss": "merchant; trader",
+    "alt": []
+   },
+   {
+    "w": "砂糖",
+    "reading": "さとう",
+    "pos": "n.",
+    "gloss": "sugar",
+    "alt": []
+   },
+   {
+    "w": "野菜",
+    "reading": "やさい",
+    "pos": "n.",
+    "gloss": "vegetable",
+    "alt": []
+   },
+   {
+    "w": "作物",
+    "reading": "さくもつ",
+    "pos": "n.",
+    "gloss": "crop; produce",
+    "alt": []
+   },
+   {
+    "w": "食べ物",
+    "reading": "たべもの",
+    "pos": "n.",
+    "gloss": "food",
+    "alt": []
+   },
+   {
+    "w": "島国",
+    "reading": "しまぐに",
+    "pos": "n.",
+    "gloss": "island nation",
+    "alt": []
+   },
+   {
+    "w": "旅",
+    "reading": "たび",
+    "pos": "n.",
+    "gloss": "journey; trip",
+    "alt": []
+   },
+   {
+    "w": "考え方",
+    "reading": "かんがえかた",
+    "pos": "n.",
+    "gloss": "way of thinking",
+    "alt": []
+   },
+   {
+    "w": "仕組み",
+    "reading": "しくみ",
+    "pos": "n.",
+    "gloss": "system; mechanism",
+    "alt": []
+   },
+   {
+    "w": "法律",
+    "reading": "ほうりつ",
+    "pos": "n.",
+    "gloss": "law",
+    "alt": []
+   },
+   {
+    "w": "税",
+    "reading": "ぜい",
+    "pos": "n.",
+    "gloss": "tax",
+    "alt": []
+   },
+   {
+    "w": "道具",
+    "reading": "どうぐ",
+    "pos": "n.",
+    "gloss": "tool; implement",
+    "alt": []
+   },
+   {
+    "w": "平和",
+    "reading": "へいわ",
+    "pos": "な-adj.",
+    "gloss": "peaceful; peace",
+    "alt": []
+   },
+   {
+    "w": "受け入れる",
+    "reading": "うけいれる",
+    "pos": "v.t.",
+    "gloss": "to accept; to take in",
+    "alt": []
+   },
+   {
+    "w": "伝わる",
+    "reading": "つたわる",
+    "pos": "v.i.",
+    "gloss": "to be handed down; to spread",
+    "alt": []
+   },
+   {
+    "w": "建てる",
+    "reading": "たてる",
+    "pos": "v.t.",
+    "gloss": "to build; to construct",
+    "alt": []
+   },
+   {
+    "w": "持ち帰る",
+    "reading": "もちかえる",
+    "pos": "v.t.",
+    "gloss": "to bring back",
+    "alt": []
+   },
+   {
+    "w": "広まる",
+    "reading": "ひろまる",
+    "pos": "v.i.",
+    "gloss": "to spread; to become widespread",
+    "alt": []
+   },
+   {
+    "w": "争う",
+    "reading": "あらそう",
+    "pos": "v.t.",
+    "gloss": "to fight over; to contend for",
+    "alt": []
+   },
+   {
+    "w": "進む",
+    "reading": "すすむ",
+    "pos": "v.i.",
+    "gloss": "to advance; to progress",
+    "alt": []
+   },
+   {
+    "w": "開く",
+    "reading": "ひらく",
+    "pos": "v.t.",
+    "gloss": "to open; to found (a government)",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 12,
+  "title_l2": "日本の伝統工芸",
+  "title_l1": "Traditional Japanese Crafts",
+  "items": [
+   {
+    "w": "工芸",
+    "reading": "こうげい",
+    "pos": "n.",
+    "gloss": "craft; applied art",
+    "alt": []
+   },
+   {
+    "w": "素材",
+    "reading": "そざい",
+    "pos": "n.",
+    "gloss": "material; raw material",
+    "alt": []
+   },
+   {
+    "w": "手作り",
+    "reading": "てづくり",
+    "pos": "n.",
+    "gloss": "handmade; made by hand",
+    "alt": []
+   },
+   {
+    "w": "手作業",
+    "reading": "てさくぎょう",
+    "pos": "n.",
+    "gloss": "handwork; manual work",
+    "alt": []
+   },
+   {
+    "w": "和紙",
+    "reading": "わし",
+    "pos": "n.",
+    "gloss": "washi; traditional Japanese paper",
+    "alt": []
+   },
+   {
+    "w": "折り紙",
+    "reading": "おりがみ",
+    "pos": "n.",
+    "gloss": "origami; paper folding",
+    "alt": []
+   },
+   {
+    "w": "鶴",
+    "reading": "つる",
+    "pos": "n.",
+    "gloss": "crane (the bird)",
+    "alt": []
+   },
+   {
+    "w": "千羽鶴",
+    "reading": "せんばづる",
+    "pos": "n.",
+    "gloss": "a thousand folded cranes; senbazuru",
+    "alt": []
+   },
+   {
+    "w": "繊維",
+    "reading": "せんい",
+    "pos": "n.",
+    "gloss": "fibre",
+    "alt": []
+   },
+   {
+    "w": "吸収",
+    "reading": "きゅうしゅう",
+    "pos": "n.",
+    "gloss": "absorption; soaking up",
+    "alt": []
+   },
+   {
+    "w": "水分",
+    "reading": "すいぶん",
+    "pos": "n.",
+    "gloss": "moisture; water content",
+    "alt": []
+   },
+   {
+    "w": "強度",
+    "reading": "きょうど",
+    "pos": "n.",
+    "gloss": "strength; durability",
+    "alt": []
+   },
+   {
+    "w": "用途",
+    "reading": "ようと",
+    "pos": "n.",
+    "gloss": "use; application",
+    "alt": []
+   },
+   {
+    "w": "工程",
+    "reading": "こうてい",
+    "pos": "n.",
+    "gloss": "process; stage of work",
+    "alt": []
+   },
+   {
+    "w": "技法",
+    "reading": "ぎほう",
+    "pos": "n.",
+    "gloss": "technique; method",
+    "alt": []
+   },
+   {
+    "w": "工房",
+    "reading": "こうぼう",
+    "pos": "n.",
+    "gloss": "workshop; studio",
+    "alt": []
+   },
+   {
+    "w": "産地",
+    "reading": "さんち",
+    "pos": "n.",
+    "gloss": "place of production",
+    "alt": []
+   },
+   {
+    "w": "願い",
+    "reading": "ねがい",
+    "pos": "n.",
+    "gloss": "wish; hope",
+    "alt": []
+   },
+   {
+    "w": "祝い",
+    "reading": "いわい",
+    "pos": "n.",
+    "gloss": "celebration; congratulation",
+    "alt": []
+   },
+   {
+    "w": "弟子",
+    "reading": "でし",
+    "pos": "n.",
+    "gloss": "apprentice; pupil",
+    "alt": []
+   },
+   {
+    "w": "後継者",
+    "reading": "こうけいしゃ",
+    "pos": "n.",
+    "gloss": "successor; person who carries on",
+    "alt": []
+   },
+   {
+    "w": "布",
+    "reading": "ぬの",
+    "pos": "n.",
+    "gloss": "cloth; fabric",
+    "alt": []
+   },
+   {
+    "w": "糸",
+    "reading": "いと",
+    "pos": "n.",
+    "gloss": "thread; yarn",
+    "alt": []
+   },
+   {
+    "w": "陶器",
+    "reading": "とうき",
+    "pos": "n.",
+    "gloss": "pottery; ceramics",
+    "alt": []
+   },
+   {
+    "w": "漆",
+    "reading": "うるし",
+    "pos": "n.",
+    "gloss": "lacquer; lacquerware",
+    "alt": []
+   },
+   {
+    "w": "繊細",
+    "reading": "せんさい",
+    "pos": "な-adj.",
+    "gloss": "delicate; fine",
+    "alt": []
+   },
+   {
+    "w": "細かい",
+    "reading": "こまかい",
+    "pos": "い-adj.",
+    "gloss": "fine; minute; detailed",
+    "alt": []
+   },
+   {
+    "w": "薄い",
+    "reading": "うすい",
+    "pos": "い-adj.",
+    "gloss": "thin; pale",
+    "alt": []
+   },
+   {
+    "w": "丈夫",
+    "reading": "じょうぶ",
+    "pos": "な-adj.",
+    "gloss": "sturdy; durable",
+    "alt": []
+   },
+   {
+    "w": "貴重",
+    "reading": "きちょう",
+    "pos": "な-adj.",
+    "gloss": "precious; valuable",
+    "alt": []
+   },
+   {
+    "w": "美しい",
+    "reading": "うつくしい",
+    "pos": "い-adj.",
+    "gloss": "beautiful",
+    "alt": []
+   },
+   {
+    "w": "折る",
+    "reading": "おる",
+    "pos": "v.t.",
+    "gloss": "to fold; to bend",
+    "alt": []
+   },
+   {
+    "w": "織る",
+    "reading": "おる",
+    "pos": "v.t.",
+    "gloss": "to weave",
+    "alt": []
+   },
+   {
+    "w": "漉く",
+    "reading": "すく",
+    "pos": "v.t.",
+    "gloss": "to pull paper by hand; to form a sheet of paper",
+    "alt": []
+   },
+   {
+    "w": "作る",
+    "reading": "つくる",
+    "pos": "v.t.",
+    "gloss": "to make; to create",
+    "alt": []
+   },
+   {
+    "w": "染める",
+    "reading": "そめる",
+    "pos": "v.t.",
+    "gloss": "to dye; to colour",
+    "alt": []
+   },
+   {
+    "w": "干す",
+    "reading": "ほす",
+    "pos": "v.t.",
+    "gloss": "to dry in the sun; to hang out",
+    "alt": []
+   },
+   {
+    "w": "乾かす",
+    "reading": "かわかす",
+    "pos": "v.t.",
+    "gloss": "to dry (something)",
+    "alt": []
+   },
+   {
+    "w": "混ぜる",
+    "reading": "まぜる",
+    "pos": "v.t.",
+    "gloss": "to mix",
+    "alt": []
+   },
+   {
+    "w": "削る",
+    "reading": "けずる",
+    "pos": "v.t.",
+    "gloss": "to shave; to whittle",
+    "alt": []
+   },
+   {
+    "w": "受け継ぐ",
+    "reading": "うけつぐ",
+    "pos": "v.t.",
+    "gloss": "to inherit; to carry on",
+    "alt": []
+   },
+   {
+    "w": "飾る",
+    "reading": "かざる",
+    "pos": "v.t.",
+    "gloss": "to decorate; to display",
+    "alt": []
+   },
+   {
+    "w": "贈る",
+    "reading": "おくる",
+    "pos": "v.t.",
+    "gloss": "to give (as a gift)",
+    "alt": []
+   },
+   {
+    "w": "仕上げる",
+    "reading": "しあげる",
+    "pos": "v.t.",
+    "gloss": "to finish; to complete (work)",
+    "alt": []
+   },
+   {
+    "w": "見習う",
+    "reading": "みならう",
+    "pos": "v.t.",
+    "gloss": "to learn by watching; to follow an example",
+    "alt": []
+   },
+   {
+    "w": "守る",
+    "reading": "まもる",
+    "pos": "v.t.",
+    "gloss": "to protect; to keep",
+    "alt": []
+   },
+   {
+    "w": "根づく",
+    "reading": "ねづく",
+    "pos": "v.i.",
+    "gloss": "to take root; to become established",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 13,
+  "title_l2": "日本人と自然",
+  "title_l1": "The Japanese and Nature",
+  "items": [
+   {
+    "w": "季節",
+    "reading": "きせつ",
+    "pos": "n.",
+    "gloss": "season",
+    "alt": []
+   },
+   {
+    "w": "移り変わり",
+    "reading": "うつりかわり",
+    "pos": "n.",
+    "gloss": "change; transition (of seasons)",
+    "alt": []
+   },
+   {
+    "w": "景色",
+    "reading": "けしき",
+    "pos": "n.",
+    "gloss": "scenery; view",
+    "alt": []
+   },
+   {
+    "w": "風景",
+    "reading": "ふうけい",
+    "pos": "n.",
+    "gloss": "scenery; landscape",
+    "alt": []
+   },
+   {
+    "w": "観察",
+    "reading": "かんさつ",
+    "pos": "n.",
+    "gloss": "observation; watching closely",
+    "alt": []
+   },
+   {
+    "w": "俳句",
+    "reading": "はいく",
+    "pos": "n.",
+    "gloss": "haiku (seventeen-syllable poem)",
+    "alt": []
+   },
+   {
+    "w": "川柳",
+    "reading": "せんりゅう",
+    "pos": "n.",
+    "gloss": "senryuu (seventeen-syllable comic poem)",
+    "alt": []
+   },
+   {
+    "w": "季語",
+    "reading": "きご",
+    "pos": "n.",
+    "gloss": "seasonal word (required in haiku)",
+    "alt": []
+   },
+   {
+    "w": "十七音",
+    "reading": "じゅうななおん",
+    "pos": "n.",
+    "gloss": "seventeen syllables",
+    "alt": []
+   },
+   {
+    "w": "詩",
+    "reading": "し",
+    "pos": "n.",
+    "gloss": "poem; poetry",
+    "alt": []
+   },
+   {
+    "w": "余白",
+    "reading": "よはく",
+    "pos": "n.",
+    "gloss": "blank space; margin",
+    "alt": []
+   },
+   {
+    "w": "標語",
+    "reading": "ひょうご",
+    "pos": "n.",
+    "gloss": "slogan; motto",
+    "alt": []
+   },
+   {
+    "w": "看板",
+    "reading": "かんばん",
+    "pos": "n.",
+    "gloss": "signboard; sign",
+    "alt": []
+   },
+   {
+    "w": "柱",
+    "reading": "はしら",
+    "pos": "n.",
+    "gloss": "pillar; post",
+    "alt": []
+   },
+   {
+    "w": "梅",
+    "reading": "うめ",
+    "pos": "n.",
+    "gloss": "plum; plum blossom",
+    "alt": []
+   },
+   {
+    "w": "蝉",
+    "reading": "せみ",
+    "pos": "n.",
+    "gloss": "cicada",
+    "alt": []
+   },
+   {
+    "w": "鳥",
+    "reading": "とり",
+    "pos": "n.",
+    "gloss": "bird",
+    "alt": []
+   },
+   {
+    "w": "草",
+    "reading": "くさ",
+    "pos": "n.",
+    "gloss": "grass; weed",
+    "alt": []
+   },
+   {
+    "w": "虫",
+    "reading": "むし",
+    "pos": "n.",
+    "gloss": "insect; bug",
+    "alt": []
+   },
+   {
+    "w": "空",
+    "reading": "そら",
+    "pos": "n.",
+    "gloss": "sky",
+    "alt": []
+   },
+   {
+    "w": "夕方",
+    "reading": "ゆうがた",
+    "pos": "n.",
+    "gloss": "evening; dusk",
+    "alt": []
+   },
+   {
+    "w": "庭",
+    "reading": "にわ",
+    "pos": "n.",
+    "gloss": "garden; yard",
+    "alt": []
+   },
+   {
+    "w": "道ばた",
+    "reading": "みちばた",
+    "pos": "n.",
+    "gloss": "roadside",
+    "alt": []
+   },
+   {
+    "w": "土地",
+    "reading": "とち",
+    "pos": "n.",
+    "gloss": "land; locality",
+    "alt": []
+   },
+   {
+    "w": "失敗",
+    "reading": "しっぱい",
+    "pos": "n.",
+    "gloss": "failure; mistake",
+    "alt": []
+   },
+   {
+    "w": "言い間違い",
+    "reading": "いいまちがい",
+    "pos": "n.",
+    "gloss": "slip of the tongue; verbal error",
+    "alt": []
+   },
+   {
+    "w": "一歩",
+    "reading": "いっぽ",
+    "pos": "n.",
+    "gloss": "one step",
+    "alt": []
+   },
+   {
+    "w": "手前",
+    "reading": "てまえ",
+    "pos": "n.",
+    "gloss": "just before; this side",
+    "alt": []
+   },
+   {
+    "w": "息",
+    "reading": "いき",
+    "pos": "n.",
+    "gloss": "breath",
+    "alt": []
+   },
+   {
+    "w": "重い",
+    "reading": "おもい",
+    "pos": "い-adj.",
+    "gloss": "heavy; weighty",
+    "alt": []
+   },
+   {
+    "w": "眺める",
+    "reading": "ながめる",
+    "pos": "v.t.",
+    "gloss": "to gaze at; to look out over",
+    "alt": []
+   },
+   {
+    "w": "見上げる",
+    "reading": "みあげる",
+    "pos": "v.t.",
+    "gloss": "to look up at",
+    "alt": []
+   },
+   {
+    "w": "見渡す",
+    "reading": "みわたす",
+    "pos": "v.t.",
+    "gloss": "to look out over; to survey",
+    "alt": []
+   },
+   {
+    "w": "切り取る",
+    "reading": "きりとる",
+    "pos": "v.t.",
+    "gloss": "to cut out; to frame (a scene)",
+    "alt": []
+   },
+   {
+    "w": "思い浮かべる",
+    "reading": "おもいうかべる",
+    "pos": "v.t.",
+    "gloss": "to call to mind; to picture",
+    "alt": []
+   },
+   {
+    "w": "詠む",
+    "reading": "よむ",
+    "pos": "v.t.",
+    "gloss": "to compose (a poem)",
+    "alt": []
+   },
+   {
+    "w": "咲く",
+    "reading": "さく",
+    "pos": "v.i.",
+    "gloss": "to bloom; to flower",
+    "alt": []
+   },
+   {
+    "w": "聞こえる",
+    "reading": "きこえる",
+    "pos": "v.i.",
+    "gloss": "to be audible; to be heard",
+    "alt": []
+   },
+   {
+    "w": "見える",
+    "reading": "みえる",
+    "pos": "v.i.",
+    "gloss": "to be visible; to look (a certain way)",
+    "alt": []
+   },
+   {
+    "w": "似る",
+    "reading": "にる",
+    "pos": "v.i.",
+    "gloss": "to resemble; to be similar",
+    "alt": []
+   },
+   {
+    "w": "貼る",
+    "reading": "はる",
+    "pos": "v.t.",
+    "gloss": "to paste; to put up (a notice)",
+    "alt": []
+   },
+   {
+    "w": "責める",
+    "reading": "せめる",
+    "pos": "v.t.",
+    "gloss": "to blame; to reproach",
+    "alt": []
+   },
+   {
+    "w": "急ぐ",
+    "reading": "いそぐ",
+    "pos": "v.i.",
+    "gloss": "to hurry; to be in a hurry",
+    "alt": []
+   },
+   {
+    "w": "省く",
+    "reading": "はぶく",
+    "pos": "v.t.",
+    "gloss": "to omit; to leave out",
+    "alt": []
+   },
+   {
+    "w": "はっきり",
+    "reading": "はっきり",
+    "pos": "adv.",
+    "gloss": "clearly; distinctly",
+    "alt": []
+   },
+   {
+    "w": "少しずつ",
+    "reading": "すこしずつ",
+    "pos": "adv.",
+    "gloss": "little by little; bit by bit",
+    "alt": []
+   },
+   {
+    "w": "たびに",
+    "reading": "たびに",
+    "pos": "exp.",
+    "gloss": "each time; every time",
+    "alt": []
+   },
+   {
+    "w": "かわりに",
+    "reading": "かわりに",
+    "pos": "exp.",
+    "gloss": "instead; as a trade-off",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 14,
+  "title_l2": "日本の政治",
+  "title_l1": "Japanese Politics",
+  "items": [
+   {
+    "w": "政治",
+    "reading": "せいじ",
+    "pos": "n.",
+    "gloss": "politics; political affairs",
+    "alt": []
+   },
+   {
+    "w": "選挙",
+    "reading": "せんきょ",
+    "pos": "n.",
+    "gloss": "election",
+    "alt": []
+   },
+   {
+    "w": "投票",
+    "reading": "とうひょう",
+    "pos": "n.",
+    "gloss": "vote; balloting",
+    "alt": []
+   },
+   {
+    "w": "投票率",
+    "reading": "とうひょうりつ",
+    "pos": "n.",
+    "gloss": "voter turnout",
+    "alt": []
+   },
+   {
+    "w": "議会",
+    "reading": "ぎかい",
+    "pos": "n.",
+    "gloss": "parliament; assembly; legislature",
+    "alt": []
+   },
+   {
+    "w": "議員",
+    "reading": "ぎいん",
+    "pos": "n.",
+    "gloss": "member of a legislature; diet member",
+    "alt": []
+   },
+   {
+    "w": "政党",
+    "reading": "せいとう",
+    "pos": "n.",
+    "gloss": "political party",
+    "alt": []
+   },
+   {
+    "w": "政策",
+    "reading": "せいさく",
+    "pos": "n.",
+    "gloss": "policy; set of measures",
+    "alt": []
+   },
+   {
+    "w": "討論",
+    "reading": "とうろん",
+    "pos": "n.",
+    "gloss": "debate; discussion",
+    "alt": []
+   },
+   {
+    "w": "討論会",
+    "reading": "とうろんかい",
+    "pos": "n.",
+    "gloss": "public debate; debate session",
+    "alt": []
+   },
+   {
+    "w": "国会",
+    "reading": "こっかい",
+    "pos": "n.",
+    "gloss": "the National Diet",
+    "alt": []
+   },
+   {
+    "w": "衆議院",
+    "reading": "しゅうぎいん",
+    "pos": "n.",
+    "gloss": "House of Representatives (lower house)",
+    "alt": []
+   },
+   {
+    "w": "参議院",
+    "reading": "さんぎいん",
+    "pos": "n.",
+    "gloss": "House of Councillors (upper house)",
+    "alt": []
+   },
+   {
+    "w": "二院制",
+    "reading": "にいんせい",
+    "pos": "n.",
+    "gloss": "bicameral system",
+    "alt": []
+   },
+   {
+    "w": "内閣",
+    "reading": "ないかく",
+    "pos": "n.",
+    "gloss": "cabinet",
+    "alt": []
+   },
+   {
+    "w": "首相",
+    "reading": "しゅしょう",
+    "pos": "n.",
+    "gloss": "prime minister",
+    "alt": []
+   },
+   {
+    "w": "与党",
+    "reading": "よとう",
+    "pos": "n.",
+    "gloss": "ruling party; governing party",
+    "alt": []
+   },
+   {
+    "w": "野党",
+    "reading": "やとう",
+    "pos": "n.",
+    "gloss": "opposition party",
+    "alt": []
+   },
+   {
+    "w": "政府",
+    "reading": "せいふ",
+    "pos": "n.",
+    "gloss": "government",
+    "alt": []
+   },
+   {
+    "w": "候補者",
+    "reading": "こうほしゃ",
+    "pos": "n.",
+    "gloss": "candidate",
+    "alt": []
+   },
+   {
+    "w": "立候補",
+    "reading": "りっこうほ",
+    "pos": "n.",
+    "gloss": "running for office; candidacy",
+    "alt": []
+   },
+   {
+    "w": "有権者",
+    "reading": "ゆうけんしゃ",
+    "pos": "n.",
+    "gloss": "voter",
+    "alt": []
+   },
+   {
+    "w": "選挙権",
+    "reading": "せんきょけん",
+    "pos": "n.",
+    "gloss": "the right to vote; suffrage",
+    "alt": []
+   },
+   {
+    "w": "当選",
+    "reading": "とうせん",
+    "pos": "n.",
+    "gloss": "being elected",
+    "alt": []
+   },
+   {
+    "w": "任期",
+    "reading": "にんき",
+    "pos": "n.",
+    "gloss": "term of office",
+    "alt": []
+   },
+   {
+    "w": "解散",
+    "reading": "かいさん",
+    "pos": "n.",
+    "gloss": "dissolution (of a legislature)",
+    "alt": []
+   },
+   {
+    "w": "総選挙",
+    "reading": "そうせんきょ",
+    "pos": "n.",
+    "gloss": "general election",
+    "alt": []
+   },
+   {
+    "w": "過半数",
+    "reading": "かはんすう",
+    "pos": "n.",
+    "gloss": "a majority; more than half",
+    "alt": []
+   },
+   {
+    "w": "多数決",
+    "reading": "たすうけつ",
+    "pos": "n.",
+    "gloss": "majority decision",
+    "alt": []
+   },
+   {
+    "w": "採決",
+    "reading": "さいけつ",
+    "pos": "n.",
+    "gloss": "vote; putting a question to a vote",
+    "alt": []
+   },
+   {
+    "w": "法案",
+    "reading": "ほうあん",
+    "pos": "n.",
+    "gloss": "bill; proposed legislation",
+    "alt": []
+   },
+   {
+    "w": "可決",
+    "reading": "かけつ",
+    "pos": "n.",
+    "gloss": "passage of a bill",
+    "alt": []
+   },
+   {
+    "w": "否決",
+    "reading": "ひけつ",
+    "pos": "n.",
+    "gloss": "rejection of a bill",
+    "alt": []
+   },
+   {
+    "w": "予算",
+    "reading": "よさん",
+    "pos": "n.",
+    "gloss": "budget",
+    "alt": []
+   },
+   {
+    "w": "憲法",
+    "reading": "けんぽう",
+    "pos": "n.",
+    "gloss": "constitution",
+    "alt": []
+   },
+   {
+    "w": "国民",
+    "reading": "こくみん",
+    "pos": "n.",
+    "gloss": "the people; citizens",
+    "alt": []
+   },
+   {
+    "w": "委員会",
+    "reading": "いいんかい",
+    "pos": "n.",
+    "gloss": "committee",
+    "alt": []
+   },
+   {
+    "w": "審議",
+    "reading": "しんぎ",
+    "pos": "n.",
+    "gloss": "deliberation; discussion of a bill",
+    "alt": []
+   },
+   {
+    "w": "演説",
+    "reading": "えんぜつ",
+    "pos": "n.",
+    "gloss": "public speech; address",
+    "alt": []
+   },
+   {
+    "w": "公約",
+    "reading": "こうやく",
+    "pos": "n.",
+    "gloss": "campaign pledge; manifesto",
+    "alt": []
+   },
+   {
+    "w": "論点",
+    "reading": "ろんてん",
+    "pos": "n.",
+    "gloss": "point at issue",
+    "alt": []
+   },
+   {
+    "w": "根拠",
+    "reading": "こんきょ",
+    "pos": "n.",
+    "gloss": "grounds; basis",
+    "alt": []
+   },
+   {
+    "w": "提案",
+    "reading": "ていあん",
+    "pos": "n.",
+    "gloss": "proposal; suggestion",
+    "alt": []
+   },
+   {
+    "w": "合意",
+    "reading": "ごうい",
+    "pos": "n.",
+    "gloss": "agreement; consensus",
+    "alt": []
+   },
+   {
+    "w": "調整",
+    "reading": "ちょうせい",
+    "pos": "n.",
+    "gloss": "adjustment; coordination",
+    "alt": []
+   },
+   {
+    "w": "成立",
+    "reading": "せいりつ",
+    "pos": "n.",
+    "gloss": "coming into effect; enactment",
+    "alt": []
+   },
+   {
+    "w": "中立",
+    "reading": "ちゅうりつ",
+    "pos": "な-adj.",
+    "gloss": "neutral; impartial",
+    "alt": []
+   },
+   {
+    "w": "質問",
+    "reading": "しつもん",
+    "pos": "n.",
+    "gloss": "question",
+    "alt": []
+   },
+   {
+    "w": "答える",
+    "reading": "こたえる",
+    "pos": "v.i.",
+    "gloss": "to answer",
+    "alt": []
+   },
+   {
+    "w": "まとめる",
+    "reading": "まとめる",
+    "pos": "v.t.",
+    "gloss": "to bring together; to sum up",
+    "alt": []
+   },
+   {
+    "w": "実行",
+    "reading": "じつこう",
+    "pos": "n.",
+    "gloss": "carrying out; putting into practice",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "recap",
+  "lesson": 15,
+  "title_l2": "世界と私の国の未来",
+  "title_l1": "The Future of Your Country and the World",
+  "items": [
+   {
+    "w": "世界",
+    "reading": "せかい",
+    "pos": "n.",
+    "gloss": "world; the world at large",
+    "alt": []
+   },
+   {
+    "w": "未来",
+    "reading": "みらい",
+    "pos": "n.",
+    "gloss": "future; the time to come",
+    "alt": []
+   },
+   {
+    "w": "将来",
+    "reading": "しょうらい",
+    "pos": "n.",
+    "gloss": "future; one's prospects",
+    "alt": []
+   },
+   {
+    "w": "地球",
+    "reading": "ちきゅう",
+    "pos": "n.",
+    "gloss": "the earth; the globe",
+    "alt": []
+   },
+   {
+    "w": "資源",
+    "reading": "しげん",
+    "pos": "n.",
+    "gloss": "natural resource; resources",
+    "alt": []
+   },
+   {
+    "w": "食料",
+    "reading": "しょくりょう",
+    "pos": "n.",
+    "gloss": "food; foodstuffs",
+    "alt": []
+   },
+   {
+    "w": "燃料",
+    "reading": "ねんりょう",
+    "pos": "n.",
+    "gloss": "fuel",
+    "alt": []
+   },
+   {
+    "w": "貧困",
+    "reading": "ひんこん",
+    "pos": "n.",
+    "gloss": "poverty",
+    "alt": []
+   },
+   {
+    "w": "医療",
+    "reading": "いりょう",
+    "pos": "n.",
+    "gloss": "medical care; healthcare",
+    "alt": []
+   },
+   {
+    "w": "支援",
+    "reading": "しえん",
+    "pos": "n.",
+    "gloss": "support; assistance",
+    "alt": []
+   },
+   {
+    "w": "豊か",
+    "reading": "ゆたか",
+    "pos": "な-adj.",
+    "gloss": "abundant; well-off",
+    "alt": []
+   },
+   {
+    "w": "温かい",
+    "reading": "あたたかい",
+    "pos": "い-adj.",
+    "gloss": "warm; kindly",
+    "alt": []
+   },
+   {
+    "w": "全体",
+    "reading": "ぜんたい",
+    "pos": "n.",
+    "gloss": "the whole; the entirety",
+    "alt": []
+   },
+   {
+    "w": "割合",
+    "reading": "わりあい",
+    "pos": "n.",
+    "gloss": "proportion; ratio",
+    "alt": []
+   },
+   {
+    "w": "数字",
+    "reading": "すうじ",
+    "pos": "n.",
+    "gloss": "number; figure",
+    "alt": []
+   },
+   {
+    "w": "半分",
+    "reading": "はんぶん",
+    "pos": "n.",
+    "gloss": "half",
+    "alt": []
+   },
+   {
+    "w": "換算",
+    "reading": "かんさん",
+    "pos": "n.",
+    "gloss": "conversion (into another unit)",
+    "alt": []
+   },
+   {
+    "w": "基準",
+    "reading": "きじゅん",
+    "pos": "n.",
+    "gloss": "standard; basis for comparison",
+    "alt": []
+   },
+   {
+    "w": "段階",
+    "reading": "だんかい",
+    "pos": "n.",
+    "gloss": "stage; phase",
+    "alt": []
+   },
+   {
+    "w": "無駄",
+    "reading": "むだ",
+    "pos": "な-adj.",
+    "gloss": "waste; wasted effort",
+    "alt": []
+   },
+   {
+    "w": "もったいない",
+    "reading": "もったいない",
+    "pos": "い-adj.",
+    "gloss": "wasteful; a shame to waste",
+    "alt": []
+   },
+   {
+    "w": "削減",
+    "reading": "さくげん",
+    "pos": "n.",
+    "gloss": "reduction; cut",
+    "alt": []
+   },
+   {
+    "w": "消費",
+    "reading": "しょうひ",
+    "pos": "n.",
+    "gloss": "consumption",
+    "alt": []
+   },
+   {
+    "w": "ごみ",
+    "reading": "ごみ",
+    "pos": "n.",
+    "gloss": "rubbish; trash",
+    "alt": []
+   },
+   {
+    "w": "足りる",
+    "reading": "たりる",
+    "pos": "v.i.",
+    "gloss": "to be enough; to suffice",
+    "alt": []
+   },
+   {
+    "w": "分ける",
+    "reading": "わける",
+    "pos": "v.t.",
+    "gloss": "to divide; to share out",
+    "alt": []
+   },
+   {
+    "w": "割る",
+    "reading": "わる",
+    "pos": "v.t.",
+    "gloss": "to divide; to split",
+    "alt": []
+   },
+   {
+    "w": "比べる",
+    "reading": "くらべる",
+    "pos": "v.t.",
+    "gloss": "to compare",
+    "alt": []
+   },
+   {
+    "w": "例える",
+    "reading": "たとえる",
+    "pos": "v.t.",
+    "gloss": "to liken; to compare to",
+    "alt": []
+   },
+   {
+    "w": "たとえ",
+    "reading": "たとえ",
+    "pos": "conj.",
+    "gloss": "even if; no matter how",
+    "alt": []
+   },
+   {
+    "w": "比喩",
+    "reading": "ひゆ",
+    "pos": "n.",
+    "gloss": "metaphor; simile",
+    "alt": []
+   },
+   {
+    "w": "象徴",
+    "reading": "しょうちょう",
+    "pos": "n.",
+    "gloss": "symbol",
+    "alt": []
+   },
+   {
+    "w": "価値",
+    "reading": "かち",
+    "pos": "n.",
+    "gloss": "value; worth",
+    "alt": []
+   },
+   {
+    "w": "想像",
+    "reading": "そうぞう",
+    "pos": "n.",
+    "gloss": "imagination; imagining",
+    "alt": []
+   },
+   {
+    "w": "仮に",
+    "reading": "かりに",
+    "pos": "adv.",
+    "gloss": "supposing; for argument's sake",
+    "alt": []
+   },
+   {
+    "w": "縮める",
+    "reading": "ちぢめる",
+    "pos": "v.t.",
+    "gloss": "to shrink; to condense",
+    "alt": []
+   },
+   {
+    "w": "意識",
+    "reading": "いしき",
+    "pos": "n.",
+    "gloss": "awareness; consciousness",
+    "alt": []
+   },
+   {
+    "w": "行動",
+    "reading": "こうどう",
+    "pos": "n.",
+    "gloss": "action; behaviour",
+    "alt": []
+   },
+   {
+    "w": "視点",
+    "reading": "してん",
+    "pos": "n.",
+    "gloss": "viewpoint; perspective",
+    "alt": []
+   },
+   {
+    "w": "見直す",
+    "reading": "みなおす",
+    "pos": "v.t.",
+    "gloss": "to review; to reconsider",
+    "alt": []
+   },
+   {
+    "w": "気づく",
+    "reading": "きづく",
+    "pos": "v.i.",
+    "gloss": "to notice; to realise",
+    "alt": []
+   },
+   {
+    "w": "暮らし",
+    "reading": "くらし",
+    "pos": "n.",
+    "gloss": "daily life; way of living",
+    "alt": []
+   },
+   {
+    "w": "幸せ",
+    "reading": "しあわせ",
+    "pos": "な-adj.",
+    "gloss": "happy; happiness",
+    "alt": []
+   },
+   {
+    "w": "知恵",
+    "reading": "ちえ",
+    "pos": "n.",
+    "gloss": "wisdom; know-how",
+    "alt": []
+   },
+   {
+    "w": "実は",
+    "reading": "じつは",
+    "pos": "adv.",
+    "gloss": "actually; in fact",
+    "alt": []
+   },
+   {
+    "w": "つまり",
+    "reading": "つまり",
+    "pos": "adv.",
+    "gloss": "in other words; that is",
+    "alt": []
+   },
+   {
+    "w": "むしろ",
+    "reading": "むしろ",
+    "pos": "adv.",
+    "gloss": "rather; if anything",
+    "alt": []
+   },
+   {
+    "w": "必ずしも",
+    "reading": "かならずしも",
+    "pos": "adv.",
+    "gloss": "not necessarily",
+    "alt": []
+   },
+   {
+    "w": "たとえば",
+    "reading": "たとえば",
+    "pos": "adv.",
+    "gloss": "for example",
+    "alt": []
+   }
+  ]
+ },
+ {
   "deck": "n2",
   "lesson": 101,
   "title_l2": "N2 語彙 1",
@@ -1549,6 +5873,638 @@
     "reading": "しんこく",
     "pos": "な-adj.",
     "gloss": "serious; grave",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "n2",
+  "lesson": 102,
+  "title_l2": "N2 語彙 2",
+  "title_l1": "JLPT N2 vocabulary, set 2 — formal verbs",
+  "items": [
+   {
+    "w": "含む",
+    "reading": "ふくむ",
+    "pos": "v.t.",
+    "gloss": "to contain; to include",
+    "alt": []
+   },
+   {
+    "w": "含める",
+    "reading": "ふくめる",
+    "pos": "v.t.",
+    "gloss": "to include (something in a set)",
+    "alt": []
+   },
+   {
+    "w": "除く",
+    "reading": "のぞく",
+    "pos": "v.t.",
+    "gloss": "to exclude; to remove",
+    "alt": []
+   },
+   {
+    "w": "示す",
+    "reading": "しめす",
+    "pos": "v.t.",
+    "gloss": "to indicate; to show",
+    "alt": []
+   },
+   {
+    "w": "指す",
+    "reading": "さす",
+    "pos": "v.t.",
+    "gloss": "to point at; to refer to",
+    "alt": []
+   },
+   {
+    "w": "述べる",
+    "reading": "のべる",
+    "pos": "v.t.",
+    "gloss": "to state; to mention",
+    "alt": []
+   },
+   {
+    "w": "認める",
+    "reading": "みとめる",
+    "pos": "v.t.",
+    "gloss": "to acknowledge; to admit",
+    "alt": []
+   },
+   {
+    "w": "断る",
+    "reading": "ことわる",
+    "pos": "v.t.",
+    "gloss": "to refuse; to decline",
+    "alt": []
+   },
+   {
+    "w": "避ける",
+    "reading": "さける",
+    "pos": "v.t.",
+    "gloss": "to avoid; to dodge",
+    "alt": []
+   },
+   {
+    "w": "防ぐ",
+    "reading": "ふせぐ",
+    "pos": "v.t.",
+    "gloss": "to prevent; to guard against",
+    "alt": []
+   },
+   {
+    "w": "破る",
+    "reading": "やぶる",
+    "pos": "v.t.",
+    "gloss": "to break (a rule or promise)",
+    "alt": []
+   },
+   {
+    "w": "従う",
+    "reading": "したがう",
+    "pos": "v.i.",
+    "gloss": "to follow; to obey",
+    "alt": []
+   },
+   {
+    "w": "頼む",
+    "reading": "たのむ",
+    "pos": "v.t.",
+    "gloss": "to ask for; to request",
+    "alt": []
+   },
+   {
+    "w": "頼る",
+    "reading": "たよる",
+    "pos": "v.i.",
+    "gloss": "to rely on",
+    "alt": []
+   },
+   {
+    "w": "望む",
+    "reading": "のぞむ",
+    "pos": "v.t.",
+    "gloss": "to hope for; to desire",
+    "alt": []
+   },
+   {
+    "w": "求める",
+    "reading": "もとめる",
+    "pos": "v.t.",
+    "gloss": "to seek; to demand",
+    "alt": []
+   },
+   {
+    "w": "与える",
+    "reading": "あたえる",
+    "pos": "v.t.",
+    "gloss": "to give; to grant",
+    "alt": []
+   },
+   {
+    "w": "得る",
+    "reading": "える",
+    "pos": "v.t.",
+    "gloss": "to obtain; to gain",
+    "alt": []
+   },
+   {
+    "w": "失う",
+    "reading": "うしなう",
+    "pos": "v.t.",
+    "gloss": "to lose",
+    "alt": []
+   },
+   {
+    "w": "保つ",
+    "reading": "たもつ",
+    "pos": "v.t.",
+    "gloss": "to maintain; to keep",
+    "alt": []
+   },
+   {
+    "w": "加える",
+    "reading": "くわえる",
+    "pos": "v.t.",
+    "gloss": "to add",
+    "alt": []
+   },
+   {
+    "w": "叱る",
+    "reading": "しかる",
+    "pos": "v.t.",
+    "gloss": "to scold",
+    "alt": []
+   },
+   {
+    "w": "疑う",
+    "reading": "うたがう",
+    "pos": "v.t.",
+    "gloss": "to doubt; to suspect",
+    "alt": []
+   },
+   {
+    "w": "信じる",
+    "reading": "しんじる",
+    "pos": "v.t.",
+    "gloss": "to believe",
+    "alt": []
+   },
+   {
+    "w": "確かめる",
+    "reading": "たしかめる",
+    "pos": "v.t.",
+    "gloss": "to confirm; to make sure",
+    "alt": []
+   },
+   {
+    "w": "調べる",
+    "reading": "しらべる",
+    "pos": "v.t.",
+    "gloss": "to investigate; to look up",
+    "alt": []
+   },
+   {
+    "w": "記録する",
+    "reading": "きろくする",
+    "pos": "v.suru",
+    "gloss": "to record",
+    "alt": []
+   },
+   {
+    "w": "報告する",
+    "reading": "ほうこくする",
+    "pos": "v.suru",
+    "gloss": "to report",
+    "alt": []
+   },
+   {
+    "w": "連絡する",
+    "reading": "れんらくする",
+    "pos": "v.suru",
+    "gloss": "to contact; to get in touch",
+    "alt": []
+   },
+   {
+    "w": "相談する",
+    "reading": "そうだんする",
+    "pos": "v.suru",
+    "gloss": "to consult",
+    "alt": []
+   },
+   {
+    "w": "説明する",
+    "reading": "せつめいする",
+    "pos": "v.suru",
+    "gloss": "to explain",
+    "alt": []
+   },
+   {
+    "w": "提案する",
+    "reading": "ていあんする",
+    "pos": "v.suru",
+    "gloss": "to propose",
+    "alt": []
+   },
+   {
+    "w": "調査する",
+    "reading": "ちょうさする",
+    "pos": "v.suru",
+    "gloss": "to investigate",
+    "alt": []
+   },
+   {
+    "w": "分析する",
+    "reading": "ぶんせきする",
+    "pos": "v.suru",
+    "gloss": "to analyse",
+    "alt": []
+   },
+   {
+    "w": "評価する",
+    "reading": "ひょうかする",
+    "pos": "v.suru",
+    "gloss": "to evaluate",
+    "alt": []
+   },
+   {
+    "w": "予想する",
+    "reading": "よそうする",
+    "pos": "v.suru",
+    "gloss": "to predict",
+    "alt": []
+   },
+   {
+    "w": "想像する",
+    "reading": "そうぞうする",
+    "pos": "v.suru",
+    "gloss": "to imagine",
+    "alt": []
+   },
+   {
+    "w": "応用する",
+    "reading": "おうようする",
+    "pos": "v.suru",
+    "gloss": "to apply (knowledge)",
+    "alt": []
+   },
+   {
+    "w": "活用する",
+    "reading": "かつようする",
+    "pos": "v.suru",
+    "gloss": "to put to use",
+    "alt": []
+   },
+   {
+    "w": "促進する",
+    "reading": "そくしんする",
+    "pos": "v.suru",
+    "gloss": "to promote; to accelerate",
+    "alt": []
+   },
+   {
+    "w": "導入する",
+    "reading": "どうにゅうする",
+    "pos": "v.suru",
+    "gloss": "to introduce; to bring in",
+    "alt": []
+   },
+   {
+    "w": "維持する",
+    "reading": "いじする",
+    "pos": "v.suru",
+    "gloss": "to maintain",
+    "alt": []
+   },
+   {
+    "w": "廃止する",
+    "reading": "はいしする",
+    "pos": "v.suru",
+    "gloss": "to abolish; to discontinue",
+    "alt": []
+   }
+  ]
+ },
+ {
+  "deck": "n2",
+  "lesson": 103,
+  "title_l2": "N2 語彙 3",
+  "title_l1": "JLPT N2 vocabulary, set 3 — connectives, adverbs and abstract nouns",
+  "items": [
+   {
+    "w": "主に",
+    "reading": "おもに",
+    "pos": "adv.",
+    "gloss": "mainly; chiefly",
+    "alt": []
+   },
+   {
+    "w": "改めて",
+    "reading": "あらためて",
+    "pos": "adv.",
+    "gloss": "again; anew",
+    "alt": []
+   },
+   {
+    "w": "あらかじめ",
+    "reading": "あらかじめ",
+    "pos": "adv.",
+    "gloss": "in advance",
+    "alt": []
+   },
+   {
+    "w": "直ちに",
+    "reading": "ただちに",
+    "pos": "adv.",
+    "gloss": "immediately",
+    "alt": []
+   },
+   {
+    "w": "次第に",
+    "reading": "しだいに",
+    "pos": "adv.",
+    "gloss": "gradually",
+    "alt": []
+   },
+   {
+    "w": "徐々に",
+    "reading": "じょじょに",
+    "pos": "adv.",
+    "gloss": "steadily; little by little",
+    "alt": []
+   },
+   {
+    "w": "依然として",
+    "reading": "いぜんとして",
+    "pos": "adv.",
+    "gloss": "still; as yet",
+    "alt": []
+   },
+   {
+    "w": "かえって",
+    "reading": "かえって",
+    "pos": "adv.",
+    "gloss": "on the contrary",
+    "alt": []
+   },
+   {
+    "w": "単に",
+    "reading": "たんに",
+    "pos": "adv.",
+    "gloss": "merely; simply",
+    "alt": []
+   },
+   {
+    "w": "特に",
+    "reading": "とくに",
+    "pos": "adv.",
+    "gloss": "especially",
+    "alt": []
+   },
+   {
+    "w": "大幅に",
+    "reading": "おおはばに",
+    "pos": "adv.",
+    "gloss": "substantially",
+    "alt": []
+   },
+   {
+    "w": "急に",
+    "reading": "きゅうに",
+    "pos": "adv.",
+    "gloss": "suddenly",
+    "alt": []
+   },
+   {
+    "w": "偶然",
+    "reading": "ぐうぜん",
+    "pos": "adv.",
+    "gloss": "by chance; coincidence",
+    "alt": []
+   },
+   {
+    "w": "必然",
+    "reading": "ひつぜん",
+    "pos": "n.",
+    "gloss": "inevitability",
+    "alt": []
+   },
+   {
+    "w": "相互",
+    "reading": "そうご",
+    "pos": "n.",
+    "gloss": "mutual; reciprocal",
+    "alt": []
+   },
+   {
+    "w": "逆に",
+    "reading": "ぎゃくに",
+    "pos": "adv.",
+    "gloss": "conversely",
+    "alt": []
+   },
+   {
+    "w": "同時に",
+    "reading": "どうじに",
+    "pos": "adv.",
+    "gloss": "at the same time",
+    "alt": []
+   },
+   {
+    "w": "当面",
+    "reading": "とうめん",
+    "pos": "n.",
+    "gloss": "for the time being",
+    "alt": []
+   },
+   {
+    "w": "したがって",
+    "reading": "したがって",
+    "pos": "conj.",
+    "gloss": "therefore",
+    "alt": []
+   },
+   {
+    "w": "ゆえに",
+    "reading": "ゆえに",
+    "pos": "conj.",
+    "gloss": "therefore; hence",
+    "alt": []
+   },
+   {
+    "w": "すなわち",
+    "reading": "すなわち",
+    "pos": "conj.",
+    "gloss": "that is to say",
+    "alt": []
+   },
+   {
+    "w": "例えば",
+    "reading": "たとえば",
+    "pos": "adv.",
+    "gloss": "for example",
+    "alt": []
+   },
+   {
+    "w": "要するに",
+    "reading": "ようするに",
+    "pos": "exp.",
+    "gloss": "in short",
+    "alt": []
+   },
+   {
+    "w": "さらに",
+    "reading": "さらに",
+    "pos": "adv.",
+    "gloss": "furthermore",
+    "alt": []
+   },
+   {
+    "w": "なお",
+    "reading": "なお",
+    "pos": "conj.",
+    "gloss": "in addition; still",
+    "alt": []
+   },
+   {
+    "w": "および",
+    "reading": "および",
+    "pos": "conj.",
+    "gloss": "and",
+    "alt": []
+   },
+   {
+    "w": "ならびに",
+    "reading": "ならびに",
+    "pos": "conj.",
+    "gloss": "as well as",
+    "alt": []
+   },
+   {
+    "w": "または",
+    "reading": "または",
+    "pos": "conj.",
+    "gloss": "or",
+    "alt": []
+   },
+   {
+    "w": "あるいは",
+    "reading": "あるいは",
+    "pos": "conj.",
+    "gloss": "or; perhaps",
+    "alt": []
+   },
+   {
+    "w": "万一",
+    "reading": "まんいち",
+    "pos": "n.",
+    "gloss": "in the unlikely event",
+    "alt": []
+   },
+   {
+    "w": "実際に",
+    "reading": "じっさいに",
+    "pos": "adv.",
+    "gloss": "in practice; actually",
+    "alt": []
+   },
+   {
+    "w": "現実",
+    "reading": "げんじつ",
+    "pos": "n.",
+    "gloss": "reality",
+    "alt": []
+   },
+   {
+    "w": "理想",
+    "reading": "りそう",
+    "pos": "n.",
+    "gloss": "ideal",
+    "alt": []
+   },
+   {
+    "w": "程度",
+    "reading": "ていど",
+    "pos": "n.",
+    "gloss": "degree; extent",
+    "alt": []
+   },
+   {
+    "w": "範囲",
+    "reading": "はんい",
+    "pos": "n.",
+    "gloss": "range; scope",
+    "alt": []
+   },
+   {
+    "w": "限度",
+    "reading": "げんど",
+    "pos": "n.",
+    "gloss": "limit",
+    "alt": []
+   },
+   {
+    "w": "方針",
+    "reading": "ほうしん",
+    "pos": "n.",
+    "gloss": "policy; course of action",
+    "alt": []
+   },
+   {
+    "w": "傾向",
+    "reading": "けいこう",
+    "pos": "n.",
+    "gloss": "tendency; trend",
+    "alt": []
+   },
+   {
+    "w": "要素",
+    "reading": "ようそ",
+    "pos": "n.",
+    "gloss": "element; factor",
+    "alt": []
+   },
+   {
+    "w": "背景",
+    "reading": "はいけい",
+    "pos": "n.",
+    "gloss": "background",
+    "alt": []
+   },
+   {
+    "w": "現象",
+    "reading": "げんしょう",
+    "pos": "n.",
+    "gloss": "phenomenon",
+    "alt": []
+   },
+   {
+    "w": "担当",
+    "reading": "たんとう",
+    "pos": "n.",
+    "gloss": "being in charge",
+    "alt": []
+   },
+   {
+    "w": "責任",
+    "reading": "せきにん",
+    "pos": "n.",
+    "gloss": "responsibility",
+    "alt": []
+   },
+   {
+    "w": "義務",
+    "reading": "ぎむ",
+    "pos": "n.",
+    "gloss": "obligation; duty",
+    "alt": []
+   },
+   {
+    "w": "権利",
+    "reading": "けんり",
+    "pos": "n.",
+    "gloss": "right; entitlement",
     "alt": []
    }
   ]

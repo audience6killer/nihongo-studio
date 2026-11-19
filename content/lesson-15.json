@@ -1,0 +1,151 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 15,
+  "title": { "l2": "世界と私の国の未来", "l1": "The Future of Your Country and the World" },
+  "grammar": {
+    "point_l2": "たとえ・メタファー",
+    "point_l1": "Simile and metaphor: 〜のように, まるで〜ようだ, 〜にたとえると, たとえ〜ても",
+    "explain_l1": "Recap: 〜のような and 〜のように both turn a noun into a comparison, and what follows decides which you need — のような before a noun (くじ引きのような偶然), のように before a verb or adjective (くじ引きのように決まる). まるで ('exactly like') still needs ようだ or みたいだ to close the sentence, 〜にたとえると makes the comparison explicit and slightly academic, and たとえ〜ても concedes a point before you deny what people expect to follow from it. The register difference is the part learners miss: ようだ hedges and says 'it is like', while Japanese essays and speeches also state a metaphor flat — 世界は一つの村だ — as a claim the writer is willing to defend. Japanese simile also reaches for concrete everyday objects (くじ引き, 台所, 在庫) far more than for abstract nouns, and an abstract vehicle usually reads like a translation.",
+    "common_mistake_l1": "Putting のように in front of a noun. 偶然 is a noun, so the comparison that modifies it needs the な-adjective form: くじ引きのような偶然, never くじ引きのように偶然. A second slip is opening with まるで and then forgetting the ようだ ending — without it the sentence stops being a comparison and turns back into a flat fact.",
+    "examples": [
+      {
+        "l2": "世界を百人に縮めると、一つの村のように見える。",
+        "reading": "せかいをひゃくにんにちぢめると、ひとつのむらのようにみえる。",
+        "l1": "Shrink the world to a hundred people and it looks like a single village."
+      },
+      {
+        "l2": "たとえ百人に縮めても、村の中の差は消えない。まるで世界がそのまま小さくなったようだ。",
+        "reading": "たとえひゃくにんにちぢめても、むらのなかでのさがきえない。まるでせかいがそのままちいさくなったようだ。",
+        "l1": "Even shrunk to a hundred people the gaps inside the village do not vanish; it is as if the world were simply made smaller."
+      },
+      {
+        "l2": "世界を一つの村にたとえると、十人に一人は水を飲めないことになる。だから「世界は一つの村だ」と言う人もいる。",
+        "reading": "せかいをひとつのむらにたとえると、じゅうにんにひとりはみずをのめないことになる。だから「せかいはひとつのむらだ」というひともいる。",
+        "l1": "If you liken the world to a single village, one person in ten turns out to be unable to drink water; that is why some people simply say \"the world is one village.\""
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "次の中で、文法の正しい文はどれですか。",
+        "options_l2": [
+          "村の差は、くじ引きのような偶然だ。",
+          "村の差は、くじ引きのように偶然だ。",
+          "村の差は、くじ引きのようだ偶然だ。",
+          "村の差は、くじ引きような偶然だ。"
+        ],
+        "answer": 0,
+        "explain_l1": "偶然 is a noun and the comparison modifies it, so you need the な-adjective form のような. のように can only modify a verb or adjective (くじ引きのように決まる), ようだ cannot sit inside a noun phrase, and ような without の is not a form Japanese uses."
+      },
+      {
+        "q_l2": "ていねいなレポートに合う文はどれですか。",
+        "options_l2": [
+          "世界は一つの村だ。",
+          "世界はまるで一つの村だ。",
+          "世界は一つの村のようなものだ。",
+          "世界を一つの村にたとえる。"
+        ],
+        "answer": 2,
+        "explain_l1": "In a careful report you hedge the metaphor with ようなものだ, which marks it as a comparison rather than a fact. 世界は一つの村だ states it flatly — fine for an essay title or a speech, too strong here. まるで with a bare だ is missing its ようだ ending, and the last option leaves たとえる with no と clause to complete it."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "世界の人口を、百人だけの村に置きかえて想像してみる。その村の半分は男性で、半分は女性だ。生まれる国は自分では選べない。だから、どの家に生まれるかは、くじ引きのようなものだ。北には豊かな家が並び、南には今夜の食事にも困る家がある。たとえば、村の十人に一人は、きれいな水を飲めない。もったいないという言葉は、まだ使える物を捨てるときに使う。この言葉には、ものを最後まで使う知恵がこめられている。百人に縮めて見ると、どの問題も他人ごとではなくなる。数字は冷たい。だが、その数字を一人ひとりの顔に置きかえると、急に温かくなる。明日の自分にできることを一つ決めるのが、この村を守る第一歩だ。",
+    "sentences": [
+      {
+        "l2": "世界の人口を、百人だけの村に置きかえて想像してみる。",
+        "l1": "Take the population of the world and swap it for a village of just a hundred people."
+      },
+      {
+        "l2": "その村の半分は男性で、半分は女性だ。",
+        "l1": "Half of that village is men and half is women."
+      },
+      {
+        "l2": "生まれる国は自分では選べない。だから、どの家に生まれるかは、くじ引きのようなものだ。",
+        "l1": "Nobody chooses the country they are born in, so which household you land in is like the draw of a lot."
+      },
+      {
+        "l2": "北には豊かな家が並び、南には今夜の食事にも困る家がある。",
+        "l1": "In the north the houses are well off; in the south there are households that cannot manage even tonight's meal."
+      },
+      {
+        "l2": "たとえば、村の十人に一人は、きれいな水を飲めない。",
+        "l1": "For example, one person in ten in the village has no clean water to drink."
+      },
+      {
+        "l2": "もったいないという言葉は、まだ使える物を捨てるときに使う。",
+        "l1": "The word mottainai is used when you throw away something that still works."
+      },
+      {
+        "l2": "この言葉には、ものを最後まで使う知恵がこめられている。",
+        "l1": "Packed into that one word is the wisdom of using a thing right to its end."
+      },
+      {
+        "l2": "百人に縮めて見ると、どの問題も他人ごとではなくなる。",
+        "l1": "Once it is shrunk to a hundred people, no problem belongs to somebody else any more."
+      },
+      {
+        "l2": "数字は冷たい。だが、その数字を一人ひとりの顔に置きかえると、急に温かくなる。",
+        "l1": "Numbers are cold. But replace the number with individual faces and it warms up very fast."
+      },
+      {
+        "l2": "明日の自分にできることを一つ決めるのが、この村を守る第一歩だ。",
+        "l1": "Choosing one thing you can do tomorrow is the first step in looking after this village."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "世界を百人に縮めて考えること",
+          "世界の人口が増える理由",
+          "村の地理と気候の説明",
+          "もったいないという言葉の歴史"
+        ],
+        "answer": 0,
+        "explain_l1": "Every paragraph works the same way: a world-scale fact is rescaled to a village of a hundred and then made personal. The population trend, the geography and the etymology are not what the passage is doing."
+      },
+      {
+        "q_l2": "文章によると、「もったいない」はどんなときに使う言葉ですか。",
+        "options_l2": [
+          "新しい物を買うとき",
+          "まだ使える物を捨てるとき",
+          "村の人口が増えるとき",
+          "食べ物が足りないとき"
+        ],
+        "answer": 1,
+        "explain_l1": "The sentence is explicit: まだ使える物を捨てるときに使う. The other options borrow words from elsewhere in the passage (人口, 足りない) but none of them is what the word marks."
+      },
+      {
+        "q_l2": "この文章の書き手は、数字についてどう考えていますか。",
+        "options_l2": [
+          "数字を見れば、世界のことが全部分かる",
+          "数字は間違っているので、使うべきではない",
+          "数字は冷たいが、人の顔が見えるように使える",
+          "数字は人口を数えるためだけのものだ"
+        ],
+        "answer": 2,
+        "explain_l1": "The writer calls numbers cold and then immediately rescales them into faces, which is neither trust in numbers alone nor rejection of them. The closing line about tomorrow's one thing keeps the same attitude: smaller, personal, still counted."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      { "l2": "世界の人口を百人に縮めて考えます。", "l1": "We shrink the world's population to a hundred people and think it through." },
+      { "l2": "生まれる国は自分では選べません。", "l1": "You cannot choose the country you are born in." },
+      { "l2": "まだ使える物を捨てるのはもったいないです。", "l1": "Throwing away something that still works is a waste." },
+      { "l2": "数字を見ると、人の顔が見えてきます。", "l1": "When you look at the numbers, people's faces begin to come into view." },
+      { "l2": "明日できることを一つ決めましょう。", "l1": "Let's settle on one thing we can do tomorrow." }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, shrink your own country's population to a hundred people and describe what you would see inside that village. Then name one everyday habit that keeps something from going to waste.",
+    "required": ["想像", "無駄", "もったいない", "未来"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "世界の人口を百人に縮めて想像してみます。私の国の百人の中には、豊かな人もいれば、今夜の食事に困る人もいます。私は、まだ使える物を捨てないことが大事だと思います。もったいないという気持ちが、無駄を減らします。小さな習慣が未来の村を変えるはずです。",
+    "tips_l1": "Open with the size of the village so the reader knows the frame, then give one difference you would actually see inside it — a tap that runs dry, a cupboard of unopened food. End on a habit rather than a slogan: saying you carry leftovers home is stronger than announcing that people should protect the environment. The app scores length, required words and sentence count only; ask a human to check the style."
+  }
+}

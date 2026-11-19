@@ -1,0 +1,151 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 14,
+  "title": { "l2": "日本の政治", "l1": "Japanese Politics" },
+  "grammar": {
+    "point_l2": "んです・のです（説明の形）",
+    "point_l1": "んです / のです: the explanatory form",
+    "explain_l1": "You have met んです before, and its written twin のです, so treat this as a reminder: the form changes what a sentence is doing, not when it happened or how polite it is. 国会で決まります reports a fact; 国会で決まるんです presents the same fact as the reason or background for something already on the table. In a question, んですか asks the listener to supply that background — どうして遅れたんですか wants an account of what happened, while 遅れましたか is a yes/no check. The pattern 〜んですけど opens a topic or a request and then leaves it unfinished, which is why it is the standard soft way to ask someone for something.",
+    "common_mistake_l1": "Putting んです on every sentence, so the whole conversation sounds like a defence. Because the form frames information as a reason, three in a row read as excuses: 今日は忙しいんです。だから来られなかったんです。すみません、遅れたんです。 — the listener waits for an apology that never arrives. Use it for the one sentence that answers \"why\", and report everything else with ます.",
+    "examples": [
+      {
+        "l2": "「どうして討論会に出なかったんですか。」「予定が急に変わったんです。」",
+        "reading": "「どうしてとうろんかいのでなかったんですか。」「よていがきゅうにかわったんです。」",
+        "l1": "\"Why didn't you come to the debate session?\" \"My plans changed at short notice.\""
+      },
+      {
+        "l2": "「選挙のことを聞きたいんですけど。」",
+        "reading": "「せんきょのことをききたいんですけど。」",
+        "l1": "\"I'd like to ask you about the election, if that's all right.\""
+      },
+      {
+        "l2": "「この法案は、まだ委員会で審議中なんです。」",
+        "reading": "「このほうあんは、まだいいんかいでしんぎちゅうなんです。」",
+        "l1": "\"This bill is still in committee, as it happens.\""
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "部長に理由を聞かれました。いちばん自然な答えはどれですか。",
+        "options_l2": [
+          "予定が変わったんです。",
+          "予定が変わりました。",
+          "予定が変わったんですか。",
+          "予定が変わるんですね。"
+        ],
+        "answer": 0,
+        "explain_l1": "部長 asked for a reason, so the reply is packaged as that reason: んです. The plain past 変わりました reports what happened without answering \"why\"; んですか hands the question back; んですね seeks the manager's agreement instead of giving information."
+      },
+      {
+        "q_l2": "同僚に相談を始めたいとき、いちばん自然な言い方はどれですか。",
+        "options_l2": [
+          "ちょっと聞きたいことがあるんですけど。",
+          "ちょっと聞きたいことがありますけど。",
+          "ちょっと聞きたいことがあるんですか。",
+          "ちょっと聞きたいことがあるんです。"
+        ],
+        "answer": 0,
+        "explain_l1": "んですけど frames what follows as background and then stops, leaving the colleague room to say どうぞ or 何ですか. ありますけど is a flat polite clause with nothing to explain; んですか turns the remark into a question about the colleague; んです without けど closes the sentence and sounds like a conclusion."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本の国会は、衆議院と参議院の二つの議院からなる二院制だ。衆議院の議員の数は参議院より多く、任期は四年で、参議院の六年より短い。参議院は三年ごとに半分の議員を選び直すので、国会が一度に大きく変わることはない。衆議院には解散があり、解散のあとで総選挙が行われる。選挙では十八歳以上の国民が投票でき、候補者は選挙区で演説をし、政党は公約を出す。有権者は、公約と候補者の話を比べてから投票する。選挙のあと、国会では法案が委員会で審議され、本会議で採決される。賛成と反対の意見が分かれると、与党と野党の議員が討論をして、それから多数決で決める。二つの議院で可決すれば法律が成立し、内閣がそれを実行する。制度は、考えの違う人たちが同じルールで決めるための仕組みだ。",
+    "sentences": [
+      {
+        "l2": "日本の国会は、衆議院と参議院の二つの議院からなる二院制だ。",
+        "l1": "Japan's National Diet is bicameral, made up of two houses: the House of Representatives and the House of Councillors."
+      },
+      {
+        "l2": "衆議院の議員の数は参議院より多く、任期は四年で、参議院の六年より短い。",
+        "l1": "The House of Representatives has more members than the House of Councillors, and its members serve four years rather than six."
+      },
+      {
+        "l2": "参議院は三年ごとに半分の議員を選び直すので、国会が一度に大きく変わることはない。",
+        "l1": "Half of the Councillors are elected again every three years, so the Diet never changes all at once."
+      },
+      {
+        "l2": "衆議院には解散があり、解散のあとで総選挙が行われる。",
+        "l1": "The House of Representatives can be dissolved, and a general election follows a dissolution."
+      },
+      {
+        "l2": "選挙では十八歳以上の国民が投票でき、候補者は選挙区で演説をし、政党は公約を出す。",
+        "l1": "In elections citizens aged eighteen and over can vote, candidates make speeches in their districts, and parties publish their pledges."
+      },
+      {
+        "l2": "有権者は、公約と候補者の話を比べてから投票する。",
+        "l1": "Voters compare the pledges and what the candidates say before they cast a ballot."
+      },
+      {
+        "l2": "選挙のあと、国会では法案が委員会で審議され、本会議で採決される。",
+        "l1": "After the election, bills in the Diet are deliberated in committee and then put to a vote in the full chamber."
+      },
+      {
+        "l2": "賛成と反対の意見が分かれると、与党と野党の議員が討論をして、それから多数決で決める。",
+        "l1": "When opinion divides for and against, members of the governing and opposition parties debate, and then the matter is settled by majority vote."
+      },
+      {
+        "l2": "二つの議院で可決すれば法律が成立し、内閣がそれを実行する。",
+        "l1": "Once both houses pass it, the bill becomes law, and the cabinet puts it into effect."
+      },
+      {
+        "l2": "制度は、考えの違う人たちが同じルールで決めるための仕組みだ。",
+        "l1": "The system is a mechanism for people who think differently to decide things under the same rules."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "国会の構成と、法律が決まるまでの流れ",
+          "選挙で勝つための作戦",
+          "政党の歴史と有名な政治家",
+          "予算の使い方の具体例"
+        ],
+        "answer": 0,
+        "explain_l1": "The passage moves from the two houses and their terms, through elections and pledges, to committees, votes and enactment. No part of it is about campaign tactics, party history or how money is spent."
+      },
+      {
+        "q_l2": "衆議院と参議院の違いについて、文章はどのように述べていますか。",
+        "options_l2": [
+          "衆議院は議員が多く任期が四年で、解散がある。",
+          "参議院は議員が多く任期が四年で、解散がある。",
+          "二つの議院の任期はどちらも六年で、解散はない。",
+          "参議院だけが選挙で議員を選ぶ。"
+        ],
+        "answer": 0,
+        "explain_l1": "Sentences two and four give the House of Representatives a shorter four-year term, more members and the possibility of dissolution. The passage never says the Councillors outnumber them, that both terms are six years, or that only one house is elected."
+      },
+      {
+        "q_l2": "最後の文から、筆者が伝えたいことは何ですか。",
+        "options_l2": [
+          "意見が違っても、同じルールで決める仕組みに意味がある。",
+          "与党の意見だけを聞けば決まるのが早い。",
+          "討論には時間をかけるだけの価値がない。",
+          "選挙の回数を増やすべきだ。"
+        ],
+        "answer": 0,
+        "explain_l1": "The closing sentence calls the system a mechanism for deciding under the same rules, which only matters because people disagree. The other three options are opinions about speed, debate or election frequency, and none of them appears in the text."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      { "l2": "国会には二つの議院がある。", "l1": "The National Diet has two houses." },
+      { "l2": "選挙では国民が投票する。", "l1": "In elections the people cast their votes." },
+      { "l2": "法案は委員会で審議される。", "l1": "A bill is deliberated in committee." },
+      { "l2": "内閣は予算を国会に出す。", "l1": "The cabinet submits the budget to the Diet." },
+      { "l2": "賛成と反対の意見を討論する。", "l1": "They debate the arguments for and against." }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 120 characters of Japanese, explain how a proposal becomes law in Japan, in four or five sentences. Use at least three of this chapter's words.",
+    "required": ["法案", "委員会", "採決", "可決"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "日本の法律は、次のような手続きで決まります。まず、内閣や国会の議員が法案を作ります。その法案は委員会で詳しく審議され、本会議で採決されます。賛成が多ければ可決され、反対が多ければ否決されます。二つの議院で可決されると、法律が成立し、内閣がそれを実行します。",
+    "tips_l1": "Order comes first: まず, そのあと, 最後に make the steps easy to follow. Name the body that acts at each step — 委員会, 本会議, 内閣 — rather than repeating 国会. んです is useful for one framing sentence such as この手続きなんですが, but leave the rest of the steps in ます form; the app only counts length, required words and sentence count, so ask a human to check the style."
+  }
+}

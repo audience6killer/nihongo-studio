@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 10,
+  "title": { "l2": "日本の便利な店", "l1": "Japan's Convenience Stores" },
+  "grammar": {
+    "point_l2": "自動詞と他動詞",
+    "point_l1": "Intransitive and transitive pairs",
+    "explain_l1": "Many Japanese verbs come in pairs that describe one change from two sides: ドアが開いた reports that it opened, and ドアを開けた reports that someone opened it. The particle is the signal — が marks the thing that changes, を marks the thing being acted on — so learning a pair means learning which member takes which particle. The shapes are systematic: 開く/開ける, 閉まる/閉める, 入る/入れる, 落ちる/落とす, 付く/付ける, 消える/消す, 止まる/止める — the partner is usually built with -eru or -su, which lets you guess a member you have not met yet. Because the transitive side names a doer, it sounds wrong whenever nobody is doing anything.",
+    "common_mistake_l1": "Describing a state with the transitive verb: saying 「店が閉めています」 about a shop that is simply shut. If you can see the condition but no one acting, use the intransitive with ている — 「店は閉まっています」. The reverse also happens: after you watch a clerk do it, you need を and the transitive member, 「店員が電気を消しました」, not 「電気が消しました」.",
+    "examples": [
+      {
+        "l2": "棚の上の商品が床に落ちた。",
+        "reading": "たなのうえのしょうひんがゆかにおちた。",
+        "l1": "The goods that had been on the shelf fell to the floor."
+      },
+      {
+        "l2": "店員が落とした商品を拾って、棚に戻した。",
+        "reading": "てんいんがおとしたしょうひんをひろって、たなにもどした。",
+        "l1": "The assistant picked up the goods he had dropped and put them back on the shelf."
+      },
+      {
+        "l2": "店は十時に閉まる。店員がシャッターを閉める音が聞こえる。",
+        "reading": "みせはじゅうじにしまる。てんいんがシャッターをしめるおとがきこえる。",
+        "l1": "The shop shuts at ten. You can hear the staff pulling the shutter down."
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "床に商品が（　）。だれかが落としたようだ。",
+        "options_l2": ["落ちている", "落としている", "落としてある", "落とした"],
+        "answer": 0,
+        "explain_l1": "が marks the goods as the thing that ended up on the floor, so you need the intransitive 落ちる plus ている: the state you can see. 落としている would make the goods the doer of a transitive verb; 落としてある means someone dropped them deliberately and left them that way; 落とした cannot take が for its object — it needs を and a person."
+      },
+      {
+        "q_l2": "閉店の時間になって、店員が店内の電気を（　）。",
+        "options_l2": ["消した", "消えた", "消させた", "消えてきた"],
+        "answer": 0,
+        "explain_l1": "店員が … を demands the transitive member of the pair, 消す. 消えた takes が and describes lights going out by themselves; 消させた is causative, 'made someone turn them off'; 消えてきた describes them gradually going out, again with no agent in the sentence."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "駅の前に、自動販売機が十台も並んでいる。小銭を入れてボタンを押すと、温かい缶コーヒーが出てくる。店が閉まった夜中に、飲み物を買えるのはありがたい。コンビニも同じで、明かりのついた店が二十四時間そこにある。レジでは、店員が商品を袋に入れてくれる。けれども、その便利な店には、見えない費用がかかっている。機械を冷やすために一日中電気が使われ、売れ残った飲み物は賞味期限が切れる前に捨てられることもある。店の裏では、空の容器のごみが毎日増えている。それでも、深夜に働く人にとって、開いている店は欠かせない場所だ。便利な店をこれからも続けるには、使う人が何を選ぶかが大切になる。",
+    "sentences": [
+      {
+        "l2": "駅の前に、自動販売機が十台も並んでいる。",
+        "l1": "In front of the station, ten vending machines stand in a row."
+      },
+      {
+        "l2": "小銭を入れてボタンを押すと、温かい缶コーヒーが出てくる。",
+        "l1": "Put in some coins, press a button, and a warm can of coffee comes out."
+      },
+      {
+        "l2": "店が閉まった夜中に、飲み物を買えるのはありがたい。",
+        "l1": "Being able to buy a drink late at night, after the shops have shut, is a real help."
+      },
+      {
+        "l2": "コンビニも同じで、明かりのついた店が二十四時間そこにある。",
+        "l1": "Convenience stores are the same: a lit shop is standing there twenty-four hours a day."
+      },
+      {
+        "l2": "レジでは、店員が商品を袋に入れてくれる。",
+        "l1": "At the register, the staff put your goods into a bag for you."
+      },
+      {
+        "l2": "けれども、その便利な店には、見えない費用がかかっている。",
+        "l1": "Even so, those convenient shops carry costs that you cannot see."
+      },
+      {
+        "l2": "機械を冷やすために一日中電気が使われ、売れ残った飲み物は賞味期限が切れる前に捨てられることもある。",
+        "l1": "Electricity is used all day long to keep the machines cold, and drinks that do not sell are sometimes thrown out before their best-before date."
+      },
+      {
+        "l2": "店の裏では、空の容器のごみが毎日増えている。",
+        "l1": "Behind the shop, the rubbish from empty containers grows every day."
+      },
+      {
+        "l2": "それでも、深夜に働く人にとって、開いている店は欠かせない場所だ。",
+        "l1": "Even so, for people working late at night, a shop that stays open is a place they could not do without."
+      },
+      {
+        "l2": "便利な店をこれからも続けるには、使う人が何を選ぶかが大切になる。",
+        "l1": "If these convenient shops are to keep going, what the people who use them choose will start to matter."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章で、書き手がいちばん言いたいことは何ですか。",
+        "options_l2": [
+          "自動販売機をもっと増やすべきだ",
+          "便利な店の裏にある費用も考える必要がある",
+          "コンビニは夜は開けないほうがいい",
+          "機械より人間のほうが仕事が正確だ"
+        ],
+        "answer": 1,
+        "explain_l1": "The first half grants what the machines and shops do for you; けれども then turns the passage, and the last two sentences are about cost and about what users choose. That arc only supports the second option. The others are claims the text never makes."
+      },
+      {
+        "q_l2": "文章によると、売れ残った飲み物はどうなることがありますか。",
+        "options_l2": [
+          "賞味期限が切れる前に捨てられることがある",
+          "次の日に半額で売られることがある",
+          "別の店に運ばれて売られることがある",
+          "店員が家に持ち帰ることがある"
+        ],
+        "answer": 0,
+        "explain_l1": "The seventh sentence says it directly: 売れ残った飲み物は賞味期限が切れる前に捨てられることもある. The other three are plausible shop practices, but the passage mentions no discount, no transfer to another shop and no staff taking stock home. Answer from the text, not from what you already know."
+      },
+      {
+        "q_l2": "便利な店について、書き手はどのように考えていますか。",
+        "options_l2": [
+          "便利な店は危険だから、利用しないほうがいい",
+          "便利だと思うが、使う人の選び方が大事だと考えている",
+          "費用がかかるので、店はもう増えないと考えている",
+          "深夜の店は、働く人には必要ないと考えている"
+        ],
+        "answer": 1,
+        "explain_l1": "The writer calls the shops ありがたい and 欠かせない場所, so this is not a rejection — that rules out the first and fourth options. The closing sentence puts the weight on 使う人が何を選ぶか, which is the second option."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      { "l2": "駅の前に自動販売機が並んでいます。", "l1": "Vending machines stand in a row in front of the station." },
+      { "l2": "小銭を入れてボタンを押してください。", "l1": "Please put in some coins and press the button." },
+      { "l2": "夜になると店の明かりが消えます。", "l1": "When night comes, the shop's lights go out." },
+      { "l2": "売れ残った商品は捨てられることがあります。", "l1": "Goods that do not sell are sometimes thrown away." },
+      { "l2": "深夜に働く人にとって、開いている店は助かります。", "l1": "For people who work late at night, a shop that is open is a help." }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, describe how you use a convenience store or a vending machine in an ordinary week, then name one small cost of that convenience — money, rubbish or electricity. Use at least three of this chapter's words.",
+    "required": ["自動販売機", "袋", "分別", "深夜"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私の家の近くには、二十四時間開いているコンビニがある。飲み物はいつも店の前の自動販売機で買う。深夜に帰るときも、明かりのついた店があると安心する。支払いは、現金より電子マネーを使うことが多い。買い物のたびに袋をもらうと、ごみが増えてしまうので、いらないときはもらわないようにしている。家では、空の容器を分別して捨てている。便利な店はこれからも使いたいが、その費用のことも忘れないようにしたい。",
+    "tips_l1": "Start with the shop or machine you actually use and where it is. Then give one habit that keeps the cost down — refusing the bag, sorting the containers, paying without cash. A habit is more convincing than an opinion. The app only scores length, required words and sentence count; ask a human to check the style."
+  }
+}

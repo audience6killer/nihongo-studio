@@ -199,7 +199,8 @@
 
       // Checkpoint: offered once enough words have actually been met.
       if (NJ.EXAM.available(st)) {
-        var lastExam = (st.exams || [])[st.exams.length - 1];
+        var exams = st.exams || [];
+        var lastExam = exams[exams.length - 1];
         var unlocked = NJ.EXAM.blocks().filter(function (b) {
           return NJ.EXAM.blockStatus(st, b) === 'available';
         });

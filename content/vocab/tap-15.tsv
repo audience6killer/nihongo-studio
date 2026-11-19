@@ -1,0 +1,57 @@
+# Chapter 15 tap dictionary — every inflected form, number and set phrase the
+# chapter's passages use, so that each token resolves to a reading and a gloss.
+# tab-separated: term<TAB>reading<TAB>gloss<TAB>pos
+
+# ---- numbers and counters ------------------------------------------------
+百人	ひゃくにん	one hundred people	num
+十人	じゅうにん	ten people	num
+一人	ひとり	one person; alone	num
+
+# ---- content words the passage needs that are not taught in recap-15 ------
+村	むら	village	n.
+男性	だんせい	man; male	n.
+女性	じょせい	woman; female	n.
+くじ引き	くじびき	drawing lots; lottery	n.
+今夜	こんや	tonight; this evening	n.
+物	もの	thing; object	n.
+顔	かお	face	n.
+レポート	レポート	report; written paper	n.
+困る	こまる	to be hard pressed; to be in trouble	v.i.
+生まれる	うまれる	to be born	v.i.
+数える	かぞえる	to count	v.t.
+まるで	まるで	just like; as if	adv.
+だが	だが	but; however	conj
+
+# ---- set phrases ---------------------------------------------------------
+他人ごと	ひとごと	somebody else's problem	exp
+一人ひとり	ひとりひとり	each person; one by one	exp
+第一歩	だいいっぽ	first step	exp
+ようだ	ようだ	it seems; it is like	exp
+
+# ---- inflected forms used in the passages --------------------------------
+置きかえて	おきかえて	to replace with; to convert into	form
+置きかえる	おきかえる	to replace with; to convert into	form
+選べない	えらべない	cannot choose	form
+選べません	えらべません	cannot choose (polite)	form
+並び	ならび	to line up (stem); a row	form
+豊かな	ゆたかな	well-off; abundant	form
+きれいな	きれいな	clean; tidy	form
+飲めない	のめない	cannot drink	form
+こめられている	こめられている	to be packed into; to be filled with	form
+縮めて	ちぢめて	to shrink; to condense	form
+温かく	あたたかく	warm; warmly	form
+足りない	たりない	not to be enough	form
+見れば	みれば	if one looks at	form
+いれば	いれば	if there is	form
+消えない	きえない	does not disappear	form
+小さく	ちいさく	small (adverb)	form
+ていねいな	ていねいな	polite; careful	form
+決めましょう	きめましょう	let's decide	form
+考えます	かんがえます	to think (polite)	form
+減らします	へらします	to reduce (polite)	form
+みます	みます	to try doing (polite)	form
+捨てない	すてない	not to throw away	form
+見えてきます	みえてきます	to come into view	form
+もったいないです	もったいないです	it is wasteful	form
+たとえる	たとえる	to liken; to compare to	form
+たとえると	たとえると	if you liken it to	form

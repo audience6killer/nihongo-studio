@@ -1,0 +1,35 @@
+# Chapter 8 — 日本の伝統芸能 / Japanese Traditional Performing Arts
+# Surface forms, inflections and set phrases that the chapter's texts use.
+# tab-separated: term<TAB>reading<TAB>gloss<TAB>pos
+#   pos: form | part | num | exp
+# Content words live in recap-08.tsv; this file only closes tap coverage.
+
+# ---- つける（面をつける）: every form the texts use -------------------------
+つける	つける	to put on; to wear	form
+つけて	つけて	putting on; wearing	form
+つけない	つけない	does not put on	form
+つけません	つけません	does not put on (polite)	form
+つけずに	つけずに	without putting on	form
+
+# ---- inflected forms of this chapter's verbs ------------------------------
+笑わせる	わらわせる	to make (someone) laugh	form
+怒り	いかり	anger; getting angry	form
+重ね	かさね	to pile up; to repeat (stem)	form
+残して	のこして	to leave; to keep (te-form)	form
+違って	ちがって	to differ (te-form)	form
+違えば	ちがえば	if it differs	form
+出てきます	でてきます	to come out (polite)	form
+見えます	みえます	to be visible; to look like	form
+見ました	みました	saw (polite)	form
+演じます	えんじます	to perform (polite)	form
+変わりました	かわりました	changed (polite)	form
+忘れない	わすれない	does not forget	form
+
+# ---- adverbial and attributive forms --------------------------------------
+少なく	すくなく	few; not much (adverbial)	form
+難しく	むずかしく	difficult (adverbial)	form
+言い	いい	to say (stem); saying	form
+言って	いって	saying; and said	form
+
+# ---- counters and set phrases ---------------------------------------------
+何度も	なんども	many times; over and over	exp

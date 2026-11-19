@@ -1,0 +1,182 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 12,
+  "title": {
+    "l2": "日本の伝統工芸",
+    "l1": "Traditional Japanese Crafts"
+  },
+  "grammar": {
+    "point_l2": "大きな・小さな と、助詞を省く話し方",
+    "point_l1": "大きな/小さな and the particle-less noun phrase",
+    "explain_l1": "大きな and 小さな are the attributive forms of 大きい and 小さい: they exist only in front of a noun, never as a predicate. 大きい木 and 大きな木 are both correct, but only 大きい can end a sentence or take です, so 木は大きな and 木は大きなです are impossible. The pair survives because these adjectives split into two shapes — the い-shape you can inflect, and an older な-shape kept for writing and storytelling, the way 同じ and いろんな also work; the difference is register, not size, since 大きな carries a slightly vaguer, more literary feel than 大きい. The second habit is conversational: in speech close to the listener the particles are simply not said — これ、私の。 コーヒー、飲む？ — and the listener supplies the relation from the shared situation. That is familiarity, not laziness; the dropped を or は is still there in the grammar, and you restore it the moment you are talking to someone you are not close to.",
+    "common_mistake_l1": "Treating 大きな like the English word 'big' and predicating it: 「この木は大きなです」 or the bare 「この木は大きな」, because English uses one form both before a noun and after 'is'. Japanese splits the job — この木は大きいです. A second slip is hearing a dropped particle as a missing word and asking a friend to repeat what they clearly said;「コーヒー、飲む？」 is a complete, everyday offer, and answering it with a textbook sentence like コーヒーを飲みますか turns a friendly moment into a comprehension check.",
+    "examples": [
+      {
+        "l2": "「大きな木の下に、小さな工房がある。」",
+        "reading": "おおきなきのしたに、ちいさなこうぼうがある。",
+        "l1": "\"There is a small workshop under the big tree.\""
+      },
+      {
+        "l2": "「この紙は大きいです。でも、あの紙は小さいです。」",
+        "reading": "このかみはおおきいです。でも、あのかみはちいさいです。",
+        "l1": "\"This sheet of paper is big. That one over there, though, is small.\""
+      },
+      {
+        "l2": "「これ、私の。コーヒー、飲む？」",
+        "reading": "これ、わたしの。コーヒー、のむ？",
+        "l1": "\"This one's mine. Coffee — are you having some?\""
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "次の文のうち、正しいものはどれですか。",
+        "options_l2": [
+          "この木は大きいです。",
+          "この木は大きなです。",
+          "この木は大きな。",
+          "この木は大きいな。"
+        ],
+        "answer": 0,
+        "explain_l1": "大きな has no predicative life: it cannot take です and cannot end a sentence, so both この木は大きなです and この木は大きな break immediately. 大きいな is not a form of 大きい either — a trailing な marks a な-adjective's attributive use, and 大きい is not one."
+      },
+      {
+        "q_l2": "友だちが「コーヒー、飲む？」と聞きました。この言い方について、正しい説明はどれですか。",
+        "options_l2": [
+          "親しい相手だから、助詞を省いている。",
+          "文法が間違っているので、正しくない。",
+          "丁寧な形なので、目上の人にも使える。",
+          "意味が分からないので、通じない。"
+        ],
+        "answer": 0,
+        "explain_l1": "The missing を is a register choice, not an error: with a friend the noun sits straight against the verb and the situation fills in the rest. The same offer to a superior needs the particle and the polite ending — コーヒーを飲みますか — and dropping it there would read as treating them like a classmate."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "和紙は、植物の繊維を水の中でほぐし、網で漉いて作る紙だ。一日に漉けるのは、五十枚ほどだ。機械で一度に作る紙と違い、職人は一枚ずつ手で漉くので、厚さが少しずつ違う。そのばらつきは、欠点ではなく、和紙の長所だ。繊維が長いため、薄い紙は破れにくく、水をよく吸う。障子やあかりなど、光を通す場所に使われてきた。折り紙も、こうした和紙の文化から生まれた遊びだ。一枚の紙を折るだけで、鶴や船の形になる。千羽鶴は、願いをこめて千枚の鶴を折り、糸でつないで飾る。職人の工房では、紙を漉く道具も乾かす方法も、何十年も変えずに受け継がれてきた。弟子は、その手の動きを見て覚える。素材と手の動きがひとつになったとき、はじめてよい品ができる。",
+    "sentences": [
+      {
+        "l2": "和紙は、植物の繊維を水の中でほぐし、網で漉いて作る紙だ。",
+        "l1": "Washi is paper made by loosening plant fibres in water and pulling them up through a screen."
+      },
+      {
+        "l2": "一日に漉けるのは、五十枚ほどだ。",
+        "l1": "What a craftsman can pull in a day comes to about fifty sheets."
+      },
+      {
+        "l2": "機械で一度に作る紙と違い、職人は一枚ずつ手で漉くので、厚さが少しずつ違う。",
+        "l1": "Unlike paper that a machine turns out all at once, the craftsman pulls each sheet by hand, so the thickness shifts from sheet to sheet."
+      },
+      {
+        "l2": "そのばらつきは、欠点ではなく、和紙の長所だ。",
+        "l1": "That unevenness is not a defect but one of washi's strengths."
+      },
+      {
+        "l2": "繊維が長いため、薄い紙は破れにくく、水をよく吸う。",
+        "l1": "Because the fibres are long, a thin sheet resists tearing and soaks up water readily."
+      },
+      {
+        "l2": "障子やあかりなど、光を通す場所に使われてきた。",
+        "l1": "It has long been used where light is meant to pass through: sliding screens, paper lamps and the like."
+      },
+      {
+        "l2": "折り紙も、こうした和紙の文化から生まれた遊びだ。",
+        "l1": "Origami, too, is a pastime that grew out of this washi culture."
+      },
+      {
+        "l2": "一枚の紙を折るだけで、鶴や船の形になる。",
+        "l1": "Fold one sheet and it becomes the shape of a crane or a boat."
+      },
+      {
+        "l2": "千羽鶴は、願いをこめて千枚の鶴を折り、糸でつないで飾る。",
+        "l1": "For a senbazuru you fold a thousand cranes with a wish folded into each, string them on thread and put them on display."
+      },
+      {
+        "l2": "職人の工房では、紙を漉く道具も乾かす方法も、何十年も変えずに受け継がれてきた。",
+        "l1": "In a craftsman's workshop both the tools for pulling paper and the way of drying it have come down through decades without change."
+      },
+      {
+        "l2": "弟子は、その手の動きを見て覚える。",
+        "l1": "The apprentice watches the movement of those hands and learns it."
+      },
+      {
+        "l2": "素材と手の動きがひとつになったとき、はじめてよい品ができる。",
+        "l1": "Only when the material and the movement of the hand become one does a good piece come into being."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章で筆者がもっとも伝えたいことはどれですか。",
+        "options_l2": [
+          "和紙のよさは、手で漉く工程と、受け継がれてきた仕事の仕方にある。",
+          "機械で作る紙のほうが品質がよく、これからは和紙の代わりになる。",
+          "折り紙は、和紙より新しく生まれた文化だ。",
+          "和紙は水に弱いので、今はあまり使われていない。"
+        ],
+        "answer": 0,
+        "explain_l1": "The article moves from how a sheet is pulled to how unevenness becomes a virtue, then to origami and finally to the workshop, so the argument is that the value sits in the hand process and the inherited way of working, not in the material alone."
+      },
+      {
+        "q_l2": "文章によると、和紙は薄いのに破れにくいのはなぜですか。",
+        "options_l2": [
+          "繊維が長いから",
+          "水をよく吸うから",
+          "一枚ずつ手で漉くから",
+          "機械で作るから"
+        ],
+        "answer": 0,
+        "explain_l1": "The fourth sentence gives cause and effect in one breath: 繊維が長いため, a thin sheet resists tearing. Hand-pulling explains the uneven thickness, and machine paper is the contrast the article sets up, not the reason."
+      },
+      {
+        "q_l2": "職人が手で漉くと厚さが少しずつ違います。このことについて、筆者はどう考えていますか。",
+        "options_l2": [
+          "和紙の長所だと考えている。",
+          "欠点なので、早く直すべきだと考えている。",
+          "気づいていない。",
+          "機械で作れば、同じ厚さになると考えている。"
+        ],
+        "answer": 0,
+        "explain_l1": "The article names the unevenness and immediately reframes it as 和紙の長所, then ties it to the long fibres. Nothing in the passage treats it as something to correct, and the closing sentence about material and hand points the same way."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      {
+        "l2": "和紙は、手作業で一枚ずつ作られます。",
+        "l1": "Washi is made one sheet at a time by hand."
+      },
+      {
+        "l2": "繊維が長いので、薄くても丈夫です。",
+        "l1": "Because the fibres are long, it stays strong even when thin."
+      },
+      {
+        "l2": "千羽鶴は、願いをこめて折ります。",
+        "l1": "You fold a thousand cranes with a wish folded into them."
+      },
+      {
+        "l2": "職人は、長い間同じ道具を使います。",
+        "l1": "A craftsman uses the same tools for years."
+      },
+      {
+        "l2": "紙を折ると、鶴の形になります。",
+        "l1": "When you fold the paper, it takes the shape of a crane."
+      }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, describe a traditional craft product from your area, or one you have seen made. Say what the material makes possible, using at least three of this chapter's words.",
+    "required": [
+      "素材",
+      "和紙",
+      "繊維",
+      "折り紙"
+    ],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私の町には、和紙を作る小さな工房があります。職人は、伝統的な方法で、植物の繊維から一枚ずつ漉いています。素材が長い繊維なので、薄くても破れにくい紙になります。私はその紙で折り紙を折るのが好きです。機械では作れない美しさがあると思います。",
+    "tips_l1": "Name the material before you name the quality: long fibres, therefore thin but hard to tear — that cause-and-effect pattern is the one the reading uses, and it is what a Japanese reader expects in a description of a craft. If you use 大きな or 小さな, check that a noun follows it; it cannot stand alone as a predicate. The app scores length, required words and sentence count only, so ask a person to read the result for style."
+  }
+}

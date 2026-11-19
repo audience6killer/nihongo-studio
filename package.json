@@ -1,6 +1,6 @@
 {
   "name": "nihongo-studio",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "private": true,
   "description": "Tobira recap + JLPT N2 Japanese study app. Static, local-first, no dependencies.",
   "type": "module",
@@ -18,7 +18,9 @@
     "test:smoke": "node tools/smoke.mjs",
     "patch:dsh": "node tools/patch_dsh_citations.mjs",
     "test": "node tools/test_lang.mjs && node tools/check_tap.mjs && node tools/smoke.mjs && node tools/qa.mjs && python tools/validate_content.py",
-    "qa": "node tools/qa.mjs"
+    "qa": "node tools/qa.mjs",
+    "check:chapter": "node tools/check_chapter.mjs",
+    "terms": "node tools/used_terms.mjs"
   },
   "engines": {
     "node": ">=20"

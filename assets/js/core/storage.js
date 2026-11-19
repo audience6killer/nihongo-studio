@@ -36,6 +36,7 @@
       sessions: [],
       days: {},
       writing: [],
+      exams: [],
       skillStats: { rec: { seen: 0, correct: 0 }, prod: { seen: 0, correct: 0 }, listen: { seen: 0, correct: 0 } },
       current: null,
       onboarded: false,
@@ -69,6 +70,7 @@
     out.sessions = Array.isArray(out.sessions) ? out.sessions : [];
     out.days = out.days && typeof out.days === 'object' ? out.days : {};
     out.writing = Array.isArray(out.writing) ? out.writing : [];
+    out.exams = Array.isArray(out.exams) ? out.exams : [];
     out.skillStats = Object.assign({}, d.skillStats, out.skillStats || {});
     Object.keys(d.skillStats).forEach(function (k) {
       out.skillStats[k] = Object.assign({ seen: 0, correct: 0 }, out.skillStats[k] || {});

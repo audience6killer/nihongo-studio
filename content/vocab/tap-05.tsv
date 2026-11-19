@@ -1,0 +1,66 @@
+# Chapter 5 — 日本の食べ物 / Japanese Food
+# Surface forms, proper nouns and set phrases this chapter's text uses that no
+# other vocabulary file already covers. Chapter-topic words live in recap-05.tsv;
+# everything here is either an inflection, a name, a number or a word the
+# chapter needs but does not teach.
+#
+# tab-separated: term<TAB>reading<TAB>gloss<TAB>pos
+
+# ---- set phrases -----------------------------------------------------------
+すみません	すみません	excuse me; I am sorry	exp
+ください	ください	please (do something for me)	exp
+
+# ---- nouns -----------------------------------------------------------------
+昔	むかし	old times; the past	n.
+横	よこ	side; beside	n.
+朝	あさ	morning	n.
+パン	パン	bread	n.
+水	みず	water	n.
+うどん	うどん	udon (thick wheat noodles)	n.
+そば	そば	soba (buckwheat noodles)	n.
+お湯	おゆ	hot water	n.
+世界中	せかいじゅう	the whole world; worldwide	n.
+外	そと	outside	n.
+短さ	みじかさ	shortness; brevity	n.
+インスタントラーメン	インスタントラーメン	instant ramen	n.
+ラーメン	ラーメン	ramen	n.
+
+# ---- proper nouns ----------------------------------------------------------
+大阪	おおさか	Osaka	name
+安藤百福	あんどうももふく	Ando Momofuku, inventor of instant ramen	name
+
+# ---- adjectives, adverbs ---------------------------------------------------
+高い	たかい	expensive; high	い-adj.
+よい	よい	good	い-adj.
+うすい	うすい	light; weak (of flavour)	い-adj.
+簡単	かんたん	easy; simple	な-adj.
+小さな	ちいさな	small (attributive)	な-adj.
+いつも	いつも	always; usually	adv.
+
+# ---- verbs -----------------------------------------------------------------
+食べる	たべる	to eat	v.t.
+
+# ---- numbers ---------------------------------------------------------------
+一九五八年	せんきゅうひゃくごじゅうはちねん	the year 1958	num
+二分	にふん	two minutes	num
+三十分	さんじゅっぷん	thirty minutes	num
+
+# ---- inflected forms -------------------------------------------------------
+だった	だった	was; were	form
+炊いた	たいた	cooked (rice)	form
+炊いて	たいて	cooking (rice) and	form
+増えた	ふえた	increased; grew	form
+保存できる	ほぞんできる	can be preserved	form
+食べられた	たべられた	could be eaten	form
+食べられる	たべられる	can eat; is edible	form
+食べます	たべます	to eat (polite)	form
+愛されてきた	あいされてきた	has been loved	form
+揚げた	あげた	fried in oil	form
+かけて	かけて	pouring over; sprinkling	form
+広がった	ひろがった	spread; extended	form
+変えた	かえた	changed	form
+される	される	to be done	form
+入って	はいって	being in; entering (te-form)	form
+考えて	かんがえて	thinking (te-form)	form
+作ります	つくります	to make (polite)	form
+買います	かいます	to buy (polite)	form

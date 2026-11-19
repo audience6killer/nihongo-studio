@@ -143,9 +143,26 @@ the content. Check the report before writing new words — usually you are addin
 
 ## 6. Adding a chapter
 
+A single chapter can be written and checked on its own, without rebuilding the
+generated bundle and without touching other chapters' files.
+
 1. Write `content/vocab/recap-NN.tsv`.
 2. Write `content/lesson-NN.json`.
-3. `python tools/build_vocab.py && python tools/build_content.py && python tools/build_tapdata.py`
-4. `python tools/validate_content.py --lessons NN && node tools/check_tap.mjs`
-5. Add rows to `content/LEDGER.md` and `content/REVIEW.md`.
-6. Spot-check the rendering of the passage, every question, and the writing model answer.
+3. Run `node tools/check_chapter.mjs NN`. It reads the source files directly and reports:
+   schema problems, counts, reading length, sentence-pair alignment, writing constraints, and
+   every token of every text that has no dictionary entry, with its surrounding context.
+4. Add the missing tokens to `content/vocab/tap-NN.tsv` — a per-chapter dictionary file, merged
+   automatically with `tap-extra.tsv` and every other `tap-*.tsv`. Repeat until it prints PASS.
+5. `npm run build` (or the individual build tools) to regenerate the bundle, then `npm test`.
+6. Add rows to `content/LEDGER.md` and `content/REVIEW.md`.
+7. Spot-check the rendering of the passage, every question, and the writing model answer.
+
+### Why a per-chapter tap file
+
+The tap dictionary is surface-based: every inflected form that appears in the prose needs its
+own row. Two writers touching one shared file conflict, so each chapter owns `tap-NN.tsv` and
+`tools/build_tapdata.py` merges them in order (`tap-extra.tsv` first, so shared glosses win).
+
+`node tools/used_terms.mjs` prints every term the course has already claimed. Vocabulary terms are
+global keys — a term taught in chapter 2 cannot be taught again in chapter 11 — so check it before
+finalising a TSV.

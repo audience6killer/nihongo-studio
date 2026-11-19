@@ -1,0 +1,87 @@
+# Chapter 7 — 日本のポップカルチャー / Japanese Pop Culture
+# Surface dictionary for the chapter 7 texts. The app's dictionary is surface-based,
+# so inflected forms, kana spellings and onomatopoeia used in this chapter's
+# passages get their own rows here. Chapter content words live in recap-07.tsv.
+#
+# tab-separated: term<TAB>reading<TAB>gloss<TAB>pos
+#   pos: form | part | exp | n. | v.t. | v.i. | adv | num
+
+# ---- reading ---------------------------------------------------------------
+子ども	こども	child; children	n.
+読む	よむ	to read	v.t.
+考えられてきた	かんがえられてきた	has been considered	form
+大人	おとな	adult; grown-up	n.
+成り立っている	なりたっている	to hold together as; to be established	form
+され	され	to be done (passive stem)	form
+されて	されて	and is done (passive te-form)	form
+になり	になり	and becomes; turning into	form
+読まれて	よまれて	and is read	form
+生み出す	うみだす	to produce; to create	v.t.
+ではない	ではない	is not	form
+机	つくえ	desk	n.
+向かい	むかい	turning to face (stem)	form
+一話	いちわ	one chapter; one instalment	num
+下書き	したがき	draft; rough copy	n.
+何枚	なんまい	how many sheets; many sheets	num
+追われて	おわれて	driven by; chased by (te-form)	form
+線	せん	line; stroke	n.
+支えている	ささえている	to support; to hold up	form
+絵	え	picture; drawing	n.
+心臓	しんぞう	heart	n.
+雨	あめ	rain	n.
+降り方	ふりかた	way of falling (rain)	n.
+言い表す	いいあらわす	to express in words	v.t.
+感じ取る	かんじとる	to sense; to pick up (a feeling)	v.t.
+軽く	かるく	lightly; frivolously	adv
+見られる	みられる	to be seen; to be regarded	form
+論じる	ろんじる	to discuss; to argue (a question)	v.t.
+学者	がくしゃ	scholar; academic	n.
+増えている	ふえている	to be increasing	form
+ドキドキ	どきどき	thump-thump (a heartbeat)	adv
+ざあざあ	ざあざあ	pouring; the sound of heavy rain	adv
+
+# ---- grammar examples ------------------------------------------------------
+母	はは	mother	n.
+書きました	かきました	wrote	form
+春風	はるかぜ	spring breeze	n.
+にぎわっていた	にぎわっていた	was bustling	form
+
+# ---- drills ----------------------------------------------------------------
+二つ目	ふたつめ	the second (of two); the second element	num
+一つ目	ひとつめ	the first (of two)	num
+濁っている	にごっている	to be voiced	form
+濁った	にごった	voiced	form
+連濁	れんだく	sequential voicing; rendaku	n.
+はなび	はなび	fireworks	form
+はるかぜ	はるかぜ	spring breeze	form
+はるがぜ	はるがぜ	the incorrect voicing of はるかぜ	form
+やまみち	やまみち	mountain path	form
+えほん	えほん	picture book	form
+山道	やまみち	mountain path	n.
+絵本	えほん	picture book	n.
+すでに	すでに	already	adv
+入っている	はいっている	to be present in; to be contained	form
+二つ	ふたつ	two	num
+長さ	ながさ	length	n.
+書く	かく	to write	v.t.
+
+# ---- reading questions -----------------------------------------------------
+見る	みる	to see; to look at; to regard	v.t.
+描かなくなる	えがかなくなる	to stop drawing	form
+引っ越す	ひっこす	to move house	v.t.
+であっても	であっても	even if it is	form
+できない	できない	cannot do	form
+
+# ---- listening -------------------------------------------------------------
+読んでいます	よんでいます	to be reading (polite)	form
+
+# ---- writing model ---------------------------------------------------------
+好き	すき	liked; favourite	な-adj.
+決まらない	きまらない	not settled; not decided	form
+見ている	みている	to be looking at; to be watching	form
+作者	さくしゃ	author; creator (of a work)	n.
+毎週	まいしゅう	every week	n.
+追われる	おわれる	to be pressed by; to be chased	form
+追われながら	おわれながら	while driven by	form
+重ねている	かさねている	to be layering; to be piling up	form
+思っている	おもっている	to be thinking; to consider	form

@@ -47,6 +47,8 @@ end of the course stage A points at, plus 2 grammar-in-context items drawn from 
 Stage B shortens itself gracefully when the chapters behind it do not exist yet — it never
 invents material.
 
+The **recap is complete**, so every one of these draws on the full 15-chapter deck.
+
 Output is a **per-chapter strength estimate**, which sets the initial card state:
 
 | Calibration result | Card state |

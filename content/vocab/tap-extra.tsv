@@ -292,7 +292,6 @@
 # Surface forms, auxiliaries and words the chapter 2 texts use. Kept here rather
 # than in recap-02.tsv when the item is a form of an already-taught word or a
 # general-purpose word needed by many chapters.
-この	この	this (before a noun)	exp
 こちら	こちら	this way; this one	exp
 になる	になる	to become	v.i.
 なります	なります	to become (polite)	form
@@ -302,7 +301,6 @@
 使います	つかいます	to use (polite)	form
 使った	つかった	used	form
 使われる	つかわれる	to be used	form
-使う	つかう	to use	v.t.
 使い	つかい	using (stem of 使う)	form
 言い方	いいかた	way of saying	n.
 言いにくい	いいにくい	hard to say	い-adj.
@@ -451,3 +449,18 @@
 安定させる	あんていさせる	to stabilise	form
 されています	されています	has been done	form
 た	た	past tense ending	form
+しまう	しまう	to end up doing; to finish doing	form
+きた	きた	came to; has been	form
+ていく	ていく	to go on doing; to continue	form
+ておく	ておく	to do in advance	form
+てみる	てみる	to try doing	form
+てある	てある	to have been done	form
+なさい	なさい	do (polite command)	form
+でしょう	でしょう	probably; isn't it	form
+だろう	だろう	probably (plain)	form
+かもしれない	かもしれない	might; perhaps	form
+ようになる	ようになる	to come to; to become able to	form
+ことになる	ことになる	to be decided that	form
+ことにする	ことにする	to decide to	form
+つもり	つもり	intention	n.
+はず	はず	should; ought to	exp

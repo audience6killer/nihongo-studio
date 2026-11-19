@@ -1,0 +1,80 @@
+# Chapter 9 — 日本の教育 / Education in Japan
+# Surface forms, set phrases and numbers needed so that every token of this
+# chapter's texts resolves. Chapter content words live in recap-09.tsv.
+# tab-separated: term<TAB>reading<TAB>gloss<TAB>pos
+
+# ---- the school year and school life --------------------------------------
+四月	しがつ	April (month)	num
+三月	さんがつ	March (month)	num
+十二月	じゅうにがつ	December (month)	num
+一時間	いちじかん	one hour	num
+九年間	きゅうねんかん	nine years	num
+学年	がくねん	school year	n.
+小学校	しょうがっこう	elementary school	n.
+中学校	ちゅうがっこう	junior high school	n.
+中学	ちゅうがく	junior high school (short form)	n.
+義務教育	ぎむきょういく	compulsory education	n.
+授業料	じゅぎょうりょう	tuition; school fees	n.
+学校生活	がっこうせいかつ	school life	n.
+給食	きゅうしょく	school lunch	n.
+服装	ふくそう	clothing; dress	n.
+相談	そうだん	consultation; talking something over	n.
+連携	れんけい	cooperation; working together	n.
+事実	じじつ	fact	n.
+進路	しんろ	course; path after graduation	n.
+強み	つよみ	strength; strong point	n.
+積み重ね	つみかさね	steady accumulation	n.
+放課後	ほうかご	after school	n.
+雰囲気	ふんいき	atmosphere; mood	n.
+お金	おかね	money	n.
+点	てん	point; item	n.
+名前	なまえ	name	n.
+電話	でんわ	telephone; phone call	n.
+小テスト	しょうテスト	short test; quiz	n.
+両方	りょうほう	both	n.
+根本	こんぽん	root; foundation	n.
+昨日	きのう	yesterday	n.
+
+# ---- verbs and inflected surfaces -----------------------------------------
+始まり	はじまり	to begin (stem)	form
+始まります	はじまります	to begin (polite)	form
+目立つ	めだつ	to stand out	v.i.
+目立たない	めだたない	not to stand out	form
+決まっている	きまっている	to be laid down; to be fixed	form
+かかる	かかる	to cost; to take (time, money)	v.i.
+かからない	かからない	to cost nothing; not to be needed	form
+かけられる	かけられる	to be able to spend (on)	form
+かけました	かけました	made (a phone call)	form
+通う	かよう	to commute; to attend regularly	v.i.
+通っていた	かよっていた	used to attend	form
+受け	うけ	to receive; to sit (an exam), stem	form
+支えます	ささえます	to support (polite)	form
+言われている	いわれている	it is said that	form
+求められている	もとめられている	to be called for; to be required	form
+くれました	くれました	gave (me); did (for me)	form
+して	して	doing; and then	form
+言いました	いいました	said	form
+乗ってくれました	のってくれました	took on (for me); helped me with	form
+歩く	あるく	to walk	v.i.
+
+# ---- adjectives and adverbs ------------------------------------------------
+むずかしい	むずかしい	difficult	い-adj.
+根強い	ねづよい	deeply rooted; persistent	い-adj.
+根強く	ねづよく	deeply rooted (adverbial)	form
+多かった	おおかった	many; a lot (past)	form
+もっと	もっと	more	adv
+これから	これから	from now on; in future	adv
+
+# ---- set phrases and connectives -------------------------------------------
+だけでなく	だけでなく	not only … but also	exp
+ではなく	ではなく	not … but	exp
+こうした	こうした	such; this kind of	exp
+自分たち	じぶんたち	themselves; ourselves	exp
+少なくない	すくなくない	not a few; quite a lot	exp
+というのは	というのは	as for; the fact that (topic)	exp
+丁寧で	ていねいで	careful; courteous (te-form)	form
+
+# ---- names and suffixes ----------------------------------------------------
+山田	やまだ	Yamada (surname)	name
+田中	たなか	Tanaka (surname)	name
+さん	さん	Mr; Ms (name suffix)	part

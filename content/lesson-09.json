@@ -1,0 +1,151 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 9,
+  "title": { "l2": "日本の教育", "l1": "Education in Japan" },
+  "grammar": {
+    "point_l2": "という — 引用と名づけ",
+    "point_l1": "という — quotation and naming",
+    "explain_l1": "という does two jobs you have already met. After quoted words it marks what was actually said (「行く」と言った); after a name or a written word it attaches a label, so 「みどり」という店 is a shop called Midori and 「禁煙」という札 is a sign that says no smoking — nobody is speaking in either case. A plain clause plus ということ turns the whole clause into a fact you can hold as a noun: 彼が留学することを知らなかった and 彼が留学するということを知らなかった both mean you did not know he was going abroad, but ということ makes clear that the content is a fact, not an action. というのは takes the same clause and puts it in front as the topic, with the comment after it: 毎日一時間歩くというのは、体にいい. The trap is the English word \"says\": 言う needs a speaker and real words, while という with a name or a definition is closer to \"called\" or \"that is\", so glossing every という as \"says\" turns a shop name into a talking shop.",
+    "common_mistake_l1": "Two slips recur. The mechanical one is writing というは for the topic pattern; the form is というのは, and the の is what turns the clause into a noun that は can mark. The meaning one is translating every という as \"says\": 山田さんという人 reports a name, so the gloss is \"a person called Yamada\", and 言う belongs only where a speaker actually spoke.",
+    "examples": [
+      {
+        "l2": "先生は「明日は小テストをします」と言いました。",
+        "reading": "せんせいは「あしたはしょうテストをします」といいました。",
+        "l1": "The teacher said, \"We will have a short test tomorrow.\""
+      },
+      {
+        "l2": "昨日、山田さんという人から電話がありました。",
+        "reading": "きのう、やまださんというひとからでんわがありました。",
+        "l1": "Yesterday I had a phone call from a person called Yamada."
+      },
+      {
+        "l2": "成績だけで人を決めるというのは、むずかしい問題だ。",
+        "reading": "せいせきだけでひとをきめるというのは、むずかしいもんだいだ。",
+        "l1": "Judging people on their marks alone is a difficult issue."
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "「田中さんという人から電話がありました。」の意味として最も近いものはどれですか。",
+        "options_l2": [
+          "田中さんという名前の人が電話をくれました。",
+          "田中さんに電話をかけました。",
+          "田中さんが「電話」と言いました。",
+          "田中さんは電話がありません。"
+        ],
+        "answer": 0,
+        "explain_l1": "Here という sticks a name onto 人, so 田中さんという人 is \"a person called Tanaka\". Option 2 reverses who called whom, option 3 treats the name as something spoken aloud, and option 4 says Tanaka has no phone — only option 1 keeps the label reading."
+      },
+      {
+        "q_l2": "「というのは」の使い方が正しい文はどれですか。",
+        "options_l2": [
+          "毎日一時間歩くというのは、体にいいと思います。",
+          "毎日一時間歩くというは、体にいいと思います。",
+          "毎日一時間歩くことを、体にいいと思います。",
+          "毎日一時間歩くというで、体にいいと思います。"
+        ],
+        "answer": 0,
+        "explain_l1": "The topic pattern is three pieces, という + の + は, and only the first option keeps all three. Option 2 drops the の, which leaves a form that does not exist. Option 3 puts を in front of a comment on goodness, so the clause has no role. Option 4 joins the clause with で, which という does not take."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本の学校では、四月に新しい学年が始まり、三月に終わる。小学校と中学校の九年間は義務教育で、授業料はかからない。教室では、生徒が自分たちで掃除をし、給食を食べる。校則で服装が決まっている学校も多く、生徒は目立たないようにしている。教師は授業だけでなく、部活の指導や生活の相談にも時間をかける。こうした毎日の積み重ねが、日本の教育の強みだと言われている。一方、中学三年生の多くは高校入試を受け、高校三年生は大学入試を受ける。成績や偏差値で進路が決まるという考え方は今も根強く、放課後に塾や予備校へ通う生徒も少なくない。学歴が人の価値を決めると感じる子どもがいることも事実だ。いじめや不登校も小さな問題ではなく、学校は家庭と連携して支えることが求められている。",
+    "sentences": [
+      {
+        "l2": "日本の学校では、四月に新しい学年が始まり、三月に終わる。",
+        "l1": "In Japanese schools the new school year begins in April and ends in March."
+      },
+      {
+        "l2": "小学校と中学校の九年間は義務教育で、授業料はかからない。",
+        "l1": "The nine years of elementary and junior high school are compulsory, and no tuition is charged."
+      },
+      {
+        "l2": "教室では、生徒が自分たちで掃除をし、給食を食べる。",
+        "l1": "In the classroom the pupils do the cleaning themselves and eat the school lunch."
+      },
+      {
+        "l2": "校則で服装が決まっている学校も多く、生徒は目立たないようにしている。",
+        "l1": "Many schools lay down clothing and other details in their rules, and pupils take care not to stand out."
+      },
+      {
+        "l2": "教師は授業だけでなく、部活の指導や生活の相談にも時間をかける。",
+        "l1": "Teachers spend time not only on lessons but on coaching club activities and on talking through everyday problems."
+      },
+      {
+        "l2": "こうした毎日の積み重ねが、日本の教育の強みだと言われている。",
+        "l1": "This day-by-day build-up is said to be the strength of Japanese education."
+      },
+      {
+        "l2": "一方、中学三年生の多くは高校入試を受け、高校三年生は大学入試を受ける。",
+        "l1": "Meanwhile most third-year junior high pupils sit high school entrance exams, and third-year high school students sit university ones."
+      },
+      {
+        "l2": "成績や偏差値で進路が決まるという考え方は今も根強く、放課後に塾や予備校へ通う生徒も少なくない。",
+        "l1": "The idea that marks and deviation scores settle your path is still deep-rooted, and not a few pupils go on to cram school after class."
+      },
+      {
+        "l2": "学歴が人の価値を決めると感じる子どもがいることも事実だ。",
+        "l1": "It is also a fact that some children feel their school record decides their worth as a person."
+      },
+      {
+        "l2": "いじめや不登校も小さな問題ではなく、学校は家庭と連携して支えることが求められている。",
+        "l1": "Bullying and refusal to attend school are not small matters either, and schools are expected to work with families to support the children concerned."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章は主に何について説明していますか。",
+        "options_l2": [
+          "日本の学校生活と、そこにある課題",
+          "日本の入試の歴史",
+          "日本の塾と予備校の役割",
+          "教師が使う教科書"
+        ],
+        "answer": 0,
+        "explain_l1": "The passage moves from the school year and daily routines to entrance exams, cram schools and the harder cases, and it sets strengths against problems. The other options name one detail each, and the history of exams is never mentioned."
+      },
+      {
+        "q_l2": "文章によると、小学校と中学校の九年間について正しいものはどれですか。",
+        "options_l2": [
+          "授業料がかからない義務教育だ。",
+          "すべての生徒が塾に通う。",
+          "四月に始まり、十二月に終わる。",
+          "入試を受けないと入学できない。"
+        ],
+        "answer": 0,
+        "explain_l1": "The second sentence gives both facts at once: the nine years are compulsory and cost no tuition. The passage says many pupils go to cram school, not all; it ends the year in March, not December; and entrance exams belong to the next stage, not to entering elementary school."
+      },
+      {
+        "q_l2": "この文章から、筆者の考えに最も近いものはどれですか。",
+        "options_l2": [
+          "強みと課題の両方を考えていく必要がある。",
+          "日本の教育は問題ばかりなので、根本から変えるべきだ。",
+          "偏差値は便利なので、もっと使うべきだ。",
+          "教育の強みだけを伝えるのが大切だ。"
+        ],
+        "answer": 0,
+        "explain_l1": "The writer praises the daily routines and the teachers, then sets out exam pressure and the families who miss out, without calling for a clean sweep. Each other option keeps one half of that balance and throws the other half away."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      { "l2": "小学校と中学校は義務教育です。", "l1": "Elementary and junior high school are compulsory education." },
+      { "l2": "四月に新しい学年が始まります。", "l1": "The new school year starts in April." },
+      { "l2": "放課後に塾へ通う生徒もいます。", "l1": "Some pupils go to cram school after class." },
+      { "l2": "偏差値だけで進路を決める人もいます。", "l1": "Some people settle their path on the deviation score alone." },
+      { "l2": "学校は家庭と連携して支えます。", "l1": "The school supports them together with the family." }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, describe one strength and one problem of the school you went to, and say what you would change. Use at least three of this chapter's words.",
+    "required": ["学校", "授業", "成績", "家庭"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私が通っていた学校では、授業が丁寧で、先生が生活の相談にも乗ってくれました。それは大きな強みだと思います。一方で、成績で進路が決まるという雰囲気があり、塾に通う友だちが多かったです。家庭によって塾にかけられるお金が違う点も、これからの課題だと思います。",
+    "tips_l1": "Open with the school itself (私が通っていた学校では…), then give one concrete strength — a teacher who helped, a class that was easy to follow — before you raise the problem. Show the problem in daily life rather than naming it in the abstract: who goes to cram school, whose family cannot pay for it. End with the change you would make, not with a general statement about education. The app only counts length, required words and sentences; have a human check the style."
+  }
+}

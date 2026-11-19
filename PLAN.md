@@ -1,7 +1,7 @@
 # Nihongo Studio — Build Plan
 
 **Instance:** Japanese (L2) for an English-speaking learner (L1), anchored on **Tobira** as a recap and **JLPT N2** as the forward target.
-**Status:** **implementation complete.** Phases 0–8 built and green. Content is 3 of 15 recap chapters plus one N2 deck — that part is authored, not coded, and `content/LEDGER.md` is the authority on it.
+**Status:** **content and implementation complete.** 15 of 15 recap chapters, three N2 vocabulary decks, all phases built and green. Visual polish is the remaining known gap.
 
 ### Approved decisions (recorded)
 
@@ -21,7 +21,7 @@
 | 2 — chapter 1 end to end | done | validate pass · tap 100% · `node tools/smoke.mjs` → **59/59** across 22 modules |
 | 3 — engine completeness | done | SRS, plan, stats, settings, export/import covered by smoke |
 | 4 — calibration, refresh deck, checkpoints | done | adaptive branch, refresh deck, JLPT-shaped exams |
-| 5 — content scale | **3 of 15 chapters** | 169 recap words + 46 N2 words · 1,938 tokens in 132 texts, 100% tap |
+| 5 — content scale | **15 of 15 chapters** | 773 recap words + 134 N2 words · 10,602 tokens in 674 texts, 100% tap |
 | 6 — N2 deck, phases, scheduled checkpoints | done | deck numbering, phase switch, blocks derived from available content |
 | 7 — PWA deploy and optional sync | **deploy done, sync deferred** | `npm run build` → `deploy/` (29 files, 333 KB); sync is explicitly out of v1 |
 | 8 — QA matrix and freeze | done | `node tools/qa.mjs` → **17/17**; licences and credits in `README.md` |
@@ -50,11 +50,14 @@ headlessly against a DOM shim, but the first real look at pixels is yours. Start
 
 ### What remains
 
-Only content, and only in the sense of authoring: chapters 4–15 of the recap, and reading/grammar
-material for the N2 decks. Both follow a loop that is now proven end to end —
-`CONTENT_SPEC.md` §6 lists the six steps, `content/LEDGER.md` records the cost per chapter
-(roughly 55 curated words and 30–45 inflected dictionary rows), and the validator names every gap
-before it can ship.
+**Content:** done for the recap. Fifteen chapters, 773 words, every passage 100% tappable.
+The three N2 decks are vocabulary-only — they need readings and grammar to match the recap
+chapters.
+
+**Visual polish:** the one known gap. No browser automation is possible in this environment, so
+nothing has been checked by eye beyond the headless render tests.
+
+**Sync:** deliberately out of scope for v1; the build reserves a `config.js` hook.
 
 ---
 

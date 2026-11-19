@@ -1,0 +1,82 @@
+# Chapter 11 — 日本の歴史 / The History of Japan
+# Tap dictionary for this chapter: every surface form the passages use that is
+# not already in recap-11.tsv or tap-extra.tsv.
+# tab-separated: term<TAB>reading<TAB>gloss<TAB>pos
+#   pos: part | form | name | num | exp | n. | adv.
+
+# ---- particles, adverbs ----------------------------------------------------
+ごろ	ごろ	around; about (time)	part
+ほとんど	ほとんど	hardly; almost (with a negative)	adv
+ともに	ともに	together with	adv
+
+# ---- general nouns ---------------------------------------------------------
+町	まち	town; city	n.
+本	ほん	book	n.
+末	すえ	the end (of); after	n.
+力	ちから	strength; power	n.
+様子	ようす	appearance; state	n.
+外国	がいこく	foreign country	n.
+交流	こうりゅう	exchange; interaction	n.
+
+# ---- proper nouns ----------------------------------------------------------
+朝鮮半島	ちょうせんはんとう	the Korean peninsula	name
+ポルトガル	ポルトガル	Portugal	name
+ポルトガル人	ポルトガルじん	Portuguese person	name
+奈良	なら	Nara	name
+江戸	えど	Edo (the old name of Tokyo)	name
+明治	めいじ	the Meiji era	name
+西欧	せいおう	Western Europe	name
+織田信長	おだのぶなが	Oda Nobunaga	name
+豊臣秀吉	とよとみひでよし	Toyotomi Hideyoshi	name
+徳川家康	とくがわいえやす	Tokugawa Ieyasu	name
+
+# ---- numbers ---------------------------------------------------------------
+六世紀	ろくせいき	the sixth century	num
+八世紀	はっせいき	the eighth century	num
+十六世紀	じゅうろくせいき	the sixteenth century	num
+
+# ---- inflected forms used in the reading -----------------------------------
+囲まれた	かこまれた	to be surrounded	form
+古く	ふるく	from long ago (adverbial)	form
+受け入れてきた	うけいれてきた	to have taken in; to have accepted	form
+受け入れ	うけいれ	to take in; to accept (stem)	form
+伝わった	つたわった	was handed down; spread	form
+伝わり	つたわり	to be handed down (stem)	form
+なり	なり	to become (stem)	form
+建てて	たてて	to build; to construct (te-form)	form
+学んだ	まなんだ	learned; studied	form
+置かれ	おかれ	to be placed; to be put (stem)	form
+決められた	きめられた	was decided; was laid down	form
+持ち帰った	もちかえった	brought back	form
+広まった	ひろまった	spread; became widespread	form
+入り	はいり	to come in; to enter (stem)	form
+変わった	かわった	changed	form
+争い	あらそい	to fight over (stem)	form
+伸ばした	のばした	extended; increased	form
+統一して	とういつして	to unify (te-form)	form
+開き	ひらき	to open; to found (stem)	form
+続いた	つづいた	continued	form
+急いで	いそいで	in a hurry; hurriedly	form
+なった	なった	became	form
+入ってきた	はいってきた	came in; was introduced	form
+
+# ---- inflected forms used in questions and options -------------------------
+入った	はいった	came in; was introduced	form
+変わってきた	かわってきた	has come to change	form
+受けなかった	うけなかった	did not receive; did not take in	form
+変えなかった	かえなかった	did not change	form
+しなかった	しなかった	did not do	form
+言えます	いえます	to be able to say (polite)	form
+
+# ---- inflected forms used in the grammar examples and drills ---------------
+集まった	あつまった	gathered	form
+
+# ---- inflected forms used in the dictation ---------------------------------
+伝わりました	つたわりました	was handed down; was introduced (polite)	form
+伝えられました	つたえられました	was introduced; was brought (polite)	form
+開きました	ひらきました	opened; founded (polite)	form
+入ってきました	はいってきました	came in (polite)	form
+続きました	つづきました	continued (polite)	form
+
+# ---- inflected forms used in the writing model -----------------------------
+つくってきた	つくってきた	has built; has shaped	form

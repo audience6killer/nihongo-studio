@@ -599,14 +599,17 @@ check('skipped checkpoint items score as wrong', () => {
 
 /* -------------------------------------------------------------- phases */
 check('recap and N2 units keep distinct numbers', () => {
-  const units = NJ.D.units();
-  is(units.map((u) => u.n), [1, 2, 3, 101]);
+  const recap = NJ.D.deckLessons('recap').map((u) => u.n);
+  const n2 = NJ.D.deckLessons('n2').map((u) => u.n);
+  is(recap.length, NJ.D.lessons.length, 'every lesson should have a recap unit: ');
+  is(recap, recap.slice().sort((a, b) => a - b), 'recap units must be ordered: ');
+  ok(recap.every((n) => n < 101), `recap units must stay below 101: ${recap}`);
+  ok(n2.length >= 1, 'no N2 deck: ');
+  ok(n2.every((n) => n > 100), `N2 units must start at 101: ${n2}`);
   is(NJ.D.chapterLabel(1), 'Chapter 1');
   is(NJ.D.chapterLabel(101), 'N2 · 1');
-  is(NJ.D.deckLessons('recap').length, 3);
-  is(NJ.D.deckLessons('n2').length, 1);
   ok(NJ.D.unit(101), 'N2 unit 101 not found: ');
-  ok(NJ.D.unit(101).words.length > 40, 'N2 deck looks empty: ');
+  ok(NJ.D.unit(101).words.length >= 40, 'N2 deck looks empty: ');
 });
 
 check('new words come from the recap before the N2 deck', () => {
@@ -642,14 +645,17 @@ check('switching phase draws from the N2 deck first', () => {
 /* -------------------------------------------------- scheduled checkpoints */
 check('scheduled checkpoints are derived from the content that exists', () => {
   const blocks = NJ.EXAM.blocks();
-  is(blocks.length, 4, `expected 3 recap blocks plus 1 N2 block, got ${blocks.length}: `);
   const recap = blocks.filter((b) => b.deck === 'recap');
-  is(recap.length, 3);
-  is(recap[0].chapters, [1], 'the first block should be cumulative through chapter 1: ');
-  is(recap[2].chapters, [1, 2, 3], 'the last block should cover everything: ');
   const n2 = blocks.filter((b) => b.deck === 'n2');
-  is(n2.length, 1);
-  is(n2[0].chapters, [101]);
+  is(recap.length, Math.min(NJ.EXAM.BLOCKS, NJ.D.chapters().length), 'recap block count: ');
+  is(n2.length, Math.min(NJ.EXAM.N2_BLOCKS, NJ.D.deckLessons('n2').length), 'N2 block count: ');
+  // Blocks are cumulative: the last one covers the whole deck.
+  is(recap[recap.length - 1].chapters, NJ.D.chapters(), 'the last recap block should cover every chapter: ');
+  is(n2[n2.length - 1].chapters, NJ.D.deckLessons('n2').map((u) => u.n), 'the last N2 block should cover every deck: ');
+  // Earlier blocks are strict prefixes.
+  for (let i = 1; i < recap.length; i++) {
+    ok(recap[i].chapters.length > recap[i - 1].chapters.length, 'blocks should grow: ');
+  }
 });
 
 check('blocks stay locked until enough of their words are met', () => {
@@ -658,28 +664,35 @@ check('blocks stay locked until enough of their words are met', () => {
   const blocks = NJ.EXAM.blocks();
   is(NJ.EXAM.blockStatus(st, blocks[0]), 'locked');
 
-  introduceSome(st, 60);
-  is(NJ.EXAM.blockStatus(st, blocks[0]), 'available', 'chapter 1 fully met: ');
-  is(NJ.EXAM.blockStatus(st, blocks[2]), 'locked', 'the whole course is not met: ');
+  // Meet every word of the first block, and nothing beyond it.
+  const first = blocks[0];
+  first.chapters.forEach((ch) => {
+    NJ.D.chapterTerms(ch).forEach((t) => { if (!st.words[t]) SES.introduce(st, t, ch); });
+  });
+  is(NJ.EXAM.blockStatus(st, first), 'available', 'first block fully met: ');
+  const lastRecap = blocks.filter((b) => b.deck === 'recap').pop();
+  is(NJ.EXAM.blockStatus(st, lastRecap), 'locked', 'the rest of the course is not met: ');
   S.reset();
 });
 
 check('a scheduled checkpoint is scoped to its block and marked done', () => {
   const st = S.reset();
   st.onboarded = true;
-  introduceSome(st, 60);
   const block = NJ.EXAM.blocks()[0];
+  block.chapters.forEach((ch) => {
+    NJ.D.chapterTerms(ch).forEach((t) => { if (!st.words[t]) SES.introduce(st, t, ch); });
+  });
 
   const exam = NJ.EXAM.build(st, { chapters: block.chapters, blockId: block.id, hasAudio: false });
   ok(exam, 'no checkpoint built for the block: ');
   is(exam.blockId, block.id);
   for (const item of exam.items) {
-    is(item.chapter, 1, 'an out-of-scope chapter leaked in: ');
+    ok(block.chapters.indexOf(item.chapter) >= 0, `an out-of-scope chapter leaked in: ${item.chapter}`);
   }
 
   st.currentExam = exam;
   let guard = 0;
-  while (!exam.done && guard++ < 200) {
+  while (!exam.done && guard++ < 400) {
     const item = EXAM.current(exam);
     if (!item) break;
     const res = EXAM.answer(exam, item.answer);

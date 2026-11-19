@@ -1,0 +1,151 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 7,
+  "title": { "l2": "日本のポップカルチャー", "l1": "Japanese Pop Culture" },
+  "grammar": {
+    "point_l2": "連濁",
+    "point_l1": "Sequential voicing (rendaku)",
+    "explain_l1": "Rendaku is what happens when two words are fused into one: the first consonant of the second element voices, so 手 (て) + 紙 (かみ) is てがみ and not てかみ, and 花 (はな) + 火 (ひ) is はなび. The alternations are k → g, s → z, t → d, and h → b or p (一本 is いっぽん); only that one consonant of the second element changes, never the first. Voicing is blocked when the second element already contains a voiced obstruent — Lyman's law — so 春風 is はるかぜ and 日陰 is ひかげ, because かぜ and かげ already carry a voiced sound. The rule is real but incomplete: 山道 is やまみち with no voicing at all, so the reliable move is to look the compound up and store the reading, rather than to derive it.",
+    "common_mistake_l1": "Learning that the second element voices and then applying it everywhere. てかみ is wrong, but so is はるがぜ, and やまみち is neither. English has no voicing alternation inside compounds, so learners tend to ignore rendaku completely or over-apply it; the fix is to learn each compound with its reading as one item.",
+    "examples": [
+      {
+        "l2": "母に手紙を書きました。",
+        "reading": "ははにてがみをかきました。",
+        "l1": "I wrote a letter to my mother."
+      },
+      {
+        "l2": "春風が気持ちいい。",
+        "reading": "はるかぜがきもちいい。",
+        "l1": "The spring breeze feels good."
+      },
+      {
+        "l2": "駅の前は人々でにぎわっていた。",
+        "reading": "えきのまえはひとびとでにぎわっていた。",
+        "l1": "The area in front of the station was crowded with people."
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "次のうち、二つ目の要素が濁っている（連濁している）言葉はどれですか。",
+        "options_l2": [
+          "花火（はなび）",
+          "春風（はるかぜ）",
+          "山道（やまみち）",
+          "絵本（えほん）"
+        ],
+        "answer": 0,
+        "explain_l1": "Only 花火 voices: はな + ひ becomes はなび, with h → b. 春風 はるかぜ keeps a voiceless か, 山道 stays やまみち, and 絵本 is simply え + ほん — no consonant of the second element changes."
+      },
+      {
+        "q_l2": "「春風（はるかぜ）」が「はるがぜ」にならない理由として正しいものはどれですか。",
+        "options_l2": [
+          "二つ目の要素に、すでに濁った音が入っているから。",
+          "一つ目の要素に、濁った音が入っているから。",
+          "二つの要素の長さが同じだから。",
+          "カタカナで書く言葉だから。"
+        ],
+        "answer": 0,
+        "explain_l1": "This is Lyman's law: かぜ already contains the voiced ぜ, so voicing the か as well would put two voiced obstruents into one word, which Japanese avoids. That is why 春風 is はるかぜ and not はるがぜ."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本では、漫画は長い間、子どもが読むものだと考えられてきた。しかし今では、大人の読者も多く、漫画は一つの産業として成り立っている。評判のよい作品は雑誌に連載され、単行本になり、海外でも翻訳されて読まれている。売れる作品を生み出すのは、才能だけではない。ある漫画家は、朝から机に向かい、一話のために下書きを何枚も描くという。締め切りに追われて睡眠時間が短くなることもあるが、その現場では、線の一本にも工夫がある。漫画の表現を支えているのは、絵だけではない。日本語の擬音語は数が多く、心臓の音を「ドキドキ」、雨の降り方を「ざあざあ」と、短い言葉で言い表す。読者はその音から、主人公の気持ちを感じ取る。娯楽として軽く見られることもあるが、研究の対象として真面目に論じる学者も増えている。",
+    "sentences": [
+      {
+        "l2": "日本では、漫画は長い間、子どもが読むものだと考えられてきた。",
+        "l1": "In Japan, manga was for a long time regarded as something that children read."
+      },
+      {
+        "l2": "しかし今では、大人の読者も多く、漫画は一つの産業として成り立っている。",
+        "l1": "Today, though, adults make up a large share of its readers, and manga holds together as an industry in its own right."
+      },
+      {
+        "l2": "評判のよい作品は雑誌に連載され、単行本になり、海外でも翻訳されて読まれている。",
+        "l1": "A well-regarded series runs in a magazine, is collected into book volumes, and is translated and read overseas as well."
+      },
+      {
+        "l2": "売れる作品を生み出すのは、才能だけではない。",
+        "l1": "What turns out a work that sells is not talent alone."
+      },
+      {
+        "l2": "ある漫画家は、朝から机に向かい、一話のために下書きを何枚も描くという。",
+        "l1": "One manga artist sits at his desk from morning, and is said to draw page after page of drafts for a single chapter."
+      },
+      {
+        "l2": "締め切りに追われて睡眠時間が短くなることもあるが、その現場では、線の一本にも工夫がある。",
+        "l1": "The deadline can crowd out his sleep, yet in that workplace there is thought in every single line."
+      },
+      {
+        "l2": "漫画の表現を支えているのは、絵だけではない。",
+        "l1": "What carries the expressiveness of manga is not the pictures alone."
+      },
+      {
+        "l2": "日本語の擬音語は数が多く、心臓の音を「ドキドキ」、雨の降り方を「ざあざあ」と、短い言葉で言い表す。",
+        "l1": "Japanese has a great many sound words: the beat of a heart is dokidoki, the fall of rain is zaa-zaa, and either one takes only a few syllables."
+      },
+      {
+        "l2": "読者はその音から、主人公の気持ちを感じ取る。",
+        "l1": "From those sounds the reader picks up what the protagonist is feeling."
+      },
+      {
+        "l2": "娯楽として軽く見られることもあるが、研究の対象として真面目に論じる学者も増えている。",
+        "l1": "It is sometimes dismissed as mere entertainment, but more and more scholars argue about it seriously as an object of study."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "漫画を一つの産業として見る視点",
+          "漫画の歴史と印刷の技術",
+          "漫画家になるための練習方法",
+          "擬音語と文法の関係"
+        ],
+        "answer": 0,
+        "explain_l1": "Every paragraph serves one frame: manga as work with a market, a schedule and a craft. History is only touched on, and the article never offers training advice or a grammar discussion."
+      },
+      {
+        "q_l2": "文章によると、締め切りに追われると、漫画家の生活はどうなりますか。",
+        "options_l2": [
+          "睡眠時間が短くなることがある",
+          "絵を描かなくなる",
+          "連載が止まる",
+          "海外へ引っ越す"
+        ],
+        "answer": 0,
+        "explain_l1": "The sixth sentence says exactly this and nothing more: 睡眠時間が短くなることもある. Losing sleep is a consequence of the deadline, not a reason to stop drawing or to end the series."
+      },
+      {
+        "q_l2": "この文章の書き手の考えに最も近いものはどれですか。",
+        "options_l2": [
+          "娯楽であっても、真面目に研究する価値がある。",
+          "漫画は子どものためのものだ。",
+          "漫画の表現は絵だけで決まる。",
+          "擬音語は翻訳できない。"
+        ],
+        "answer": 0,
+        "explain_l1": "The opening calls manga a children's medium and the ending overturns that: it may be entertainment, but it is now a subject scholars argue about. The other options are claims the passage denies or never makes."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      { "l2": "漫画は今では大人も読んでいます。", "l1": "Nowadays adults read manga too." },
+      { "l2": "評判のよい作品は海外でも翻訳されています。", "l1": "Well-regarded works are translated overseas as well." },
+      { "l2": "締め切りが近いと、睡眠時間が短くなります。", "l1": "When a deadline is close, sleep gets shorter." },
+      { "l2": "日本語の擬音語は数が多く、短い言葉で気持ちを伝えます。", "l1": "Japanese has many sound words, and they convey feeling in a few short syllables." },
+      { "l2": "娯楽として軽く見られるが、研究の対象にもなっている。", "l1": "It is taken lightly as entertainment, but it has also become a subject of research." }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, say what decides whether a manga work sells, and what the artist is doing behind the scenes. Use at least three of this chapter's words.",
+    "required": ["連載", "読者", "締め切り", "工夫"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私が好きな漫画は、長く連載が続いている作品だ。売れるかどうかは、絵だけでは決まらない。読者は、主人公の気持ちが伝わるかどうかを見ている。作者は毎週の締め切りに追われながら、線の一本にも工夫を重ねている。娯楽として軽く見ることもできるが、私はその仕事を職人の仕事だと思っている。",
+    "tips_l1": "Open with what decides a sale, then name a second factor beyond talent: the reader, the editor, the weekly schedule. Put 連載 and 締め切り inside a sentence that needs them instead of listing them. One concrete detail — a page count, a redrawn line — is worth more than three abstract adjectives. The app only counts length, required words and sentence count; have a human check the style."
+  }
+}

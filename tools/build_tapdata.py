@@ -20,7 +20,14 @@ from _common import (  # noqa: E402
     VOCAB_DIR, Report, deck_lesson_files, read_tsv, utf8_stdout, write_js,
 )
 
-EXTRA = os.path.join(VOCAB_DIR, "tap-extra.tsv")
+def tap_files() -> list[str]:
+    """Shared extras plus one optional file per chapter."""
+    if not os.path.isdir(VOCAB_DIR):
+        return []
+    names = [n for n in sorted(os.listdir(VOCAB_DIR)) if n.startswith("tap-") and n.endswith(".tsv")]
+    # tap-extra.tsv first so its glosses win over per-chapter duplicates
+    names.sort(key=lambda n: (n != "tap-extra.tsv", n))
+    return [os.path.join(VOCAB_DIR, n) for n in names]
 
 
 def main() -> int:
@@ -30,8 +37,8 @@ def main() -> int:
     rows: list[dict] = []
     for _deck, _chapter, path in deck_lesson_files():
         rows.extend(read_tsv(path, report))
-    extra = read_tsv(EXTRA, report)
-    rows.extend(extra)
+    for rel in tap_files():
+        rows.extend(read_tsv(rel, report))
 
     entries: dict[str, dict] = {}
     origin: dict[str, str] = {}

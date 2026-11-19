@@ -1,0 +1,151 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 5,
+  "title": { "l2": "日本の食べ物", "l1": "Japanese Food" },
+  "grammar": {
+    "point_l2": "逆接の「が」と「けれども」",
+    "point_l1": "The contrastive が and けれども",
+    "explain_l1": "が and けれども both join two clauses and flag the second one as unexpected, but they are not interchangeable in tone. が is the neutral default: it is standard in speech, in business email and in academic prose, and it adds no colour of its own. けれども is heavier — it stretches the pause and sounds more deliberate, so it belongs in polite speech and in writing that wants a considered turn rather than a quick one; the casual けど is its everyday descendant. When the contrast deserves a fresh sentence, Japanese usually starts a new one: しかし does that job in formal writing, でも in speech. So the level rises from けど to が to けれども, and the sentence-initial options are a separate decision about how big the turn is.",
+    "common_mistake_l1": "Treating every が as 'but'. In 「この店は安いが、味はいい」 the が really is contrast, but in 「すみませんが、水をください」 and 「この料理には何が入っていますか」 it only softens a request or marks the subject — translate those as 'but' and the sentence turns into a contradiction that is not there. Read the second half: if it does not oppose the first, the が is doing softer work.",
+    "examples": [
+      {
+        "l2": "米は日本の主食だが、朝はパンを食べる人も多い。",
+        "reading": "こめはにほんのしゅしょくだが、あさはパンをたべるひともおおい。",
+        "l1": "Rice is the staple food of Japan, but plenty of people eat bread in the morning."
+      },
+      {
+        "l2": "値段は安いけれども、味はいい。",
+        "reading": "ねだんはやすいけれども、あじはいい。",
+        "l1": "It is cheap, and yet it tastes good."
+      },
+      {
+        "l2": "すみませんが、この料理には何が入っていますか。",
+        "reading": "すみませんが、このりょうりにはなにがはいっていますか。",
+        "l1": "Excuse me — what goes into this dish?"
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "次の文のうち、「が」が「しかし」の意味ではない文はどれですか。",
+        "options_l2": [
+          "すみませんが、水をください。",
+          "この店は安いが、味はよくない。",
+          "米は主食だが、パンもよく食べる。",
+          "この商品は人気だが、値段が高い。"
+        ],
+        "answer": 0,
+        "explain_l1": "In the first sentence が only softens the request; nothing after it opposes anything before it, and しかし cannot stand there. The other three are real contrasts — cheap versus not tasty, rice versus bread, popular versus expensive — and each could be rewritten with a sentence-initial しかし."
+      },
+      {
+        "q_l2": "会社で使う文として、いちばん適切なものはどれですか。",
+        "options_l2": [
+          "味はよいが、値段が高い。",
+          "味はよいけど、値段が高い。",
+          "味はよい。だから、値段が高い。",
+          "味はよいので、値段が高い。"
+        ],
+        "answer": 0,
+        "explain_l1": "が carries the contrast without lowering the register, which is what a company document needs. けど is conversational and reads as casual in writing; だから and ので mark a cause, and here the cause would be the good taste, which is backwards."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "昔から、日本の食事は米が中心だった。炊いたご飯が主食で、その横に汁物とおかずが並ぶのがふつうだ。この形は今も同じだが、朝はパンだけという家庭も増えた。米は長く保存できるので、一年を通して安定して食べられた。一方、麺の文化も長く、うどんやそばは各地で愛されてきた。一九五八年、大阪の小さな工場で、安藤百福が油で揚げた麺を思いつく。お湯をかけて二分で食べられるこの商品は、世界中に広がった。寿司もまた、外で食べるものから家庭の食卓へと姿を変えた。ファストフードの店で、注文から提供までの時間の短さが大切にされる。何を主食にするかで、その日の献立の形は大きく変わる。",
+    "sentences": [
+      {
+        "l2": "昔から、日本の食事は米が中心だった。",
+        "l1": "Since long ago, rice has been at the centre of the Japanese meal."
+      },
+      {
+        "l2": "炊いたご飯が主食で、その横に汁物とおかずが並ぶのがふつうだ。",
+        "l1": "Cooked rice is the staple, and a soup and a side dish normally sit beside it."
+      },
+      {
+        "l2": "この形は今も同じだが、朝はパンだけという家庭も増えた。",
+        "l1": "The pattern is still the same today, but more households now have nothing but bread in the morning."
+      },
+      {
+        "l2": "米は長く保存できるので、一年を通して安定して食べられた。",
+        "l1": "Rice keeps for a long time, so it could be eaten steadily all year round."
+      },
+      {
+        "l2": "一方、麺の文化も長く、うどんやそばは各地で愛されてきた。",
+        "l1": "Noodles have just as long a history: udon and soba have been loved in every region."
+      },
+      {
+        "l2": "一九五八年、大阪の小さな工場で、安藤百福が油で揚げた麺を思いつく。",
+        "l1": "In 1958, in a small factory in Osaka, Momofuku Ando hit on the idea of frying noodles in oil."
+      },
+      {
+        "l2": "お湯をかけて二分で食べられるこの商品は、世界中に広がった。",
+        "l1": "The product — edible two minutes after hot water is poured over it — spread across the world."
+      },
+      {
+        "l2": "寿司もまた、外で食べるものから家庭の食卓へと姿を変えた。",
+        "l1": "Sushi, too, changed from something eaten out into a dish on the family table."
+      },
+      {
+        "l2": "ファストフードの店で、注文から提供までの時間の短さが大切にされる。",
+        "l1": "At a fast-food restaurant, what is valued is how short the stretch from ordering to serving is."
+      },
+      {
+        "l2": "何を主食にするかで、その日の献立の形は大きく変わる。",
+        "l1": "What you treat as the staple largely determines the shape of that day's menu."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "日本の食事の歴史と、その変化",
+          "米の値段が上がった理由",
+          "寿司と魚の関係",
+          "インスタントラーメンの会社の歴史"
+        ],
+        "answer": 0,
+        "explain_l1": "The passage runs from rice as the base of the meal through noodles, instant ramen and sushi to fast food: the subject throughout is how Japanese eating was built and how it changed. Prices, fish and one company's history each appear only in passing."
+      },
+      {
+        "q_l2": "文章によると、米が主食なのはなぜですか。",
+        "options_l2": [
+          "長く保存できるから",
+          "値段が安いから",
+          "料理が簡単だから",
+          "麺より味がいいから"
+        ],
+        "answer": 0,
+        "explain_l1": "The fourth sentence states the reason outright: 米は長く保存できるので、一年を通して安定して食べられた. Cheapness, easy cooking and taste are plausible guesses, but the passage never offers them as the reason."
+      },
+      {
+        "q_l2": "この文章の書き手は、日本の食事についてどう考えていますか。",
+        "options_l2": [
+          "主食が何かで、食事の形が変わると考えている。",
+          "米の文化はもう終わりだと考えている。",
+          "外食より家庭の料理のほうが大切だと考えている。",
+          "ラーメンは日本の食べ物ではないと考えている。"
+        ],
+        "answer": 0,
+        "explain_l1": "The closing sentence makes the writer's position explicit: the staple decides the shape of the day's menu, which is also how the article explains bread, noodles and sushi. Nowhere does it declare rice culture finished, rank home cooking over eating out, or deny ramen a place in Japanese food."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      { "l2": "米は日本の主食です。", "l1": "Rice is the staple food of Japan." },
+      { "l2": "インスタントラーメンはお湯で作ります。", "l1": "You make instant ramen with hot water." },
+      { "l2": "ファストフードの店は注文が簡単です。", "l1": "At a fast-food restaurant, ordering is simple." },
+      { "l2": "寿司には酢と魚を使います。", "l1": "Sushi uses vinegar and fish." },
+      { "l2": "ラーメンのスープには油が多いです。", "l1": "Ramen broth contains a lot of oil." }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 120 characters of Japanese, describe a meal you eat regularly: what the staple is, what the side dishes are, and where the ingredients come from. Use at least four of this chapter's words.",
+    "required": ["材料", "調理", "味", "栄養"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私の家では、ご飯はいつも米を炊いて作ります。おかずは少ないですが、材料は近くの店で買います。調理の時間は三十分くらいで、味はうすいですが、栄養にも気をつけています。週末だけは外でラーメンを食べます。米は日本の主食で、毎日の食事の中心です。外で食べるより、家で作るほうが安いです。",
+    "tips_l1": "Start with the staple — 米, パン or 麺 — because that is the frame the passage uses, then name the side dishes and where the ingredients come from. Keep が for the one contrast you actually mean, and if the contrast deserves a new sentence, open with しかし rather than piling が into one long clause. The app counts length, required words and sentence count only; have a human check the style."
+  }
+}

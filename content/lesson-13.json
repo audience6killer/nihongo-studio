@@ -1,0 +1,173 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 13,
+  "title": {
+    "l2": "日本人と自然",
+    "l1": "The Japanese and Nature"
+  },
+  "grammar": {
+    "point_l2": "終助詞② — かな・かしら・っけ・わ・の・さ",
+    "point_l1": "Sentence-final particles, part 2: wondering, recalling, soft assertion",
+    "explain_l1": "Part 1 handled the particles that move information around: よ hands over something the listener may not have, ね asks for agreement, な is a comment aimed at yourself. Part 2 handles particles that mark the speaker's stance instead. かな and かしら turn a statement into a question you are asking yourself — かしら is the older, softer-sounding variant. っけ pulls back something you once knew and are no longer sure about. わ, の and さ colour a plain statement as soft, explanatory or casually emphatic, and none of them changes what is being said. The gender labels in textbooks are real but loosening: わ and the explanatory の still lean feminine in many regions, さ leans masculine or young, yet plenty of speakers of both genders use all three, so copy the people you actually talk to rather than a list.",
+    "common_mistake_l1": "Treating っけ as a general question ending. It only works when you once knew the answer and have lost it: 「会議は三時からだっけ」 to a colleague who holds the schedule is asking for a memory to be confirmed, but the same ending on something you never knew sounds confused, and 「お名前、何でしたっけ」 to a person you have just met implies you have forgotten a name you never learned. For a real unknown, ask plainly or use かな.",
+    "examples": [
+      {
+        "l2": "「この雨、夕方までに止むかな。」",
+        "reading": "「このあめ、ゆうがたまでにとむかな。」",
+        "l1": "\"Will this rain stop by evening, I wonder.\""
+      },
+      {
+        "l2": "「会議は三時からだったっけ。」",
+        "reading": "「かいぎはさんじからだったっけ。」",
+        "l1": "\"Was the meeting from three, again?\""
+      },
+      {
+        "l2": "「心配しなくていいさ。ちゃんと間に合うよ。」",
+        "reading": "「しんぱいしなくていいさ。ちゃんとにあうよ。」",
+        "l1": "\"There's nothing to worry about — we'll get there in time.\""
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "友だちとの会話です。忘れたことを思い出したいとき、いちばん合う言い方はどれですか。",
+        "options_l2": [
+          "会議は三時からだっけ。",
+          "会議は三時からだよ。",
+          "会議は三時からだね。",
+          "会議は三時からだな。"
+        ],
+        "answer": 0,
+        "explain_l1": "っけ marks a memory you are reaching for: you were told the time once and it has slipped. The other three are part 1 particles — よ gives information away, ね invites agreement, な comments to yourself — and none of them asks the listener to confirm a half-lost memory."
+      },
+      {
+        "q_l2": "初対面の取引先に電話をかけます。いちばん適切な言い方はどれですか。",
+        "options_l2": [
+          "では、明日の三時に伺いますわ。",
+          "では、明日の三時に伺います。",
+          "では、明日の三時に伺うさ。",
+          "では、明日の三時に伺うの。"
+        ],
+        "answer": 1,
+        "explain_l1": "On a first business call the polite ending is already doing the softening, and adding a particle from this set pulls the sentence toward intimate talk: わ, さ and の all belong between people who know each other. This is the register half of the chapter — a particle can be perfectly grammatical and still wrong for the room."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本では、季節の移り変わりがはっきりしている。春になると庭の梅が咲き、夏の夕方には遠くの山から蝉の声が聞こえてくる。秋は空が高くなり、冬は静かに雪が積もる。季節が変わるたびに、同じ道でも景色が少しずつ違って見える。こうした変化を、俳句は十七音という短い形で切り取る。説明の言葉はほとんど入らないかわりに、一つ一つの語が重い。季語が一つあると、読む人はその季節と土地をすぐに思い浮かべる。川柳も音の数は同じだが、季語を必要とせず、人の失敗や言い間違いを責めずに軽く描く。短い詩が長い説明より多くを伝えることがあるのは、余白があるからだ。駅の柱に貼られた標語も、作り方はよく似ている。「急ぐ日も、一歩手前で、ひと息を」。",
+    "sentences": [
+      {
+        "l2": "日本では、季節の移り変わりがはっきりしている。",
+        "l1": "In Japan the turn of the seasons is sharply defined."
+      },
+      {
+        "l2": "春になると庭の梅が咲き、夏の夕方には遠くの山から蝉の声が聞こえてくる。",
+        "l1": "When spring comes the plum tree in the garden blooms, and on summer evenings the cicadas can be heard from the mountains far off."
+      },
+      {
+        "l2": "秋は空が高くなり、冬は静かに雪が積もる。",
+        "l1": "In autumn the sky grows higher, and in winter the snow piles up quietly."
+      },
+      {
+        "l2": "季節が変わるたびに、同じ道でも景色が少しずつ違って見える。",
+        "l1": "Each time the season turns, the same road looks a little different."
+      },
+      {
+        "l2": "こうした変化を、俳句は十七音という短い形で切り取る。",
+        "l1": "Haiku frames that kind of change in a short form of seventeen syllables."
+      },
+      {
+        "l2": "説明の言葉はほとんど入らないかわりに、一つ一つの語が重い。",
+        "l1": "There is almost no room for explanation; what you get instead is the weight of each single word."
+      },
+      {
+        "l2": "季語が一つあると、読む人はその季節と土地をすぐに思い浮かべる。",
+        "l1": "With one seasonal word in place, the reader immediately pictures that season and that place."
+      },
+      {
+        "l2": "川柳も音の数は同じだが、季語を必要とせず、人の失敗や言い間違いを責めずに軽く描く。",
+        "l1": "Senryuu keeps the same syllable count, but it needs no seasonal word, and it sketches people's failures and slips of the tongue lightly, without blame."
+      },
+      {
+        "l2": "短い詩が長い説明より多くを伝えることがあるのは、余白があるからだ。",
+        "l1": "A short poem can carry more than a long explanation because of the space it leaves blank."
+      },
+      {
+        "l2": "駅の柱に貼られた標語も、作り方はよく似ている。「急ぐ日も、一歩手前で、ひと息を」。",
+        "l1": "The slogan pasted on a station pillar is made in much the same way: \"Even on a hurried day, stop one step short and take a breath.\""
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "短い言葉で季節や人を描く表現",
+          "日本各地の名所の説明",
+          "俳句の長い歴史",
+          "駅の標語の作り方の練習"
+        ],
+        "answer": 0,
+        "explain_l1": "The passage moves from how the seasons change, to haiku and senryuu, to a station slogan — in every case it is about putting a scene or a human habit into very few words. Nothing in it dates a poem or explains how to draft a slogan."
+      },
+      {
+        "q_l2": "文章によると、川柳と俳句の違いは何ですか。",
+        "options_l2": [
+          "季語を必要としないこと",
+          "音の数がとても多いこと",
+          "説明の言葉が多いこと",
+          "冬の場面しか詠まないこと"
+        ],
+        "answer": 0,
+        "explain_l1": "The eighth sentence sets the two side by side: the syllable count is the same, but senryuu needs no seasonal word and turns to people rather than to the season. The syllable-count option is the trap, because the article says the opposite."
+      },
+      {
+        "q_l2": "駅の標語を出したのはなぜだと考えられますか。",
+        "options_l2": [
+          "短い言葉で場面を伝える方法が俳句と似ていること",
+          "標語のほうが俳句より長い歴史があること",
+          "標語にも季語を入れる必要があること",
+          "駅の標語は文学ではないこと"
+        ],
+        "answer": 0,
+        "explain_l1": "The last sentence says the method is よく似ている — much the same — and the passage has just spent nine sentences describing that method: cut the explanation and let a few concrete words carry the scene. The slogan is there as a familiar example of the same craft, not as an older or a lesser form."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      {
+        "l2": "春になると庭の梅が咲きます。",
+        "l1": "When spring comes, the plum tree in the garden blooms."
+      },
+      {
+        "l2": "山の上から町を眺めます。",
+        "l1": "I look out over the town from the top of the mountain."
+      },
+      {
+        "l2": "夏の夕方には遠くから鳥の声が聞こえます。",
+        "l1": "On summer evenings you can hear birds from far away."
+      },
+      {
+        "l2": "俳句は季語を一つ入れて詠みます。",
+        "l1": "In haiku you compose with a single seasonal word included."
+      },
+      {
+        "l2": "冬は静かで、雪が積もる日もあります。",
+        "l1": "Winter is quiet, and there are days when the snow piles up."
+      }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "Describe one place near you the way it changes through the year, in about 100 characters of Japanese. Name what you see or hear in two different seasons, then close with one sentence about what a haiku made from that scene would need to leave out.",
+    "required": [
+      "季節",
+      "景色",
+      "俳句"
+    ],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私の家の近くに小さな川があります。季節が変わると、同じ道でも景色が少しずつ変わります。春は岸の梅が咲き、夏の夕方には虫の声が聞こえます。秋は空が高くなり、冬は静かで、雪が積もる日もあります。この川を十七音で表すなら、どんな俳句になるだろうとよく考えます。",
+    "tips_l1": "Name the place in your first clause — a river, a park, a platform — then give one sense detail per season instead of an adjective like きれい. Keep the level consistent: either です・ます throughout or plain form throughout. For the closing sentence, say what the poem would drop, because that is the point of the chapter. The app only counts length, required words and sentence count; have a human read the style."
+  }
+}

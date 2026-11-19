@@ -1,0 +1,76 @@
+# Chapter 12 — 日本の伝統工芸 / Traditional Japanese Crafts
+# Surface forms and general words needed so every token of chapter 12 resolves.
+# tab-separated: term<TAB>reading<TAB>gloss<TAB>pos
+#   pos: part | form | exp | plus the ordinary n./v.t./い-adj. labels used by the app
+
+# ---- reading: 和紙と紙漉き ------------------------------------------------
+植物	しょくぶつ	plant	n.
+ほぐす	ほぐす	to loosen; to break up into fibres	v.t.
+ほぐし	ほぐし	loosening; breaking up (stem)	form
+網	あみ	net; screen	n.
+漉いて	すいて	pulling a sheet of paper (te-form)	form
+紙	かみ	paper	n.
+一度に	いちどに	at one time; all at once	adv
+違い	ちがい	difference	n.
+一枚	いちまい	one sheet (of paper)	num
+手	て	hand	n.
+厚さ	あつさ	thickness	n.
+ばらつき	ばらつき	variation; unevenness	n.
+欠点	けってん	fault; defect	n.
+長所	ちょうしょ	good point; strength	n.
+破れにくい	やぶれにくい	hard to tear	い-adj.
+破れにくく	やぶれにくく	hard to tear (adverbial)	form
+吸う	すう	to absorb; to draw in	v.t.
+障子	しょうじ	paper sliding screen; shoji	n.
+あかり	あかり	light; a lamp	n.
+光	ひかり	light	n.
+場所	ばしょ	place	n.
+使われてきた	つかわれてきた	has been used	form
+使われていない	つかわれていない	is not used	form
+生まれた	うまれた	was born; arose	form
+遊び	あそび	play; pastime	n.
+船	ふね	boat; ship	n.
+こめて	こめて	putting (a wish) into	form
+千枚	せんまい	a thousand sheets	num
+折り	おり	folding (stem)	form
+つないで	つないで	stringing together (te-form)	form
+何十年	なんじゅうねん	for decades	num
+変えずに	かえずに	without changing	form
+受け継がれてきた	うけつがれてきた	has been handed down	form
+ひとつ	ひとつ	one (thing)	num
+はじめて	はじめて	for the first time	adv
+品	しな	article; piece; goods	n.
+
+# ---- questions ------------------------------------------------------------
+よさ	よさ	goodness; the good side of something	n.
+仕方	しかた	way of doing	n.
+代わり	かわり	substitute; in place of	n.
+新しく	あたらしく	newly (adverbial)	form
+弱い	よわい	weak	い-adj.
+早く	はやく	quickly; early	form
+直す	なおす	to fix; to correct	v.t.
+気づいて	きづいて	noticing (te-form)	form
+いない	いない	is not; there is not	form
+作れば	つくれば	if one makes	form
+
+# ---- grammar examples and drills -----------------------------------------
+木	き	tree; wood	n.
+コーヒー	コーヒー	coffee	n.
+飲む	のむ	to drink	v.t.
+助詞	じょし	particle	n.
+省いている	はぶいている	leaving out; omitting	form
+正しくない	ただしくない	not correct	form
+使える	つかえる	to be usable; can use	form
+分からない	わからない	not to understand; not to know	form
+通じない	つうじない	does not get through; is not understood	form
+
+# ---- listening and writing ------------------------------------------------
+薄く	うすく	thin (adverbial)	form
+作られます	つくられます	is made (polite passive)	form
+折ります	おります	to fold (polite)	form
+的な	てきな	-ic; typical of	part
+作れない	つくれない	cannot make	form
+美しさ	うつくしさ	beauty	n.
+漉ける	すける	to be able to make (paper)	form
+五十枚	ごじゅうまい	fifty sheets	num
+枚	まい	counter for flat things	num

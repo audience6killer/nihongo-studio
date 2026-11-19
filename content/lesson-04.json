@@ -1,0 +1,156 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 4,
+  "title": { "l2": "日本のスポーツ", "l1": "Sports in Japan" },
+  "grammar": {
+    "point_l2": "数字と助数詞",
+    "point_l1": "Numbers and counters",
+    "explain_l1": "A counter is the small noun that follows a number: 人 for people, 本 for long thin things, 枚 for flat ones, 台 for machines and vehicles, 回 for occurrences, 試合 for matches. The sound shifts look random but are not: 一本 is いっぽん, 三本 is さんぼん, 六本 is ろっぽん, and 人 runs ひとり, ふたり, さんにん, よにん, while 何人 is なんにん. 回 and 試合 are the pair you need to schedule a season; 人 is the one you need inside a club. つ covers only one to ten, and only things that have no counter of their own.",
+    "common_mistake_l1": "Reaching for つ whenever something looks countable: 部員が三人, not 部員が三つ; 竹刀が五本, not 五つ. The other slip is reading every 本 as ほん — 三本 is さんぼん, and 六本 is ろっぽん.",
+    "examples": [
+      {
+        "l2": "竹刀を一本だけ持ってきました。",
+        "reading": "しないをいっぽんだけもってきました。",
+        "l1": "I brought just one bamboo sword."
+      },
+      {
+        "l2": "この道場には、ふだん何人くらい来ますか。",
+        "reading": "このどうじょうには、ふだんなんにんくらいきますか。",
+        "l1": "About how many people come to this dojo on an ordinary day?"
+      },
+      {
+        "l2": "試合は年に三回ありますが、勝ったのは二回だけです。",
+        "reading": "しあいはねんにさんかいありますが、かったのはにかいだけです。",
+        "l1": "There are three matches a year, but we have only won two of them."
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "「三本」の読み方として、いちばん正しいものはどれですか。",
+        "options_l2": ["さんほん", "さんぼん", "さんぽん", "みほん"],
+        "answer": 1,
+        "explain_l1": "The 本 series voices after 三: さんぼん. It doubles after 六, 八 and 十 (ろっぽん, はっぽん, じゅっぽん) and takes いっ for one (いっぽん). さんほん and さんぽん are not used, and みほん is a different word — it means a sample."
+      },
+      {
+        "q_l2": "「駐車場にコーチの車が___あります。」に入れることばはどれですか。",
+        "options_l2": ["三つ", "三台", "三本", "三枚"],
+        "answer": 1,
+        "explain_l1": "Vehicles and machines take 台, so 三台 (さんだい) is the only answer that works. 三つ is only for things with no counter of their own and stops at ten, 三本 is for long thin things, and 三枚 is for flat ones, so none of the other three fits a car."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本の学校では、授業が終わると部活が始まる。一年生は入部すると、まず先輩に用具の片づけ方を教わる。私の学校の剣道部は、三年生が四人、二年生が六人、一年生が五人で、全部で十五人だ。稽古は道場で行い、始めと終わりには必ず礼をする。先生は「心と技と体を、同じくらい鍛えなさい」とよく言う。心は礼儀から、技は基本の型から、体は毎日の食事から作られる。技は一日では上達しないが、毎日竹刀を三百回ふると、少しずつ体が覚えていく。強い先輩ほど、後輩に教えるときの言葉がていねいだ。試合の日は、応援に来た家族が観客席から声をかける。勝っても負けても、最後に相手と礼をして終わる。",
+    "sentences": [
+      {
+        "l2": "日本の学校では、授業が終わると部活が始まる。",
+        "l1": "At Japanese schools, club activities start as soon as classes end."
+      },
+      {
+        "l2": "一年生は入部すると、まず先輩に用具の片づけ方を教わる。",
+        "l1": "When a first-year student joins a club, the first thing they are taught by a senior is how to put the equipment away."
+      },
+      {
+        "l2": "私の学校の剣道部は、三年生が四人、二年生が六人、一年生が五人で、全部で十五人だ。",
+        "l1": "The kendo club at my school has four third-years, six second-years and five first-years — fifteen in all."
+      },
+      {
+        "l2": "稽古は道場で行い、始めと終わりには必ず礼をする。",
+        "l1": "Practice takes place in the dojo, and everyone bows at the start and at the end."
+      },
+      {
+        "l2": "先生は「心と技と体を、同じくらい鍛えなさい」とよく言う。",
+        "l1": "The teacher often says, \"train your heart, your technique and your body in equal measure.\""
+      },
+      {
+        "l2": "心は礼儀から、技は基本の型から、体は毎日の食事から作られる。",
+        "l1": "The heart is built from courtesy, the technique from the basic forms, the body from what you eat each day."
+      },
+      {
+        "l2": "技は一日では上達しないが、毎日竹刀を三百回ふると、少しずつ体が覚えていく。",
+        "l1": "Technique does not improve in a day, but if you swing the bamboo sword three hundred times every day, the body remembers it little by little."
+      },
+      {
+        "l2": "強い先輩ほど、後輩に教えるときの言葉がていねいだ。",
+        "l1": "The stronger the senior, the more carefully they choose their words when teaching a junior."
+      },
+      {
+        "l2": "試合の日は、応援に来た家族が観客席から声をかける。",
+        "l1": "On match day, the family who have come to support you call out from the spectator seats."
+      },
+      {
+        "l2": "勝っても負けても、最後に相手と礼をして終わる。",
+        "l1": "Whether you win or lose, you finish by bowing to your opponent."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "学校の部活と武道の稽古",
+          "プロのスポーツの歴史",
+          "試合のルールについて",
+          "用具の値段と選び方"
+        ],
+        "answer": 0,
+        "explain_l1": "Every paragraph comes back to the same ground: a school club, the dojo, practice, and how seniors treat juniors. There is no history, no rulebook and no price list anywhere in the passage."
+      },
+      {
+        "q_l2": "文章によると、一年生は入部して最初に何をしますか。",
+        "options_l2": [
+          "すぐに試合に出て勝負する",
+          "道場を掃除する",
+          "先生に型を教える",
+          "先輩に用具の片づけ方を教わる"
+        ],
+        "answer": 3,
+        "explain_l1": "The second sentence says it plainly: まず先輩に用具の片づけ方を教わる — before technique, the newcomer learns how the club is kept. Cleaning, competing and teaching the teacher are not in the text at that point."
+      },
+      {
+        "q_l2": "この文章から、筆者がいちばん伝えたいことは何ですか。",
+        "options_l2": [
+          "試合に勝つことだけが大切だ",
+          "技だけでなく、心と体も同じくらい大切だ",
+          "先輩の言うことは必ず正しい",
+          "部活は一年生のうちにやめるべきだ"
+        ],
+        "answer": 1,
+        "explain_l1": "The passage builds 心・技・体 as three equal objects of training and closes with a bow whether you win or lose, so the point is balance, not victory. The other options are either too narrow or not claimed anywhere."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      {
+        "l2": "剣道の稽古は道場で行います。",
+        "l1": "Kendo practice is held in the dojo."
+      },
+      {
+        "l2": "一年生は先輩に用具の片づけ方を教わります。",
+        "l1": "First-year students are taught how to put the equipment away by their seniors."
+      },
+      {
+        "l2": "試合の前には、必ず礼をします。",
+        "l1": "Before a match, you always bow."
+      },
+      {
+        "l2": "今年は試合が五回ありました。",
+        "l1": "There were five matches this year."
+      },
+      {
+        "l2": "後輩を褒める言葉は、先輩によって違います。",
+        "l1": "The words a senior uses to praise a junior differ from one senior to another."
+      }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, write about a sport or martial art you have practised or watched. Say how often you do it, what your senior or coach is like, and what you find difficult. Use at least three of this chapter's words.",
+    "required": ["稽古", "礼儀", "先輩", "努力"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私の学校には剣道部があって、週に四回、道場で稽古をします。最初は礼儀がうるさく言われて、少し面倒だと感じました。でも、先輩が毎回きちんと礼をするのを見て、礼は相手を大切にするためのものだと分かりました。技はなかなか上達しませんが、努力を続ければ、いつか試合に出られると思います。",
+    "tips_l1": "Name the activity and the place in your first sentence, then give a frequency with a counter — 週に四回, 月に二回 — because that is the grammar point doing real work. Describe one senior or coach with a concrete detail instead of the word \"kind\". The app only counts length, required words and sentence count, so have a human check your style."
+  }
+}

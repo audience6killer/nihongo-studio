@@ -58,6 +58,8 @@ npm test                        # the whole suite, in order
 | `node tools/smoke.mjs` | Every module loads, every screen renders, SRS and plan behave |
 | `node tools/qa.mjs` | Asset wiring, service-worker parity, instance isolation, data integrity, no secrets |
 | `python tools/validate_content.py` | Lesson schema, sentence pairs, option counts, writing constraints |
+| `node tools/check_chapter.mjs NN` | One chapter, from source files: schema plus 100% tap coverage |
+| `node tools/used_terms.mjs` | Every vocabulary term the course has already claimed |
 
 ## Build and deploy
 
@@ -84,20 +86,21 @@ will populate it from the environment, but nothing in the app reads it: v1 is lo
 
 ## State of the build
 
-The engine is complete: onboarding, calibration with a refresh deck, the daily session
-(recognition, production, listening, dictation), reading with tap-to-define, the writing task,
-scheduled and practice checkpoints, phase switching between the recap and the N2 deck, stats,
+Everything in the plan is built: onboarding, calibration with a refresh deck, the daily session
+(recognition, production, listening, dictation), reading with tap-to-define, writing tasks,
+scheduled and practice checkpoints, phase switching between the recap and the N2 decks, stats,
 settings, export/import, a deploy build and a service worker.
 
-Content is the remaining work, and it is authored rather than coded:
+Content:
 
-| Deck | Units | Words | Status |
+| Deck | Units | Words | Content |
 |---|---|---|---|
-| Tobira recap | 3 of 15 | 169 | chapters 1–3 complete with readings and grammar |
-| N2 vocabulary | 1 | 46 | vocabulary only, no reading or grammar yet |
+| Tobira recap | 15 of 15 | 773 | full chapters: reading, grammar, dictation, writing |
+| N2 vocabulary | 3 | 134 | words only — readings and grammar still to come |
 
-`content/LEDGER.md` is the authority on what exists. To add a chapter, follow `CONTENT_SPEC.md`;
-the validators will tell you exactly what is missing.
+15 lessons · 10,602 passage tokens, every one tappable · 1,980 dictionary entries.
+`content/LEDGER.md` is the authority on what exists and `content/REVIEW.md` lists what still wants
+a human read.
 
 Not built: sync. v1 is local-only on purpose — see `INSTANCE.md`.
 

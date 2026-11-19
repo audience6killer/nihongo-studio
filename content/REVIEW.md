@@ -1,60 +1,66 @@
 # Review buffer
 
 Entries the agent is less than fully certain about, or decisions worth a second opinion. Nothing
-here is known-bad; the validators pass. This is where human judgement adds what a validator
-cannot. Clear a row by confirming it or correcting the source file and rebuilding.
+here is known-bad: the validators pass and every chapter is 100% tappable. This is where human
+judgement adds what a validator cannot. Clear a row by confirming it, or correct the source file
+and rebuild.
 
-## Chapters 2 and 3 — readings and glosses to spot-check
+## Chapters 4–15 — readings and glosses to spot-check
 
-| Entry | Reading / gloss given | Question for the reviewer |
+| Chapter | Entry | Question for the reviewer |
 |---|---|---|
-| 丁寧 | ていねい · "polite; careful" · `な-adj.` | Correct for both senses (丁寧な言葉 / 丁寧な仕事)? |
-| 常体 / 敬体 | *not taught* | I teach です・ます / だ・である without the terms 敬体/常体. Enough, or add them? |
-| 大事 | だいじ · "important; precious" · `な-adj.` | Fine for 「大事なのは」? |
-| 場 | ば · "place; occasion" | Overlaps 場面 and 場所. Keep all three? |
-| 使い分ける | つかいわける · "to use properly; to distinguish in use" | Gloss is clumsy. Better phrasing? |
-| 好む | このむ · "to prefer; to like" · `v.t.` | Natural at N3? Or above level? |
-| 人工知能 | じんこうちのう | Reading correct? Also AI is often エーアイ in speech. |
-| 携帯 | けいたい · "mobile phone; portable" | The phone sense is dated (携帯電話 → スマホ). Keep? |
-| 自動 | じどう · `n.` | It behaves as a prefix (自動ドア). Tag ok? |
-| 安定 | あんてい · `な-adj.` | Used as noun and な-adj (安定な vs 安定した). Tag ok? |
-| 不安 | ふあん · `な-adj.` "anxious; anxiety" | Noun + な-adj dual. Tag ok? |
-| マンション | "apartment block; condominium" | The common-mistake drill depends on this gloss. Fine? |
-| アルバイト | "part-time job (from German Arbeit)" | Etymology in the explanation is correct? |
-| 外来語 vs カタカナ語 | Both used | The chapter title uses カタカナ語; the vocabulary word is 外来語. Deliberate (not all loanwords are katakana, not all katakana is foreign), but worth a second look. |
+| 4 | 稽古 | Reading けいこ correct for martial-arts practice? |
+| 4 | 数え方 in the grammar | Are the counter examples (一本 ippon, 三本 sanbon) all correct? |
+| 5 | the が・けれども contrast | Is けれども really described as the more formal one throughout? |
+| 6 | お盆 | Is it right to gloss this as the mid-August memorial season without mentioning regional variation? |
+| 7 | 連濁 rules | ライマンの法則 is stated plainly — is the simplification honest enough? |
+| 8 | 狂言 | Is きょうげん glossed as comic theatre in a way a learner will not misread? |
+| 9 | the education reading | Bullying and school refusal are mentioned factually; is the tone right? |
+| 10 | transitivity pairs | 開く/開ける, 閉まる/閉める, 落ちる/落とす, 消える/消す — all tagged with the correct transitivity? |
+| 11 | 多い | The "container noun" contrast is the hardest explanation in the course; does it land? |
+| 12 | 漉く | Reading すく, gloss "to make (paper)" — right register for a craft text? |
+| 13 | 終助詞② | The gender-association caveat is deliberate; is it phrased carefully enough? |
+| 14 | the politics reading | Deliberately institutional and non-partisan. Nothing reads as advocacy? |
+| 15 | もったいない | Treated as a habit, not a moral instruction. Acceptable? |
+| all | N2 decks | 134 formal-register words with no readings or grammar yet — is the gloss level right? |
 
 ## Decisions worth confirming
 
-1. **Alternate forms in `alt`.** Several chapter 1 vocabulary rows accept a conjugated form as a
-   correct production answer — for example 位置する accepts 位置しています and 位置した. Chapters 2
-   and 3 do **not** do this. Pick one policy and I will apply it everywhere.
-2. **Katakana ↔ hiragana.** An all-katakana word accepts its hiragana rendering
-   (コンピューター / こんぴゅーたー) because the phonemes are identical. Kanji words do **not** get this
-   treatment; they need an explicit `alt`.
-3. **Recognition alternates.** Every second `rec` review of the same card asks for the reading
-   instead of the meaning. Both are recognition, and kanji→reading decays fastest. Documented in
-   `STUDY_PLAN.md`; easy to disable if you would rather keep meaning-only.
-4. **A new word is tested immediately** — card → recognition → production → listening in one
-   group. That makes the first session heavier. Change if it feels like too much.
-5. **Dictation tolerance.** One character of error per ten characters is forgiven
-   (`max(1, floor(len / 10))`, Levenshtein). A substitution costs one edit, not two.
-6. **Chapter 3 is large** (70 words against 45 and 54). It fits the technology topic, but the
-   daily load means it will take five sessions to introduce. Split it if that feels long.
+1. **Alternate forms in `alt`.** Chapter 1 vocabulary accepts conjugated forms as correct
+   production answers (位置する also accepts 位置しています); chapters 2–15 do not. Pick one policy
+   and I will apply it everywhere.
+2. **Katakana ↔ hiragana.** An all-katakana word accepts its hiragana rendering; kanji words need an
+   explicit `alt`.
+3. **Recognition alternates.** Every second `rec` review asks for the reading instead of the
+   meaning. Both are recognition, and kanji→reading decays fastest.
+4. **A new word is tested immediately** — card → recognition → production → listening in one group.
+   That makes the first session heavier.
+5. **Dictation tolerance.** One character of error per ten is forgiven (Levenshtein, substitution
+   costs one edit).
+6. **Chapter sizes vary from 44 to 70 words.** Chapter 3 is the outlier. At 15 new words a day that
+   is four to five sessions per chapter; say if you would rather they were evened out.
+7. **Writing tasks require three or four of the chapter's own words.** Where a word moved to an
+   earlier chapter during the collision pass, it was dropped from `required` rather than left
+   claiming to be "this chapter's word". The model answers still use it.
+
+## What the parallel authoring cost
+
+Twelve chapters were written at once. The mechanical consequences are fixed, but they are worth
+knowing about because they shape what a reviewer should look for:
+
+- 122 vocabulary terms collided across chapters and were resolved by precedence (earliest chapter
+  keeps the word). A chapter may therefore recycle a word rather than teach it — check that its
+  reading still makes sense as a *recap* of earlier material rather than a first introduction.
+- Four writing tasks asked for words that had moved; they were repaired mechanically. Read them for
+  whether the replacement word still fits the prompt.
+- Chapters 6 and 10 arrived without tap files and needed their dictionaries written from scratch.
+  Their prose is unaudited beyond the automated checks.
 
 ## Prose to read once
 
-- `content/lesson-02.json` → `reading.text_l2`: 288 characters on speech levels. Check that the
-  three questions really are main idea / detail / inference, and that question 3 is not a
-  restatement of question 1.
-- `content/lesson-03.json` → `reading.text_l2`: 242 characters on robots. The topic is
-  well-worn; check it does not read like a textbook editorial.
-- `lesson-02` grammar: the 終助詞 explanation covers よ・ね・な only. Part 2 (chapter 13) has to
-  pick up かな・っけ・わ・ぞ — confirm that split is sensible.
-- `lesson-03` grammar: the カタカナ explanation claims スマート is usually about slimness and
-  テンション about mood. Both are correct as written, but say so if you would rather drop the
-  contrasts.
-- All three `writing.model_l2` answers: read for naturalness. The app only counts length,
-  required words and sentences.
-- `listening.dictation` in chapters 2 and 3: confirm each is unambiguous when heard. Chapter 3
-  has 安定させる, which is a mouthful for TTS.
+Every `reading.text_l2` is original and 242–309 characters. If you read only five, read 4 (sports,
+counters), 7 (manga, rendaku), 9 (education), 14 (politics) and 15 (the closing chapter) — those
+carry the most editorial risk.
 
+Also worth a look: `lesson-10.json`'s writing model is 182 characters, far longer than the 100 it
+requires. Deliberate, but it makes the task look harder than it is.

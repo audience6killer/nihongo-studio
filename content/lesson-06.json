@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 6,
+  "title": { "l2": "日本人と宗教", "l1": "The Japanese and Religion" },
+  "grammar": {
+    "point_l2": "もの・こと（名詞化）",
+    "point_l1": "The nominalisers もの and こと",
+    "explain_l1": "Both こと and もの turn a clause into a noun, but they split by what is being named. こと names an event, an action or a fact — something that happens or is true — so it takes a clause in front of it: 日本語を勉強することが楽しい, 彼が来たことを知らなかった. もの names a physical object, or a thing treated as having a character of its own: これは日本で作られたものです, 人はだれでも忘れるものだ. Two combinations are fixed idioms: 〜たことがある reports experience and 〜ことができる reports ability or possibility. 〜ものだ is a third pattern — after a present-tense clause it states a general truth, and after a past-tense clause it looks back with nostalgia: 子供のころはよくここで遊んだものだ.",
+    "common_mistake_l1": "English 'thing' pulls learners into もの for every abstract idea, so they produce 日本へ行ったものがある for 'I have been to Japan'; experience is 〜たことがある and never もの. The mirror error is こと for something you can touch: holding a bowl and saying これは私が作ったことです needs もの, because the bowl is an object. Ask whether you could put it on a table — if yes, it is もの.",
+    "examples": [
+      {
+        "l2": "子供のころ、家族と神社へお参りに行ったことがある。",
+        "reading": "こどものころ、かぞくとじんじゃへおまいりにいったことがある。",
+        "l1": "When I was a child, I once went with my family to a shrine to pray."
+      },
+      {
+        "l2": "この寺では、だれでも鐘を突くことができる。",
+        "reading": "このてらでは、だれでもかねをつくことができる。",
+        "l1": "At this temple, anyone can ring the bell."
+      },
+      {
+        "l2": "人は、目に見えないものを大切にするものだ。",
+        "reading": "ひとは、めにみえないものをたいせつにするものだ。",
+        "l1": "People are the kind of creatures who treasure what they cannot see."
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "「子供のころ、家族と初詣に行った（　）がある。」に入るのはどれですか。",
+        "options_l2": ["もの", "こと", "ところ", "ほう"],
+        "answer": 1,
+        "explain_l1": "Experience is always 〜たことがある. もの would name a physical object, and you cannot own 'a thing that you went'; ところ and ほう do not follow a past-tense clause in this pattern at all."
+      },
+      {
+        "q_l2": "「小さいころは、正月になると家族でこの寺に来た（　）。」に入るのはどれですか。",
+        "options_l2": ["ことだ", "ものだ", "ことがある", "ところだ"],
+        "answer": 1,
+        "explain_l1": "〜ものだ after a past-tense clause is the nostalgic 'used to': 来たものだ recalls a repeated family custom. ことだ offers advice, ことがある would report a single experience and clashes with 正月になると, and ところだ marks a point in time rather than a memory."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本では、自分は無宗教だと言う人が多い。それでも、正月になると、多くの人が神社や寺へ初詣に出かけて、一年の安全を願う。神社では、鳥居をくぐって境内に入り、手を合わせてから願い事をする。初詣では、おみくじを引いたり、お守りを買ったりする人も多い。寺では線香を立てて手を合わせ、節分には豆をまいて冬の終わりを祝う。八月のお盆には、祖先の墓を訪れて、家族で食事をする。今でも、家の中に仏壇や神棚を置いて、毎日手を合わせている家は多い。結婚式は教会で、葬式は寺で行う人が多い。夜に爪を切ると縁起が悪いという迷信は、今も残っている。大切なのは、神を信じるかどうかではなく、家族や祖先を思う時間になっていることだ。",
+    "sentences": [
+      {
+        "l2": "日本では、自分は無宗教だと言う人が多い。",
+        "l1": "In Japan, many people say they have no religion."
+      },
+      {
+        "l2": "それでも、正月になると、多くの人が神社や寺へ初詣に出かけて、一年の安全を願う。",
+        "l1": "Even so, when New Year comes, many of them set off for a shrine or a temple and pray for safety through the year."
+      },
+      {
+        "l2": "神社では、鳥居をくぐって境内に入り、手を合わせてから願い事をする。",
+        "l1": "At a shrine you pass under the torii, step into the grounds, and only after putting your hands together do you make your wish."
+      },
+      {
+        "l2": "初詣では、おみくじを引いたり、お守りを買ったりする人も多い。",
+        "l1": "On the first visit of the year, plenty of people also draw a fortune slip and buy a charm."
+      },
+      {
+        "l2": "寺では線香を立てて手を合わせ、節分には豆をまいて冬の終わりを祝う。",
+        "l1": "At a temple they light incense and put their hands together; at Setsubun they scatter beans to mark the end of winter."
+      },
+      {
+        "l2": "八月のお盆には、祖先の墓を訪れて、家族で食事をする。",
+        "l1": "At Obon in August, families visit their ancestors' graves and eat together."
+      },
+      {
+        "l2": "今でも、家の中に仏壇や神棚を置いて、毎日手を合わせている家は多い。",
+        "l1": "Even now, many homes keep a Buddhist altar and a Shinto shelf, and put their hands together there every day."
+      },
+      {
+        "l2": "結婚式は教会で、葬式は寺で行う人が多い。",
+        "l1": "Many people hold the wedding in a church and the funeral at a temple."
+      },
+      {
+        "l2": "夜に爪を切ると縁起が悪いという迷信は、今も残っている。",
+        "l1": "The superstition that cutting your nails at night brings bad luck is still around today."
+      },
+      {
+        "l2": "大切なのは、神を信じるかどうかではなく、家族や祖先を思う時間になっていることだ。",
+        "l1": "What matters is not whether you believe in a god, but that these occasions have become time for thinking of family and ancestors."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "生活の中の宗教の習慣",
+          "正月の習慣だけ",
+          "寺や神社の建物",
+          "外国の迷信"
+        ],
+        "answer": 0,
+        "explain_l1": "Every sentence describes something people do — New Year visits, Setsubun beans, Obon, home altars, weddings and funerals, one superstition — so the theme is practice inside ordinary life. New Year appears once among several customs, architecture is never described, and the superstition is presented as local, not foreign."
+      },
+      {
+        "q_l2": "八月のお盆には、何をしますか。",
+        "options_l2": [
+          "祖先の墓を訪れる",
+          "神社でお守りを買う",
+          "節分に豆をまいて祝う",
+          "初日の出を見る"
+        ],
+        "answer": 0,
+        "explain_l1": "Only the Obon sentence belongs to August: families visit the graves and share a meal. The charm belongs to the New Year visit, the beans to Setsubun in February, and the first sunrise is not mentioned in the passage at all."
+      },
+      {
+        "q_l2": "この文章から、筆者の考えに最も近いものはどれですか。",
+        "options_l2": [
+          "宗教より、生活の中の行事を大切にする",
+          "日本人は神を信じる",
+          "迷信を本気で信じる人はもういない",
+          "正月の行事は外国から来た"
+        ],
+        "answer": 0,
+        "explain_l1": "The closing sentence sets belief aside and points at what these occasions do for people, which is how the passage explains people who call themselves non-religious yet still take part. The other options harden a description of practice into claims the passage never makes — it does not say what all Japanese believe, does not deny that anyone believes a superstition, and never traces New Year to another country."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      { "l2": "正月になると、多くの人が神社へ初詣に行きます。", "l1": "When New Year comes, many people go to a shrine for their first visit of the year." },
+      { "l2": "寺では、線香を立てて手を合わせます。", "l1": "At a temple, people light incense and put their hands together." },
+      { "l2": "お盆には、家族で祖先の墓を訪れます。", "l1": "At Obon, families visit their ancestors' graves together." },
+      { "l2": "家の中に仏壇や神棚がある家も多いです。", "l1": "Many homes also have a Buddhist altar or a Shinto shelf inside." },
+      { "l2": "迷信を信じている人は、もう少ないと思います。", "l1": "I think few people believe in superstitions any more." }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, describe one seasonal or religious custom — New Year, Obon, Setsubun, a wedding, a funeral — and say when it happens, what people do, and whether you take part yourself. Use at least three of this chapter's words.",
+    "required": ["習慣", "初詣", "祖先", "おみくじ"],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "私の国にも、正月に家族が集まる習慣があります。日本では、神社へ行っておみくじを引く人をよく見ます。私も去年、友だちと初詣に行きました。おみくじの内容は、まだよく分かりません。お盆には、祖先の墓の前で手を合わせます。宗教を信じていなくても、家族のことを思う時間は大切だと思います。",
+    "tips_l1": "Name the occasion first (正月, お盆, 節分), then the action, then your own position: 参加します, 見るだけです, 家族と一緒に行きます. Keep to です・ます and one tense per sentence. 初詣 and おみくじ are nouns, so give them a verb — 初詣に行く, おみくじを引く. The app only counts length, required words and sentence count; ask a human to check your style."
+  }
+}

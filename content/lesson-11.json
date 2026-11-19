@@ -1,0 +1,173 @@
+{
+  "schema": 2,
+  "l2": "ja",
+  "l1": "en",
+  "chapter": 11,
+  "title": {
+    "l2": "日本の歴史",
+    "l1": "The History of Japan"
+  },
+  "grammar": {
+    "point_l2": "「多い」と連体修飾",
+    "point_l1": "多い, and adverbs that modify nouns",
+    "explain_l1": "多い looks like an ordinary い-adjective, but it cannot stand in front of the thing it counts: ○多くの人, ○たくさんの人, ×多い人. It reports how large a group is, which is a statement about the group as a whole, so it belongs at the end as a predicate (人が多い) or in the adverb form 多く with の. The test is what the noun is: 人が多い町 is fine because 多い describes the town, not the people — the counted noun keeps its が. Adverb-plus-verb phrases modify nouns differently again: よく行く店, ゆっくり歩く人, 歴史がよく分かる本 — the verb stays in plain form, its doer takes が, and nothing is inserted between the verb and the noun.",
+    "common_mistake_l1": "Writing 多い人 for \"many people\", because English puts \"many\" in front of the noun. 多い is a predicate: say 人が多い, or change the shape to 多くの人 / たくさんの人. The second slip is carrying English \"that\" into noun modification — よく行くの店, ゆっくり歩くの人の — when the plain-form verb joins the noun with nothing in between.",
+    "examples": [
+      {
+        "l2": "この町には多くの寺がある。",
+        "reading": "このまちにはおおくのてらがある。",
+        "l1": "There are many temples in this town."
+      },
+      {
+        "l2": "駅の近くは人が多い。",
+        "reading": "えきのちかくはひとがおおい。",
+        "l1": "There are a lot of people near the station."
+      },
+      {
+        "l2": "歴史がよく分かる本を読んでいます。",
+        "reading": "れきしがよくわかるほんをよんでいます。",
+        "l1": "I am reading a book that makes history easy to follow."
+      }
+    ],
+    "drills": [
+      {
+        "q_l2": "次のうち、正しい文はどれですか。",
+        "options_l2": [
+          "駅の前に多い人が集まった。",
+          "駅の前に多くの人が集まった。",
+          "駅の前に多く人が集まった。",
+          "駅の前に多いの人が集まった。"
+        ],
+        "answer": 1,
+        "explain_l1": "Only 多くの人 and たくさんの人 can stand in front of 人. 多い人 and 多く人 keep the wrong shape, and 多いの adds a の that an い-adjective never takes — 多く is functioning as an adverb here, so it needs の to join the noun."
+      },
+      {
+        "q_l2": "「この町には寺が多い。」と同じ意味の文はどれですか。",
+        "options_l2": [
+          "この町には多くの寺がある。",
+          "この町には多く寺がある。",
+          "この町には多いの寺がある。",
+          "この町には多い寺がある。"
+        ],
+        "answer": 0,
+        "explain_l1": "Moving 多い out of the predicate changes its shape: 寺が多い becomes 多くの寺がある, with ある as the new predicate. The other three move the adjective in front of the noun without changing its form, which Japanese does not allow for 多い."
+      }
+    ]
+  },
+  "reading": {
+    "text_l2": "日本は海に囲まれた島国で、古くから大陸の文化を受け入れてきた。六世紀ごろ、漢字と仏教が朝鮮半島から伝わった。漢字は記録を残す道具になり、人々は寺を建てて新しい教えを学んだ。八世紀には都が奈良に置かれ、法律と税の仕組みが決められた。遣唐使は長い旅の末に、言葉や考え方を日本に持ち帰った。十六世紀にはポルトガルから鉄砲が伝わり、キリスト教も広まった。貿易で砂糖や野菜が入り、食生活は大きく変わった。戦国時代には各地の武将が領地を争い、織田信長と豊臣秀吉が力を伸ばした。徳川家康は全国を統一して江戸に幕府を開き、長い平和が続いた。明治になると、西欧の技術や制度を急いで取り入れる時代になった。",
+    "sentences": [
+      {
+        "l2": "日本は海に囲まれた島国で、古くから大陸の文化を受け入れてきた。",
+        "l1": "Japan is an island nation ringed by sea, and since long ago it has taken in culture from the continent."
+      },
+      {
+        "l2": "六世紀ごろ、漢字と仏教が朝鮮半島から伝わった。",
+        "l1": "Around the sixth century, kanji and Buddhism arrived from the Korean peninsula."
+      },
+      {
+        "l2": "漢字は記録を残す道具になり、人々は寺を建てて新しい教えを学んだ。",
+        "l1": "Chinese characters became a tool for keeping records, and people built temples and studied the new teaching."
+      },
+      {
+        "l2": "八世紀には都が奈良に置かれ、法律と税の仕組みが決められた。",
+        "l1": "In the eighth century the capital was placed at Nara, and the machinery of law and taxation was set down."
+      },
+      {
+        "l2": "遣唐使は長い旅の末に、言葉や考え方を日本に持ち帰った。",
+        "l1": "After long journeys, the envoys to Tang China brought its language and habits of thought back to Japan."
+      },
+      {
+        "l2": "十六世紀にはポルトガルから鉄砲が伝わり、キリスト教も広まった。",
+        "l1": "In the sixteenth century firearms reached Japan from Portugal, and Christianity spread as well."
+      },
+      {
+        "l2": "貿易で砂糖や野菜が入り、食生活は大きく変わった。",
+        "l1": "Sugar and vegetables came in through trade, and eating habits changed considerably."
+      },
+      {
+        "l2": "戦国時代には各地の武将が領地を争い、織田信長と豊臣秀吉が力を伸ばした。",
+        "l1": "In the Sengoku period warlords across the country fought over territory, and Oda Nobunaga and Toyotomi Hideyoshi extended their power."
+      },
+      {
+        "l2": "徳川家康は全国を統一して江戸に幕府を開き、長い平和が続いた。",
+        "l1": "Tokugawa Ieyasu unified the country and established the shogunate in Edo, and a long peace followed."
+      },
+      {
+        "l2": "明治になると、西欧の技術や制度を急いで取り入れる時代になった。",
+        "l1": "With the Meiji era, the country entered a period of hurriedly adopting technology and institutions from Western Europe."
+      }
+    ],
+    "questions": [
+      {
+        "q_l2": "この文章の主なテーマは何ですか。",
+        "options_l2": [
+          "外国から入ってきた文化や技術",
+          "江戸の町の様子",
+          "武士の生活と戦い",
+          "明治の教育と貿易"
+        ],
+        "answer": 0,
+        "explain_l1": "Each paragraph follows something that came from outside — characters, Buddhism, laws, firearms, sugar — and says what it changed at home. Edo, samurai life and Meiji education appear only as parts of that story, not as its subject."
+      },
+      {
+        "q_l2": "六世紀ごろ、日本に伝わったものは何ですか。",
+        "options_l2": [
+          "漢字と仏教",
+          "鉄砲とキリスト教",
+          "砂糖と野菜",
+          "幕府と武士"
+        ],
+        "answer": 0,
+        "explain_l1": "The second sentence pairs 六世紀 with 漢字 and 仏教. Firearms and Christianity belong to the sixteenth century, sugar and vegetables to trade, and the shogunate to the end of the passage."
+      },
+      {
+        "q_l2": "この文章から、日本の文化についてどう言えますか。",
+        "options_l2": [
+          "外国から入ったものを受け入れながら、日本は変わってきた。",
+          "日本の文化は外国の影響をほとんど受けなかった。",
+          "外国の文化は日本の生活を変えなかった。",
+          "日本は明治になるまで外国と交流しなかった。"
+        ],
+        "answer": 0,
+        "explain_l1": "The passage repeats one pattern: something arrives, and life at home shifts — 食生活は大きく変わった, 新しい教えを学んだ. That supports acceptance followed by change; the other three deny the exchange the passage describes."
+      }
+    ]
+  },
+  "listening": {
+    "dictation": [
+      {
+        "l2": "六世紀に漢字と仏教が伝わりました。",
+        "l1": "Kanji and Buddhism were introduced in the sixth century."
+      },
+      {
+        "l2": "鉄砲はポルトガル人から伝えられました。",
+        "l1": "Firearms were introduced by the Portuguese."
+      },
+      {
+        "l2": "徳川家康は江戸に幕府を開きました。",
+        "l1": "Tokugawa Ieyasu established the shogunate in Edo."
+      },
+      {
+        "l2": "貿易で新しい食べ物が入ってきました。",
+        "l1": "New foods came in through trade."
+      },
+      {
+        "l2": "長い平和の時代が続きました。",
+        "l1": "A long period of peace continued."
+      }
+    ]
+  },
+  "writing": {
+    "prompt_l1": "In about 100 characters of Japanese, choose one thing Japan took in from abroad — writing, Buddhism, firearms, sugar, an institution — and say roughly when it arrived and what changed in ordinary life. Use at least three of this chapter's words.",
+    "required": [
+      "文化",
+      "貿易",
+      "統一"
+    ],
+    "min_units": 100,
+    "unit": "chars",
+    "model_l2": "日本は昔から、外国の文化を何度も受け入れてきた。六世紀には漢字と仏教が入り、十六世紀には鉄砲とキリスト教が貿易とともに伝わった。徳川家康が全国を統一してからは、長い平和の時代が続いた。新しいものを取り入れる力が、日本の歴史をつくってきたと思う。",
+    "tips_l1": "Name the period before the import — the point of the chapter is sequence, and 六世紀 / 十六世紀 / 明治 do that work in two characters. Then say what changed for ordinary people, such as food or writing, rather than that something \"had an influence\". 受け入れてきた and 統一して are handy shapes; keep 多い out of the attributive slot and write 多くの人. The app only counts length, the required words and the number of sentences, so ask a human to check the style."
+  }
+}
