@@ -3,6 +3,9 @@
 -- It creates one row per authenticated user and an atomic save function
 -- that refuses to overwrite a newer revision.
 --
+-- Safe to re-run: every statement is idempotent. Expect "Success. No rows
+-- returned" — the verification query at the bottom then prints one row.
+--
 -- Adapted from the Chinese sibling instance. The table is language-agnostic, but
 -- each instance keeps its own Supabase project so two apps signed in with the
 -- same email can never overwrite each other's row.
@@ -69,3 +72,18 @@ $$;
 
 revoke all on function public.save_progress(jsonb, bigint) from public;
 grant execute on function public.save_progress(jsonb, bigint) to authenticated;
+
+-- ---------------------------------------------------------------------------
+-- Verification. Expect exactly one row, with every column true and policies = 1.
+-- If save_function is false, the function was created in another schema.
+-- ---------------------------------------------------------------------------
+select
+  to_regclass('public.progress') is not null as table_exists,
+  coalesce((select c.relrowsecurity
+              from pg_class c
+             where c.oid = to_regclass('public.progress')), false) as rls_enabled,
+  (select count(*)
+     from pg_policies
+    where schemaname = 'public' and tablename = 'progress') as policies,
+  to_regprocedure('public.save_progress(jsonb,bigint)') is not null as save_function;
+
