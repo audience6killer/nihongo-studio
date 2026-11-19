@@ -597,6 +597,99 @@ check('skipped checkpoint items score as wrong', () => {
   S.reset();
 });
 
+/* -------------------------------------------------------------- phases */
+check('recap and N2 units keep distinct numbers', () => {
+  const units = NJ.D.units();
+  is(units.map((u) => u.n), [1, 2, 3, 101]);
+  is(NJ.D.chapterLabel(1), 'Chapter 1');
+  is(NJ.D.chapterLabel(101), 'N2 · 1');
+  is(NJ.D.deckLessons('recap').length, 3);
+  is(NJ.D.deckLessons('n2').length, 1);
+  ok(NJ.D.unit(101), 'N2 unit 101 not found: ');
+  ok(NJ.D.unit(101).words.length > 40, 'N2 deck looks empty: ');
+});
+
+check('new words come from the recap before the N2 deck', () => {
+  const st = S.reset();
+  st.onboarded = true;
+  const first = SES.availableNew(st);
+  is(first.deck, 'recap');
+  is(first.chapter, 1);
+
+  introduceSome(st, 1000);
+  const next = SES.availableNew(st);
+  is(next.deck, 'n2');
+  is(next.chapter, 101);
+  S.reset();
+});
+
+check('switching phase draws from the N2 deck first', () => {
+  const st = S.reset();
+  st.onboarded = true;
+  st.profile = {
+    phase: 'n2',
+    startDate: NJ.U.dayKey(new Date()),
+    targetDate: NJ.U.dayKey(NJ.U.addDays(new Date(), 168)),
+    dailyMinutes: 35
+  };
+  is(NJ.PLAN.phaseOf(st), 'n2');
+  const nav = SES.availableNew(st);
+  is(nav.deck, 'n2');
+  is(nav.chapter, 101);
+  S.reset();
+});
+
+/* -------------------------------------------------- scheduled checkpoints */
+check('scheduled checkpoints are derived from the content that exists', () => {
+  const blocks = NJ.EXAM.blocks();
+  is(blocks.length, 4, `expected 3 recap blocks plus 1 N2 block, got ${blocks.length}: `);
+  const recap = blocks.filter((b) => b.deck === 'recap');
+  is(recap.length, 3);
+  is(recap[0].chapters, [1], 'the first block should be cumulative through chapter 1: ');
+  is(recap[2].chapters, [1, 2, 3], 'the last block should cover everything: ');
+  const n2 = blocks.filter((b) => b.deck === 'n2');
+  is(n2.length, 1);
+  is(n2[0].chapters, [101]);
+});
+
+check('blocks stay locked until enough of their words are met', () => {
+  const st = S.reset();
+  st.onboarded = true;
+  const blocks = NJ.EXAM.blocks();
+  is(NJ.EXAM.blockStatus(st, blocks[0]), 'locked');
+
+  introduceSome(st, 60);
+  is(NJ.EXAM.blockStatus(st, blocks[0]), 'available', 'chapter 1 fully met: ');
+  is(NJ.EXAM.blockStatus(st, blocks[2]), 'locked', 'the whole course is not met: ');
+  S.reset();
+});
+
+check('a scheduled checkpoint is scoped to its block and marked done', () => {
+  const st = S.reset();
+  st.onboarded = true;
+  introduceSome(st, 60);
+  const block = NJ.EXAM.blocks()[0];
+
+  const exam = NJ.EXAM.build(st, { chapters: block.chapters, blockId: block.id, hasAudio: false });
+  ok(exam, 'no checkpoint built for the block: ');
+  is(exam.blockId, block.id);
+  for (const item of exam.items) {
+    is(item.chapter, 1, 'an out-of-scope chapter leaked in: ');
+  }
+
+  st.currentExam = exam;
+  let guard = 0;
+  while (!exam.done && guard++ < 200) {
+    const item = EXAM.current(exam);
+    if (!item) break;
+    const res = EXAM.answer(exam, item.answer);
+    if (res.complete) EXAM.finish(st);
+  }
+  is(st.exams[0].blockId, block.id);
+  is(NJ.EXAM.blockStatus(st, block), 'done');
+  S.reset();
+});
+
 /* ------------------------------------------------------------------ router */
 const APP = NJ.APP;
 const UI = NJ.UI;
@@ -716,6 +809,20 @@ check('a finished session from a previous day does not block the next one', () =
 check('screens survive an unknown chapter', () => {
   const html = renderRoute('#/lesson/99');
   includes(html, 'Chapter not found');
+});
+
+check('the N2 deck screen renders as a word list, not an error', () => {
+  const html = renderRoute('#/lesson/101');
+  includes(html, 'N2 · 1');
+  includes(html, 'vocabulary deck');
+  includes(html, '影響');
+  no(/Chapter not found/.test(html), 'the deck fell through to the not-found page: ');
+});
+
+check('the chapters screen lists the N2 deck alongside the recap', () => {
+  const html = renderRoute('#/chapters');
+  includes(html, 'N2 vocabulary');
+  includes(html, 'N2 語彙 1');
 });
 
 /* ------------------------------------------------------------- export/import */

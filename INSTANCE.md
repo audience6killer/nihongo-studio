@@ -12,8 +12,8 @@ recorded with a date and a reason.
 | App id | `ja` (`window.NJ_APP = { id: "ja", l1: "en", l2: "ja" }`) |
 | Storage key | `nihongo.v1` |
 | Global prefix | `NJ_` (`NJ_VOCAB`, `NJ_LESSONS`, `NJ_TAP`, `NJ_CONFIG`) |
-| Sync | None in v1. Separate Supabase project when added. |
-| Deployment | Not in v1. |
+| Sync | **Not implemented.** v1 is local-only; the build reserves a `config.js` hook. |
+| Deployment | `npm run build` → `deploy/`, Netlify-ready. See `README.md`. |
 
 ## Learning design
 

@@ -17,9 +17,12 @@ const SHELL = 'index.html';
 const CORE = [
   './',
   SHELL,
+  'index.html',
   'manifest.webmanifest',
   'assets/css/app.css',
   'assets/img/icon.svg',
+  'assets/img/icon-180.png',
+  'assets/img/icon-512.png',
   'assets/js/data/config.js',
   'assets/js/data/vocab.js',
   'assets/js/data/lessons.js',

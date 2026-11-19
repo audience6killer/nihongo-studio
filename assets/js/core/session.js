@@ -14,28 +14,42 @@
 
   var ACTIVE_KEYS = ['recap', 'refresh', 'n2'];
 
-  /** Words that are in the course and have not been introduced yet. */
+  /**
+   * The next unit with unintroduced words, drawn from the decks the current
+   * phase puts first. Recap comes before N2 unless the learner switched.
+   */
   SES.availableNew = function (state) {
-    var chapters = NJ.D.chapters();
-    for (var c = 0; c < chapters.length; c++) {
-      var chapter = chapters[c];
-      var terms = NJ.D.chapterTerms(chapter).filter(function (t) {
-        return !state.words[t];
-      });
-      if (terms.length) return { chapter: chapter, terms: terms };
+    var decks = NJ.PLAN.activeDecks(state);
+    for (var d = 0; d < decks.length; d++) {
+      var units = NJ.D.deckLessons(decks[d]);
+      for (var u = 0; u < units.length; u++) {
+        var pending = (units[u].words || []).filter(function (t) { return !state.words[t]; });
+        if (pending.length) {
+          return { chapter: units[u].n, deck: decks[d], unit: units[u], terms: pending };
+        }
+      }
     }
-    return { chapter: chapters.length ? chapters[chapters.length - 1] : 1, terms: [] };
+    return { chapter: null, deck: decks[0], unit: null, terms: [] };
   };
 
-  /** Which chapter the learner is currently working through. */
+  /** Which unit the learner is currently working through, or null when done. */
   SES.currentChapter = function (state) {
     return SES.availableNew(state).chapter;
   };
 
   function shuffle(arr) { return NJ.U.shuffle(arr, Math.random); }
 
+  /** Build a 4-option question. Duplicates are dropped so grading is never ambiguous. */
   function mcq(correct, distractors) {
-    var options = shuffle([correct].concat(distractors));
+    var seen = [String(correct)];
+    var pool = [];
+    (distractors || []).forEach(function (d) {
+      var text = String(d);
+      if (!text || seen.indexOf(text) >= 0) return;
+      seen.push(text);
+      pool.push(text);
+    });
+    var options = shuffle([correct].concat(pool));
     return { options: options, answer: options.indexOf(correct) };
   }
 

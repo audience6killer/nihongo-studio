@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Shared helpers for the content tools. Python stdlib only."""
 from __future__ import annotations
 
@@ -53,6 +53,27 @@ class Report:
             return False
         print(f"{self.label}: ok ({len(self.warnings)} warning(s))")
         return True
+
+
+def read_tsv_meta(path: str) -> dict:
+    """Read `# title_l2: ...` style metadata from a vocabulary file header."""
+    meta: dict[str, str] = {}
+    if not os.path.exists(path):
+        return meta
+    with open(path, "r", encoding="utf-8-sig") as fh:
+        for raw in fh:
+            line = raw.strip()
+            if not line:
+                continue
+            if not line.startswith("#"):
+                break
+            body = line[1:].strip()
+            if ":" in body:
+                key, value = body.split(":", 1)
+                key = key.strip().lower()
+                if key in ("title_l2", "title_l1", "deck"):
+                    meta[key] = value.strip()
+    return meta
 
 
 def read_tsv(path: str, report: Report) -> list[dict]:

@@ -202,6 +202,54 @@
 
   /* ------------------------------------------------------------------ screen */
 
+  /**
+   * A vocabulary-only unit: an N2 deck with no reading or grammar yet. It gets
+   * a word list rather than a "not found" page, because the words are real and
+   * studyable even when the prose is not written.
+   */
+  function renderDeck(unit, s) {
+    var terms = unit.words || [];
+    var introduced = terms.filter(function (t) { return s.words[t]; }).length;
+    var pct = terms.length ? Math.round((introduced / terms.length) * 100) : 0;
+
+    var html = '<div class="page-head">' +
+      '<p class="small" style="color:var(--ink-3);margin:0">' + UI.esc(NJ.D.chapterLabel(unit.n)) +
+        ' · vocabulary deck</p>' +
+      '<h1 lang="ja">' + UI.esc(unit.title_l2 || 'N2 語彙') + '</h1>' +
+      '<p class="sub">' + UI.esc(unit.title_l1 || '') + ' · ' + introduced + '/' + terms.length + ' words introduced</p>' +
+    '</div>';
+
+    html += '<div class="card card--quiet" style="margin-bottom:1rem">' +
+      '<p class="small" style="color:var(--ink-3);margin:0">' +
+        'This deck is vocabulary only: no reading, grammar or writing yet. ' +
+        'The words are scheduled exactly like recap words, with the same three skills.' +
+      '</p>' +
+    '</div>' + UI.bar(pct);
+
+    html += '<div class="card" style="margin-top:1rem"><div class="rows">';
+    terms.forEach(function (term) {
+      var w = NJ.D.word(term) || { w: term, reading: '', gloss: '', pos: '' };
+      var known = !!s.words[term];
+      html += '<div class="row-item" style="cursor:default">' +
+        '<span class="grow">' +
+          '<strong lang="ja">' + UI.jpWord(w.w, w.reading, s) + '</strong>' +
+          '<span class="meta" lang="ja">' + UI.esc(w.reading) + ' · ' + UI.esc(w.pos || '') +
+            (known ? ' · <span style="color:var(--moss)">introduced</span>' : '') + '</span>' +
+          '<span class="meta">' + UI.esc(w.gloss) + '</span>' +
+        '</span>' +
+        '<button type="button" class="btn btn--quiet btn--sm" data-act="say" data-text="' + UI.esc(w.w) +
+          '" aria-label="Listen to ' + UI.esc(w.w) + '">▶</button>' +
+      '</div>';
+    });
+    html += '</div></div>';
+
+    html += '<div class="btn-row" style="margin-top:1.2rem">' +
+      '<a class="btn btn--primary" href="#/session" data-act="go" data-to="#/session">Practise these words</a>' +
+      '<a class="btn btn--ghost" href="#/chapters" data-act="go" data-to="#/chapters">All chapters</a>' +
+    '</div>';
+    return html;
+  }
+
   UI.screens.lesson = {
     render: function (routeArg) {
       var chapter = Number(routeArg);
@@ -210,6 +258,8 @@
       }
       var les = NJ.D.lesson(chapter);
       if (!les) {
+        var unit = NJ.D.unit(chapter);
+        if (unit) return renderDeck(unit, st());
         return '<div class="page-head"><h1>Chapter not found</h1></div>' +
           '<div class="card"><a class="btn btn--ghost" href="#/chapters" data-act="go" data-to="#/chapters">Back to chapters</a></div>';
       }

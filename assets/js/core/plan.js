@@ -11,6 +11,34 @@
 
   PLAN.SESSIONS_PER_WEEK = 5;
 
+  /** Which deck the learner is working through, and the order to draw from. */
+  PLAN.phaseOf = function (state) {
+    var p = state && state.profile;
+    return (p && p.phase) || 'recap';
+  };
+
+  PLAN.activeDecks = function (state) {
+    return PLAN.phaseOf(state) === 'n2' ? ['n2', 'recap'] : ['recap', 'n2'];
+  };
+
+  PLAN.deckLabel = function (deck) {
+    return deck === 'n2' ? 'N2 vocabulary' : 'Tobira recap';
+  };
+
+  /** Introduced / total for one deck, for the phase card. */
+  PLAN.deckProgress = function (state, deck) {
+    var units = NJ.D.deckLessons(deck);
+    var total = 0;
+    var introduced = 0;
+    units.forEach(function (u) {
+      (u.words || []).forEach(function (t) {
+        total++;
+        if (state.words[t]) introduced++;
+      });
+    });
+    return { total: total, introduced: introduced, pct: total ? Math.round((introduced / total) * 100) : 0 };
+  };
+
   /** Seconds per item, used to fill a session to the target minutes. */
   PLAN.EST = { rec: 12, prod: 30, listen: 16, new: 40, dictation: 45, reading: 60, writing: 300 };
 

@@ -1222,5 +1222,335 @@
     "alt": []
    }
   ]
+ },
+ {
+  "deck": "n2",
+  "lesson": 101,
+  "title_l2": "N2 語彙 1",
+  "title_l1": "JLPT N2 vocabulary, set 1 — abstract and workplace nouns",
+  "items": [
+   {
+    "w": "影響",
+    "reading": "えいきょう",
+    "pos": "n.",
+    "gloss": "influence; effect",
+    "alt": []
+   },
+   {
+    "w": "原因",
+    "reading": "げんいん",
+    "pos": "n.",
+    "gloss": "cause",
+    "alt": []
+   },
+   {
+    "w": "結果",
+    "reading": "けっか",
+    "pos": "n.",
+    "gloss": "result; outcome",
+    "alt": []
+   },
+   {
+    "w": "理由",
+    "reading": "りゆう",
+    "pos": "n.",
+    "gloss": "reason",
+    "alt": []
+   },
+   {
+    "w": "目的",
+    "reading": "もくてき",
+    "pos": "n.",
+    "gloss": "purpose; aim",
+    "alt": []
+   },
+   {
+    "w": "方法",
+    "reading": "ほうほう",
+    "pos": "n.",
+    "gloss": "method; way",
+    "alt": []
+   },
+   {
+    "w": "手段",
+    "reading": "しゅだん",
+    "pos": "n.",
+    "gloss": "means; measure",
+    "alt": []
+   },
+   {
+    "w": "条件",
+    "reading": "じょうけん",
+    "pos": "n.",
+    "gloss": "condition; term",
+    "alt": []
+   },
+   {
+    "w": "状況",
+    "reading": "じょうきょう",
+    "pos": "n.",
+    "gloss": "situation; circumstances",
+    "alt": []
+   },
+   {
+    "w": "可能性",
+    "reading": "かのうせい",
+    "pos": "n.",
+    "gloss": "possibility",
+    "alt": []
+   },
+   {
+    "w": "改善",
+    "reading": "かいぜん",
+    "pos": "n.",
+    "gloss": "improvement; betterment",
+    "alt": []
+   },
+   {
+    "w": "解決",
+    "reading": "かいけつ",
+    "pos": "n.",
+    "gloss": "resolution; solution",
+    "alt": []
+   },
+   {
+    "w": "判断",
+    "reading": "はんだん",
+    "pos": "n.",
+    "gloss": "judgement; decision",
+    "alt": []
+   },
+   {
+    "w": "検討",
+    "reading": "けんとう",
+    "pos": "n.",
+    "gloss": "consideration; review",
+    "alt": []
+   },
+   {
+    "w": "確認",
+    "reading": "かくにん",
+    "pos": "n.",
+    "gloss": "confirmation; check",
+    "alt": []
+   },
+   {
+    "w": "主張",
+    "reading": "しゅちょう",
+    "pos": "n.",
+    "gloss": "claim; assertion",
+    "alt": []
+   },
+   {
+    "w": "反対",
+    "reading": "はんたい",
+    "pos": "n.",
+    "gloss": "opposition; objection",
+    "alt": []
+   },
+   {
+    "w": "賛成",
+    "reading": "さんせい",
+    "pos": "n.",
+    "gloss": "agreement; approval",
+    "alt": []
+   },
+   {
+    "w": "意見",
+    "reading": "いけん",
+    "pos": "n.",
+    "gloss": "opinion; view",
+    "alt": []
+   },
+   {
+    "w": "目標",
+    "reading": "もくひょう",
+    "pos": "n.",
+    "gloss": "goal; target",
+    "alt": []
+   },
+   {
+    "w": "計画",
+    "reading": "けいかく",
+    "pos": "n.",
+    "gloss": "plan; scheme",
+    "alt": []
+   },
+   {
+    "w": "予定",
+    "reading": "よてい",
+    "pos": "n.",
+    "gloss": "plan; schedule",
+    "alt": []
+   },
+   {
+    "w": "準備",
+    "reading": "じゅんび",
+    "pos": "n.",
+    "gloss": "preparation",
+    "alt": []
+   },
+   {
+    "w": "対応",
+    "reading": "たいおう",
+    "pos": "n.",
+    "gloss": "handling; response",
+    "alt": []
+   },
+   {
+    "w": "協力",
+    "reading": "きょうりょく",
+    "pos": "n.",
+    "gloss": "cooperation",
+    "alt": []
+   },
+   {
+    "w": "参加",
+    "reading": "さんか",
+    "pos": "n.",
+    "gloss": "participation",
+    "alt": []
+   },
+   {
+    "w": "活動",
+    "reading": "かつどう",
+    "pos": "n.",
+    "gloss": "activity",
+    "alt": []
+   },
+   {
+    "w": "経験",
+    "reading": "けいけん",
+    "pos": "n.",
+    "gloss": "experience",
+    "alt": []
+   },
+   {
+    "w": "能力",
+    "reading": "のうりょく",
+    "pos": "n.",
+    "gloss": "ability; capacity",
+    "alt": []
+   },
+   {
+    "w": "成長",
+    "reading": "せいちょう",
+    "pos": "n.",
+    "gloss": "growth",
+    "alt": []
+   },
+   {
+    "w": "発展",
+    "reading": "はってん",
+    "pos": "n.",
+    "gloss": "development; expansion",
+    "alt": []
+   },
+   {
+    "w": "経済",
+    "reading": "けいざい",
+    "pos": "n.",
+    "gloss": "economy",
+    "alt": []
+   },
+   {
+    "w": "社会",
+    "reading": "しゃかい",
+    "pos": "n.",
+    "gloss": "society",
+    "alt": []
+   },
+   {
+    "w": "環境",
+    "reading": "かんきょう",
+    "pos": "n.",
+    "gloss": "environment",
+    "alt": []
+   },
+   {
+    "w": "課題",
+    "reading": "かだい",
+    "pos": "n.",
+    "gloss": "task; issue to be tackled",
+    "alt": []
+   },
+   {
+    "w": "十分",
+    "reading": "じゅうぶん",
+    "pos": "な-adj.",
+    "gloss": "enough; sufficient",
+    "alt": []
+   },
+   {
+    "w": "当然",
+    "reading": "とうぜん",
+    "pos": "な-adj.",
+    "gloss": "natural; a matter of course",
+    "alt": []
+   },
+   {
+    "w": "確か",
+    "reading": "たしか",
+    "pos": "な-adj.",
+    "gloss": "certain; sure",
+    "alt": []
+   },
+   {
+    "w": "明らか",
+    "reading": "あきらか",
+    "pos": "な-adj.",
+    "gloss": "clear; evident",
+    "alt": []
+   },
+   {
+    "w": "具体的",
+    "reading": "ぐたいてき",
+    "pos": "な-adj.",
+    "gloss": "concrete; specific",
+    "alt": []
+   },
+   {
+    "w": "抽象的",
+    "reading": "ちゅうしょうてき",
+    "pos": "な-adj.",
+    "gloss": "abstract",
+    "alt": []
+   },
+   {
+    "w": "積極的",
+    "reading": "せっきょくてき",
+    "pos": "な-adj.",
+    "gloss": "positive; proactive",
+    "alt": []
+   },
+   {
+    "w": "消極的",
+    "reading": "しょうきょくてき",
+    "pos": "な-adj.",
+    "gloss": "negative; passive",
+    "alt": []
+   },
+   {
+    "w": "共通",
+    "reading": "きょうつう",
+    "pos": "な-adj.",
+    "gloss": "common; shared",
+    "alt": []
+   },
+   {
+    "w": "重要",
+    "reading": "じゅうよう",
+    "pos": "な-adj.",
+    "gloss": "important",
+    "alt": []
+   },
+   {
+    "w": "深刻",
+    "reading": "しんこく",
+    "pos": "な-adj.",
+    "gloss": "serious; grave",
+    "alt": []
+   }
+  ]
  }
 ]

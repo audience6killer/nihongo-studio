@@ -4,8 +4,12 @@
  * samples the same skills as the daily session at exam section boundaries:
  *   文字・語彙 (script & vocabulary) · 文法・読解 (grammar & reading) · 聴解 (listening)
  *
- * It is a practice instrument over the words the learner has actually met, not
- * an official paper and not a prediction of a pass.
+ * Two ways in:
+ *   - scheduled blocks, which unlock as the course is actually studied
+ *   - an ad-hoc practice checkpoint over everything met so far
+ *
+ * It is a practice instrument, not an official paper and not a prediction of a
+ * pass.
  */
 (function (root) {
   'use strict';
@@ -24,24 +28,44 @@
   EXAM.MIN_WORDS = 12;
   EXAM.SECONDS_PER_ITEM = 70;
   EXAM.MIN_MINUTES = 8;
+  EXAM.BLOCKS = 3;              // recap checkpoints across the whole course
+  EXAM.N2_BLOCKS = 2;           // checkpoints across the N2 decks
+  EXAM.UNLOCK_FRACTION = 0.6;   // share of a block's words that must be met
 
+  /** Build a 4-option question. Duplicates are dropped so grading is never ambiguous. */
   function mcq(correct, distractors) {
-    var options = U.shuffle([correct].concat(distractors), Math.random);
+    var seen = [String(correct)];
+    var pool = [];
+    (distractors || []).forEach(function (d) {
+      var text = String(d);
+      if (!text || seen.indexOf(text) >= 0) return;
+      seen.push(text);
+      pool.push(text);
+    });
+    var options = U.shuffle([correct].concat(pool), Math.random);
     return { options: options, answer: options.indexOf(correct) };
   }
 
-  function studiedTerms(state) {
+  function inScope(chapters) {
+    if (!chapters || !chapters.length) return function () { return true; };
+    var set = {};
+    chapters.forEach(function (c) { set[c] = true; });
+    return function (chapter) { return !!set[chapter]; };
+  }
+
+  function studiedTerms(state, scope) {
     var studied = [];
-    NJ.D.chapters().forEach(function (ch) {
-      NJ.D.chapterTerms(ch).forEach(function (t) {
+    NJ.D.units().forEach(function (unit) {
+      if (!scope(unit.n)) return;
+      (unit.words || []).forEach(function (t) {
         if (state.words[t]) studied.push(t);
       });
     });
     return studied;
   }
 
-  function vocabItems(state, count) {
-    var terms = studiedTerms(state);
+  function vocabItems(state, count, scope) {
+    var terms = studiedTerms(state, scope);
     if (!terms.length) return [];
     var items = [];
     var half = Math.ceil(count / 2);
@@ -70,11 +94,12 @@
     return items;
   }
 
-  function grammarItems(count) {
+  function grammarItems(count, scope) {
     var pool = [];
     NJ.D.chapters().forEach(function (ch) {
+      if (!scope(ch)) return;
       var les = NJ.D.lesson(ch);
-      ((les && les.grammar && les.grammar.drills) || []).forEach(function (d, i) {
+      ((les && les.grammar && les.grammar.drills) || []).forEach(function (d) {
         pool.push({
           kind: 'grammar', section: 'langread', chapter: ch,
           prompt_l2: d.q_l2, options: d.options_l2.slice(), answer: d.answer,
@@ -85,13 +110,14 @@
     return U.sample(pool, count, Math.random);
   }
 
-  function readingItems(count) {
+  function readingItems(count, scope) {
     var pool = [];
     NJ.D.chapters().forEach(function (ch) {
+      if (!scope(ch)) return;
       var les = NJ.D.lesson(ch);
       var r = les && les.reading;
       if (!r) return;
-      (r.questions || []).forEach(function (q, i) {
+      (r.questions || []).forEach(function (q) {
         pool.push({
           kind: 'comprehension', section: 'langread', chapter: ch,
           passage_l2: r.text_l2,
@@ -104,10 +130,11 @@
     return U.sample(pool, count, Math.random);
   }
 
-  function listeningItems(state, count, hasAudio) {
+  function listeningItems(count, hasAudio, scope) {
     if (!hasAudio) return [];
     var sentences = [];
     NJ.D.chapters().forEach(function (ch) {
+      if (!scope(ch)) return;
       var les = NJ.D.lesson(ch);
       ((les && les.listening && les.listening.dictation) || []).forEach(function (d) {
         sentences.push({ l2: d.l2, l1: d.l1, chapter: ch });
@@ -127,31 +154,88 @@
     });
   }
 
+  /* -------------------------------------------------------------- schedule */
+
+  function chunkCumulative(units, parts, prefix, deck, labelFor) {
+    var out = [];
+    if (!units.length) return out;
+    var per = Math.max(1, Math.ceil(units.length / parts));
+    for (var boundary = per; out.length < parts; boundary += per) {
+      var upToIndex = Math.min(units.length - 1, boundary - 1);
+      var upTo = units[upToIndex];
+      var chapters = units.slice(0, upToIndex + 1);
+      out.push({
+        id: prefix + '-' + (out.length + 1),
+        deck: deck,
+        label: labelFor(out.length + 1, upTo),
+        upTo: upTo,
+        chapters: chapters
+      });
+      if (upToIndex === units.length - 1) break;
+    }
+    return out;
+  }
+
+  /** Checkpoints that unlock as the course is studied. Derived, not hardcoded. */
+  EXAM.blocks = function () {
+    var recap = NJ.D.chapters();
+    var n2 = NJ.D.deckLessons('n2').map(function (u) { return u.n; });
+    var out = chunkCumulative(recap, EXAM.BLOCKS, 'recap', 'recap', function (i, upTo) {
+      return 'Recap checkpoint ' + i + ' · through ' + NJ.D.chapterLabel(upTo);
+    });
+    return out.concat(chunkCumulative(n2, EXAM.N2_BLOCKS, 'n2', 'n2', function (i, upTo) {
+      return 'N2 checkpoint ' + i + ' · through ' + NJ.D.chapterLabel(upTo);
+    }));
+  };
+
+  EXAM.blockProgress = function (state, block) {
+    var total = 0;
+    var introduced = 0;
+    block.chapters.forEach(function (ch) {
+      NJ.D.chapterTerms(ch).forEach(function (t) {
+        total++;
+        if (state.words[t]) introduced++;
+      });
+    });
+    return { total: total, introduced: introduced, pct: total ? Math.round((introduced / total) * 100) : 0 };
+  };
+
+  EXAM.blockStatus = function (state, block) {
+    var taken = (state.exams || []).some(function (e) { return e.blockId === block.id; });
+    if (taken) return 'done';
+    var prog = EXAM.blockProgress(state, block);
+    if (!prog.introduced) return 'locked';
+    return (prog.introduced / Math.max(1, prog.total)) >= EXAM.UNLOCK_FRACTION ? 'available' : 'locked';
+  };
+
+  /* ---------------------------------------------------------------- build */
+
   /**
-   * Build a checkpoint from the content the learner has met.
+   * Build a checkpoint. `opts.chapters` scopes it to a set of units;
+   * `opts.blockId` records which scheduled block it belongs to.
    * Returns null when there is not enough studied vocabulary to be meaningful.
    */
   EXAM.build = function (state, opts) {
     var o = opts || {};
     var hasAudio = o.hasAudio !== false;
-    if (studiedTerms(state).length < EXAM.MIN_WORDS) return null;
+    var scope = inScope(o.chapters);
+    if (studiedTerms(state, scope).length < EXAM.MIN_WORDS) return null;
 
-    var perChapter = NJ.D.chapters().length;
-    var vocab = vocabItems(state, perChapter >= 3 ? 14 : 10);
-    var grammar = grammarItems(perChapter >= 3 ? 6 : 2);
-    var reading = readingItems(perChapter >= 3 ? 4 : 2);
-    var listen = listeningItems(state, perChapter >= 3 ? 5 : 3, hasAudio);
-
-    var items = vocab.concat(grammar, reading, listen);
+    var perChapter = (o.chapters && o.chapters.length) || NJ.D.chapters().length;
+    var big = perChapter >= 3;
+    var items = vocabItems(state, big ? 14 : 10, scope)
+      .concat(grammarItems(big ? 6 : 2, scope))
+      .concat(readingItems(big ? 4 : 2, scope))
+      .concat(listeningItems(big ? 5 : 3, hasAudio, scope));
     if (items.length < 6) return null;
 
     var minutes = Math.max(EXAM.MIN_MINUTES, Math.round((items.length * EXAM.SECONDS_PER_ITEM) / 60));
-
     var counts = {};
     items.forEach(function (it) { counts[it.section] = (counts[it.section] || 0) + 1; });
 
     return {
       id: 'e' + Date.now().toString(36),
+      blockId: o.blockId || null,
       startedAt: Date.now(),
       minutes: minutes,
       totalSeconds: minutes * 60,
@@ -242,6 +326,7 @@
     state.exams = state.exams || [];
     state.exams.push({
       id: exam.id,
+      blockId: exam.blockId || null,
       at: exam.finishedAt,
       pct: exam.report.pct,
       correct: correct,
@@ -253,8 +338,8 @@
     return exam;
   };
 
-  /** Is there enough material for a checkpoint right now? */
+  /** Is there enough material for an ad-hoc checkpoint right now? */
   EXAM.available = function (state) {
-    return studiedTerms(state).length >= EXAM.MIN_WORDS;
+    return studiedTerms(state, inScope(null)).length >= EXAM.MIN_WORDS;
   };
 })(typeof window !== 'undefined' ? window : globalThis);

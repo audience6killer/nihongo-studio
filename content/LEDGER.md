@@ -8,8 +8,18 @@ One row per chapter. Updated after every batch, and after every validator run.
 | 2 | 日本語のスピーチスタイル | Speech Styles in Japanese | スピーチレベルと終助詞① | 54 | 288 | 10 | 5 | 2 | 115 chars | sentence-level | ✓ | pass |
 | 3 | 日本のテクノロジー | Technology in Japan | カタカナ語・外来語 | 70 | 242 | 9 | 5 | 2 | 107 chars | sentence-level | ✓ | pass |
 
-Latest run: **169 words across 3 chapters · 1,938 tokens in 132 texts, 100% resolved ·
-587 dictionary entries · 3/3 lessons validated.**
+Vocabulary-only deck, no lesson JSON:
+
+| Unit | Title (L2) | Title (L1) | Words | Status |
+|---|---|---|---|---|
+| N2 · 1 (101) | N2 語彙 1 | JLPT N2 vocabulary, set 1 — abstract and workplace nouns | 46 | words only |
+
+Latest run: **215 words across 4 units · 1,938 tokens in 132 texts, 100% resolved ·
+633 dictionary entries · 3/3 lessons validated · QA 17/17.**
+
+A vocabulary-only unit carries its titles as `# title_l2:` comments in its TSV header and renders
+as a word list, because the words are studyable before the prose exists. N2 unit numbers start at
+101 so that a recap chapter and an N2 deck can never collide.
 
 ## How to read this
 
@@ -30,7 +40,7 @@ and model answer in `content/` was written for this app.
 
 | Ch | Title (L2) | Planned grammar point | Status |
 |---|---|---|---|
-| 4 | 日本のスポーツ | 数字と助数詞 | next batch |
+| 4 | 日本のスポーツ | 数字と助数詞 | next batch (also needs an N2 unit with reading + grammar) |
 | 5 | 日本の食べ物 | が・けれども | next batch |
 | 6 | 日本人と宗教 | もの・こと | not started |
 | 7 | 日本のポップカルチャー | 連濁 | not started |

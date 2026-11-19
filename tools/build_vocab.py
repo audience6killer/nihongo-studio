@@ -19,10 +19,14 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from _common import (  # noqa: E402
     CONTENT, Report, deck_lesson_files, lesson_json_files, read_json, read_tsv,
-    utf8_stdout, write_js, write_text,
+    read_tsv_meta, utf8_stdout, write_js, write_text,
 )
 
 SCHEMA = 2
+
+# Decks share one number line so a chapter id is unique across the course.
+# Recap units keep 1..99; N2 decks start at 101.
+DECK_OFFSET = {"recap": 0, "n2": 100}
 
 
 def main() -> int:
@@ -51,6 +55,10 @@ def main() -> int:
             report.error(f"{os.path.relpath(path, os.path.dirname(path))}: no vocabulary rows")
             continue
 
+        # A vocabulary-only deck carries its title in the TSV header comments.
+        tsv_meta = read_tsv_meta(path)
+        unit = chapter + DECK_OFFSET.get(deck, 0)
+
         chapter_terms: list[str] = []
         for row in rows:
             term = row["w"]
@@ -69,16 +77,17 @@ def main() -> int:
                 "gloss": row["gloss"],
                 "pos": row["pos"],
                 "alt": row["alt"],
-                "lesson": chapter,
+                "lesson": unit,
                 "deck": deck,
             })
 
         meta = titles.get((deck, chapter), {})
         lessons.append({
-            "n": chapter,
+            "n": unit,
             "deck": deck,
-            "title_l2": meta.get("title_l2", ""),
-            "title_l1": meta.get("title_l1", ""),
+            "title_l2": meta.get("title_l2") or tsv_meta.get("title_l2", ""),
+            "title_l1": meta.get("title_l1") or tsv_meta.get("title_l1", ""),
+            "has_lesson": (deck, chapter) in titles,
             "count": len(chapter_terms),
             "words": chapter_terms,
         })

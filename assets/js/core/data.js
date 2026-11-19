@@ -47,9 +47,42 @@
 
   D.words = function () { return (D.vocab && D.vocab.words) || []; };
 
-  /** Chapter numbers that have content, in order. */
+  /** Chapter numbers that have full lesson content, in order. */
   D.chapters = function () {
     return D.lessons.map(function (l) { return l.chapter; });
+  };
+
+  /** Every vocabulary unit in the course, recap and N2, ordered by number. */
+  D.units = function () {
+    var list = (D.vocab && D.vocab.lessons) ? D.vocab.lessons.slice() : [];
+    return list.sort(function (a, b) { return a.n - b.n; });
+  };
+
+  /** Vocabulary units belonging to one deck. */
+  D.deckLessons = function (deck) {
+    return D.units().filter(function (u) { return u.deck === deck; });
+  };
+
+  D.unit = function (n) {
+    var list = D.units();
+    for (var i = 0; i < list.length; i++) if (list[i].n === n) return list[i];
+    return null;
+  };
+
+  D.decks = function () {
+    return (D.meta && D.meta.decks && D.meta.decks.length) ? D.meta.decks : ['recap'];
+  };
+
+  /** "Chapter 3" for the recap, "N2 · 1" for a vocabulary deck. */
+  D.chapterLabel = function (n) {
+    if (n == null) return '—';
+    if (n > 100) return 'N2 · ' + (n - 100);
+    return 'Chapter ' + n;
+  };
+
+  /** True when the unit has reading, grammar and writing content. */
+  D.hasLesson = function (n) {
+    return !!D.lesson(n);
   };
 
   /** Terms belonging to a chapter, in TSV order. */
@@ -91,27 +124,33 @@
     return null;
   };
 
+  /** Pick up to `need` distinct glosses, never reusing anything in `exclude`. */
+  function pickGlosses(pool, exclude, need, rand) {
+    var U = NJ.U;
+    var seen = exclude.slice();
+    var out = [];
+    var shuffled = U.shuffle(pool, rand);
+    for (var i = 0; i < shuffled.length && out.length < need; i++) {
+      var g = String(shuffled[i].gloss || '');
+      if (!g || seen.indexOf(g) >= 0) continue;
+      seen.push(g);
+      out.push(g);
+    }
+    return out;
+  }
+
   /** Distractor glosses for a multiple-choice card, from the same chapter. */
   D.distractorGlosses = function (word, n, rand) {
-    var U = NJ.U;
-    function uniqueFrom(pool) {
-      var seen = [String(word.gloss)];
-      var out = [];
-      var shuffled = U.shuffle(pool, rand);
-      for (var i = 0; i < shuffled.length && out.length < n; i++) {
-        var g = String(shuffled[i].gloss || '');
-        if (!g || seen.indexOf(g) >= 0) continue;
-        seen.push(g);
-        out.push(g);
-      }
-      return out;
-    }
+    var exclude = [String(word.gloss)];
     var samePos = D.words().filter(function (x) {
       return x.w !== word.w && x.pos === word.pos;
     });
-    var out = uniqueFrom(samePos);
+    var out = pickGlosses(samePos, exclude, n, rand);
     if (out.length < n) {
-      out = out.concat(uniqueFrom(D.words().filter(function (x) { return x.w !== word.w; }))).slice(0, n);
+      var rest = D.words().filter(function (x) { return x.w !== word.w; });
+      // Dedupe across both pools: a fresh `seen` per call would let the second
+      // pass repeat a gloss the first pass already offered.
+      out = out.concat(pickGlosses(rest, exclude.concat(out), n - out.length, rand));
     }
     return out;
   };

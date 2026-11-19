@@ -53,8 +53,7 @@
       '</div>';
   }
 
-  UI.actions['finish-onboarding'] = function () {
-    var st = state();
+  UI.actions['finish-onboarding'] = function () {    var st = state();
     var name = (root.document.getElementById('ob-name') || {}).value || '';
     var minutes = Number((root.document.getElementById('ob-minutes') || {}).value) || 35;
     var start = (root.document.getElementById('ob-start') || {}).value || U.dayKey(new Date());
@@ -75,8 +74,27 @@
     UI.render();
   };
 
-  /* ------------------------------------------------------------------ today */
+  UI.actions['switch-phase'] = function () {
+    var st = state();
+    var current = NJ.PLAN.phaseOf(st);
+    var next = current === 'n2' ? 'recap' : 'n2';
+    UI.confirm(
+      next === 'n2' ? 'Switch to the N2 deck?' : 'Switch back to the recap?',
+      next === 'n2'
+        ? 'New words will come from the N2 vocabulary deck. Recap words you have not met stay available and will still be drawn once N2 runs out.'
+        : 'New words will come from the Tobira recap again, then back to N2.',
+      function () {
+        st.profile = st.profile || {};
+        st.profile.phase = next;
+        NJ.S.save(st);
+        UI.toast('Drawing new words from ' + NJ.PLAN.deckLabel(next) + '.');
+        UI.render();
+      },
+      'Switch'
+    );
+  };
 
+  /* ------------------------------------------------------------------ today */
   UI.screens.today = {
     render: function () {
       var st = state();
@@ -99,7 +117,7 @@
       var html = '<div class="page-head">' +
         '<h1>' + greeting(st) + '</h1>' +
         '<p class="sub">' + U.fmtDate(new Date(), { weekday: 'long', month: 'long', day: 'numeric' }) +
-        ' · chapter ' + nav.chapter + ' of ' + Math.max(1, NJ.D.chapters().length) + '</p>' +
+        ' · ' + UI.esc(NJ.D.chapterLabel(nav.chapter)) + '</p>' +
         '</div>';
 
       if (!audio) {
@@ -182,18 +200,49 @@
       // Checkpoint: offered once enough words have actually been met.
       if (NJ.EXAM.available(st)) {
         var lastExam = (st.exams || [])[st.exams.length - 1];
+        var unlocked = NJ.EXAM.blocks().filter(function (b) {
+          return NJ.EXAM.blockStatus(st, b) === 'available';
+        });
         html += '<div class="card">' +
           '<div class="card-head"><h2>Checkpoint</h2>' +
             (lastExam ? '<span class="pill">last: ' + lastExam.pct + '%</span>' : '<span class="pill">not taken</span>') +
           '</div>' +
           '<p class="small" style="color:var(--ink-3);margin:0 0 .8rem">' +
-            'A timed sample in JLPT shape — <span lang="ja">文字・語彙</span>, ' +
-            '<span lang="ja">文法・読解</span>, <span lang="ja">聴解</span>. No writing section, ' +
-            'because JLPT has none.' +
+            (unlocked.length
+              ? '<strong>' + unlocked.length + '</strong> scheduled checkpoint' + (unlocked.length === 1 ? '' : 's') +
+                ' unlocked: ' + UI.esc(unlocked[0].label) + '.'
+              : 'A timed sample in JLPT shape — <span lang="ja">文字・語彙</span>, ' +
+                '<span lang="ja">文法・読解</span>, <span lang="ja">聴解</span>. No writing section, ' +
+                'because JLPT has none.') +
           '</p>' +
-          '<a class="btn btn--ghost" href="#/exam" data-act="go" data-to="#/exam">Take a checkpoint</a>' +
+          '<a class="btn ' + (unlocked.length ? 'btn--primary' : 'btn--ghost') + '" href="#/exam" data-act="go" data-to="#/exam">' +
+            (unlocked.length ? 'Take ' + UI.esc(unlocked[0].label) : 'Take a checkpoint') + '</a>' +
         '</div>';
       }
+
+      // Phase: recap first, then the N2 deck. Switching is explicit.
+      var phase = NJ.PLAN.phaseOf(st);
+      var recapProg = NJ.PLAN.deckProgress(st, 'recap');
+      var n2Prog = NJ.PLAN.deckProgress(st, 'n2');
+      var hasN2 = n2Prog.total > 0;
+      html += '<div class="card card--flat">' +
+        '<div class="card-head"><h3>Course phase</h3>' +
+          '<span class="pill">' + UI.esc(NJ.PLAN.deckLabel(phase)) + '</span>' +
+        '</div>' +
+        '<dl class="kv"><dt>Tobira recap</dt><dd>' + recapProg.introduced + ' / ' + recapProg.total +
+          ' <span class="small" style="color:var(--ink-3)">(' + recapProg.pct + '%)</span></dd></dl>' +
+        (hasN2 ? '<dl class="kv"><dt>N2 vocabulary</dt><dd>' + n2Prog.introduced + ' / ' + n2Prog.total +
+          ' <span class="small" style="color:var(--ink-3)">(' + n2Prog.pct + '%)</span></dd></dl>' : '') +
+        '<p class="small" style="color:var(--ink-3);margin:.6rem 0 0">' +
+          (phase === 'recap'
+            ? 'New words come from the recap. The N2 deck starts once the recap runs out, or when you switch.'
+            : 'New words come from the N2 deck. Any recap words left over are still available.') +
+        '</p>' +
+        (hasN2 ? '<div class="btn-row" style="margin-top:.7rem">' +
+          '<button type="button" class="btn btn--ghost btn--sm" data-act="switch-phase">' +
+            (phase === 'recap' ? 'Switch to N2' : 'Switch back to the recap') + '</button>' +
+        '</div>' : '') +
+      '</div>';
 
       return html;
     },
@@ -241,6 +290,28 @@
         '</a>';
       });
       html += '</div></div>';
+
+      var n2Units = NJ.D.deckLessons('n2');
+      if (n2Units.length) {
+        html += '<h2 style="margin:1.5rem 0 .6rem">N2 vocabulary</h2>' +
+          '<div class="card card--flat"><div class="rows">';
+        n2Units.forEach(function (unit) {
+          var terms = unit.words || [];
+          var introduced = terms.filter(function (t) { return st.words[t]; }).length;
+          var done = terms.length > 0 && introduced === terms.length;
+          var kind2 = done ? 'done' : unit.n === currentChapter ? 'current' : '';
+          html += '<a class="row-item" href="#/lesson/' + unit.n + '" data-act="go" data-to="#/lesson/' + unit.n + '">' +
+            UI.chapterNum(unit.n - 100, kind2) +
+            '<span class="grow">' +
+              '<strong lang="ja">' + UI.esc(unit.title_l2 || 'N2 語彙') + '</strong>' +
+              '<span class="meta">' + UI.esc(unit.title_l1 || '') + ' · ' + introduced + '/' + terms.length + ' words</span>' +
+              '<span class="meta">Vocabulary only — reading and grammar arrive in a later content batch</span>' +
+            '</span>' +
+            '<span class="chev">›</span>' +
+          '</a>';
+        });
+        html += '</div></div>';
+      }
 
       html += '<div class="card card--quiet">' +
         '<p class="small" style="color:var(--ink-3);margin:0">' +

@@ -9,10 +9,11 @@ window.NJ_VOCAB = {
   "l1": "en",
   "app": "ja",
   "decks": [
-   "recap"
+   "recap",
+   "n2"
   ],
-  "count": 169,
-  "lessons": 3
+  "count": 215,
+  "lessons": 4
  },
  "lessons": [
   {
@@ -20,6 +21,7 @@ window.NJ_VOCAB = {
    "deck": "recap",
    "title_l2": "日本の地理",
    "title_l1": "The Geography of Japan",
+   "has_lesson": true,
    "count": 45,
    "words": [
     "地理",
@@ -74,6 +76,7 @@ window.NJ_VOCAB = {
    "deck": "recap",
    "title_l2": "日本語のスピーチスタイル",
    "title_l1": "Speech Styles in Japanese",
+   "has_lesson": true,
    "count": 54,
    "words": [
     "敬語",
@@ -137,6 +140,7 @@ window.NJ_VOCAB = {
    "deck": "recap",
    "title_l2": "日本のテクノロジー",
    "title_l1": "Technology in Japan",
+   "has_lesson": true,
    "count": 70,
    "words": [
     "技術",
@@ -209,6 +213,62 @@ window.NJ_VOCAB = {
     "アプリ",
     "エアコン",
     "マンション"
+   ]
+  },
+  {
+   "n": 101,
+   "deck": "n2",
+   "title_l2": "N2 語彙 1",
+   "title_l1": "JLPT N2 vocabulary, set 1 — abstract and workplace nouns",
+   "has_lesson": false,
+   "count": 46,
+   "words": [
+    "影響",
+    "原因",
+    "結果",
+    "理由",
+    "目的",
+    "方法",
+    "手段",
+    "条件",
+    "状況",
+    "可能性",
+    "改善",
+    "解決",
+    "判断",
+    "検討",
+    "確認",
+    "主張",
+    "反対",
+    "賛成",
+    "意見",
+    "目標",
+    "計画",
+    "予定",
+    "準備",
+    "対応",
+    "協力",
+    "参加",
+    "活動",
+    "経験",
+    "能力",
+    "成長",
+    "発展",
+    "経済",
+    "社会",
+    "環境",
+    "課題",
+    "十分",
+    "当然",
+    "確か",
+    "明らか",
+    "具体的",
+    "抽象的",
+    "積極的",
+    "消極的",
+    "共通",
+    "重要",
+    "深刻"
    ]
   }
  ],
@@ -1750,6 +1810,420 @@ window.NJ_VOCAB = {
    "alt": [],
    "lesson": 3,
    "deck": "recap"
+  },
+  {
+   "w": "影響",
+   "reading": "えいきょう",
+   "gloss": "influence; effect",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "原因",
+   "reading": "げんいん",
+   "gloss": "cause",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "結果",
+   "reading": "けっか",
+   "gloss": "result; outcome",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "理由",
+   "reading": "りゆう",
+   "gloss": "reason",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "目的",
+   "reading": "もくてき",
+   "gloss": "purpose; aim",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "方法",
+   "reading": "ほうほう",
+   "gloss": "method; way",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "手段",
+   "reading": "しゅだん",
+   "gloss": "means; measure",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "条件",
+   "reading": "じょうけん",
+   "gloss": "condition; term",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "状況",
+   "reading": "じょうきょう",
+   "gloss": "situation; circumstances",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "可能性",
+   "reading": "かのうせい",
+   "gloss": "possibility",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "改善",
+   "reading": "かいぜん",
+   "gloss": "improvement; betterment",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "解決",
+   "reading": "かいけつ",
+   "gloss": "resolution; solution",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "判断",
+   "reading": "はんだん",
+   "gloss": "judgement; decision",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "検討",
+   "reading": "けんとう",
+   "gloss": "consideration; review",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "確認",
+   "reading": "かくにん",
+   "gloss": "confirmation; check",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "主張",
+   "reading": "しゅちょう",
+   "gloss": "claim; assertion",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "反対",
+   "reading": "はんたい",
+   "gloss": "opposition; objection",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "賛成",
+   "reading": "さんせい",
+   "gloss": "agreement; approval",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "意見",
+   "reading": "いけん",
+   "gloss": "opinion; view",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "目標",
+   "reading": "もくひょう",
+   "gloss": "goal; target",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "計画",
+   "reading": "けいかく",
+   "gloss": "plan; scheme",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "予定",
+   "reading": "よてい",
+   "gloss": "plan; schedule",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "準備",
+   "reading": "じゅんび",
+   "gloss": "preparation",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "対応",
+   "reading": "たいおう",
+   "gloss": "handling; response",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "協力",
+   "reading": "きょうりょく",
+   "gloss": "cooperation",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "参加",
+   "reading": "さんか",
+   "gloss": "participation",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "活動",
+   "reading": "かつどう",
+   "gloss": "activity",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "経験",
+   "reading": "けいけん",
+   "gloss": "experience",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "能力",
+   "reading": "のうりょく",
+   "gloss": "ability; capacity",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "成長",
+   "reading": "せいちょう",
+   "gloss": "growth",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "発展",
+   "reading": "はってん",
+   "gloss": "development; expansion",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "経済",
+   "reading": "けいざい",
+   "gloss": "economy",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "社会",
+   "reading": "しゃかい",
+   "gloss": "society",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "環境",
+   "reading": "かんきょう",
+   "gloss": "environment",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "課題",
+   "reading": "かだい",
+   "gloss": "task; issue to be tackled",
+   "pos": "n.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "十分",
+   "reading": "じゅうぶん",
+   "gloss": "enough; sufficient",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "当然",
+   "reading": "とうぜん",
+   "gloss": "natural; a matter of course",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "確か",
+   "reading": "たしか",
+   "gloss": "certain; sure",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "明らか",
+   "reading": "あきらか",
+   "gloss": "clear; evident",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "具体的",
+   "reading": "ぐたいてき",
+   "gloss": "concrete; specific",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "抽象的",
+   "reading": "ちゅうしょうてき",
+   "gloss": "abstract",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "積極的",
+   "reading": "せっきょくてき",
+   "gloss": "positive; proactive",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "消極的",
+   "reading": "しょうきょくてき",
+   "gloss": "negative; passive",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "共通",
+   "reading": "きょうつう",
+   "gloss": "common; shared",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "重要",
+   "reading": "じゅうよう",
+   "gloss": "important",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
+  },
+  {
+   "w": "深刻",
+   "reading": "しんこく",
+   "gloss": "serious; grave",
+   "pos": "な-adj.",
+   "alt": [],
+   "lesson": 101,
+   "deck": "n2"
   }
  ]
 };

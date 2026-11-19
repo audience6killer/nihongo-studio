@@ -1,7 +1,7 @@
 # Nihongo Studio — Build Plan
 
 **Instance:** Japanese (L2) for an English-speaking learner (L1), anchored on **Tobira** as a recap and **JLPT N2** as the forward target.
-**Status:** Phases 0–4 built and green, plus the first content batch (chapters 1–3 of 15). Phases 5 (rest of the content), 6 (N2 deck), 7 (deploy) and 8 (QA freeze) remain.
+**Status:** **implementation complete.** Phases 0–8 built and green. Content is 3 of 15 recap chapters plus one N2 deck — that part is authored, not coded, and `content/LEDGER.md` is the authority on it.
 
 ### Approved decisions (recorded)
 
@@ -18,13 +18,13 @@
 |---|---|---|
 | 0 — shell, PWA scaffolding, docs, dev server | done | serves at `127.0.0.1:8765`; icons generated with no image library |
 | 1 — language adapter | done | `node tools/test_lang.mjs` → **55/55** |
-| 2 — chapter 1 end to end | done | validate pass · tap 100% · `node tools/smoke.mjs` → **51/51** across 22 modules |
-| 3 — engine completeness | done as part of Phase 2 | SRS, plan, stats, settings, export/import all covered by smoke |
-| 4 — calibration, refresh deck, checkpoints | done | 9 new smoke checks; adaptive branch and JLPT-shaped exams verified |
-| 5 — content scale | **3 of 15 chapters** | 169 words · 1,938 tokens in 132 texts, 100% tap coverage · 587 entries |
-| 6 — N2 deck and scheduled checkpoints | not started | |
-| 7 — PWA deploy and optional sync | not started | |
-| 8 — QA matrix and freeze | not started | |
+| 2 — chapter 1 end to end | done | validate pass · tap 100% · `node tools/smoke.mjs` → **59/59** across 22 modules |
+| 3 — engine completeness | done | SRS, plan, stats, settings, export/import covered by smoke |
+| 4 — calibration, refresh deck, checkpoints | done | adaptive branch, refresh deck, JLPT-shaped exams |
+| 5 — content scale | **3 of 15 chapters** | 169 recap words + 46 N2 words · 1,938 tokens in 132 texts, 100% tap |
+| 6 — N2 deck, phases, scheduled checkpoints | done | deck numbering, phase switch, blocks derived from available content |
+| 7 — PWA deploy and optional sync | **deploy done, sync deferred** | `npm run build` → `deploy/` (29 files, 333 KB); sync is explicitly out of v1 |
+| 8 — QA matrix and freeze | done | `node tools/qa.mjs` → **17/17**; licences and credits in `README.md` |
 
 Bugs found and fixed by these tests, rather than by the user:
 
@@ -38,11 +38,23 @@ Bugs found and fixed by these tests, rather than by the user:
 6. **Greedy longest-match segmented はいなくなる as はい + なく, stranding a character.** Now
    maximum-coverage DP; this fixed a whole class of tap gaps across every chapter.
 7. A finished session from a previous day blocked the next one on `#/session`.
+8. Distractor glosses were deduplicated per pool, so the fallback pool could repeat a gloss the
+   first pool had already offered — a multiple-choice card with only three distinct options.
+9. The deploy build's own secret scan flagged the word `service_role` inside the warning comment
+   that says never to put one there; it now looks for key-shaped material instead.
 
 **Not verified:** visual layout. No browser automation is possible in this environment — headless
 Edge cannot start under the file sandbox (its mojo channel is denied). The screens are exercised
 headlessly against a DOM shim, but the first real look at pixels is yours. Start at
 `#/today`, then `#/chapters` → chapter 1 → all four section tabs, then a session.
+
+### What remains
+
+Only content, and only in the sense of authoring: chapters 4–15 of the recap, and reading/grammar
+material for the N2 decks. Both follow a loop that is now proven end to end —
+`CONTENT_SPEC.md` §6 lists the six steps, `content/LEDGER.md` records the cost per chapter
+(roughly 55 curated words and 30–45 inflected dictionary rows), and the validator names every gap
+before it can ship.
 
 ---
 

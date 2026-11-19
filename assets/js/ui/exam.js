@@ -19,32 +19,63 @@
   function renderIntro(s) {
     var available = NJ.EXAM.available(s);
     var studied = Object.keys(s.words || {}).length;
-    return '<div class="page-head"><h1>Checkpoints</h1>' +
-      '<p class="sub">Sampled tests in JLPT shape. Practice instruments, not official papers.</p></div>' +
+    var blocks = NJ.EXAM.blocks();
 
-      '<div class="card card--accent">' +
-        '<h2>' + (available ? 'A checkpoint is available' : 'Not yet') + '</h2>' +
-        (available
-          ? '<p>Built from the words you have actually met, in three sections:</p>' +
-            '<ul class="small" style="color:var(--ink-2);padding-left:1.1rem;margin:0 0 .9rem">' +
-              '<li><strong lang="ja">文字・語彙</strong> — readings and meanings</li>' +
-              '<li><strong lang="ja">文法・読解</strong> — grammar in context and a reading passage</li>' +
-              '<li><strong lang="ja">聴解</strong> — listening, when a Japanese voice is available</li>' +
-            '</ul>' +
-            '<div class="btn-row"><button type="button" class="btn btn--primary" data-act="exam-start">Start checkpoint</button></div>'
-          : '<p>You have met <strong>' + studied + '</strong> words. A checkpoint needs at least ' +
-            NJ.EXAM.MIN_WORDS + ', so that the result means something.</p>' +
-            '<div class="btn-row"><a class="btn btn--ghost" href="#/session" data-act="go" data-to="#/session">Study a session</a></div>') +
-      '</div>' +
+    var html = '<div class="page-head"><h1>Checkpoints</h1>' +
+      '<p class="sub">Sampled tests in JLPT shape. Practice instruments, not official papers.</p></div>';
 
-      '<div class="card card--flat">' +
-        '<h3>What this is not</h3>' +
-        '<ul class="small" style="color:var(--ink-3);padding-left:1.1rem;margin:0">' +
-          '<li>Not an official JLPT paper, and not a prediction of a pass.</li>' +
-          '<li>No writing and no speaking section — JLPT has none either.</li>' +
-          '<li>The sections are shorter than the real exam, on purpose.</li>' +
-        '</ul>' +
-      '</div>';
+    if (blocks.length) {
+      html += '<div class="card"><h2>Scheduled</h2>' +
+        '<p class="small" style="color:var(--ink-3);margin:0 0 .8rem">' +
+          'Each block unlocks once 60% of its words have been met, and covers everything up to that point.</p>' +
+        '<div class="rows">';
+      blocks.forEach(function (block) {
+        var status = NJ.EXAM.blockStatus(s, block);
+        var prog = NJ.EXAM.blockProgress(s, block);
+        var pill = status === 'done' ? '<span class="pill pill--done">done</span>'
+          : status === 'available' ? '<span class="pill pill--rec">ready</span>'
+          : '<span class="pill pill--muted">locked</span>';
+        html += '<div class="row-item" style="cursor:default">' +
+          '<span class="grow">' +
+            '<strong>' + UI.esc(block.label) + '</strong>' +
+            '<span class="meta">' + prog.introduced + ' / ' + prog.total + ' words met · ' + prog.pct + '%</span>' +
+          '</span>' + pill +
+          (status === 'available'
+            ? '<button type="button" class="btn btn--primary btn--sm" data-act="exam-start-block" data-block="' +
+              UI.esc(block.id) + '">Start</button>'
+            : status === 'done'
+              ? '<button type="button" class="btn btn--ghost btn--sm" data-act="exam-start-block" data-block="' +
+                UI.esc(block.id) + '">Retake</button>'
+              : '') +
+        '</div>';
+      });
+      html += '</div></div>';
+    }
+
+    html += '<div class="card card--accent">' +
+      '<h2>' + (available ? 'Practice checkpoint' : 'Not enough words yet') + '</h2>' +
+      (available
+        ? '<p>A short mixed test over everything you have met, in three sections:</p>' +
+          '<ul class="small" style="color:var(--ink-2);padding-left:1.1rem;margin:0 0 .9rem">' +
+            '<li><strong lang="ja">文字・語彙</strong> — readings and meanings</li>' +
+            '<li><strong lang="ja">文法・読解</strong> — grammar in context and a reading passage</li>' +
+            '<li><strong lang="ja">聴解</strong> — listening, when a Japanese voice is available</li>' +
+          '</ul>' +
+          '<div class="btn-row"><button type="button" class="btn btn--ghost" data-act="exam-start">Start practice checkpoint</button></div>'
+        : '<p>You have met <strong>' + studied + '</strong> words. A checkpoint needs at least ' +
+          NJ.EXAM.MIN_WORDS + ', so that the result means something.</p>' +
+          '<div class="btn-row"><a class="btn btn--ghost" href="#/session" data-act="go" data-to="#/session">Study a session</a></div>') +
+    '</div>';
+
+    html += '<div class="card card--flat">' +
+      '<h3>What this is not</h3>' +
+      '<ul class="small" style="color:var(--ink-3);padding-left:1.1rem;margin:0">' +
+        '<li>Not an official JLPT paper, and not a prediction of a pass.</li>' +
+        '<li>No writing and no speaking section — JLPT has none either.</li>' +
+        '<li>The sections are shorter than the real exam, on purpose.</li>' +
+      '</ul>' +
+    '</div>';
+    return html;
   }
 
   function renderReport(exam, s) {
@@ -203,6 +234,26 @@
     var s = st();
     var exam = NJ.EXAM.build(s, { hasAudio: NJ.TTS.hasVoice() });
     if (!exam) { UI.toast('Not enough studied words for a checkpoint yet.', 'warn'); return; }
+    s.currentExam = exam;
+    NJ.S.save(s);
+    view.played = {};
+    UI.render();
+  };
+
+  UI.actions['exam-start-block'] = function (ev, el) {
+    var s = st();
+    var blockId = el.getAttribute('data-block');
+    var block = NJ.EXAM.blocks().filter(function (b) { return b.id === blockId; })[0];
+    if (!block) { UI.toast('That checkpoint does not exist yet.', 'warn'); return; }
+    var exam = NJ.EXAM.build(s, {
+      hasAudio: NJ.TTS.hasVoice(),
+      chapters: block.chapters,
+      blockId: block.id
+    });
+    if (!exam) {
+      UI.toast('Meet a few more of this block\'s words first.', 'warn');
+      return;
+    }
     s.currentExam = exam;
     NJ.S.save(s);
     view.played = {};

@@ -6,7 +6,7 @@ window.NJ_TAP = {
  "meta": {
   "schema": 1,
   "l2": "ja",
-  "count": 587
+  "count": 633
  },
  "entries": {
   "あいづち": {
@@ -1059,6 +1059,11 @@ window.NJ_TAP = {
    "g": "main; principal",
    "p": "な-adj."
   },
+  "主張": {
+   "r": "しゅちょう",
+   "g": "claim; assertion",
+   "p": "n."
+  },
   "九州": {
    "r": "きゅうしゅう",
    "g": "Kyushu",
@@ -1073,6 +1078,11 @@ window.NJ_TAP = {
    "r": "かんそくする",
    "g": "to be dry; to dry",
    "p": "v.suru"
+  },
+  "予定": {
+   "r": "よてい",
+   "g": "plan; schedule",
+   "p": "n."
   },
   "人": {
    "r": "ひと",
@@ -1294,6 +1304,16 @@ window.NJ_TAP = {
    "g": "all; the whole",
    "p": "adv."
   },
+  "共通": {
+   "r": "きょうつう",
+   "g": "common; shared",
+   "p": "な-adj."
+  },
+  "具体的": {
+   "r": "ぐたいてき",
+   "g": "concrete; specific",
+   "p": "な-adj."
+  },
   "内容": {
    "r": "ないよう",
    "g": "content; substance",
@@ -1354,6 +1374,11 @@ window.NJ_TAP = {
    "g": "first meeting",
    "p": "n."
   },
+  "判断": {
+   "r": "はんだん",
+   "g": "judgement; decision",
+   "p": "n."
+  },
   "利用されてきた": {
    "r": "りようされてきた",
    "g": "to have been used",
@@ -1389,9 +1414,19 @@ window.NJ_TAP = {
    "g": "Hokkaido",
    "p": "name"
   },
+  "十分": {
+   "r": "じゅうぶん",
+   "g": "enough; sufficient",
+   "p": "な-adj."
+  },
   "半島": {
    "r": "はんとう",
    "g": "peninsula",
+   "p": "n."
+  },
+  "協力": {
+   "r": "きょうりょく",
+   "g": "cooperation",
    "p": "n."
   },
   "南": {
@@ -1429,6 +1464,16 @@ window.NJ_TAP = {
    "g": "dangerous; danger",
    "p": "な-adj."
   },
+  "原因": {
+   "r": "げんいん",
+   "g": "cause",
+   "p": "n."
+  },
+  "参加": {
+   "r": "さんか",
+   "g": "participation",
+   "p": "n."
+  },
   "友だち": {
    "r": "ともだち",
    "g": "friend",
@@ -1437,6 +1482,11 @@ window.NJ_TAP = {
   "友人": {
    "r": "ゆうじん",
    "g": "friend",
+   "p": "n."
+  },
+  "反対": {
+   "r": "はんたい",
+   "g": "opposition; objection",
    "p": "n."
   },
   "取られる": {
@@ -1458,6 +1508,11 @@ window.NJ_TAP = {
    "r": "うける",
    "g": "to receive; to get (an impression)",
    "p": "v.t."
+  },
+  "可能性": {
+   "r": "かのうせい",
+   "g": "possibility",
+   "p": "n."
   },
   "各地": {
    "r": "かくち",
@@ -1719,6 +1774,11 @@ window.NJ_TAP = {
    "g": "cold",
    "p": "い-adj."
   },
+  "対応": {
+   "r": "たいおう",
+   "g": "handling; response",
+   "p": "n."
+  },
   "尊敬語": {
    "r": "そんけいご",
    "g": "respectful language (sonkeigo)",
@@ -1824,9 +1884,19 @@ window.NJ_TAP = {
    "g": "strongly",
    "p": "form"
   },
+  "当然": {
+   "r": "とうぜん",
+   "g": "natural; a matter of course",
+   "p": "な-adj."
+  },
   "形": {
    "r": "かたち",
    "g": "form; shape",
+   "p": "n."
+  },
+  "影響": {
+   "r": "えいきょう",
+   "g": "influence; effect",
    "p": "n."
   },
   "役割": {
@@ -1899,6 +1969,11 @@ window.NJ_TAP = {
    "g": "meaning",
    "p": "n."
   },
+  "意見": {
+   "r": "いけん",
+   "g": "opinion; view",
+   "p": "n."
+  },
   "感じられます": {
    "r": "かんじられます",
    "g": "to be felt",
@@ -1909,10 +1984,25 @@ window.NJ_TAP = {
    "g": "to feel",
    "p": "v.t."
   },
+  "成長": {
+   "r": "せいちょう",
+   "g": "growth",
+   "p": "n."
+  },
+  "手段": {
+   "r": "しゅだん",
+   "g": "means; measure",
+   "p": "n."
+  },
   "技術": {
    "r": "ぎじゅつ",
    "g": "technology; technique",
    "p": "n."
+  },
+  "抽象的": {
+   "r": "ちゅうしょうてき",
+   "g": "abstract",
+   "p": "な-adj."
   },
   "持ってきます": {
    "r": "もってきます",
@@ -1947,6 +2037,11 @@ window.NJ_TAP = {
   "操作": {
    "r": "そうさ",
    "g": "operation; handling",
+   "p": "n."
+  },
+  "改善": {
+   "r": "かいぜん",
+   "g": "improvement; betterment",
    "p": "n."
   },
   "故障": {
@@ -2004,6 +2099,11 @@ window.NJ_TAP = {
    "g": "person (polite); way of doing",
    "p": "n."
   },
+  "方法": {
+   "r": "ほうほう",
+   "g": "method; way",
+   "p": "n."
+  },
   "日": {
    "r": "ひ",
    "g": "day",
@@ -2028,6 +2128,11 @@ window.NJ_TAP = {
    "r": "にほんご",
    "g": "the Japanese language",
    "p": "n."
+  },
+  "明らか": {
+   "r": "あきらか",
+   "g": "clear; evident",
+   "p": "な-adj."
   },
   "明日": {
    "r": "あした",
@@ -2119,6 +2224,11 @@ window.NJ_TAP = {
    "g": "Honshu",
    "p": "name"
   },
+  "条件": {
+   "r": "じょうけん",
+   "g": "condition; term",
+   "p": "n."
+  },
   "来た": {
    "r": "きた",
    "g": "came",
@@ -2143,6 +2253,11 @@ window.NJ_TAP = {
    "r": "やわらかい",
    "g": "soft; gentle",
    "p": "い-adj."
+  },
+  "検討": {
+   "r": "けんとう",
+   "g": "consideration; review",
+   "p": "n."
   },
   "楽しませる": {
    "r": "たのしませる",
@@ -2234,6 +2349,11 @@ window.NJ_TAP = {
    "g": "Okinawa",
    "p": "name"
   },
+  "活動": {
+   "r": "かつどう",
+   "g": "activity",
+   "p": "n."
+  },
   "流れ": {
    "r": "ながれ",
    "g": "flow; current",
@@ -2259,10 +2379,20 @@ window.NJ_TAP = {
    "g": "strait; channel",
    "p": "n."
   },
+  "消極的": {
+   "r": "しょうきょくてき",
+   "g": "negative; passive",
+   "p": "な-adj."
+  },
   "深く": {
    "r": "ふかく",
    "g": "deeply",
    "p": "adv."
+  },
+  "深刻": {
+   "r": "しんこく",
+   "g": "serious; grave",
+   "p": "な-adj."
   },
   "減らす": {
    "r": "へらす",
@@ -2282,6 +2412,11 @@ window.NJ_TAP = {
   "湖": {
    "r": "みずうみ",
    "g": "lake",
+   "p": "n."
+  },
+  "準備": {
+   "r": "じゅんび",
+   "g": "preparation",
    "p": "n."
   },
   "漁業": {
@@ -2304,6 +2439,11 @@ window.NJ_TAP = {
    "g": "characteristic; feature",
    "p": "n."
   },
+  "状況": {
+   "r": "じょうきょう",
+   "g": "situation; circumstances",
+   "p": "n."
+  },
   "独特": {
    "r": "どくとく",
    "g": "unique; distinctive",
@@ -2314,6 +2454,11 @@ window.NJ_TAP = {
    "g": "narrow; cramped",
    "p": "い-adj."
   },
+  "理由": {
+   "r": "りゆう",
+   "g": "reason",
+   "p": "n."
+  },
   "理解": {
    "r": "りかい",
    "g": "understanding",
@@ -2323,6 +2468,11 @@ window.NJ_TAP = {
    "r": "りかいしたり",
    "g": "understanding (and so on)",
    "p": "form"
+  },
+  "環境": {
+   "r": "かんきょう",
+   "g": "environment",
+   "p": "n."
   },
   "生活": {
    "r": "せいかつ",
@@ -2358,6 +2508,11 @@ window.NJ_TAP = {
    "r": "ことなる",
    "g": "to differ",
    "p": "v.i."
+  },
+  "発展": {
+   "r": "はってん",
+   "g": "development; expansion",
+   "p": "n."
   },
   "発明": {
    "r": "はつめい",
@@ -2399,6 +2554,16 @@ window.NJ_TAP = {
    "g": "to aim for; to target",
    "p": "v.t."
   },
+  "目標": {
+   "r": "もくひょう",
+   "g": "goal; target",
+   "p": "n."
+  },
+  "目的": {
+   "r": "もくてき",
+   "g": "purpose; aim",
+   "p": "n."
+  },
   "相手": {
    "r": "あいて",
    "g": "the other person; partner",
@@ -2439,6 +2604,21 @@ window.NJ_TAP = {
    "g": "research",
    "p": "n."
   },
+  "確か": {
+   "r": "たしか",
+   "g": "certain; sure",
+   "p": "な-adj."
+  },
+  "確認": {
+   "r": "かくにん",
+   "g": "confirmation; check",
+   "p": "n."
+  },
+  "社会": {
+   "r": "しゃかい",
+   "g": "society",
+   "p": "n."
+  },
   "祭り": {
    "r": "まつり",
    "g": "festival",
@@ -2474,6 +2654,11 @@ window.NJ_TAP = {
    "g": "to pile up",
    "p": "v.i."
   },
+  "積極的": {
+   "r": "せっきょくてき",
+   "g": "positive; proactive",
+   "p": "な-adj."
+  },
   "約": {
    "r": "やく",
    "g": "approximately",
@@ -2492,6 +2677,21 @@ window.NJ_TAP = {
   "終助詞": {
    "r": "しゅうじょし",
    "g": "sentence-final particle",
+   "p": "n."
+  },
+  "経済": {
+   "r": "けいざい",
+   "g": "economy",
+   "p": "n."
+  },
+  "経験": {
+   "r": "けいけん",
+   "g": "experience",
+   "p": "n."
+  },
+  "結果": {
+   "r": "けっか",
+   "g": "result; outcome",
    "p": "n."
   },
   "続いている": {
@@ -2547,6 +2747,11 @@ window.NJ_TAP = {
   "背骨": {
    "r": "せぼね",
    "g": "spine",
+   "p": "n."
+  },
+  "能力": {
+   "r": "のうりょく",
+   "g": "ability; capacity",
    "p": "n."
   },
   "自分": {
@@ -2634,6 +2839,11 @@ window.NJ_TAP = {
    "g": "tourist; sightseer",
    "p": "n."
   },
+  "解決": {
+   "r": "かいけつ",
+   "g": "resolution; solution",
+   "p": "n."
+  },
   "言いたい": {
    "r": "いいたい",
    "g": "want to say",
@@ -2667,6 +2877,11 @@ window.NJ_TAP = {
   "言葉": {
    "r": "ことば",
    "g": "word; language",
+   "p": "n."
+  },
+  "計画": {
+   "r": "けいかく",
+   "g": "plan; scheme",
    "p": "n."
   },
   "話して": {
@@ -2709,6 +2924,11 @@ window.NJ_TAP = {
    "g": "word order",
    "p": "n."
   },
+  "課題": {
+   "r": "かだい",
+   "g": "task; issue to be tackled",
+   "p": "n."
+  },
   "謙譲語": {
    "r": "けんじょうご",
    "g": "humble language (kenjougo)",
@@ -2717,6 +2937,11 @@ window.NJ_TAP = {
   "資料": {
    "r": "しりょう",
    "g": "materials; documents",
+   "p": "n."
+  },
+  "賛成": {
+   "r": "さんせい",
+   "g": "agreement; approval",
    "p": "n."
   },
   "農業": {
@@ -2833,6 +3058,11 @@ window.NJ_TAP = {
    "r": "とどうふけん",
    "g": "prefecture; the prefectural system",
    "p": "n."
+  },
+  "重要": {
+   "r": "じゅうよう",
+   "g": "important",
+   "p": "な-adj."
   },
   "金曜日": {
    "r": "きんようび",

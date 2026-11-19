@@ -152,13 +152,17 @@ Checkpoints sample the same skills at exam section boundaries, in **JLPT shape**
 | Week 22 | 45 min | N2-level sampling |
 | Week 24 | 60 min | Final mock |
 
-**Built so far:** the *practice* checkpoint. It is offered as soon as 12 words have actually been
-met, is built from that learner's own studied vocabulary, and runs for about 70 seconds per item.
-That keeps it honest before the full course exists — it can only test what has been taught.
+**How it is built.** The schedule is derived from the content that exists, not hardcoded, so it
+scales as chapters ship:
 
-The **scheduled** checkpoints above (fixed at chapter boundaries and N2 weeks) arrive in Phase 6,
-when chapters 2–15 and the N2 deck exist and the timer can mean something. Until then, treat a
-practice checkpoint as a self-check, not a milestone.
+- the recap chapters are split into three cumulative blocks, so with 15 chapters the blocks end
+  after chapter 5, 10 and 15 — exactly the boundaries above;
+- the N2 decks are split into two blocks;
+- a block unlocks once 60% of its words have been met, and stops being offered as new once taken
+  (it can be retaken).
+
+A **practice checkpoint** also exists for a learner who wants a self-check outside the schedule: it
+covers everything met so far and needs 12 known words. It runs about 70 seconds per item.
 
 There is **no writing section**: JLPT does not test writing. The writing stage in a recap unit is
 labelled output practice and is scored by a transparent heuristic (length, required-word coverage,
