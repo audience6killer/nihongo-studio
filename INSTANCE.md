@@ -12,7 +12,7 @@ recorded with a date and a reason.
 | App id | `ja` (`window.NJ_APP = { id: "ja", l1: "en", l2: "ja" }`) |
 | Storage key | `nihongo.v1` |
 | Global prefix | `NJ_` (`NJ_VOCAB`, `NJ_LESSONS`, `NJ_TAP`, `NJ_CONFIG`) |
-| Sync | **Not implemented.** v1 is local-only; the build reserves a `config.js` hook. |
+| Sync | **Optional Supabase mirror**, one project per instance. Local-first: the browser holds the source of truth, the cloud a sanitised snapshot. |
 | Deployment | `npm run build` → `deploy/`, Netlify-ready. See `README.md`. |
 
 ## Learning design
@@ -55,7 +55,8 @@ recorded with a date and a reason.
    vocabulary is authored in-repo. Licence burden is zero, authoring burden is on us.
 3. **15 units, not 36** (§4.1 permits this).
 4. **Checkpoints are JLPT-shaped with no writing section** (§4.7, §8.1).
-5. **Sync deferred** (§2.8 allows optional sync; v1 ships without it).
+5. **Sync is optional and off by default** (§2.8). It ships, but the app is complete and correct
+   without a project: no account, no network call, nothing to configure.
 
 ## Open items
 

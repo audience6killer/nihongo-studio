@@ -227,6 +227,12 @@
     meta.storage = 'local';
     meta.configAt = (root.NJ_CONFIG && root.NJ_CONFIG.builtAt) || '';
     NJ.S.save(state());
+
+    // Sync is optional: init() is a no-op unless a project is configured and
+    // this device is signed in.
+    if (NJ.sync) {
+      try { NJ.sync.init(); } catch (err) { if (root.console) root.console.error(err); }
+    }
   }
 
   if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', boot, { once: true });

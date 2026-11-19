@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nihongo Studio — sync and hosting setup</title>
+<style>
+  :root {
+    --paper: #f7f3ea; --ink: #1f1b16; --ink-2: #4a4238; --ink-3: #7a6f61;
+    --rule: #ddd4c4; --accent: #2f4d7a; --warn: #9a6b12; --warn-wash: #f6ecd6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.1rem 5rem; }
+  h1 { font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: 1.9rem; margin: 0 0 .3rem; }
+  h2 { font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: 1.2rem; margin: 2.2rem 0 .6rem; }
+  h3 { font-size: .95rem; margin: 1.4rem 0 .4rem; }
+  p, li { color: var(--ink-2); }
+  .sub { color: var(--ink-3); margin: 0 0 2rem; }
+  a { color: #22375a; text-underline-offset: 2px; }
+  ol, ul { padding-left: 1.2rem; }
+  li { margin-bottom: .45rem; }
+  code { font-size: .9em; background: #efe9dc; padding: .1em .35em; border-radius: 4px; }
+  pre {
+    background: #1f1b16; color: #f0ebe1; padding: 1rem; border-radius: 10px;
+    overflow-x: auto; font-size: .8rem; line-height: 1.5;
+  }
+  .card { background: #fffdf8; border: 1px solid var(--rule); border-radius: 14px; padding: 1.1rem 1.2rem; margin: 1rem 0; }
+  .note { border-left: 3px solid var(--warn); background: var(--warn-wash); padding: .75rem .9rem; border-radius: 0 10px 10px 0; }
+  .note strong { display: block; margin-bottom: .15rem; }
+  .back { display: inline-block; margin-top: 2.5rem; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { text-align: left; padding: .4rem .5rem; border-bottom: 1px solid #e9e2d4; }
+  th { color: var(--ink-3); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Sync and hosting setup</h1>
+<p class="sub">Everything here is optional. The app works completely offline with no account.</p>
+
+<div class="card">
+  <strong>What sync does, and what it does not.</strong>
+  <p style="margin:.4rem 0 0">Every answer is written to this browser first. Supabase holds a
+  <em>mirror</em> of that state so your phone and your computer agree. It is never the source of
+  truth: if the network is down, or the project pauses, you keep studying and nothing is lost.
+  What leaves the device is one sanitised snapshot per account — no analytics, no page views, and
+  no session tokens in the uploaded copy.</p>
+</div>
+
+<h2>1. Create a Supabase project</h2>
+<ol>
+  <li>Sign in at <a href="https://supabase.com/dashboard" rel="noreferrer">supabase.com/dashboard</a>
+    and create a new project.</li>
+  <li>Open <strong>Project Settings → Data API</strong> and copy the <strong>Project URL</strong> and
+    the <strong>anon / publishable</strong> key. Both are public by design.</li>
+</ol>
+
+<div class="note">
+  <strong>Give every language app its own project</strong>
+  The sync table has one row per account. If two apps share a project and you sign in with the same
+  email, they overwrite each other. One project per app is the simplest isolation there is.
+</div>
+
+<h2>2. Run the schema</h2>
+<p>Open the <strong>SQL Editor</strong> in Supabase, paste the whole block below, and run it once.
+It creates the table, turns on Row Level Security so an account can only read its own row, and adds
+an atomic save function that refuses to overwrite a newer revision.</p>
+
+<pre id="sql">-- Run tools/prepare_deploy.mjs to inject the schema here.
+-- In the repository the same SQL lives at supabase/schema.sql.</pre>
+
+<h2>3. Enable email sign-in</h2>
+<ol>
+  <li><strong>Authentication → Sign In / Providers</strong>: make sure <strong>Email</strong> is
+    enabled.</li>
+  <li><strong>Authentication → Users → Add user</strong> (or sign up from the app) to create your
+    account.</li>
+  <li>Then, if you want nobody else to be able to register,
+    <strong>Authentication → Sign In / Providers → Email</strong> and switch off
+    <em>Allow new users to sign up</em>.</li>
+</ol>
+
+<div class="note">
+  <strong>Turn off sign-ups, not the provider</strong>
+  Disabling the Email <em>provider</em> stops you signing in as well. “Email logins are disabled” is
+  a provider setting, not a wrong password.
+</div>
+
+<h2>4. Point the build at the project</h2>
+<p>The deployed site is configured with two environment variables, read at build time:</p>
+<table>
+  <tr><th>Variable</th><th>Value</th></tr>
+  <tr><td><code>SUPABASE_URL</code></td><td><code>https://&lt;project&gt;.supabase.co</code></td></tr>
+  <tr><td><code>SUPABASE_ANON_KEY</code></td><td>the anon / publishable key</td></tr>
+</table>
+<p>On Netlify: <strong>Site configuration → Environment variables</strong>, then
+<strong>Deploys → Trigger deploy → Clear cache and deploy site</strong>. Environment variables are
+baked in at build time, so saving them does nothing until a new deploy runs. The build log must say
+<code>supabase: configured at build time</code>.</p>
+<p>Running locally instead? <code>npm run build</code> with the same variables set, or paste the URL
+and key directly into <strong>Settings → Cloud sync</strong> in the app.</p>
+
+<div class="note">
+  <strong>Never ship the secret key</strong>
+  The build refuses a key that looks like <code>service_role</code>. The anon key is protected by
+  Row Level Security; the secret key bypasses it and must never reach a browser.
+</div>
+
+<h2>5. Sign in and verify</h2>
+<ol>
+  <li>Open the app, go to <strong>Settings → Cloud sync</strong>, and sign in.</li>
+  <li>Study a little, then press <strong>Sync now</strong>. Open the same page on the other device,
+    sign in, and the progress merges.</li>
+  <li>Check <strong>Settings → Data → Export backup</strong> opens a JSON file with no
+    <code>accessToken</code> in it — that is by design.</li>
+</ol>
+
+<h2>6. Hosting</h2>
+<p>The repository ships a Netlify contract: connect the repo, build <code>npm run build</code>,
+publish <code>deploy</code>, Node 20. The service worker is content-hashed on every build, so a new
+deploy always installs a fresh cache. After deploying, set the Supabase
+<strong>Site URL</strong> to the new address so confirmation emails point somewhere real.</p>
+
+<div class="note">
+  <strong>iPhone</strong>
+  “Add to Home Screen” installs the offline app. A private Netlify site gates the <em>files</em>,
+  not your progress row, and a home-screen app may not share the Netlify session — a public site
+  protected by Supabase auth is usually the smoother arrangement.
+</div>
+
+<a class="back" href="./index.html">← Back to the app</a>
+
+</main>
+</body>
+</html>

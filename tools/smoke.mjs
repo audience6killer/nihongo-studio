@@ -114,7 +114,7 @@ const FILES = [
   'assets/js/core/util.js',
   'assets/js/core/lang.js',
   'assets/js/core/data.js',
-  'assets/js/core/storage.js',
+  'assets/js/core/storage.js', 'assets/js/core/sync.js',
   'assets/js/core/srs.js',
   'assets/js/core/plan.js',
   'assets/js/core/tts.js',
@@ -838,6 +838,122 @@ check('the chapters screen lists the N2 deck alongside the recap', () => {
   includes(html, 'N2 語彙 1');
 });
 
+/* -------------------------------------------------------------------- sync */
+const SYNC = NJ.sync;
+
+function sampleState(over) {
+  return Object.assign({
+    version: 1,
+    app: 'ja',
+    createdAt: '2026-11-01T00:00:00.000Z',
+    onboarded: true,
+    profile: { name: 'Test', dailyMinutes: 35 },
+    settings: { rate: 0.9, furigana: false },
+    diagnostic: null,
+    words: {},
+    cards: {},
+    lessons: {},
+    sessions: [],
+    days: {},
+    exams: [],
+    writing: [],
+    skillStats: { rec: { seen: 0, correct: 0 }, prod: { seen: 0, correct: 0 }, listen: { seen: 0, correct: 0 } },
+    current: null,
+    meta: { lastOpen: 1, configAt: 0 }
+  }, over || {});
+}
+
+check('a merge keeps both devices and takes the later review', () => {
+  const cardA = { w: '気候', skill: 'rec', due: 100, interval: 1, ease: 2.5, reps: 1, lapses: 0, last: 1000, suspended: false, recap: true, created: 1 };
+  const cardB = { w: '気候', skill: 'rec', due: 900, interval: 5, ease: 2.4, reps: 3, lapses: 1, last: 5000, suspended: false, recap: true, created: 1 };
+  const a = sampleState({
+    words: { 気候: { w: '気候', seen: 2, correct: 2, lapses: 0, lastSeen: 1000 } },
+    cards: { '気候|rec': cardA },
+    days: { '2026-11-18': { reviews: 10, minutes: 5, newWords: 3, correct: 8, total: 10, sessions: 1, items: 10 } }
+  });
+  const b = sampleState({
+    words: { 気候: { w: '気候', seen: 5, correct: 4, lapses: 1, lastSeen: 5000 } },
+    cards: { '気候|rec': cardB },
+    days: { '2026-11-18': { reviews: 14, minutes: 9, newWords: 4, correct: 11, total: 14, sessions: 2, items: 14 } }
+  });
+
+  const m = SYNC.mergeStates(a, b);
+  is(m.cards['気候|rec'].interval, 5, 'the later review should win outright: ');
+  is(m.cards['気候|rec'].reps, 3);
+  is(m.words['気候'].seen, 5, 'counters take the max: ');
+  is(m.days['2026-11-18'].reviews, 14, 'daily totals take the max, never the sum: ');
+  is(m.days['2026-11-18'].minutes, 9);
+});
+
+check('a merge keeps cards that exist on only one side', () => {
+  const a = sampleState({ cards: { 'A|rec': { w: 'A', skill: 'rec', last: 1 } } });
+  const b = sampleState({ cards: { 'B|prod': { w: 'B', skill: 'prod', last: 2 } } });
+  const m = SYNC.mergeStates(a, b);
+  is(Object.keys(m.cards).sort(), ['A|rec', 'B|prod']);
+});
+
+check('a merge with a missing side copies the other', () => {
+  const a = sampleState({ cards: { 'A|rec': { w: 'A', skill: 'rec', last: 1 } } });
+  is(Object.keys(SYNC.mergeStates(null, a).cards), ['A|rec']);
+  is(Object.keys(SYNC.mergeStates(a, null).cards), ['A|rec']);
+});
+
+check('a merge deduplicates session and exam history', () => {
+  const row = { id: 's1', date: '2026-11-18', startedAt: 10, graded: 5 };
+  const exam = { id: 'e1', at: 20, pct: 80 };
+  const a = sampleState({ sessions: [row], exams: [exam] });
+  const b = sampleState({ sessions: [row], exams: [exam] });
+  const m = SYNC.mergeStates(a, b);
+  is(m.sessions.length, 1, 'the same session must not appear twice: ');
+  is(m.exams.length, 1);
+});
+
+check('the uploaded copy omits the session token', () => {
+  const st = S.load();
+  st.meta.sync = { url: 'https://demo.supabase.co', anonKey: 'anon', accessToken: 'SECRET-TOKEN', refreshToken: 'SECRET-REFRESH' };
+  const clean = SYNC.sanitize(st);
+  no(clean.meta && clean.meta.sync, 'sanitize kept meta.sync: ');
+  S.reset();
+});
+
+check('sync config never reaches an export', () => {
+  const st = S.load();
+  st.meta.sync = { url: 'https://demo.supabase.co', anonKey: 'anon', accessToken: 'SECRET-TOKEN', refreshToken: 'SECRET-REFRESH' };
+  NJ.S.save(st);
+  const text = NJ.S.exportText(NJ.S.load());
+  no(text.indexOf('SECRET-TOKEN') >= 0, 'access token leaked into the export: ');
+  no(text.indexOf('SECRET-REFRESH') >= 0, 'refresh token leaked into the export: ');
+  S.reset();
+});
+
+check('site config is read from the build-time config', () => {
+  const saved = windowShim.NJ_CONFIG;
+  windowShim.NJ_CONFIG = { supabaseUrl: 'https://demo.supabase.co/', supabaseAnonKey: 'anon-key' };
+  const site = SYNC.siteConfig();
+  is(site.url, 'https://demo.supabase.co', 'a trailing slash should be trimmed: ');
+  is(site.anonKey, 'anon-key');
+  windowShim.NJ_CONFIG = { supabaseUrl: '', supabaseAnonKey: '' };
+  is(SYNC.siteConfig(), null, 'empty build config means manual settings: ');
+  windowShim.NJ_CONFIG = saved;
+});
+
+check('sync config validates the project url and tracks state', () => {
+  S.reset();
+  let threw = false;
+  try { SYNC.saveConfig({ url: 'ftp://nope' }); } catch (e) { threw = true; }
+  ok(threw, 'a non-http url should be rejected: ');
+  is(SYNC.statusText(), 'Not connected');
+
+  SYNC.saveConfig({ url: 'https://demo.supabase.co', anonKey: 'k' });
+  is(SYNC.config().url, 'https://demo.supabase.co');
+  ok(SYNC.configured(), 'configured should be true: ');
+  no(SYNC.signedIn(), 'not signed in yet: ');
+  is(SYNC.statusText(), 'Signed out');
+
+  SYNC.disconnect();
+  no(SYNC.configured(), 'disconnect should clear the project: ');
+  S.reset();
+});
 /* ------------------------------------------------------------- export/import */
 check('export contains no secrets and no live session', () => {
   const st = NJ.S.load();

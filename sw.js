@@ -31,6 +31,7 @@ const CORE = [
   'assets/js/core/lang.js',
   'assets/js/core/data.js',
   'assets/js/core/storage.js',
+  'assets/js/core/sync.js',
   'assets/js/core/srs.js',
   'assets/js/core/plan.js',
   'assets/js/core/tts.js',

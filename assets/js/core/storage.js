@@ -45,6 +45,7 @@
   };
 
   var cache = null;
+  var quiet = false;
 
   function readRaw() {
     try {
@@ -108,9 +109,26 @@
     cache = s;
     try {
       root.localStorage.setItem(S.KEY, JSON.stringify(s));
+      if (!quiet && NJ.sync && NJ.sync.onLocalSave) NJ.sync.onLocalSave();
       return true;
     } catch (err) {
       return false;
+    }
+  };
+
+  /**
+   * Swap the whole state for another snapshot (used when a cloud copy wins).
+   * Quiet: the write must not schedule another sync.
+   */
+  S.replace = function (next) {
+    var prev = quiet;
+    quiet = true;
+    try {
+      cache = S.migrate(next);
+      S.save(cache);
+      return cache;
+    } finally {
+      quiet = prev;
     }
   };
 

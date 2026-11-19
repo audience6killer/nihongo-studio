@@ -349,6 +349,7 @@
     if (state.sessions.length > 400) state.sessions = state.sessions.slice(-400);
 
     NJ.S.bumpDay(state, { minutes: minutes, sessions: 1 });
+    if (NJ.sync && NJ.sync.onSessionEnd) NJ.sync.onSessionEnd();
     return session;
   };
 

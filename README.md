@@ -21,7 +21,7 @@ question, drill, explanation and model answer in this repository is original pro
   the review queue grows. It shows pace honestly, including when the six-month target is short.
 - **Tap-to-define** on every word of every passage, with a furigana toggle.
 - **Local-first.** All progress lives in `localStorage` under `nihongo.v1`. No analytics, no
-  third-party scripts, no network calls except optional sync (not in v1).
+  third-party scripts, and no network calls at all unless you connect optional cloud sync.
 
 Speaking and handwriting are deliberately absent. Production is typed, never scored for
 pronunciation.
@@ -80,8 +80,15 @@ Netlify: connect the repository, leave the base directory empty, build `npm run 
 `deploy`, Node 20 (pinned in `.nvmrc` and `netlify.toml`). `deploy/` is gitignored — it is a build
 artefact, never a source of truth.
 
-**Sync is not implemented yet.** `config.js` carries the reserved `supabase` block, and the build
-will populate it from the environment, but nothing in the app reads it: v1 is local-only by design.
+**Cloud sync is optional.** The build writes `SUPABASE_URL` and `SUPABASE_ANON_KEY` into
+`config.js`; with neither set the app is purely local and Settings accepts a project by hand
+instead. `supabase/schema.sql` creates the table, the RLS policy and the atomic `save_progress`
+function; `setup.html` is the step-by-step walkthrough, with the SQL injected at build time.
+
+Local-first is the invariant, not a slogan: every answer is written to this browser first, the
+cloud holds a sanitised mirror, and no session token is ever uploaded. Conflicts merge the two
+snapshots field by field, so a session on the phone and a session on the laptop do not
+erase each other.
 
 
 ## State of the build
@@ -102,7 +109,7 @@ Content:
 `content/LEDGER.md` is the authority on what exists and `content/REVIEW.md` lists what still wants
 a human read.
 
-Not built: sync. v1 is local-only on purpose — see `INSTANCE.md`.
+Optional cloud sync ships with the app. It needs its own Supabase project — see `setup.html`.
 
 ## Audio needs a Japanese voice
 

@@ -23,7 +23,7 @@
 | 4 — calibration, refresh deck, checkpoints | done | adaptive branch, refresh deck, JLPT-shaped exams |
 | 5 — content scale | **15 of 15 chapters** | 773 recap words + 134 N2 words · 10,602 tokens in 674 texts, 100% tap |
 | 6 — N2 deck, phases, scheduled checkpoints | done | deck numbering, phase switch, blocks derived from available content |
-| 7 — PWA deploy and optional sync | **deploy done, sync deferred** | `npm run build` → `deploy/` (29 files, 333 KB); sync is explicitly out of v1 |
+| 7 — PWA deploy and optional sync | done | `npm run build` → `deploy/`; optional Supabase sync ported from the Chinese instance |
 | 8 — QA matrix and freeze | done | `node tools/qa.mjs` → **17/17**; licences and credits in `README.md` |
 
 Bugs found and fixed by these tests, rather than by the user:
@@ -57,7 +57,17 @@ chapters.
 **Visual polish:** the one known gap. No browser automation is possible in this environment, so
 nothing has been checked by eye beyond the headless render tests.
 
-**Sync:** deliberately out of scope for v1; the build reserves a `config.js` hook.
+**Sync:** shipped as an optional mirror. `supabase/schema.sql` and `assets/js/core/sync.js`
+were ported from this project's Chinese sibling instance, which had already solved the hard
+part — the field-by-field merge and the revision-checked save. What changed in the port: the
+state shape (deck phases and exams, a single `stageAt` instead of per-stage scores), the gzip
+marker, and the build-time config shape.
+
+**Verified, and not verified.** The merge, the sanitising, the token exclusion and the config
+parsing are covered by eight smoke checks; the build's injection of the config and the schema is
+exercised with a dummy project. What has *not* run is a real sign-in, pull, push or conflict
+retry against a live Supabase project: there is no project here and the network is closed except
+for the npm registry and GitHub. That first round trip is the one thing left to prove.
 
 ---
 

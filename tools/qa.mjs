@@ -36,7 +36,7 @@ function includes(hay, needle, label = '') {
 /* --------------------------------------------------------------- modules */
 const FILES = [
   'assets/js/data/config.js', 'assets/js/data/vocab.js', 'assets/js/data/lessons.js', 'assets/js/data/tap.js',
-  'assets/js/core/util.js', 'assets/js/core/lang.js', 'assets/js/core/data.js', 'assets/js/core/storage.js',
+  'assets/js/core/util.js', 'assets/js/core/lang.js', 'assets/js/core/data.js', 'assets/js/core/storage.js', 'assets/js/core/sync.js',
   'assets/js/core/srs.js', 'assets/js/core/plan.js', 'assets/js/core/tts.js', 'assets/js/core/session.js',
   'assets/js/core/diagnostic.js', 'assets/js/core/exam.js',
   'assets/js/ui/components.js', 'assets/js/ui/dashboard.js', 'assets/js/ui/session.js',
@@ -226,7 +226,7 @@ check('build output is ignored by git', () => {
 
 /* ----------------------------------------------------------- deployment */
 check('the deploy contract is complete', () => {
-  for (const f of ['netlify.toml', '.nvmrc', 'package.json', 'tools/prepare_deploy.mjs', 'serve.py']) {
+  for (const f of ['netlify.toml', '.nvmrc', 'package.json', 'tools/prepare_deploy.mjs', 'serve.py', 'setup.html', 'supabase/schema.sql']) {
     ok(has(f), `missing ${f}`);
   }
   const pkg = JSON.parse(read('package.json'));
@@ -247,6 +247,36 @@ check('every tool referenced by the docs exists', () => {
   const docs = read('README.md') + read('CONTENT_SPEC.md');
   const tools = [...docs.matchAll(/tools\/([a-zA-Z_]+\.(?:mjs|py))/g)].map((m) => m[1]);
   for (const t of new Set(tools)) ok(has(join('tools', t)), `README/CONTENT_SPEC references a missing tool: tools/${t}`);
+});
+
+/* --------------------------------------------------------------- sync */
+check('the sync contract is complete', () => {
+  ok(has('supabase/schema.sql'), 'supabase/schema.sql is missing: ');
+  const schema = read('supabase/schema.sql');
+  includes(schema, 'create table if not exists public.progress');
+  includes(schema, 'enable row level security');
+  includes(schema, 'security definer', 'the save function must be a definer: ');
+  includes(schema, 'save_progress');
+  includes(schema, 'auth.uid() = user_id', 'RLS must scope rows to the owner: ');
+  no(/grant\s+(insert|update|delete)/i.test(schema), 'the client must not be granted direct writes: ');
+
+  ok(has('setup.html'), 'setup.html is missing: ');
+  includes(read('setup.html'), '<pre id="sql">', 'the build injects the schema into this placeholder: ');
+
+  const config = read('assets/js/data/config.js');
+  includes(config, 'supabaseUrl');
+  includes(config, 'supabaseAnonKey');
+
+  const syncSource = read('assets/js/core/sync.js');
+  includes(syncSource, 'save_progress', 'the client should call the RPC: ');
+  includes(syncSource, '/auth/v1/token', 'the client should use GoTrue: ');
+});
+
+check('sync is documented as optional and local-first', () => {
+  const readme = read('README.md');
+  includes(readme.toLowerCase(), 'local-first');
+  const instance = read('INSTANCE.md');
+  includes(instance, 'Sync');
 });
 
 /* ------------------------------------------------------------ inventory */

@@ -167,6 +167,186 @@
     UI.render();
   };
 
+  /* ------------------------------------------------------------ cloud sync */
+
+  function syncCard(s) {
+    var sync = NJ.sync;
+    if (!sync) return '';
+
+    var cfg = sync.config() || {};
+    var baked = sync.usesSiteConfig();
+    var signed = sync.signedIn();
+    var configured = sync.configured();
+    var st = sync.state;
+    var host = '';
+    try { host = cfg.url ? new URL(cfg.url).host : ''; } catch (e) { host = cfg.url || ''; }
+
+    var html = '<div class="card"><h2>Cloud sync</h2>' +
+      '<p class="small" style="color:var(--ink-3);margin:0 0 .8rem">' +
+        'Optional. Every answer is saved on this device first; the cloud is a mirror for your other ' +
+        'devices, never the source of truth. Without it, move progress by hand with Export and Import.' +
+      '</p>';
+
+    if (!configured && !signed) {
+      html += '<p style="margin:0 0 .8rem">Point this app at a Supabase project to sync between devices. ' +
+        '<a href="setup.html">The setup guide</a> has the SQL and the hosting steps.</p>' +
+        '<label class="field"><span>Project URL</span>' +
+          '<input class="input input--ui" id="sync-url" type="url" placeholder="https://xxxx.supabase.co" value="' +
+            UI.esc(cfg.url || '') + '"></label>' +
+        '<label class="field"><span>Anon / publishable key</span>' +
+          '<input class="input input--ui" id="sync-key" type="text" placeholder="eyJ…" value="' +
+            UI.esc(cfg.anonKey || '') + '">' +
+          '<span class="hint">Safe to ship: Row Level Security limits each account to its own row. ' +
+          'Never the service_role key.</span></label>' +
+        '<button type="button" class="btn btn--ghost btn--sm" data-act="sync-save-project">Save project</button>' +
+        '</div>';
+      return html;
+    }
+
+    if (!signed) {
+      html += '<div class="card-head"><span class="pill">Not signed in</span>' +
+        (baked ? '<span class="pill pill--muted">configured at build time</span>'
+               : '<button type="button" class="btn btn--quiet btn--sm" data-act="sync-forget">Change project</button>') +
+        '</div>' +
+        '<p class="small" style="color:var(--ink-3);margin:0 0 .8rem">' +
+          (baked ? 'This site is already pointed at your sync project. Sign in to pull your progress.'
+                 : 'Connected to ' + UI.esc(host || 'your project') + '. Sign in to pull your progress.') +
+        '</p>' +
+        '<label class="field"><span>Email</span>' +
+          '<input class="input input--ui" id="sync-email" type="email" autocomplete="username" value="' +
+            UI.esc(cfg.email || '') + '"></label>' +
+        '<label class="field"><span>Password</span>' +
+          '<input class="input input--ui" id="sync-pass" type="password" autocomplete="current-password"></label>' +
+        '<div class="btn-row">' +
+          '<button type="button" class="btn btn--primary" data-act="sync-signin">Sign in</button>' +
+          '<button type="button" class="btn btn--ghost" data-act="sync-signup">Create account</button>' +
+        '</div>' +
+        '</div>';
+      return html;
+    }
+
+    var pill = st.syncing ? '<span class="pill">Syncing…</span>'
+      : st.lastError ? '<span class="pill pill--listen">Sync error</span>'
+      : '<span class="pill pill--done">Connected</span>';
+
+    html += '<div class="card-head">' + pill + '<span class="small" style="color:var(--ink-3)">' +
+      UI.esc(cfg.email || '') + (host ? ' · ' + UI.esc(host) : '') + '</span></div>' +
+      '<dl class="kv"><dt>Status</dt><dd>' + UI.esc(sync.statusText()) + '</dd></dl>' +
+      '<dl class="kv"><dt>Last sync</dt><dd>' +
+        (st.lastSyncAt ? U.fmtDate(new Date(st.lastSyncAt), { hour: '2-digit', minute: '2-digit' }) : 'never') +
+      '</dd></dl>';
+
+    if (st.lastError) {
+      html += '<div class="note" style="margin:.7rem 0"><strong>Last sync failed</strong>' + UI.esc(st.lastError) + '</div>';
+    }
+
+    html += '<div class="switch" style="margin-top:.6rem">' +
+        '<span class="label">Auto-sync<span class="hint">After sessions and setting changes</span></span>' +
+        '<button type="button" class="toggle" role="switch" aria-checked="' +
+          (cfg.enabled !== false ? 'true' : 'false') + '" data-act="sync-toggle-auto" aria-label="Auto-sync"></button>' +
+      '</div>' +
+      '<div class="btn-row" style="margin-top:.8rem">' +
+        '<button type="button" class="btn btn--primary btn--sm" data-act="sync-now">Sync now</button>' +
+        '<button type="button" class="btn btn--ghost btn--sm" data-act="sync-upload">Upload this device</button>' +
+        '<button type="button" class="btn btn--ghost btn--sm" data-act="sync-download">Download from cloud</button>' +
+        '<button type="button" class="btn btn--quiet btn--sm" data-act="sync-signout">Sign out</button>' +
+      '</div>' +
+      '</div>';
+    return html;
+  }
+
+  function syncField(id) {
+    var el = root.document.getElementById(id);
+    return el ? String(el.value || '').trim() : '';
+  }
+
+  function syncBusy(fn) {
+    var run = function () {
+      return Promise.resolve()
+        .then(fn)
+        .catch(function (e) {
+          UI.toast((NJ.sync && NJ.sync.friendly && NJ.sync.friendly(e)) || e.message || 'Sync failed.', 'warn');
+        })
+        .then(function () { UI.render(); });
+    };
+    return run();
+  }
+
+  UI.actions['sync-save-project'] = function () {
+    try {
+      NJ.sync.saveConfig({ url: syncField('sync-url'), anonKey: syncField('sync-key') });
+      UI.toast('Project saved.');
+    } catch (e) {
+      UI.toast(e.message, 'warn');
+    }
+    UI.render();
+  };
+
+  UI.actions['sync-forget'] = function () {
+    UI.confirm('Forget this project?',
+      'The URL and key are removed from this device and you are signed out. Local progress stays.',
+      function () { NJ.sync.disconnect(); UI.render(); }, 'Forget');
+  };
+
+  UI.actions['sync-signin'] = function () {
+    var email = syncField('sync-email');
+    var pass = syncField('sync-pass');
+    syncBusy(async function () {
+      if (!NJ.sync.usesSiteConfig() && root.document.getElementById('sync-url')) {
+        NJ.sync.saveConfig({ url: syncField('sync-url'), anonKey: syncField('sync-key') });
+      }
+      var res = await NJ.sync.signIn(email, pass);
+      if (res && res.signedIn) {
+        await NJ.sync.syncNow({ silent: true });
+        UI.toast('Signed in. Progress merged and synced.');
+      }
+    });
+  };
+
+  UI.actions['sync-signup'] = function () {
+    var email = syncField('sync-email');
+    var pass = syncField('sync-pass');
+    syncBusy(async function () {
+      if (!NJ.sync.usesSiteConfig() && root.document.getElementById('sync-url')) {
+        NJ.sync.saveConfig({ url: syncField('sync-url'), anonKey: syncField('sync-key') });
+      }
+      var res = await NJ.sync.signUp(email, pass);
+      if (res && res.needsConfirmation) {
+        UI.toast('Account created. Confirm your email, then sign in.', 'warn');
+        return;
+      }
+      await NJ.sync.syncNow({ silent: true });
+      UI.toast('Account created and synced.');
+    });
+  };
+
+  UI.actions['sync-now'] = function () {
+    syncBusy(async function () { await NJ.sync.syncNow({}); UI.toast('Synced.'); });
+  };
+
+  UI.actions['sync-upload'] = function () {
+    syncBusy(async function () { await NJ.sync.upload(); UI.toast('Uploaded this device.'); });
+  };
+
+  UI.actions['sync-download'] = function () {
+    UI.confirm('Replace this device with the cloud copy?',
+      'This device\u2019s progress is replaced by the cloud snapshot. Export a backup first if you are unsure.',
+      function () {
+        syncBusy(async function () { await NJ.sync.download(); UI.toast('Downloaded.'); });
+      }, 'Download');
+  };
+
+  UI.actions['sync-signout'] = function () {
+    syncBusy(async function () { await NJ.sync.signOut(); UI.toast('Signed out. Local progress stays.'); });
+  };
+
+  UI.actions['sync-toggle-auto'] = function () {
+    var cfg = NJ.sync.config() || {};
+    NJ.sync.saveConfig({ enabled: !(cfg.enabled !== false) });
+    UI.toast(cfg.enabled !== false ? 'Auto-sync off.' : 'Auto-sync on.');
+    UI.render();
+  };
+
   UI.screens.settings = {
     render: function () {
       var s = st();
@@ -242,6 +422,8 @@
         '</div>' +
         '<input type="file" id="import-file" accept="application/json,.json" hidden>' +
       '</div>';
+
+      html += syncCard(s);
 
       html += '<div class="card card--quiet"><p class="small" style="color:var(--ink-3);margin:0">' +
         'Not affiliated with Kurosio Publishers or the JLPT administrators. Chapter topics are facts; ' +
